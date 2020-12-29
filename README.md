@@ -1,9 +1,9 @@
 
 # Tracking
-##  Introduction
+##  How does it work?
 
 
-##  Data Storage
+##  Where is data stored?
 * Calendar Server  (central entity to sync calendar events across all devices)
   * Cloud  Storage
     * [Apple Calendar](https://www.icloud.com/calendar/) 
@@ -20,7 +20,7 @@
 <br />
 <br />
 
-## Data Entry  
+## How are new events created?
 * Flic Buttons  
 * Zigbee Buttons  
 * IOS Shortcuts  
@@ -28,4 +28,4 @@
 <br />
 <br />
 
-## Data Analysis 
+## How is data analyzed? 
