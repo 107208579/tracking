@@ -1,11 +1,25 @@
 
-# Calendar Tracking
-##  How does it work?
+# Calendar Tracking  
+##  How does it work?  
+
+
+<br />
+<br />
+
+##  Who does this?  
+Here are some great people that track their life via a calendar:
+* [ "Keeping Track of Time" by Awais Hussain](https://vimeo.com/57823452)
+* ["Lifelogging" by David Achkar](https://david.achkar.com/qssv-lifelog-talk/)
+* ["Productivity Hacking" by James Ma](http://www.jamesmaa.com/2012/12/02/james-maas-productivity-hacking-guide/)
+* ["Tracking My Time Spent" by Stephanie Rogers](https://blog.usejournal.com/quantified-self-tracking-my-time-spent-1fdb97652595)
+* ["I Tracked Every Minute Of My Life For One Week" by Antonia](https://www.youtube.com/watch?v=CtyJR2e1Fco)
+* ["I Tracked Every Minute Of My Life For 7 Days" by Nathaniel Drew](https://www.youtube.com/watch?v=FLLiFl1m9I4)
+* ["I Tracked Every Minute Of My Life For 3 Months" by Matt D'Avella](https://www.youtube.com/watch?v=LUjTvPy_UAg)
 <br />
 <br />
 
 ##  How are events stored?
-* **CalDAV Server** (sync calendar events between devices)
+* **CalDAV Server**  (sync calendar events between devices)
   * Cloud Hosted
     * [Apple Calendar](https://www.icloud.com/calendar/) 
     * [Google Calendar](http://calendar.google.com)
@@ -42,11 +56,15 @@
 <br />
 
 ## How can events be added?  
-* Calendar Clients  
+* CalDAV Client  
+Create a calendar event manually within the application
 
 * Physical Buttons  
+Create a calendar event via a button press
+
   * Flic
   * Zigbee  
+
 * Android 
   * [Add Your Template](https://play.google.com/store/apps/details?id=streim.de.quickaddroidpro)
   * [Calendar Helper](https://play.google.com/store/apps/details?id=net.noople.calendarhelper)
@@ -54,8 +72,17 @@
 * iOS Shortcuts (NFC Tags)
 * iOS Applications
   * [Calendar Paste](https://apps.apple.com/app/id581693524)
-  * [Geofency](https://apps.apple.com/app/id615538630)
   * [Tyme](https://www.tyme-app.com)
+<br />
+<br />
+
+
+## What tools can help me to track? 
+* Location Tracking
+  * iOS
+    * [Arc App](https://apps.apple.com/app/id1063151918)
+    * [Geofency](https://apps.apple.com/app/id615538630)
+    * [Life Cycle](https://apps.apple.com/app/id1064955217)
 <br />
 <br />
 
