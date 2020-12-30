@@ -1,4 +1,3 @@
-
 # Calendar Tracking  
 ## How does it work?  
 
@@ -8,13 +7,13 @@
 
 ## Who does this?  
 Here are some great people that track their life via a calendar:
-* ["Lifelogging" by David Achkar](https://david.achkar.com/qssv-lifelog-talk/)
-* ["Productivity Hacking" by James Ma](http://www.jamesmaa.com/2012/12/02/james-maas-productivity-hacking-guide/)
-* [ "Keeping Track of Time" by Awais Hussain](https://vimeo.com/57823452)
-* ["Tracking My Time Spent" by Stephanie Rogers](https://blog.usejournal.com/quantified-self-tracking-my-time-spent-1fdb97652595)
-* ["I Tracked Every Minute Of My Life For One Week" by Antonia](https://www.youtube.com/watch?v=CtyJR2e1Fco)
-* ["I Tracked Every Minute Of My Life For 7 Days" by Nathaniel Drew](https://www.youtube.com/watch?v=FLLiFl1m9I4)
-* ["I Tracked Every Minute Of My Life For 3 Months" by Matt D'Avella](https://www.youtube.com/watch?v=LUjTvPy_UAg)
+* [Lifelogging (David Achkar)](https://david.achkar.com/qssv-lifelog-talk/)
+* [Productivity Hacking (James Maa)](http://www.jamesmaa.com/2012/12/02/james-maas-productivity-hacking-guide/)
+* [ Keeping Track of Time (Awais Hussain)](https://vimeo.com/57823452)
+* [Tracking My Time Spent (Stephanie Rogers)](https://blog.usejournal.com/quantified-self-tracking-my-time-spent-1fdb97652595)
+* [I Tracked Every Minute Of My Life For One Week (Antonia)](https://www.youtube.com/watch?v=CtyJR2e1Fco)
+* [I Tracked Every Minute Of My Life For 7 Days (Nathaniel Drew)](https://www.youtube.com/watch?v=FLLiFl1m9I4)
+* [I Tracked Every Minute Of My Life For 3 Months (Matt D'Avella)](https://www.youtube.com/watch?v=LUjTvPy_UAg)
 <br />
 <br />
 
