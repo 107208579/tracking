@@ -5,7 +5,7 @@
 <br />
 
 ##  How are events stored?
-* **CalDAV Server**  (sync calendar events between devices)
+* **CalDAV Server** (sync calendar events between devices)
   * Cloud Hosted
     * [Apple Calendar](https://www.icloud.com/calendar/) 
     * [Google Calendar](http://calendar.google.com)
@@ -17,7 +17,7 @@
 <br />
 <br />
 
-* **Calendar Clients** (add, update, delete calendar events)
+* **CalDAV Clients** (add, update, delete calendar events)
   * Windows
      * [eM Client](http://www.emclient.com)
      * [One Calendar](https://www.onecalendar.nl)
