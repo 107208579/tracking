@@ -16,6 +16,7 @@
      * [Radicale](http://radicale.org)
 <br />
 <br />
+
 * **Calendar Clients** (add, update, delete calendar events)
   * Windows
      * [eM Client](http://www.emclient.com)
@@ -39,6 +40,7 @@
     * [One Calendar](https://play.google.com/store/apps/details?id=biz.codespark.xcalendarapp)
 <br />
 <br />
+
 ## How can events be added?  
 * Calendar Clients  
 
@@ -56,12 +58,14 @@
   * [Tyme](https://www.tyme-app.com)
 <br />
 <br />
+
 ## How can events be exported? 
 * macOS
   * [Export Calendars Pro](http://apps.apple.com/app/id663835623)
   * [TimeTable](http://www.stevenriggs.com)
 <br />
 <br />
+
 ## How can events be analysed?
  * [Tableau](https://www.tableau.com)
 <br />
