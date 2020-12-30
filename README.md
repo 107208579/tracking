@@ -1,16 +1,16 @@
 
 # Calendar Tracking  
-##  How does it work?  
+## How does it work?  
 
 
 <br />
 <br />
 
-##  Who does this?  
+## Who does this?  
 Here are some great people that track their life via a calendar:
-* [ "Keeping Track of Time" by Awais Hussain](https://vimeo.com/57823452)
 * ["Lifelogging" by David Achkar](https://david.achkar.com/qssv-lifelog-talk/)
 * ["Productivity Hacking" by James Ma](http://www.jamesmaa.com/2012/12/02/james-maas-productivity-hacking-guide/)
+* [ "Keeping Track of Time" by Awais Hussain](https://vimeo.com/57823452)
 * ["Tracking My Time Spent" by Stephanie Rogers](https://blog.usejournal.com/quantified-self-tracking-my-time-spent-1fdb97652595)
 * ["I Tracked Every Minute Of My Life For One Week" by Antonia](https://www.youtube.com/watch?v=CtyJR2e1Fco)
 * ["I Tracked Every Minute Of My Life For 7 Days" by Nathaniel Drew](https://www.youtube.com/watch?v=FLLiFl1m9I4)
@@ -18,7 +18,7 @@ Here are some great people that track their life via a calendar:
 <br />
 <br />
 
-##  How are events stored?
+## How are events stored?
 * **CalDAV Server**  (sync calendar events between devices)
   * Cloud Hosted
     * [Apple Calendar](https://www.icloud.com/calendar/) 
