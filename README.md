@@ -1,6 +1,6 @@
 # Calendar Tracking  
-## How does it work?  
-Do you ever wonder where your time goes?
+## How does this work?  
+The easiest way to manage events is to create them in your calendar. If you want to sync calendar events across different calendars then choose calendar applications that support CalDAV. CalDAV is a protocol used to sync calendars.
 
 ![Calendar Setup with CalDAV](https://github.com/107208579/tracking/blob/main/img/CalDAV_Diagram.png)
 <br />
