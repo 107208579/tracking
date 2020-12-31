@@ -1,6 +1,11 @@
+
+
 # Calendar Tracking  
 ## How does it work?  
 
+Do you ever wonder where your time goes?
+
+![Calendar Setup with CalDAV](https://github.com/107208579/tracking/blob/main/img/CalDAV_Diagram.png)
 
 <br />
 <br />
