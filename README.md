@@ -61,8 +61,8 @@ The easiest way is to use a calendar service such as [Apple iCloud](https://www.
 <br />
 
 ## What calendar apps can be used?
-Literally any calendar you are comfortable with. Below you find a list of applications that support CalDAV and allow for easy synronisation between different devices.  
-* **Clients** (to add, update, delete calendar events). 
+Literally any calendar you are comfortable with. Below you find a list of applications that support CalDAV and allow for easy synronisation between different devices.   
+* **Clients** (to add, update, delete calendar events)  
   * Windows
      * [eM Client](http://www.emclient.com)
      * [One Calendar](https://www.onecalendar.nl)
@@ -84,6 +84,7 @@ Literally any calendar you are comfortable with. Below you find a list of applic
     * [BusyCal](https://apps.apple.com/us/app/id1035689743)
     * [Fantastical](https://apps.apple.com/app/id718043190)
 <br />
+
 * **Servers**  (to sync calendar events via CalDAV)  
   * Cloud Hosted
     * [ iCloud Calendar](https://www.icloud.com/calendar/) 
