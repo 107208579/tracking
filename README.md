@@ -34,25 +34,26 @@ The easiest way is to use a calendar service such as [Apple iCloud](https://www.
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Setup.png" width="800"> 
  
  I have split my calendar into different calendars categories
-> <font color="grey">RES</font> (Rest)
-> <font color="green">TRA</font> (Transportation)
-> <font color="turquoise">ENT</font> (Entertainment)
-> <font color="darkblue">SPO</font> (Sports)
-> <font color="brown">EMP</font> (Employment) 
-> <font color="purple">EDU</font> (Education)
-> <font color="red">HYG</font> (Hygiene)
+ 
+> <font color="grey">RES</font> (Rest)  
+> <font color="green">TRA</font> (Transportation)  
+> <font color="turquoise">ENT</font> (Entertainment)  
+> <font color="darkblue">SPO</font> (Sports)  
+> <font color="brown">EMP</font> (Employment)  
+> <font color="purple">EDU</font> (Education)  
+> <font color="red">HYG</font> (Hygiene)  
 >  …
 
 <br />
 <br />
 
-> <font color="green">TRA - Walk</font>
-> <font color="green">TRA - Bus</font> 
-> <font color="green">TRA - Car</font>
-> <font color="green">TRA - Walk</font>
-> <font color="turquoise">ENT - Book</font>   
+> <font color="green">TRA - Walk</font>  
+> <font color="green">TRA - Bus</font>  
+> <font color="green">TRA - Car</font>  
+> <font color="green">TRA - Walk</font>  
+> <font color="turquoise">ENT - Book</font>  
 > <font color="turquoise">ENT - Game</font>  
-> <font color="turquoise">ENT - Television</font>   
+> <font color="turquoise">ENT - Television</font>  
 > <font color="turquoise">ENT - Computer</font>  
 >  …
 
