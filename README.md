@@ -4,10 +4,7 @@
 https://stackedit.io/app#
 
 ## Why track your time?  
-Have you ever asked yourself where your time goes? Or have you ever wished you could remember what you were doing on a specific day in the past?
-
-What if I said that all you need to do is to track your time in a calendar?
-
+Have you ever asked yourself where your time goes? Or have you ever wished you could remember what you were doing on a specific day in the past? How do you spend your 10080 minutes in a week?
 
 I've been tracking 
 - To remember past events
@@ -16,43 +13,49 @@ I've been tracking
 - To leave a legacy
 
 Here are some great people that track their life via a calendar:
-* [Lifelogging (David Achkar)](https://david.achkar.com/qssv-lifelog-talk/)
-* [Productivity Hacking (James Maa)](http://www.jamesmaa.com/2012/12/02/james-maas-productivity-hacking-guide/)
-* [Every Step I Take (Nicholas Feltron)](https://www.youtube.com/watch?v=MazwAPVO70Y)
-* [ Keeping Track of Time (Awais Hussain)](https://vimeo.com/57823452)
-* [Tracking My Time Spent (Stephanie Rogers)](https://blog.usejournal.com/quantified-self-tracking-my-time-spent-1fdb97652595)
-* [I Tracked Every Minute Of My Life For One Week (Antonia)](https://www.youtube.com/watch?v=CtyJR2e1Fco)
-* [I Tracked Every Minute Of My Life For 7 Days (Nathaniel Drew)](https://www.youtube.com/watch?v=FLLiFl1m9I4)
-* [I Tracked Every Minute Of My Life For 3 Months (Matt D'Avella)](https://www.youtube.com/watch?v=LUjTvPy_UAg)
-* [How Six Months of Tracking Everything Increased my Awareness (David Achkar)](https://vimeo.com/78020552)
+* [Lifelogging](https://david.achkar.com/qssv-lifelog-talk/) (David Achkar)
+* [Every Step I Take](https://www.youtube.com/watch?v=MazwAPVO70Y) (Nicholas Feltron)
+* [Productivity Hacking](http://www.jamesmaa.com/2012/12/02/james-maas-productivity-hacking-guide/) (James Maa)
+* [ Keeping Track of Time](https://vimeo.com/57823452) (Awais Hussain)
+* [Tracking My Time Spent](https://blog.usejournal.com/quantified-self-tracking-my-time-spent-1fdb97652595) (Stephanie Rogers)
+* [How and Why I Create a Quantified Self](https://www.jacksondame.com/blog/lifelogging-how-and-why-i-create-a-quantified-self) (Jackson Dame)
+* [I Tracked Every Minute Of My Life For 7 Days](https://www.youtube.com/watch?v=FLLiFl1m9I4)  (Nathaniel Drew)
+* [I Tracked Every Minute Of My Life For 3 Months](https://www.youtube.com/watch?v=LUjTvPy_UAg) (Matt D'Avella)
+* [I Tracked Every Minute Of My Life For One Week](https://www.youtube.com/watch?v=CtyJR2e1Fco) (Antonia)
+* [How Six Months of Tracking Everything Increased my Awareness](https://vimeo.com/78020552) (David Achkar)
+
 <br />
 <br />
 
 
 ## How does this all work?  
-The easiest way is to use a calendar service such as [Apple iCloud](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) which allows other devices and calendar apps to independently connect and synchronise data. In my case, I use a self-hosted calendar server ([Nextcloud](http://nextcloud.com)) which synchronises event via CalDAV to my iPhone, iPad, and iMac calendar.
+The easiest way is to use a calendar service such as [Apple iCloud](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) which allows calendar apps to independently connect and synchronise data. In my case, I run a self-hosted [Nextcloud](http://nextcloud.com) server  which uses CalDAV to keep all my events updated across my iPhone, iPad, and iMac calendar.
 
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Setup.png" width="800"> 
  
-> Rest  
-> Transportation  
-> Entertainment   
-> Sports   
-> Employment  
-> Education   
-> Hygiene   
+ I have split my calendar into different calendars categories
+> <font color="grey">RES</font> (Rest)
+> <font color="green">TRA</font> (Transportation)
+> <font color="turquoise">ENT</font> (Entertainment)
+> <font color="darkblue">SPO</font> (Sports)
+> <font color="brown">EMP</font> (Employment) 
+> <font color="purple">EDU</font> (Education)
+> <font color="red">HYG</font> (Hygiene)
 >  …
 
 <br />
 <br />
 
-> Transportation - Bus  
-> Transportation - Car  
-> Transportation - Walk  
-> Entertainment - Book  
-> Entertainment - Television  
-> Entertainment - Computer  
+> <font color="green">TRA - Walk</font>
+> <font color="green">TRA - Bus</font> 
+> <font color="green">TRA - Car</font>
+> <font color="green">TRA - Walk</font>
+> <font color="turquoise">ENT - Book</font>   
+> <font color="turquoise">ENT - Game</font>  
+> <font color="turquoise">ENT - Television</font>   
+> <font color="turquoise">ENT - Computer</font>  
 >  …
+
 <br />
 <br />
 
