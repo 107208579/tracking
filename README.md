@@ -1,10 +1,11 @@
 
 # Calendar Tracking  
+![Calendar Setup with CalDAV](https://github.com/107208579/tracking/blob/main/img/Calendar_Overview.png)
 
 ## Why track your time?  
-Have you ever asked yourself where your time goes? Or have you ever wished you could remember what you were doing on a specific day in the past? What if I said that all you need to do is to track your time in a calendar?
+Have you ever asked yourself where your time goes? Or have you ever wished you could remember what you were doing on a specific day in the past?
 
-![Calendar Overview](https://github.com/107208579/tracking/blob/main/img/Calendar_Overview.png)
+What if I said that all you need to do is to track your time in a calendar?
 
 
 I've been tracking 
@@ -27,17 +28,17 @@ Here are some great people that track their life via a calendar:
 <br />
 
 
-## How does this work?  
+## How does this all work?  
+
+
 Simply create an event in a calendar. If you want to sync calendars across different devices then choose calendar apps that support CalDAV synchronisation.
 
-
-![Calendar Setup](https://github.com/107208579/tracking/blob/main/img/Calendar_Setup.png)
-
+![Calendar Setup with CalDAV](https://github.com/107208579/tracking/blob/main/img/Calendar_Setup.png)
 
 
-To work with CalDAV you need a server that acts as central repository of your calendar data. The central server allows devices and calendar apps to independently connect and synchronise data.
+To work with CalDAV you need a server that acts as central repository of your calendar data. The central server allows devices and calendar apps to independently connect and synchronise data. In my case I use [Nextcloud](http://nextcloud.com)  
 
-> Rest
+> Rest  
 > Transportation  
 > Entertainment   
 > Sports   
@@ -50,18 +51,18 @@ To work with CalDAV you need a server that acts as central repository of your ca
 <br />
 
 > Transportation - Bus  
-> Transportation - Car
-> Transportation - Walk
+> Transportation - Car  
+> Transportation - Walk  
 > Entertainment - Book  
 > Entertainment - Television  
 > Entertainment - Computer  
 >  …
-
 <br />
 <br />
 
-## What calendar applications can be used?
-* **Clients** (to add, update, delete calendar events)
+## What calendar apps can be used?
+Literally any calendar you are comfortable with. Below you find a list of applications that support CalDAV and hence allow for easy synronisation between different devices.  
+* **Clients** (to add, update, delete calendar events). 
   * Windows
      * [eM Client](http://www.emclient.com)
      * [One Calendar](https://www.onecalendar.nl)
@@ -83,7 +84,7 @@ To work with CalDAV you need a server that acts as central repository of your ca
     * [BusyCal](https://apps.apple.com/us/app/id1035689743)
     * [Fantastical](https://apps.apple.com/app/id718043190)
 <br />
-* **Servers**  (to sync calendar events via CalDAV between devices)
+* **Servers**  (to sync calendar events via CalDAV)  
   * Cloud Hosted
     * [ iCloud Calendar](https://www.icloud.com/calendar/) 
     * [Google Calendar](http://calendar.google.com)
@@ -117,10 +118,9 @@ To work with CalDAV you need a server that acts as central repository of your ca
 
 
 ## What other tools can help to track? 
-* Location Tracking
-  * iOS
-    * [Arc App](https://apps.apple.com/app/id1063151918) - shows which locations you have been to  
-    * [Life Cycle](https://apps.apple.com/app/id1064955217) - shows which locations you have been to 
+ * iOS
+   * [Arc App](https://apps.apple.com/app/id1063151918) - shows which locations you have been to  
+   * [Life Cycle](https://apps.apple.com/app/id1064955217) - shows which locations you have been to 
 <br />
 <br />
 
