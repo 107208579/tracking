@@ -4,6 +4,8 @@
 ## Why track your time?  
 Have you ever asked yourself where your time goes? Or have you ever wished you could remember what you were doing on a specific day in the past? What if I said that all you need to do is to track your time in a calendar?
 
+![Calendar Overview](https://github.com/107208579/tracking/blob/main/img/Calendar_Overview.png)
+
 
 I've been tracking 
 - To remember past events
@@ -29,7 +31,7 @@ Here are some great people that track their life via a calendar:
 Simply create an event in a calendar. If you want to sync calendars across different devices then choose calendar apps that support CalDAV synchronisation.
 
 
-![Calendar Setup with CalDAV](https://github.com/107208579/tracking/blob/main/img/CalDAV_Diagram.png)
+![Calendar Setup](https://github.com/107208579/tracking/blob/main/img/Calendar_Setup.png)
 
 
 
