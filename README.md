@@ -1,6 +1,7 @@
-
 # Calendar Tracking  
-![Calendar Setup with CalDAV](https://github.com/107208579/tracking/blob/main/img/Calendar_Overview.png)
+<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Overview.png" width="800">
+
+https://stackedit.io/app#
 
 ## Why track your time?  
 Have you ever asked yourself where your time goes? Or have you ever wished you could remember what you were doing on a specific day in the past?
@@ -29,15 +30,10 @@ Here are some great people that track their life via a calendar:
 
 
 ## How does this all work?  
+The easiest way is to use a calendar service such as [Apple iCloud](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) which allows other devices and calendar apps to independently connect and synchronise data. In my case, I use a self-hosted calendar server ([Nextcloud](http://nextcloud.com)) which synchronises event via CalDAV to my iPhone, iPad, and iMac calendar.
 
-
-Simply create an event in a calendar. If you want to sync calendars across different devices then choose calendar apps that support CalDAV synchronisation.
-
-![Calendar Setup with CalDAV](https://github.com/107208579/tracking/blob/main/img/Calendar_Setup.png)
-
-
-To work with CalDAV you need a server that acts as central repository of your calendar data. The central server allows devices and calendar apps to independently connect and synchronise data. In my case I use [Nextcloud](http://nextcloud.com)  
-
+<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Setup.png" width="800"> 
+ 
 > Rest  
 > Transportation  
 > Entertainment   
@@ -61,7 +57,7 @@ To work with CalDAV you need a server that acts as central repository of your ca
 <br />
 
 ## What calendar apps can be used?
-Literally any calendar you are comfortable with. Below you find a list of applications that support CalDAV and hence allow for easy synronisation between different devices.  
+Literally any calendar you are comfortable with. Below you find a list of applications that support CalDAV and allow for easy synronisation between different devices.  
 * **Clients** (to add, update, delete calendar events). 
   * Windows
      * [eM Client](http://www.emclient.com)
