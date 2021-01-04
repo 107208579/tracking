@@ -4,7 +4,7 @@
 https://stackedit.io/app#
 
 ## Why track your time?  
-Have you ever asked yourself where your time goes? Or have you ever wished you could remember what you were doing on a specific day in the past? How do you spend your 10080 minutes in a week?
+Have you ever asked yourself where your time goes? Or have you ever wished you could remember what you were doing on a specific day in the past? How do you spend your 10,080 minutes in a week?
 
 I've been tracking 
 - To remember past events
@@ -29,7 +29,7 @@ Here are some great people that track their life via a calendar:
 
 
 ## How does this all work?  
-The easiest way is to use a calendar service such as [Apple iCloud](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) which allows calendar apps to independently connect and synchronise data. In my case, I run a self-hosted [Nextcloud](http://nextcloud.com) server  which uses CalDAV to keep all my events updated across my iPhone, iPad, and iMac calendar.
+The easiest way is to use a calendar service such as [Apple iCloud](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) which allows all your calendar apps to independently connect and synchronise data. In my case, I run a self-hosted [Nextcloud](http://nextcloud.com) server  which uses CalDAV to keep all my events updated across my iPhone, iPad, and iMac calendar.
 
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Setup.png" width="800"> 
  
