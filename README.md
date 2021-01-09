@@ -1,3 +1,4 @@
+
 # Calendar Tracking  
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Overview.png" width="800">
 
@@ -131,7 +132,7 @@ Apart from manually adding events to a calendar there are many applications and 
 
  * **Via Button Press**  
    * macOS
-     * [Flic Button](https://flic.io/) + [macOS Flic App]([https://flic.io/mac-app](https://flic.io/mac-app)) + [Flic Shell Plugin](https://github.com/MikeDocker/Flic-Plugin) + [AppleScript](https://github.com/107208579/applescript2event)
+     * [Flic Button](https://flic.io/) + [macOS Flic App](https://flic.io/mac-app) + [Flic Shell Plugin](https://github.com/MikeDocker/Flic-Plugin) + [AppleScript](https://github.com/107208579/applescript2event)
      * [StreamDeck](https://www.elgato.com/en/gaming/stream-deck) + [macOS StreamDeck App](https://www.elgato.com/en/gaming/downloads) + [AppleScript](https://github.com/107208579/applescript2event)
    * iOS 
      * [Flic Button](https://flic.io/) + [iOS Flic App](https://apps.apple.com/app/id977593793) + [IFTTT (iOS Calendar)](https://ifttt.com/ios_calendar) / [IFTTT (Google Calendar)](https://ifttt.com/google_calendar)
