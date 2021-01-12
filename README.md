@@ -1,7 +1,8 @@
 
 # Calendar Tracking  
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Overview.png" width="800">
-
+<br />
+<br />
 
 ## Why track your time?  
 Have you ever asked yourself where your time goes? Or have you ever wished you could remember what you were doing on a specific day in the past? How do you spend your 10,080 minutes in a week? Aren't we what we remember?
@@ -26,14 +27,12 @@ Here are some great people that track their life via a calendar:
 <br />
 <br />
 
-
 ## How does this all work?  
 The easiest way is to use a calendar service such as [Apple iCloud](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) which allows all your calendar apps to independently connect and synchronise events. In my case, I run a self-hosted [Nextcloud](http://nextcloud.com) server  which uses CalDAV to keep all my events updated across my iPhone, iPad, and iMac calendar.
 
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Setup.png" width="800"> 
- 
 
-My calendar separates life categories into different calendars - each with a single color:  
+My calendar separates life categories into different calendars:  
 * EDU (Education)  
 * EMP (Employment)  
 * ENT (Entertainment)  
@@ -44,10 +43,8 @@ My calendar separates life categories into different calendars - each with a sin
 * SPO (Sports)  
 * TRA (Transportation)  
 * …
-<br />
-<br />
 
-Each calendar has a different event title that allows me to log more event details:
+Each calendar has a different event title that allows me to add more categories:
 * TRA - Walk  
 * TRA - Bus  
 * TRA - Car  
@@ -59,8 +56,6 @@ Each calendar has a different event title that allows me to log more event detai
 * HOU - Cleaning  
 * HOU - Laundry  
 * …
-<br />
-<br />
 
 Here are some examples:
 <p float="left">
@@ -70,7 +65,6 @@ Here are some examples:
 </p>
 <br />
 <br />
-
 
 ## What calendar apps can be used?
 Literally any calendar you are comfortable with. Below you find a small list of applications that support CalDAV and allow for easy synronisation of events between different devices, such as your computer with your mobile phone.  
