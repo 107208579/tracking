@@ -4,7 +4,7 @@
 
 
 ## Why track your time?  
-Have you ever asked yourself where your time goes? Or have you ever wished you could remember what you were doing on a specific day in the past? How do you spend your 10,080 minutes in a week?
+Have you ever asked yourself where your time goes? Or have you ever wished you could remember what you were doing on a specific day in the past? How do you spend your 10,080 minutes in a week? Aren't we what we remember?
 
 I've been tracking 
 - To remember past events
@@ -33,37 +33,47 @@ The easiest way is to use a calendar service such as [Apple iCloud](https://www.
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Setup.png" width="800"> 
  
 
-
-In order to add events 
- I have split my calendar into different calendars categories
- 
-> <font color="grey">RES</font> (Rest)  
-> <font color="green">TRA</font> (Transportation)  
-> <font color="turquoise">ENT</font> (Entertainment)  
-> <font color="darkblue">SPO</font> (Sports)  
-> <font color="brown">EMP</font> (Employment)  
-> <font color="purple">EDU</font> (Education)  
-> <font color="red">HYG</font> (Hygiene)  
->  …
-
+My calendar separates life categories into different calendars - each with a single color:  
+* EDU (Education)  
+* EMP (Employment)  
+* ENT (Entertainment)  
+* FOO (Food)  
+* HOU (Housework)  
+* HYG (Hygiene)  
+* RES (Rest)  
+* SPO (Sports)  
+* TRA (Transportation)  
+* …
 <br />
 <br />
 
-> <font color="green">TRA - Walk</font>  
-> <font color="green">TRA - Bus</font>  
-> <font color="green">TRA - Car</font>  
-> <font color="green">TRA - Walk</font>  
-> <font color="turquoise">ENT - Book</font>  
-> <font color="turquoise">ENT - Game</font>  
-> <font color="turquoise">ENT - Television</font>  
-> <font color="turquoise">ENT - Computer</font>  
->  …
+Each calendar has a different event title that allows me to log more event details:
+* TRA - Walk  
+* TRA - Bus  
+* TRA - Car  
+* TRA - Walk  
+* ENT - Book  
+* ENT - Computer  
+* ENT - Game  
+* ENT - Television  
+* HOU - Cleaning  
+* HOU - Laundry  
+* …
+<br />
+<br />
 
+Here are some examples:
+<p float="left">
+<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Event_001.png" width="300">
+<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Event_002.png" width="300">
+<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Event_003.png" width="300">
+</p>
 <br />
 <br />
+
 
 ## What calendar apps can be used?
-Literally any calendar you are comfortable with. Below you find a list of applications that support CalDAV and allow for easy synronisation of events between different devices.   
+Literally any calendar you are comfortable with. Below you find a small list of applications that support CalDAV and allow for easy synronisation of events between different devices, such as your computer with your mobile phone.  
 * **Clients** (to add, update, delete calendar events)  
   * Windows
      * [eM Client](http://www.emclient.com)
@@ -85,8 +95,8 @@ Literally any calendar you are comfortable with. Below you find a list of applic
     * [Business Calendar 2](https://play.google.com/store/apps/details?id=com.appgenix.bizcal)
     * [CalenGoo](https://play.google.com/store/apps/details?id=com.calengoo.android)
     * [One Calendar](https://play.google.com/store/apps/details?id=biz.codespark.xcalendarapp)
-<br />
-
+<br />  
+  
 * **Servers**  (to sync calendar events via CalDAV)  
   * Cloud Hosted
     * [iCloud Calendar](https://www.icloud.com/calendar/) 
@@ -100,7 +110,7 @@ Literally any calendar you are comfortable with. Below you find a list of applic
 <br />
 
 ## What tools can add events?  
-Apart from manually adding events to a calendar there are many applications and options.
+Apart from manually typing events into a calendar there are many other applications and options
  * **Via Application**  
    * macOS
      * [Apple Event Script](https://github.com/107208579/applescript2event) - event creation via AppleScript
