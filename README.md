@@ -100,15 +100,15 @@ Literally any calendar you are comfortable with. Below you find a small list of 
      * [Baïkal](http://www.baikal-server.com)
      * [Nextcloud](http://nextcloud.com) 
      * [Radicale](http://radicale.org)
-<br />
-<br />
+<br />  
+<br />  
 
 ## What tools can add events?  
-Apart from manually typing events into a calendar there are many other applications and options
+Apart from manually adding events to a calendar there are many other options. Some of those are quite easy and some of them require technical knowledge.
  * **Via Application**  
    * macOS
      * [Apple Event Script](https://github.com/107208579/applescript2event) - event creation via AppleScript
-     * [KeyBoardMaestro](https://www.keyboardmaestro.com) + [Apple Event Script](https://github.com/107208579/applescript2event)
+     * [Apple Event Script](https://github.com/107208579/applescript2event) + [KeyBoardMaestro](https://www.keyboardmaestro.com) - event creation via AppleScript and key presses
    * iOS
      * iOS Shortcuts
      * iOS Shortcuts + NFC Tags
@@ -129,9 +129,9 @@ Apart from manually typing events into a calendar there are many other applicati
   
  * **Via Bluetooth Location**  
    * iOS  
-     * [Geofency](https://apps.apple.com/app/id615538630) + iBeacon  
+     * [Geofency](https://apps.apple.com/app/id615538630) + [Bluetooth Beacon](https://www.feasycom.com/product/Bluetooth-Beacon.html) - event creation based on 
    * Self-Hosted  
-     * [monitor](https://github.com/andrewjfreyer/monitor) + [mqtt2caldav](https://github.com/107208579/mqtt2caldav)  
+     * Linux + [monitor](https://github.com/andrewjfreyer/monitor) + [mqtt2caldav](https://github.com/107208579/mqtt2caldav)  
 <br />  
 
  * **Via Button Press**  
@@ -143,9 +143,10 @@ Apart from manually typing events into a calendar there are many other applicati
    * Android
      * [Flic Button](https://flic.io/) + [Android Flic App](https://play.google.com/store/apps/details?id=io.flic.app) + [IFTTT (Google Calendar)](https://ifttt.com/google_calendar)
    * Cloud Hosted
-     * [Flic Hub](https://flic.io/) + [Flic Button](https://flic.io/) + [IFTTT (iOS Calendar)](https://ifttt.com/ios_calendar) / [IFTTT (Google Calendar)](https://ifttt.com/google_calendar)
+     * [Flic Button](https://flic.io/) + [Flic Hub](https://flic.io/) + [IFTTT (iOS Calendar)](https://ifttt.com/ios_calendar) / [IFTTT (Google Calendar)](https://ifttt.com/google_calendar)
    * Self-Hosted
-     * [mqtt2caldav](https://github.com/107208579/mqtt2caldav)
+     * [Zigbee Buttons](https://www.zigbee2mqtt.io/information/supported_devices.html) + [Zigbee Receiver](https://www.zigbee2mqtt.io/information/supported_adapters.html) + Linux + [zigbee2mqtt](https://www.zigbee2mqtt.io) + [mqtt2caldav](https://github.com/107208579/mqtt2caldav)
+     * [RF Buttons](https://www.amazon.com/s?k=433MHz+Button) + [RF Gateway](https://sonoff.tech/product/accessories/433-rf-bridge)-[flashed](https://www.youtube.com/watch?v=o4Qa43c_shM) + Linux + [mqtt2caldav](https://github.com/107208579/mqtt2caldav)
 <br />
 <br />
 
