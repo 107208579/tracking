@@ -67,7 +67,7 @@ Here are some examples:
 <br />
 
 ## What calendar apps can be used?
-Literally any calendar you are comfortable with. Below you find a small list of applications that support CalDAV and allow for easy synronisation of events between different devices, such as your computer with your mobile phone.  
+Literally any calendar you are comfortable with. Below you find a small list of applications that support CalDAV and allow for easy synronisation of events between different devices, such as your computer, laptop, and mobile phone.  
 * **Clients** (to add, update, delete calendar events)  
   * Windows
      * [eM Client](http://www.emclient.com)
@@ -104,14 +104,14 @@ Literally any calendar you are comfortable with. Below you find a small list of 
 <br />  
 
 ## What tools can add events?  
-Apart from manually adding events to a calendar there are many other options. Some of those are quite easy and some of them require technical knowledge.
+Apart from manually adding events to a calendar there are many other options. Below is a list of different ways I have come across to create calendar events. 
  * **Via Application**  
    * macOS
      * [Apple Event Script](https://github.com/107208579/applescript2event) - event creation via AppleScript
      * [Apple Event Script](https://github.com/107208579/applescript2event) + [KeyBoardMaestro](https://www.keyboardmaestro.com) - event creation via AppleScript and key presses
    * iOS
-     * iOS Shortcuts
-     * iOS Shortcuts + NFC Tags
+     * iOS Shortcuts - event creation with shortcuts
+     * iOS Shortcuts + [NFC Tags](https://www.matthewcassinelli.com/nfc-tags-siri-shortcuts/) - event creation with shortcuts and NFC tags
      * [Duplicator](https://apps.apple.com/app/id863270136) - event duplication of existing events
      * [Calendar Paste](https://apps.apple.com/app/id581693524) - event creation via pre-defined templates 
      * [Week Calendar](https://apps.apple.com/app/id381059732) - event creation via pre-defined templates 
@@ -134,7 +134,7 @@ Apart from manually adding events to a calendar there are many other options. So
      * Linux + [monitor](https://github.com/andrewjfreyer/monitor) + [mqtt2caldav](https://github.com/107208579/mqtt2caldav)  
 <br />  
 
- * **Via Button Press**  
+ * **Via Physical Button Press**  
    * macOS
      * [Flic Button](https://flic.io/) + [macOS Flic App](https://flic.io/mac-app) + [Flic Shell Plugin](https://github.com/MikeDocker/Flic-Plugin) + [AppleScript](https://github.com/107208579/applescript2event)
      * [StreamDeck](https://www.elgato.com/en/gaming/stream-deck) + [macOS StreamDeck App](https://www.elgato.com/en/gaming/downloads) + [AppleScript](https://github.com/107208579/applescript2event)
@@ -145,8 +145,9 @@ Apart from manually adding events to a calendar there are many other options. So
    * Cloud Hosted
      * [Flic Button](https://flic.io/) + [Flic Hub](https://flic.io/) + [IFTTT (iOS Calendar)](https://ifttt.com/ios_calendar) / [IFTTT (Google Calendar)](https://ifttt.com/google_calendar)
    * Self-Hosted
-     * [Zigbee Buttons](https://www.zigbee2mqtt.io/information/supported_devices.html) + [Zigbee Receiver](https://www.zigbee2mqtt.io/information/supported_adapters.html) + Linux + [zigbee2mqtt](https://www.zigbee2mqtt.io) + [mqtt2caldav](https://github.com/107208579/mqtt2caldav)
-     * [RF Buttons](https://www.amazon.com/s?k=433MHz+Button) + [RF Gateway](https://sonoff.tech/product/accessories/433-rf-bridge)-[flashed](https://www.youtube.com/watch?v=o4Qa43c_shM) + Linux + [mqtt2caldav](https://github.com/107208579/mqtt2caldav)
+     * [Zigbee Buttons](https://www.zigbee2mqtt.io/information/supported_devices.html) + [Zigbee Receiver](https://www.zigbee2mqtt.io/information/supported_adapters.html) + Linux Server + [zigbee2mqtt](https://www.zigbee2mqtt.io) + [mqtt2caldav](https://github.com/107208579/mqtt2caldav)
+     * [Zigbee Buttons](https://www.zigbee2mqtt.io/information/supported_devices.html) + [Sonoff Zigbee Gateway](https://www.itead.cc/sonoff-zbbridge.html) - [flashed](https://www.digiblur.com/2020/07/how-to-use-sonoff-zigbee-bridge-with.html) + Linux Server + [mqtt2caldav](https://github.com/107208579/mqtt2caldav) 
+     * [RF Buttons](https://www.amazon.com/s?k=433MHz+Button) + [Sonoff RF Gateway](https://sonoff.tech/product/accessories/433-rf-bridge) - [flashed](https://www.youtube.com/watch?v=o4Qa43c_shM) + Linux Server + [zigbee2mqtt](https://www.zigbee2mqtt.io) + [mqtt2caldav](https://github.com/107208579/mqtt2caldav)
 <br />
 <br />
 
@@ -171,3 +172,4 @@ Apart from manually adding events to a calendar there are many other options. So
  * [Tableau](https://www.tableau.com)  
 <br />
 <br />
+
