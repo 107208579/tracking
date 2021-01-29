@@ -28,7 +28,9 @@ Here are some great people that track their life via a calendar:
 <br />
 
 ## How does this all work?  
-The easiest way is to use a calendar service such as [Apple iCloud](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) which allows all your calendar apps to independently connect and synchronise events. In my case, I run a self-hosted [Nextcloud](http://nextcloud.com) server  which uses CalDAV to keep all my events updated across my iPhone, iPad, and iMac calendar.
+The easiest way is to use a calendar service such as [Apple iCloud](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) which allows all your other calendar applications to independently connect and synchronise events across.
+
+In my case, I run a self-hosted [Nextcloud](http://nextcloud.com) server  which uses CalDAV to keep all my events updated across my iPhone, iPad, and iMac calendar. 
 
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Setup.png" width="800"> 
 
@@ -45,16 +47,17 @@ My calendar separates life categories into different calendars:
 * …
 
 Each calendar has a different event title that allows me to add more categories:
-* TRA - Walk  
-* TRA - Bus  
-* TRA - Car  
-* TRA - Walk  
 * ENT - Book  
 * ENT - Computer  
 * ENT - Game  
 * ENT - Television  
 * HOU - Cleaning  
 * HOU - Laundry  
+* HOU - Maintenance    
+* TRA - Walk  
+* TRA - Bus  
+* TRA - Car  
+* TRA - Walk  
 * …
 
 Here are some examples:
@@ -115,6 +118,7 @@ Apart from manually adding events to a calendar there are many other options. Be
      * [Calendar Paste](https://apps.apple.com/app/id581693524) - event creation via pre-defined templates 
      * [Week Calendar](https://apps.apple.com/app/id381059732) - event creation via pre-defined templates 
    * Android
+	    * [Add Quick Event](https://play.google.com/store/apps/details?id=com.a3w4u.addquickeventfree) - event creation via shortcut text
 	    * [Add Your Template](https://play.google.com/store/apps/details?id=streim.de.quickaddroidpro) - event creation via pre-defined templates 
 	    * [Calendar Helper](https://play.google.com/store/apps/details?id=net.noople.calendarhelper) - event creation via pre-defined templates
 	    * [CalenGoo](https://play.google.com/store/apps/details?id=com.calengoo.android) - event creation via pre-defined templates
@@ -152,13 +156,16 @@ Apart from manually adding events to a calendar there are many other options. Be
 <br />
 <br />
 
-## What other tools can help to track?  
+## What other tools are helpful?  
  * iOS  
    * [Arc App](https://apps.apple.com/app/id1063151918) - tracks which locations you have been to and for how long  
    * [Geofency](https://apps.apple.com/app/id615538630) - tracks which locations you have been to and for how long  
    * [Geofy](https://apps.apple.com/app/id894390468) - tracks which locations you have been to and for how long  
    * [Life Cycle](https://apps.apple.com/app/id1064955217) - tracks which locations you have been to and for how long  
    * [Tyme](https://apps.apple.com/app/id1461456813) - tracks which locations you have been to and for how long  
+ * macOS
+   * [iCalBuddy](https://hasseg.org/icalBuddy/) - command line tool to query calendars
+   * [iCalBuddy64](https://github.com/DavidKaluta/icalBuddy64) - command line tool to query calendars
 <br />
 <br />
 
