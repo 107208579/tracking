@@ -136,8 +136,10 @@ Apart from manually adding events to a calendar there are many other options. Be
 
  * **Via Physical Button Press**  
    * macOS
-     * [Flic Button](https://flic.io/) + [macOS Flic App](https://flic.io/mac-app) + [Flic Shell Plugin](https://github.com/MikeDocker/Flic-Plugin) + [AppleScript](https://github.com/107208579/applescript2event)
-     * [StreamDeck](https://www.elgato.com/en/gaming/stream-deck) + [macOS StreamDeck App](https://www.elgato.com/en/gaming/downloads) + [AppleScript](https://github.com/107208579/applescript2event)
+     * [Keyboard](https://www.apple.com/sg/shop/product/MLA22ZA/A/magic-keyboard-us-english) + [Keyboard Shortcuts](https://support.apple.com/en-gb/guide/mac-help/mchlp2271/11.0/mac/11.0) + [Apple Event Script](https://github.com/107208579/applescript2event)
+     * [Keyboard](https://www.apple.com/sg/shop/product/MLA22ZA/A/magic-keyboard-us-english) +  [KeyBoardMaestro](https://www.keyboardmaestro.com) + [Apple Event Script](https://github.com/107208579/applescript2event)
+     * [Flic Button](https://flic.io/) + [macOS Flic App](https://flic.io/mac-app) + [Flic Shell Plugin](https://github.com/MikeDocker/Flic-Plugin) + [Apple Event Script](https://github.com/107208579/applescript2event)
+     * [StreamDeck](https://www.elgato.com/en/gaming/stream-deck) + [macOS StreamDeck App](https://www.elgato.com/en/gaming/downloads) + [Apple Event Script](https://github.com/107208579/applescript2event)
    * iOS 
      * [Flic Button](https://flic.io/) + [iOS Flic App](https://apps.apple.com/app/id977593793) + [IFTTT (iOS Calendar)](https://ifttt.com/ios_calendar) / [IFTTT (Google Calendar)](https://ifttt.com/google_calendar)
    * Android
@@ -172,4 +174,3 @@ Apart from manually adding events to a calendar there are many other options. Be
  * [Tableau](https://www.tableau.com)  
 <br />
 <br />
-
