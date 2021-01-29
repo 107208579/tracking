@@ -108,7 +108,6 @@ Apart from manually adding events to a calendar there are many other options. Be
  * **Via Application**  
    * macOS
      * [Apple Event Script](https://github.com/107208579/applescript2event) - event creation via AppleScript
-     * [Apple Event Script](https://github.com/107208579/applescript2event) + [KeyBoardMaestro](https://www.keyboardmaestro.com) - event creation via AppleScript and key presses
    * iOS
      * iOS Shortcuts - event creation with shortcuts
      * iOS Shortcuts + [NFC Tags](https://www.matthewcassinelli.com/nfc-tags-siri-shortcuts/) - event creation with shortcuts and NFC tags
@@ -137,7 +136,7 @@ Apart from manually adding events to a calendar there are many other options. Be
  * **Via Physical Button Press**  
    * macOS
      * [Keyboard](https://www.apple.com/sg/shop/product/MLA22ZA/A/magic-keyboard-us-english) + [Keyboard Shortcuts](https://support.apple.com/en-gb/guide/mac-help/mchlp2271/11.0/mac/11.0) + [Apple Event Script](https://github.com/107208579/applescript2event)
-     * [Keyboard](https://www.apple.com/sg/shop/product/MLA22ZA/A/magic-keyboard-us-english) +  [KeyBoardMaestro](https://www.keyboardmaestro.com) + [Apple Event Script](https://github.com/107208579/applescript2event)
+     * [Keyboard](https://www.apple.com/sg/shop/product/MLA22ZA/A/magic-keyboard-us-english) + [KeyBoardMaestro](https://www.keyboardmaestro.com) + [Apple Event Script](https://github.com/107208579/applescript2event)
      * [Flic Button](https://flic.io/) + [macOS Flic App](https://flic.io/mac-app) + [Flic Shell Plugin](https://github.com/MikeDocker/Flic-Plugin) + [Apple Event Script](https://github.com/107208579/applescript2event)
      * [StreamDeck](https://www.elgato.com/en/gaming/stream-deck) + [macOS StreamDeck App](https://www.elgato.com/en/gaming/downloads) + [Apple Event Script](https://github.com/107208579/applescript2event)
    * iOS 
