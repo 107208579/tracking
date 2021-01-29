@@ -28,7 +28,7 @@ Here are some great people that track their life via a calendar:
 <br />
 
 ## How does this all work?  
-The easiest way is to use a calendar service such as [Apple iCloud](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) which allows all your other calendar applications to independently connect and synchronise events across.
+The easiest way is to use a calendar service such as [Apple iCloud](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) that acts as a server and allows all your calendar applications to connect and synchronise events.
 
 As long as the applications support CalDAV you can mix and match, for example your Android Mobile calendar with your Google Cloud Calendar and your Microsoft Windows 10 calendar. In my case, I run a self-hosted [Nextcloud](http://nextcloud.com) server which keeps my iPhone, iPad, and iMac calendars in sync. 
 
@@ -70,7 +70,17 @@ Here are some examples:
 <br />
 
 ## What calendar apps can be used?
-Literally any calendar you are comfortable with. Below you find a small list of applications that support CalDAV and allow for easy synronisation of events between different devices, such as your computer, laptop, and mobile phone.  
+Literally any calendar you are comfortable with. Below you find a small list of servers and applications that support CalDAV and allow for easy synronisation of events between different devices, such as your computer, laptop, and mobile phone.  
+* **Servers**   
+  * Cloud Hosted
+    * [iCloud Calendar](https://www.icloud.com/calendar/) 
+    * [Google Calendar](http://calendar.google.com)
+    * [Yahoo Calendar](http://calendar.yahoo.com)
+   * Self Hosted
+     * [Baïkal](http://www.baikal-server.com)
+     * [Nextcloud](http://nextcloud.com) 
+     * [Radicale](http://radicale.org)
+<br />  
 * **Clients**  
   * Windows
      * [eM Client](http://www.emclient.com)
@@ -93,18 +103,7 @@ Literally any calendar you are comfortable with. Below you find a small list of 
     * [CalenGoo](https://play.google.com/store/apps/details?id=com.calengoo.android)
     * [One Calendar](https://play.google.com/store/apps/details?id=biz.codespark.xcalendarapp)
 <br />  
-  
-* **Servers**   
-  * Cloud Hosted
-    * [iCloud Calendar](https://www.icloud.com/calendar/) 
-    * [Google Calendar](http://calendar.google.com)
-    * [Yahoo Calendar](http://calendar.yahoo.com)
-   * Self Hosted
-     * [Baïkal](http://www.baikal-server.com)
-     * [Nextcloud](http://nextcloud.com) 
-     * [Radicale](http://radicale.org)
-<br />  
-<br />  
+  <br />  
 
 ## What tools can add events?  
 Apart from manually adding events to a calendar there are many other options. Below is a list of different ways I have come across to create calendar events. 
