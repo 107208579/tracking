@@ -30,11 +30,11 @@ Here are some great people that track their life via a calendar:
 ## How does this all work?  
 The easiest way is to use a calendar service such as [Apple iCloud](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) which allows all your other calendar applications to independently connect and synchronise events across.
 
-In my case, I run a self-hosted [Nextcloud](http://nextcloud.com) server  which uses CalDAV to keep all my events updated across my iPhone, iPad, and iMac calendar. 
+As long as the applications support CalDAV you can mix and match, for example your Android Mobile calendar with your Google Cloud Calendar and your Microsoft Windows 10 calendar. In my case, I run a self-hosted [Nextcloud](http://nextcloud.com) server which keeps my iPhone, iPad, and iMac calendars in sync. 
 
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Setup.png" width="800"> 
 
-My calendar separates life categories into different calendars:  
+My calendar separates life categories into different colour-coded calendars:  
 * EDU (Education)  
 * EMP (Employment)  
 * ENT (Entertainment)  
@@ -46,7 +46,7 @@ My calendar separates life categories into different calendars:
 * TRA (Transportation)  
 * …
 
-Each calendar has a different event title that allows me to add more categories:
+Each calendar has a different event title that allows me to have additional categories:
 * ENT - Book  
 * ENT - Computer  
 * ENT - Game  
@@ -71,7 +71,7 @@ Here are some examples:
 
 ## What calendar apps can be used?
 Literally any calendar you are comfortable with. Below you find a small list of applications that support CalDAV and allow for easy synronisation of events between different devices, such as your computer, laptop, and mobile phone.  
-* **Clients** (to add, update, delete calendar events)  
+* **Clients**  
   * Windows
      * [eM Client](http://www.emclient.com)
      * [One Calendar](https://www.onecalendar.nl)
@@ -94,7 +94,7 @@ Literally any calendar you are comfortable with. Below you find a small list of 
     * [One Calendar](https://play.google.com/store/apps/details?id=biz.codespark.xcalendarapp)
 <br />  
   
-* **Servers**  (to sync calendar events via CalDAV)  
+* **Servers**   
   * Cloud Hosted
     * [iCloud Calendar](https://www.icloud.com/calendar/) 
     * [Google Calendar](http://calendar.google.com)
@@ -126,13 +126,13 @@ Apart from manually adding events to a calendar there are many other options. Be
   
  * **Via GPS Location**
    * iOS
-     * [Geofency](https://apps.apple.com/app/id615538630) - event creation based on GPS location  
-     * [Tyme](https://apps.apple.com/app/id1461456813) - event creation based on GPS location  
+     * [Geofency](https://apps.apple.com/app/id615538630) - automatic event creation based on GPS location  
+     * [Tyme](https://apps.apple.com/app/id1461456813) - automatic event creation based on GPS location  
 <br />  
   
  * **Via Bluetooth Location**  
    * iOS  
-     * [Geofency](https://apps.apple.com/app/id615538630) + [Bluetooth Beacon](https://www.feasycom.com/product/Bluetooth-Beacon.html) - event creation based on 
+     * [Geofency](https://apps.apple.com/app/id615538630) + [Bluetooth Beacon](https://www.feasycom.com/product/Bluetooth-Beacon.html) - event creation based on Bluetooth beacon detectoin
    * Self-Hosted  
      * Linux + [monitor](https://github.com/andrewjfreyer/monitor) + [mqtt2caldav](https://github.com/107208579/mqtt2caldav)  
 <br />  
