@@ -165,17 +165,20 @@ Apart from manually adding events to a calendar there are many other options. Be
  * macOS
    * [iCalBuddy](https://hasseg.org/icalBuddy/) - command line tool to query calendars
    * [iCalBuddy64](https://github.com/DavidKaluta/icalBuddy64) - command line tool to query calendars
+* Self-Hosted
+   * [http2mqtt](https://github.com/oliverlorenz/http2mqtt)
+   * [mqtt2caldav](https://github.com/107208579/mqtt2caldav)
 <br />
 <br />
 
 ## How can events be exported?  
 * macOS  
-  * [Export Calendars Pro](http://apps.apple.com/app/id663835623)  
-  * [TimeTable](https://apps.apple.com/app/id1191331765)  
+  * [Export Calendars Pro](http://apps.apple.com/app/id663835623) - export events into spreadsheets
+  * [TimeTable](https://apps.apple.com/app/id1191331765) - export events into spreadsheets
 <br />
 <br />
 
 ## How can events be analysed?  
- * [Tableau](https://www.tableau.com)  
+ * [Tableau](https://www.tableau.com) - import spreadsheets and analyse data
 <br />
 <br />
