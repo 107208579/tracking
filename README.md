@@ -81,6 +81,7 @@ Literally any calendar you are comfortable with. Below you find a small list of 
      * [Nextcloud](http://nextcloud.com) 
      * [Radicale](http://radicale.org)
 <br />  
+
 * **Clients**  
   * Windows
      * [eM Client](http://www.emclient.com)
@@ -103,7 +104,7 @@ Literally any calendar you are comfortable with. Below you find a small list of 
     * [CalenGoo](https://play.google.com/store/apps/details?id=com.calengoo.android)
     * [One Calendar](https://play.google.com/store/apps/details?id=biz.codespark.xcalendarapp)
 <br />  
-  <br />  
+<br />  
 
 ## What tools can add events?  
 Apart from manually adding events to a calendar there are many other options. Below is a list of different ways I have come across to create calendar events. 
