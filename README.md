@@ -34,16 +34,16 @@ As long as the applications support CalDAV you can mix and match, for example yo
 
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Setup.png" width="800"> 
 
-My calendar separates life categories into different colour-coded calendars:  
-* EDU (Education)  
-* EMP (Employment)  
-* ENT (Entertainment)  
-* FOO (Food)  
-* HOU (Housework)  
-* HYG (Hygiene)  
-* RES (Rest)  
-* SPO (Sports)  
-* TRA (Transportation)  
+My calendar separates life categories into different colour-coded calendars, such as Education, Employment, Entertainment, Food, Housework, Hygiene, Rest, Sports, Transportation, etc
+* EDU   
+* EMP   
+* ENT   
+* FOO  
+* HOU  
+* HYG  
+* RES  
+* SPO  
+* TRA  
 * …
 
 Each calendar has a different event title that allows me to have additional categories:
