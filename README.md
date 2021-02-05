@@ -169,8 +169,8 @@ Apart from manually adding events to a calendar there are many other options. Be
    * [iCalBuddy](https://hasseg.org/icalBuddy/) - command line tool to query calendars
    * [iCalBuddy64](https://github.com/DavidKaluta/icalBuddy64) - command line tool to query calendars
 * Self-Hosted
-   * [http2mqtt](https://github.com/oliverlorenz/http2mqtt)
-   * [mqtt2caldav](https://github.com/107208579/mqtt2caldav)
+   * [http2mqtt](https://github.com/oliverlorenz/http2mqtt) - converts http requests to mqtt messages
+   * [mqtt2caldav](https://github.com/107208579/mqtt2caldav) - converts mqtt messages to calendar events
 <br />
 <br />
 
