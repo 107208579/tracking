@@ -192,9 +192,9 @@ Each calendar has a different event title that allows for additional details:
 
 The smallest event duration logged is 5 minutes. Here are some event examples:
 <p align="center">
-<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Event_001.png" width="300">
-<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Event_002.png" width="300">
-<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Event_003.png" width="300">
+<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Event_001.png" width="250">
+<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Event_002.png" width="250">
+<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Event_003.png" width="250">
 </p>
 
 Events are mainly logged via the iOS Shortcuts app on an iPhone (examples show iOS12 and iOS14):
