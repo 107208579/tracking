@@ -1,19 +1,19 @@
-
 # Calendar Tracking  
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Overview.png" width="800">
 <br />
 <br />
 
 ## Why track your time?  
-Have you ever asked yourself where your time goes? Or have you ever wished you could remember what you were doing on a specific day in the past? How do you spend your 10,080 minutes in a week? Aren't we what we remember?
+Have you ever asked yourself where your time goes? Or have you ever wished you could remember what you were doing on a specific day in the past? How do you spend your 10,080 minutes in a week? 
 
-I've been tracking 
-- To remember past events
-- To learn about myself
-- To change my behavior
-- To leave a legacy
+I've been tracking my life since 2012, mainly to:
+- remember past events
+- learn about myself
+- plan better for the future
+- change personal behaviour
+- leave a legacy
 
-Here are some great people that track their life via a calendar:
+Here are some great people that also track their life via a calendar:
 * [Lifelogging](https://david.achkar.com/qssv-lifelog-talk/) (David Achkar)
 * [Every Step I Take](https://www.youtube.com/watch?v=MazwAPVO70Y) (Nicholas Feltron)
 * [Productivity Hacking](http://www.jamesmaa.com/2012/12/02/james-maas-productivity-hacking-guide/) (James Maa)
@@ -28,49 +28,15 @@ Here are some great people that track their life via a calendar:
 <br />
 
 ## How does this all work?  
-The easiest way is to use a calendar service such as [Apple iCloud](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) that acts as a server and allows all your calendar applications to connect and synchronise events.
-
-As long as the applications support CalDAV you can mix and match, for example your Android Mobile calendar with your Google Cloud Calendar and your Microsoft Windows 10 calendar. In my case, I run a self-hosted [Nextcloud](http://nextcloud.com) server which keeps my iPhone, iPad, and iMac calendars in sync. 
+The easiest way is to create events in a calendar. Use a calendar service such as [Apple iCloud](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) that acts as a central storage and allows all your calendar apps to connect and synchronise events.
 
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Setup.png" width="800"> 
-
-My calendar separates life categories into different colour-coded calendars, such as Education, Employment, Entertainment, Food, Housework, Hygiene, Rest, Sports, Transportation, etc
-* EDU   
-* EMP   
-* ENT   
-* FOO  
-* HOU  
-* HYG  
-* RES  
-* SPO  
-* TRA  
-* …
-
-Each calendar has a different event title that allows me to have additional categories:
-* ENT - Book  
-* ENT - Computer  
-* ENT - Game  
-* ENT - Television  
-* HOU - Cleaning  
-* HOU - Laundry  
-* HOU - Maintenance    
-* TRA - Walk  
-* TRA - Bus  
-* TRA - Car  
-* TRA - Walk  
-* …
-
-Here are some examples:
-<p float="left">
-<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Event_001.png" width="300">
-<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Event_002.png" width="300">
-<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Event_003.png" width="300">
-</p>
 <br />
 <br />
+
 
 ## What calendar apps can be used?
-Literally any calendar you are comfortable with. Below you find a small list of servers and applications that support CalDAV and allow for easy synronisation of events between different devices, such as your computer, laptop, and mobile phone.  
+Literally any calendar you are comfortable with. Below you find a small list of servers and applications that support CalDAV and allow for easy synchronisation of events between different devices, such as your computer, laptop, and mobile phone.  
 * **Servers**   
   * Cloud Hosted
     * [iCloud Calendar](https://www.icloud.com/calendar/) 
@@ -132,7 +98,7 @@ Apart from manually adding events to a calendar there are many other options. Be
   
  * **Via Bluetooth Location**  
    * iOS  
-     * [Geofency](https://apps.apple.com/app/id615538630) + [Bluetooth Beacon](https://www.feasycom.com/product/Bluetooth-Beacon.html) - event creation based on Bluetooth beacon detectoin
+     * [Geofency](https://apps.apple.com/app/id615538630) + [Bluetooth Beacon](https://www.feasycom.com/product/Bluetooth-Beacon.html) - event creation based on Bluetooth beacon detection
    * Self-Hosted  
      * Linux Server + [monitor](https://github.com/andrewjfreyer/monitor) + [mqtt2caldav](https://github.com/107208579/mqtt2caldav)  
 <br />  
@@ -183,5 +149,46 @@ Apart from manually adding events to a calendar there are many other options. Be
 
 ## How can events be analysed?  
  * [Tableau](https://www.tableau.com) - import spreadsheets and analyse data
+<br />
+<br />
+
+
+## How do you personally track your time?  
+I run a self-hosted [Nextcloud](http://nextcloud.com/) server which keeps my iPhone, iPad, and iMac calendars in sync via CalDAV. I also log calendar events via a simple button press.
+
+* [Zigbee Buttons](https://www.zigbee2mqtt.io/information/supported_devices.html) + [Zigbee Receiver](https://www.zigbee2mqtt.io/information/supported_adapters.html) + Linux Server + [zigbee2mqtt](https://www.zigbee2mqtt.io) + [mqtt2caldav](https://github.com/107208579/mqtt2caldav)
+
+My calendar separates life categories with different colour-coded calendars, such as Education, Employment, Entertainment, Food, Housework, Hygiene, Rest, Sports, Transportation, etc
+* EDU   
+* EMP   
+* ENT   
+* FOO  
+* HOU  
+* HYG  
+* RES  
+* SPO  
+* TRA  
+* …
+
+Each calendar has a different event title that allows me to have additional details:
+* ENT - Book  
+* ENT - Computer  
+* ENT - Game  
+* ENT - Television  
+* HOU - Cleaning  
+* HOU - Laundry  
+* HOU - Maintenance    
+* TRA - Walk  
+* TRA - Bus  
+* TRA - Car  
+* TRA - Walk  
+* …
+
+Here are some examples:
+<p float="left">
+<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Event_001.png" width="300">
+<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Event_002.png" width="300">
+<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Event_003.png" width="300">
+</p>
 <br />
 <br />
