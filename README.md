@@ -1,17 +1,21 @@
+
+
 # Calendar Tracking  
+<p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Overview.png" width="800">
+</p>
 <br />
 <br />
 
 ## Why track your time?  
-Have you ever asked yourself where your time goes? Or have you ever wished you could remember what you were doing on a specific day in the past? How do you spend your 10,080 minutes in a week? 
+Have you ever asked yourself where your time goes? Or have you ever wished you could remember what you were doing on a specific day in the past? How do you spend your 10,080 minutes of a week? 
 
 I've been tracking my life since 2012, mainly to:
 - remember past events
 - learn about myself
 - plan better for the future
 - change personal behaviour
-- leave a legacy
+- leave a digital legacy
 
 Here are some great people that also track their life via a calendar:
 * [Lifelogging](https://david.achkar.com/qssv-lifelog-talk/) (David Achkar)
@@ -30,7 +34,9 @@ Here are some great people that also track their life via a calendar:
 ## How does this all work?  
 The easiest way is to create events in a calendar. Use a calendar service such as [Apple iCloud](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) that acts as a central storage and allows all your calendar apps to connect and automatically synchronise events with each other.
 
+<p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Setup.png" width="800"> 
+</p>
 <br />
 <br />
 
@@ -154,11 +160,9 @@ Apart from manually adding events to a calendar there are many other options. Be
 
 
 ## How do you personally track your time?  
-I run a self-hosted [Nextcloud](http://nextcloud.com/) server which keeps my iPhone, iPad, and iMac calendars in sync via CalDAV. I also log calendar events via a simple button press.
+I run a self-hosted [Nextcloud](http://nextcloud.com/) server which keeps my iPhone, iPad, and iMac calendars in sync via CalDAV.
 
-* [Zigbee Buttons](https://www.zigbee2mqtt.io/information/supported_devices.html) + [Zigbee Receiver](https://www.zigbee2mqtt.io/information/supported_adapters.html) + Linux Server + [zigbee2mqtt](https://www.zigbee2mqtt.io) + [mqtt2caldav](https://github.com/107208579/mqtt2caldav)
-
-My calendar separates life categories with different colour-coded calendars, such as Education, Employment, Entertainment, Food, Housework, Hygiene, Rest, Sports, Transportation, etc
+My calendar has life colour-coded calendars, such as Education, Employment, Entertainment, Food, Housework, Hygiene, Rest, Sports, Transportation, etc
 * EDU   
 * EMP   
 * ENT   
@@ -170,25 +174,36 @@ My calendar separates life categories with different colour-coded calendars, suc
 * TRA  
 * …
 
-Each calendar has a different event title that allows me to have additional details:
+Each calendar has a different event title that allows for additional details:
 * ENT - Book  
 * ENT - Computer  
 * ENT - Game  
 * ENT - Television  
 * HOU - Cleaning  
 * HOU - Laundry  
-* HOU - Maintenance    
+* HOU - Maintenance   
+* SOC - Cinema  
+* SOC - Restaurant 
 * TRA - Walk  
 * TRA - Bus  
 * TRA - Car  
 * TRA - Walk  
 * …
 
-Here are some examples:
-<p float="left">
+The smallest event duration logged is 5 minutes. Here are some event examples:
+<p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Event_001.png" width="300">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Event_002.png" width="300">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Event_003.png" width="300">
 </p>
+
+Events are mainly logged via the iOS Shortcuts app on an iPhone (examples show iOS12 and iOS14):
+<p align="center">
+<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_iOS12_Shortcuts.png" width="250">    
+<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_iOS14_Shortcuts.png" width="250">
+</p>
+
+At home events are also logged via a simple press on a light switch:
+* [Zigbee Buttons](https://www.zigbee2mqtt.io/information/supported_devices.html) + [Zigbee Receiver](https://www.zigbee2mqtt.io/information/supported_adapters.html) + Linux Server + [zigbee2mqtt](https://www.zigbee2mqtt.io) + [mqtt2caldav](https://github.com/107208579/mqtt2caldav)
 <br />
 <br />
