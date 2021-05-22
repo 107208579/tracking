@@ -26,7 +26,7 @@ Here are some great people that also track their life via a calendar:
 * [How and Why I Create a Quantified Self](https://www.jacksondame.com/blog/lifelogging-how-and-why-i-create-a-quantified-self) (Jackson Dame)
 * [I Tracked Every Minute Of My Life For 7 Days](https://www.youtube.com/watch?v=FLLiFl1m9I4)  (Nathaniel Drew)
 * [I Tracked Every Minute Of My Life For 3 Months](https://www.youtube.com/watch?v=LUjTvPy_UAg) (Matt D'Avella)
-* [I Tracked Every Minute Of My Life For One Week](https://www.youtube.com/watch?v=CtyJR2e1Fco) (Antonia)
+* [I Tracked Every Minute Of My Life For One Week](https://www.youtube.com/watch?v=CtyJR2e1Fco) (Antoniya Ivanova)
 * [How Six Months of Tracking Everything Increased my Awareness](https://vimeo.com/78020552) (David Achkar)
 <br />
 <br />
