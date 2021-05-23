@@ -886,15 +886,40 @@ mqtt2caldav     vi mqtt2caldav/config/config.json
 
 
 ==========================================================================================
-==== IpTables Configuration ==============================================================
+==== Installing IpTables =================================================================
 ==========================================================================================
 
     → Useful links
     ~ https://crm.vpscheap.net/knowledgebase.php?action=displayarticle&id=29
     ~ https://www.thegeekstuff.com/scripts/iptables-rules
 
+
     → Install 'iptables-persistent'
          sudo apt-get install iptables-persistent
+
+
+    → Check if the installation was successul
+         iptables --version
+
+
+    → Understand the following 'chains' (or rules)
+         • INPUT       controls incoming packets
+         • FORWARD     controls incoming packets that are forwarded to another destination
+         • OUTPUT      controls outgoing packets
+
+
+    → Understand the following 'responses'
+         • ACCEPT      allows the connection
+         • DROP        blocks the connection without a message
+         • REJECT      blocks the connection with an error message
+
+
+    → Understand the following parameters
+         • -I          insert
+         • -A          append      
+         • -P          policy
+         • -m          match
+
 
     → Use the following tools to check traffic connections
     → Check for a 'SYN_SENT' but not an 'ESTABLISHED'
@@ -902,14 +927,14 @@ mqtt2caldav     vi mqtt2caldav/config/config.json
          sudo netstat -aeptcnl | egrep -via '192.168.2.100|0 0.0.0.0|:::2'
          watch -n 5 'sudo iptables -nvL | grep -v "0     0"'
 
-    → Add the following rules to iptables to only have local access
+
+    → Add the following rules to iptables to only have LOCAL NETWORK access
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 sudo iptables -A INPUT -i lo -j ACCEPT
 sudo iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 sudo iptables -A INPUT -s 10.0.0.0/8 -j RETURN
 sudo iptables -A INPUT -s 172.16.0.0/12 -j RETURN
 sudo iptables -A INPUT -s 192.168.0.0/16 -j RETURN
-sudo iptables -A INPUT -s 195.30.252.25 -j RETURN
 sudo iptables -A INPUT -p udp --sport 53 -j ACCEPT
 sudo iptables -A INPUT -p tcp --sport 53 -j ACCEPT
 sudo iptables -A INPUT -p udp --sport 123 -j ACCEPT
@@ -921,7 +946,6 @@ sudo iptables -A OUTPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 sudo iptables -A OUTPUT -s 10.0.0.0/8 -j RETURN
 sudo iptables -A OUTPUT -s 172.16.0.0/12 -j RETURN
 sudo iptables -A OUTPUT -s 192.168.0.0/16 -j RETURN
-sudo iptables -A OUTPUT -d 195.30.252.25 -j RETURN
 sudo iptables -A OUTPUT -p udp --dport 53 -j ACCEPT
 sudo iptables -A OUTPUT -p tcp --dport 53 -j ACCEPT
 sudo iptables -A OUTPUT -p udp --dport 123 -j ACCEPT
