@@ -1,39 +1,32 @@
-
-
 # Calendar Tracking  
-<p align="center">
-<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Overview.png" width="800">
-</p>
-<br />
 <br />
 
 ## Why track your time?  
-Have you ever asked yourself where your time goes? Or have you ever wished you could remember what you were doing on a specific day in the past? How do you spend your 10,080 minutes of a week? 
+Have you ever asked yourself where your time goes? Or have you ever wished you could remember what you were doing on a specific day in the past?
 
-I've been tracking my life since 2012, mainly to:
-- remember past events
-- learn about myself
-- plan better for the future
+Back in 2012 I was very curious on how I spend my 10,080 minutes in a week and decided to track my life. I wanted to:
+- easily remember past events
+- learn more about myself
+- plan better ahead
 - change personal behaviour
 - leave a digital legacy
 
-Here are some great people that also track their life via a calendar:
+Here are some other great people that also track their life in a calendar:
 * [Lifelogging](https://david.achkar.com/qssv-lifelog-talk/) (David Achkar)
 * [Every Step I Take](https://www.youtube.com/watch?v=MazwAPVO70Y) (Nicholas Feltron)
 * [Productivity Hacking](http://www.jamesmaa.com/2012/12/02/james-maas-productivity-hacking-guide/) (James Maa)
 * [Keeping Track of Time](https://vimeo.com/57823452) (Awais Hussain)
 * [Tracking My Time Spent](https://blog.usejournal.com/quantified-self-tracking-my-time-spent-1fdb97652595) (Stephanie Rogers)
 * [How and Why I Create a Quantified Self](https://www.jacksondame.com/blog/lifelogging-how-and-why-i-create-a-quantified-self) (Jackson Dame)
-* [I Tracked Every Minute Of My Life For 7 Days](https://www.youtube.com/watch?v=FLLiFl1m9I4)  (Nathaniel Drew)
+* [I Tracked Every Minute Of My Life For 7 Days](https://www.youtube.com/watch?v=FLLiFl1m9I4) (Nathaniel Drew)
+* [I Tracked Every Minute Of My Life For 1 Week](https://www.youtube.com/watch?v=CtyJR2e1Fco) (Antoniya Ivanova)
 * [I Tracked Every Minute Of My Life For 3 Months](https://www.youtube.com/watch?v=LUjTvPy_UAg) (Matt D'Avella)
-* [I Tracked Every Minute Of My Life For One Week](https://www.youtube.com/watch?v=CtyJR2e1Fco) (Antoniya Ivanova)
 * [How Six Months of Tracking Everything Increased my Awareness](https://vimeo.com/78020552) (David Achkar)
 <br />
 <br />
 
 ## How does this all work?  
 The easiest way is to create events in a calendar. Use a calendar service such as [Apple iCloud](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) that acts as a central storage and allows all your calendar apps to connect and automatically synchronise events with each other.
-
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Setup.png" width="600"> 
 </p>
@@ -54,7 +47,7 @@ Literally any calendar you are comfortable with. Below you find a small list of 
      * [Radicale](http://radicale.org)
 <br />  
 
-* **Clients**  
+* **Applications**  
   * Windows
      * [eM Client](http://www.emclient.com)
      * [One Calendar](https://www.onecalendar.nl)
@@ -84,8 +77,8 @@ Apart from manually adding events to a calendar there are many other options. Be
    * macOS
      * [Apple Event Script](https://github.com/107208579/applescript2event) - event creation via AppleScript
    * iOS
-     * iOS Shortcuts - event creation with shortcuts
-     * iOS Shortcuts + [NFC Tags](https://www.matthewcassinelli.com/nfc-tags-siri-shortcuts/) - event creation with shortcuts and NFC tags
+     * [iOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) - event creation with shortcuts
+     * [iOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) + [NFC Tags](https://www.matthewcassinelli.com/nfc-tags-siri-shortcuts/) - event creation with shortcuts and NFC tags
      * [Duplicator](https://apps.apple.com/app/id863270136) - event duplication of existing events
      * [Calendar Paste](https://apps.apple.com/app/id581693524) - event creation via pre-defined templates 
      * [Week Calendar](https://apps.apple.com/app/id381059732) - event creation via pre-defined templates 
@@ -158,52 +151,53 @@ Apart from manually adding events to a calendar there are many other options. Be
 <br />
 <br />
 
+## What setup do you use specifically?  
+I have a [Nextcloud](http://nextcloud.com/) server which keeps my iPhone, iPad, and iMac calendars always via CalDAV in sync. On the go, I mostly log events on my iPhone via [iOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios). At home I use Zigbee switches that allow me to log events via simple button press. If required, I modify events in more detail in the [macOS Calendar](http://support.apple.com/guide/calendar/welcome/mac).
 
-## How do you personally track your time?  
-I run a self-hosted [Nextcloud](http://nextcloud.com/) server which keeps my iPhone, iPad, and iMac calendars in sync via CalDAV.
+<p align="center">
+<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup.png" width="600">    
+</p>
 
-My calendar has life colour-coded calendars, such as Education, Employment, Entertainment, Food, Housework, Hygiene, Rest, Sports, Transportation, etc
-* EDU   
+My setup has different calendars, such as Employment, Entertainment, Transportation, etc
 * EMP   
 * ENT   
-* FOO  
-* HOU  
-* HYG  
-* RES  
-* SPO  
-* TRA  
+* TRA   
 * …
 
-Each calendar has a different event title that allows for additional details:
-* ENT - Book  
-* ENT - Computer  
-* ENT - Game  
-* ENT - Television  
-* HOU - Cleaning  
-* HOU - Laundry  
-* HOU - Maintenance   
-* SOC - Cinema  
-* SOC - Restaurant 
+Each event receives a different event title with more details:
+* EMP - Work
+* EMP - Meeting
+* EMP - Interview 
+* ENT - Computer
+* ENT - Television
 * TRA - Walk  
 * TRA - Bus  
 * TRA - Car  
-* TRA - Walk  
 * …
 
-The smallest event duration logged is 5 minutes. Here are some event examples:
+<p align="center">
+<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Overview.png" width="620">
+</p>
+<br />
+<br />
+
+The smallest event duration logged is 5 minutes. Here are some event example events:
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Event_001.png" width="250">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Event_002.png" width="250">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Event_003.png" width="250">
 </p>
+<br />
+<br />
 
-Events are mainly logged via the iOS Shortcuts app on an iPhone (examples show iOS12 and iOS14):
+Events are mainly logged via the [iOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) app on an iPhone (examples show iOS12 and iOS14):
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_iOS12_Shortcuts.png" width="250">    
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_iOS14_Shortcuts.png" width="250">
 </p>
+<br />
+<br />
 
-At home events are also logged via a simple press on a light switch:
-* [Zigbee Buttons](https://www.zigbee2mqtt.io/information/supported_devices.html) + [Zigbee Receiver](https://www.zigbee2mqtt.io/information/supported_adapters.html) + Linux Server + [zigbee2mqtt](https://www.zigbee2mqtt.io) + [mqtt2caldav](https://github.com/107208579/mqtt2caldav)
-<br />
-<br />
+
+* Hardware
+  * [Zigbee Buttons by Xiaomi](https://www.zigbee2mqtt.io/information/supported_devices.html) + [Zigbee Receiver by Electrolama](https://www.zigbee2mqtt.io/information/supported_adapters.html) + [Raspberry Pi Zero W](https://www.raspberrypi.org/) + [zigbee2mqtt](https://www.zigbee2mqtt.io) + [mqtt2caldav](https://github.com/107208579/mqtt2caldav)
