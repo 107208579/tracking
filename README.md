@@ -8,6 +8,8 @@ Back in 2012 I was very curious on how I spend my 10,080 minutes in a week and d
 - easily remember past events
 - learn more about myself
 - plan better ahead
+- have a visualization of my life
+- increase my productivity
 - change personal behaviour
 - leave a digital legacy
 
@@ -17,6 +19,7 @@ Here are some other great people that also track their life in a calendar:
 * [Productivity Hacking](http://www.jamesmaa.com/2012/12/02/james-maas-productivity-hacking-guide/) (James Maa)
 * [Keeping Track of Time](https://vimeo.com/57823452) (Awais Hussain)
 * [Tracking My Time Spent](https://blog.usejournal.com/quantified-self-tracking-my-time-spent-1fdb97652595) (Stephanie Rogers)
+* [Time blocking and time tracking](https://www.youtube.com/watch?v=X57gxhIHjBE) (Aparna Kher)
 * [How and Why I Create a Quantified Self](https://www.jacksondame.com/blog/lifelogging-how-and-why-i-create-a-quantified-self) (Jackson Dame)
 * [I Tracked Every Minute Of My Life For 7 Days](https://www.youtube.com/watch?v=FLLiFl1m9I4) (Nathaniel Drew)
 * [I Tracked Every Minute Of My Life For 1 Week](https://www.youtube.com/watch?v=CtyJR2e1Fco) (Antoniya Ivanova)
