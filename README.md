@@ -38,7 +38,8 @@ The easiest way is to create events in a calendar. Use a calendar service such a
 
 
 ## What calendar apps can be used?
-Literally any calendar you are comfortable with. Below you find a small list of services and applications that support CalDAV and allow for easy synchronisation of events between different devices, such as your computer, laptop, or mobile phone.  
+Literally any calendar you are comfortable with. Below you find a small list of services and applications that support CalDAV and allow for easy synchronisation of events between different devices (such as your computer, laptop, or mobile phone) and across different computer systems (such as Windows, macOS, iOS, Linux).
+
 * **Servers**   
   * Cloud Hosted
     * [iCloud Calendar](https://www.icloud.com/calendar/) 
