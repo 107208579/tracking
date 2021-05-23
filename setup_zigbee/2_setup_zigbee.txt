@@ -2,7 +2,7 @@
 ==== Buying a CC2652 stick ===============================================================
 ==========================================================================================
 
-   → Buy a Zigbee CC2652
+   → Get a Zigbee CC2652 stick
    ~ https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick/
 
 
