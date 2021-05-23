@@ -152,7 +152,7 @@ Apart from manually adding events to a calendar there are many other options. Be
 <br />
 
 ## What setup do you use specifically?  
-I have a [Nextcloud](http://nextcloud.com/) server which keeps my iPhone, iPad, and iMac calendars always via CalDAV in sync. On the go, I mostly log events on my iPhone via [iOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios). At home I use Zigbee switches that allow me to log events via simple button press. If required, I modify events in more detail in the [macOS Calendar](http://support.apple.com/guide/calendar/welcome/mac).
+I have a [Nextcloud](http://nextcloud.com/) server running which keeps my iPhone, iPad, and iMac calendars always via CalDAV in sync. On the go, I mostly log events on my iPhone via [iOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios). At home I use Zigbee switches that allow me to log events via a simple button press. If required, I also modify events in the [macOS Calendar](http://support.apple.com/guide/calendar/welcome/mac).
 
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup.png" width="600">    
