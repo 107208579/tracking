@@ -13,7 +13,7 @@ Back in 2012 I was very curious on how I spend my 10,080 minutes in a week and d
 - change personal behaviour
 - leave a digital legacy
 
-Here are some other great people that also track their life in a calendar:
+Here are some other great people that track their life in a calendar:
 * [Lifelogging](https://david.achkar.com/qssv-lifelog-talk/) (David Achkar)
 * [Every Step I Take](https://www.youtube.com/watch?v=MazwAPVO70Y) (Nicholas Feltron)
 * [Productivity Hacking](http://www.jamesmaa.com/2012/12/02/james-maas-productivity-hacking-guide/) (James Maa)
