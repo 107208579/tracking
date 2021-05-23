@@ -1,28 +1,78 @@
 ==========================================================================================
-==== Setting up Zigbee ===================================================================
+==== Buying a CC2652 stick ===============================================================
 ==========================================================================================
 
-    → Useful links
-    ~ https://www.zigbee2mqtt.io
-    ~ https://discord.com/channels/556563650429583360/556563650429583364
+   → Buy a Zigbee CC2652
+   ~ https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick/
 
-    • Coordinator
-    	An existing network is wire connected to the coordinator. This is the source
-    	of the network, the root of the tree that can bridge to other networks. The
-    	coordinator stores information on the network and manages security keys and
-    	access, acting as the Trust Center. An example of a ZigBee coordinator would
-    	be the modems Assured Systems supply at the bottom of this article.
 
-    • Router
-    	A router can perform a function within the network as well as receive and forward
-    	data to and from other devices on the network.
 
-    • End Device
-    	An end device performs a function for an application but not much more. It can
-    	receive and respond to its parent node (coordinator or router), but it can’t
-    	talk to other devices on the network. This relationship allows the node to rest
-    	and preserve battery life. An example would be a light switch on an automated
-    	home management system.
+
+
+==========================================================================================
+==== Flashing the CC2652 stick ===========================================================
+==========================================================================================
+
+    → Follow the instructions for flashing the CC2652 via macOS
+    ~ https://www.zigbee2mqtt.io/information/supported_adapters.html
+    ~ https://electrolama.com/projects/zig-a-zig-ah/#flash-firmware
+
+
+    → Connect the CC2652 via USB to macOS
+    → Check if the CC2652 was detected
+        sudo dmesg | grep AppleUSBCH
+         > [1458325.212772]: IOUserSerial::AppleUSBCHCOM::<private>: 127 0x600002c9c058
+         > [1458325.213170]: DK: AppleUSBCHCOM-0x100048d92::start(IOUSBHostInterface-0x100048d90) ok
+
+
+    → Install python3 and 'pip' on macOS
+        xcode-select --install
+        brew install python3
+
+
+    → Upgrade 'pip' and install the following packages
+    ~ https://github.com/JelmerT/cc2538-bsl
+        sudo pip3 install --upgrade pip
+        pip3 install pyserial intelhex python-magic
+
+
+    → Download the boot loader
+        wget -O cc2538-bsl.zip https://codeload.github.com/JelmerT/cc2538-bsl/zip/master && unzip cc2538-bsl.zip
+
+
+    → Download the new firmware 
+    ~ https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.x.0/bin
+         • Electrolama zzh
+         • CC2652R_coordinator_20210120.zip
+
+
+    → Check the exact device location the CC2652 is connected to
+        ls -l /dev/tty.usbserial-*
+         > /dev/tty.usbserial-1460
+
+
+    → Flash the CC2652 by pressing the reset button on the board
+    → Keep pressing while plugging the device back into the USB port
+
+    → Wait one second and then run the following command (note the device location)
+        ./cc2538-bsl.py -p /dev/tty.usbserial-1460 -evw CC26X2R1_20201026.hex
+         > Opening port /dev/tty.usbserial-1460, baud 500000
+         > Reading data from CC26X2R1_20201026.hex
+         > Your firmware looks like an Intel Hex file
+         > Connecting to target...
+         > CC1350 PG2.0 (7x7mm): 352KB Flash, 20KB SRAM, CCFG.BL_CONFIG at 0x00057FD8
+         > Primary IEEE Address: 00:12:4B:00:21:B7:77:5E
+         >     Performing mass erase
+         > Erasing all main bank flash sectors
+         >     Erase done
+         > Writing 360448 bytes starting at address 0x00000000
+         > Write 104 bytes at 0x00057F980
+         >     Write done
+         > Verifying by comparing CRC32 calculations.
+         >     Verified (match: 0x0a0682b4)
+
+
+    → Remove the device from the USB port
 
 
 
