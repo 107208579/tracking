@@ -194,7 +194,7 @@ The smallest event duration logged is 5 minutes. Here are some event example eve
 <br />
 <br />
 
-On my iPhone I have created one-touch[iOS Shortcut](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) bookmarks (screenshots show iOS12 and iOS14):
+On my iPhone I have created one-touch [iOS Shortcut](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) bookmarks (screenshots show iOS12 and iOS14):
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_iOS12_Shortcuts.png" width="250">    
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_iOS14_Shortcuts.png" width="250">
