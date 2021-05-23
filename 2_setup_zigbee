@@ -1,0 +1,892 @@
+==========================================================================================
+==== Setting up Zigbee ===================================================================
+==========================================================================================
+
+    → Useful links
+    ~ https://www.zigbee2mqtt.io
+    ~ https://discord.com/channels/556563650429583360/556563650429583364
+
+    • Coordinator
+    	An existing network is wire connected to the coordinator. This is the source
+    	of the network, the root of the tree that can bridge to other networks. The
+    	coordinator stores information on the network and manages security keys and
+    	access, acting as the Trust Center. An example of a ZigBee coordinator would
+    	be the modems Assured Systems supply at the bottom of this article.
+
+    • Router
+    	A router can perform a function within the network as well as receive and forward
+    	data to and from other devices on the network.
+
+    • End Device
+    	An end device performs a function for an application but not much more. It can
+    	receive and respond to its parent node (coordinator or router), but it can’t
+    	talk to other devices on the network. This relationship allows the node to rest
+    	and preserve battery life. An example would be a light switch on an automated
+    	home management system.
+
+
+
+
+
+==========================================================================================
+==== Connecting the CC2652 stick =========================================================
+==========================================================================================
+
+    → Connect your CC2652 stick to your Raspberry Pi USB port
+    → Ideally use an USB extension cable to distance the antenna from the Raspberry Pi
+    → Determine the device location
+        ls -l /dev/serial/by-id
+         > lrwxrwxrwx 1 root 13 Dec  4 20:34 usb-1a86_USB_Serial-if00-port0 -> ../../ttyUSB0
+
+
+        ls -l /dev/ttyUSB0
+         > crw-rw---- 1 root 188, 0 Dec  4 20:34 /dev/ttyUSB0
+
+
+    → For troubleshooting run the following commands
+        sudo lsusb
+         > Bus 001 Device 002: ID 1a86:7523 QinHeng Electronics HL-340 USB-Serial adapter
+         > Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+
+        sudo lsusb -v
+         > idVendor           0x1a86 QinHeng Electronics
+         > idProduct          0x7523 HL-340 USB-Serial adapter
+         > ...
+
+  
+        sudo less /var/log/messages | grep ch341
+         > [   17.901271] usbcore: registered new interface driver ch341
+         > [   17.901432] usbserial: USB Serial support registered for ch341-uart
+         > [   17.901604] ch341 1-1:1.0: ch341-uart converter detected
+         > [   17.992707] usb 1-1: ch341-uart converter now attached to ttyUSB0
+
+        dmesg | tail -100
+         > [   18.410939] usbcore: registered new interface driver ch341
+         > [   18.411103] usbserial: USB Serial support registered for ch341-uart
+         > [   18.411294] ch341 1-1:1.0: ch341-uart converter detected
+         > [   18.474904] usb 1-1: ch341-uart converter now attached to ttyUSB0
+
+
+
+
+
+==========================================================================================
+==== Installing Mosquitto ================================================================
+==========================================================================================
+
+    → Install the Mosquitto broker and clients
+    ~ https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/
+         sudo apt install -y mosquitto mosquitto-clients
+         sudo systemctl enable mosquitto.service
+
+
+    → Check the running Mosquitto version
+         mosquitto -v
+         > 1604153551: mosquitto version 1.5.7 starting
+         > 1604153551: Using default config.
+         > 1604153551: Opening ipv4 listen socket on port 1883.
+         > 1604153551: Error: Address already in use
+
+
+
+
+
+==========================================================================================
+==== Securing Mosquitto ==================================================================
+==========================================================================================
+
+    → Set a user and password
+		sudo mosquitto_passwd -c /etc/mosquitto/passwd mqtt
+		• User		mqtt
+		• Pass		<your_password>
+
+
+    → Update the config file and add the following section
+		sudo vi /etc/mosquitto/mosquitto.conf
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+password_file /etc/mosquitto/passwd
+allow_anonymous false
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+    → Restart Mosquitto with the new configuration file changes
+		sudo mosquitto -c /etc/mosquitto/mosquitto.conf
+
+
+    → Verify the user and the password
+    → An empty line will be shown if the connection is successul
+		mosquitto_sub -h localhost -v -t '#' -p 1883 -u mqtt -P <your_password>
+
+
+    → Incorrect access will send an error message
+         > Connection Refused: not authorised.
+
+
+
+
+==========================================================================================
+==== Installing Zigbee2MQTT ==============================================================
+==========================================================================================
+
+    → Look for the latest Zigbee2MQTT installation
+    ~ https://www.zigbee2mqtt.io/getting_started/running_zigbee2mqtt.html
+        sudo curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+
+
+    → If you receive an error message as below:
+         > ## You appear to be running on ARMv6 hardware. Unfortunately this is not
+         > currently supported by the NodeSource Linux distributions. Please use the
+         > 'linux-armv6l' binary tarballs available directly from nodejs.org for
+         > Node.js 4 and later.
+
+
+    → Check your ARM architecture version
+        uname -m
+         > armv6l
+
+    → Or use this command
+        cat /proc/cpuinfo
+         > model name	: ARMv6-compatible processor rev 7 (v6l)
+
+
+    → Manually download and install an unoffical NodeJS version
+    ~ https://unofficial-builds.nodejs.org/download/release/
+        wget https://unofficial-builds.nodejs.org/download/release/v12.9.1/node-v12.9.1-linux-armv6l.tar.xz
+        tar -xvf node-v12.9.1-linux-armv6l.tar.xz
+        sudo cp -R node-v12.9.1-linux-armv6l/* /usr/local/
+        rm -rf node-v12.9.1-linux-armv6l node-v12.9.1-linux-armv6l.tar.xz
+
+
+    → Check if the download was successful
+        node -v
+         > v12.9.1
+
+
+    → Check if the download was successful (this may take a bit)
+        npm -v
+         > 6.10.2
+
+
+    → Install git, gcc, and g++
+        sudo apt-get install -y git make g++ gcc
+
+
+    → Clone the Zigbee2MQTT repository
+        sudo git clone https://github.com/Koenkk/zigbee2mqtt.git /opt/zigbee2mqtt
+
+
+    → Change permissions to your local user
+        sudo chown -R pi:pi /opt/zigbee2mqtt
+
+
+    → Change into the Zigbee directory
+        cd /opt/zigbee2mqtt
+
+
+    → Install dependencies (this may take lots of time on a Rasperry Pi Zero)
+        npm ci --production
+         > [..................] | extractTree: verb extractTree extracting dependencies to node_modules/
+         > [ .................] | extractTree: sill extract ms@2.0.0 extracted to /opt/zigbee2mqtt/node_modules/ms (5844ms)
+         > [  ................] - extractTree: sill extract jest-util@26.3.0 extracted to /opt/zigbee2mqtt/node_modules/jest-util (15625ms)
+         > [        ..........] / extractTree: sill extract path-dirname@1.0.2 extracted to /opt/zigbee2mqtt/node_modules/path-dirname (11930ms)
+         > [         .........] \ reify:@babel/code-frame: timing reify:loadBundles Completed in 0ms
+         > [          ........] \ reify:has-values: http fetch GET 200 https://registry.npmjs.org/ansi-styles/-/ansi-styles-4.2.1.tgz 276431ms
+         > [           .......] \ reify:parse-json: timing reifyNode:node_modules/path-type Completed in 386566ms
+         > [            ......] \ reify:define-property: timing reifyNode:node_modules/once Completed in 392704ms
+         > [             .....] | reify:jest-environment-jsdom: timing reifyNode:node_modules/jest-environment-node Completed in 432610ms
+         > [              ....] / reify:has-flag: timing reifyNode:node_modules/graceful-fs Completed in 471319ms
+         > [              ....] / reify:has-flag: timing reifyNode:node_modules/graceful-fs Completed in 471319ms
+         > [               ...] | reify:ms: timing reifyNode:node_modules/eslint-config-google Completed in 506123ms
+         > [                ..] \ reify:concat-stream: http fetch GET 200 https://registry.npmjs.org/acorn-walk/-/acorn-walk-7.2.0.tgz 363501ms
+         > [                 .] - reify:@jest/globals: timing reifyNode:node_modules/@jest/source-map Completed in 567117ms
+         > [                  ] - reify:@typescript-eslint/types: http fetch GET 200 https://registry.npmjs.org/argparse/-/argparse-1.0.10.tgz 408920ms
+         > ...
+         > ...
+
+
+    → Verify that your final output line is similar to this:
+         > gyp info ok
+         > added 827 packages in 352.324s
+
+
+
+
+
+==========================================================================================
+==== Setting up Zigbee2MQTT ==============================================================
+==========================================================================================
+
+    → Basic configuration as shown below - further details underneath
+        vi /opt/zigbee2mqtt/data/configuration.yaml
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+serial:
+  port: /dev/ttyUSB0
+permit_join: true
+homeassistant: false
+mqtt:
+  base_topic: mqtt
+  server: 'mqtt://localhost'
+  user: mqtt
+  password: <your_password>
+advanced:
+  network_key: GENERATE
+  pan_id: 0x1a62
+  elapsed: false
+  timestamp_format: 'YYYY/MM/DD HH:mm:ss'
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+    → Configure Zigbee2MQTT for the correct USB device location
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+serial:
+  port: /dev/ttyUSB0
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+    → Secure your Zigbee2MQTT network to run with a key
+    ~ https://www.zigbee2mqtt.io/information/configuration.html
+    ~ https://www.zigbee2mqtt.io/how_tos/how_to_secure_network.html
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+advanced:
+    network_key: GENERATE
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+    → And add the user and the password to connect to Mosquitto
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+user: 'user'
+password: '<your_password>'
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+    → And change the base topic to the correct name
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+base_topic: mqtt
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+    → Change the default ID if more than one network should run in parallel
+    → The default PAN ID for Zigbee2MQTT is set to '0x1a62' (which is 6754 in decimal)
+    → PAN IDs can be any value in the range of 0×0000 – 0xFFFE
+    ~ https://www.zigbee2mqtt.io/information/configuration.html
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+advanced:
+  network_key: GENERATE
+  pan_id: 0x1a62
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+    → Quickly check if your node starts up and runs correctly
+        cd /opt/zigbee2mqtt
+        npm start 
+         > zigbee2mqtt@1.15.0 start /opt/zigbee2mqtt
+         > node index.js
+         >
+         > Zigbee2MQTT:info  2020-10-31 22:30:23: Logging to console and directory: '/opt/zigbee2mqtt/data/log/2020-10-31.22-30-22' filename: log.txt
+         > Zigbee2MQTT:info  2020-10-31 22:30:28: Starting Zigbee2MQTT version 1.15.0 (commit #ed8b4e5)
+         > ...
+         > Zigbee2MQTT:info  2020-10-31 22:30:38: Connecting to MQTT server at mqtt://localhost
+         > Zigbee2MQTT:info  2020-10-31 22:30:40: Connected to MQTT server
+         > ...
+
+
+    → Check the journal 
+        sudo journalctl -u zigbee2mqtt.service -f
+        > zigbee2mqtt@1.18.1 start /opt/zigbee2mqtt
+
+
+    → Configure Zigbee2MQTT to run as daemon in the background
+        sudo vi /etc/systemd/system/zigbee2mqtt.service
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+[Unit]
+Description=zigbee2mqtt
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/npm start
+WorkingDirectory=/opt/zigbee2mqtt
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+    → Start Zigbee2MQTT
+        sudo systemctl restart zigbee2mqtt
+
+
+    → Check if Zigbee2MQTT is running
+        systemctl status zigbee2mqtt.service
+        systemctl | egrep 'zigbee2mqtt'
+        sudo journalctl -u zigbee2mqtt.service -f
+
+
+    → Start Zigbee2MQTT upon system boot
+        sudo systemctl enable zigbee2mqtt.service
+
+
+
+
+
+==========================================================================================
+==== Upgrading Zigbee2MQTT ===============================================================
+==========================================================================================
+
+    → Stop Zigbee2MQTT 
+        sudo systemctl stop zigbee2mqtt
+        cd /opt/zigbee2mqtt
+
+
+    → Backup configuration
+        cp -R data data-backup
+
+
+    → Update
+        git checkout HEAD -- npm-shrinkwrap.json
+        git pull
+        npm ci
+
+
+    → Restore configuration
+        cp -R data-backup/* data
+        rm -rf data-backup
+
+
+
+
+
+==========================================================================================
+==== Rolling back Zigbee2MQTT ============================================================
+==========================================================================================
+
+    → Find the version to rollback to 
+    ~ https://github.com/Koenkk/zigbee2mqtt/tags
+
+    → Roll back
+        cd /opt/zigbee2mqtt
+        git checkout 99274c7
+
+    → Reconfigure 'npm'
+        npm ci --production
+        npm start
+
+
+
+
+
+==========================================================================================
+==== Zigbee and WiFi Interference ========================================================
+==========================================================================================
+
+    → Verify that Zigbee and WiFi run on different channels to avoid signal interference
+    ~ https://www.zigbee2mqtt.io/how_tos/how_to_improve_network_range_and_stability.html
+    ~ https://www.digi.com/resources/documentation/digidocs/90001537/references/r_channels_zigbee.htm
+    ~ https://support.metageek.com/hc/en-us/articles/203845040-Zigbee-and-WiFi-Coexistence
+         • Zigbee operates on 2.4 Ghz with 16 channels between 11 and 26
+         • Zigbee channels 25 and 26 might not be supported by all hardware
+
+
+    → Interference happens with the following setups
+         • Wifi Channel 01 interferes with Zigbee channels 11, 12, 13, 14, 15, 16, 17
+         • Wifi Channel 06 interferes with Zigbee channels 13, 14, 15, 16, 17, 18, 19, 20, 21, 22
+         • Wifi Channel 11 interferes with Zigbee channels 19, 20, 21, 22, 23, 24
+
+
+    → Ideally both networks are being set on opposing ends of the channel spectrum
+    → Make sure you don't have a 'smart' WiFi router which automatically changes channels
+         • Wifi Channel 01 with Zigbee channels 19, 20, 21, 22, 23, 24
+         • Wifi Channel 11 with Zigbee channels 11, 12, 13, 14, 15, 16, 17
+
+
+    → Check the last log entry to figure out which channel Zigbee uses 
+        less /opt/zigbee2mqtt/data/log/*/log.txt | grep channel | awk -F\network\"\: '{print $2}'
+         > {"channel":11,"extendedPanID":"0xdddddddddddddddd","panID":6754},"permit_join":true,"version":"1.15.0"}'
+
+
+    → Check your devices' wireless network connection and look for 'Frequency'
+        iwconfig wlan0
+         > wlan0     IEEE 802.11  ESSID:"INTERNET"
+         > Mode:Managed  Frequency:2.462 GHz  Access Point: E2:63:DA:1C:53:C6
+
+
+    → Scan your network to compare the frequency with the channel
+        sudo iwlist wlan0 scan | grep 'Frequency' | sort | uniq -c | sort -n
+         > 1  Frequency:2.437 GHz (Channel 6)
+         > 2  Frequency:2.417 GHz (Channel 2)
+         > 2  Frequency:2.442 GHz (Channel 7)
+         > 3  Frequency:2.462 GHz (Channel 11)
+
+
+    → Ideally us an USB extension to physically distance the Zigbee antenna from the server
+
+
+
+
+
+==========================================================================================
+==== Changing Zigbee Channel =============================================================
+==========================================================================================
+
+    → In order to change the default Zigbee channel edit the configuration.yaml
+    → Use a 'Zigbee Light Link' channel to avoid problems: 11, 15, 20
+    → IMPORTANT: Change of channel requires re-pairing of all devices
+    ~ https://www.zigbee2mqtt.io/information/configuration.html
+
+        vi /opt/zigbee2mqtt/data/configuration.yaml
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+advanced:
+  channel: 15
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+    → Restart the service
+        sudo systemctl restart zigbee2mqtt
+
+
+
+
+
+==========================================================================================
+==== Zigbee and BlueTooth Interference ===================================================
+==========================================================================================
+
+    → Bluetooth signals are a potential source of interference for ZigBee and WiFi networks
+    ~ https://www.zigbee2mqtt.io/how_tos/how_to_improve_network_range_and_stability.html
+
+
+    → Check if Bluetooth as a service is running
+        sudo service bluetooth status
+        hciconfig -a
+
+
+    → Permanently disable Bluetooth 
+        sudo vi /boot/config.txt
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# Uncomment to enable Bluetooth
+dtoverlay=disable-bt
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+    → Restart your server for the changes to take effect 
+        sudo reboot
+
+
+    → Ideally us an USB extension to physically distance the Zigbee antenna from the server
+
+
+
+
+
+==========================================================================================
+==== Pairing Devices =====================================================================
+==========================================================================================
+
+    → Check that your configuration.yaml allows to join new devices
+        less /opt/zigbee2mqtt/data/configuration.yaml
+         • permit_join: true
+
+
+    → Subscribe with the Mosquitto client to all topics
+        mosquitto_sub -u mqtt -P <your_password> -h localhost -p 1883 -v -t '#'
+
+-------------------------------------------------------------------------------------------
+
+    → Ikea Tradfri E1524/E1810 (Round Remote Control)
+    ~ https://www.zigbee2mqtt.io/devices/E1524_E1810.html
+    → Press connect button inside casing 4 times in short order
+
+
+    → You should see an output similar to this:
+         > zigbee2mqtt/bridge/state online
+         > zigbee2mqtt/bridge/config {"commit":"ed8b4e5","coordinator":{"meta":{"maintrel":3,"majorrel":2,"minorrel":6,"product":0,"revision":20190608,"transportrev":2},"type":"zStack12"},"log_level":"info","network":{"channel":11,"extendedPanID":"0xdddddddddddddddd","panID":6754},"permit_join":true,"version":"1.15.0"}
+         > zigbee2mqtt/bridge/log {"message":"announce","meta":{"friendly_name":"0xbc33acfffed4ed8b"},"type":"device_announced"}
+
+
+    → Alternatively check the systems journald log files
+        sudo journalctl -u zigbee2mqtt.service -f
+
+
+    → Here are the button press options
+         > Single = Left	      mqtt/Ikea_Round_Remote_Control {"action":"arrow_left_click","linkquality":60,"update_available":false}
+         > Single Press Right 	mqtt/Ikea_Round_Remote_Control {"action":"arrow_right_click","linkquality":42,"update_available":false}
+         > Single Press Up		  mqtt/Ikea_Round_Remote_Control {"action":"brightness_up_click","linkquality":73,"update_available":false}
+         > Single Press Down	  mqtt/Ikea_Round_Remote_Control {"action":"brightness_down_click","linkquality":76,"update_available":false}
+         > Single Press Center	mqtt/Ikea_Round_Remote_Control {"action":"toggle","linkquality":81,"update_available":false}
+
+         > Long Press Left		  mqtt/Ikea_Round_Remote_Control {"action":"arrow_left_hold","linkquality":28,"update_available":false}
+								mqtt/Ikea_Round_Remote_Control {"action":"arrow_left_release","duration":2.811,"linkquality":78,"update_available":false}
+
+         > Long Press Right		  mqtt/Ikea_Round_Remote_Control {"action":"arrow_right_hold","linkquality":70,"update_available":false}
+								mqtt/Ikea_Round_Remote_Control {"action":"arrow_right_release","duration":1.875,"linkquality":86,"update_available":false}	
+
+         > Long Press Up		    mqtt/Ikea_Round_Remote_Control {"action":"brightness_up_hold","linkquality":63,"update_available":false}
+								mqtt/Ikea_Round_Remote_Control {"action":"brightness_up_release","linkquality":92,"update_available":false}
+
+         > Long Press Down		  mqtt/Ikea_Round_Remote_Control {"action":"brightness_down_hold","linkquality":92,"update_available":false}
+								mqtt/Ikea_Round_Remote_Control {"action":"brightness_down_release","linkquality":68,"update_available":false}
+
+         > Long Press Center	  mqtt/Ikea_Round_Remote_Control {"action":"toggle","linkquality":84,"update_available":false}
+								mqtt/Ikea_Round_Remote_Control {"action":"toggle_hold","linkquality":86,"update_available":false}
+
+-------------------------------------------------------------------------------------------
+
+    → Sonoff SNZB-01 (Square Button)
+    ~ https://www.zigbee2mqtt.io/devices/SNZB-01.html
+    → Long press reset button for 5 seconds until the LED indicator flashes three times, which means the device has entered pairing mode
+
+
+    → Here are the button press options
+         > Single Press			mqtt/0x00124b001f8ab0cd {"action":"single","linkquality":13}'
+         > Double Press			mqtt/0x00124b001f8ab0cd {"action":"double","linkquality":13}'
+         > Long Press			  mqtt/0x00124b001f8ab0cd {"action":"long","linkquality":15}'
+
+-------------------------------------------------------------------------------------------
+
+    → XiaoMi Aqara WXKG01LM (Round Button)
+    ~ https://www.zigbee2mqtt.io/devices/WXKG01LM.html
+    → Press and hold the reset button on the device for 5 seconds until the blue light starts blinking
+
+
+    → Here are the button press options
+         > Single Press			mqtt/XiaoMi_Test_1 {"action":"single","battery":100,"linkquality":86,"voltage":3052}'
+         > Double Press			mqtt/XiaoMi_Test_1 {"action":"double","battery":100,"linkquality":94,"voltage":3052}'
+         > Triple Press			mqtt/XiaoMi_Test_1 {"action":"triple","battery":100,"linkquality":102,"voltage":3052}'
+         > Quadruple Press	mqtt/XiaoMi_Test_1 {"action":"quadruple","battery":100,"linkquality":102,"voltage":3052}'
+         > Many (4+)			  mqtt/XiaoMi_Test_1 {"action":"many","battery":100,"linkquality":92,"voltage":3052}'
+         > Long Hold			  mqtt/XiaoMi_Test_1 {"action":"hold","battery":100,"linkquality":94,"voltage":3052}'
+         > Release				  mqtt/XiaoMi_Test_1 {"action":"release","battery":100,"duration":2417,"linkquality":86,"voltage":3052}'
+         > Battery				  mqtt/XiaoMi_Test_1 {"battery":100,"linkquality":52,"voltage":3700}'		
+
+-------------------------------------------------------------------------------------------
+
+
+    → Check your configuration file again and see if all devices have been added
+        less /opt/zigbee2mqtt/data/configuration.yaml
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+devices:
+  '0x00158d000403091a':
+    friendly_name: '0x00158d000403091a'
+    legacy: false
+  '0x00124b001f8ab0cd':
+    friendly_name: '0x00124b001f4ab0cd'
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+    → Give your devices a nicer name by editing the 'friendly_name'
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+devices:
+  '0x00158d000403091a':
+    friendly_name: 'XiaoMi_Test_1'
+    legacy: false
+  '0x00124b001f4ab0cd':
+    friendly_name: 'Sonoff_Test_1'
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+    → Set 'permit_join' to 'false' AFTER all devices have been paired
+        vi /opt/zigbee2mqtt/data/configuration.yaml
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+permit_join: false
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+    → Restart the service for the changes to take effect
+        sudo systemctl start zigbee2mqtt
+
+
+
+
+
+==========================================================================================
+==== Adding readme.txt ===================================================================
+==========================================================================================
+
+    → Add the following cheat file to your servers home directory
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+===== CC2652 ===========================================================
+sudo lsusb
+sudo lsusb -v
+sudo less /var/log/messages | grep ch341
+ls -l /dev/serial/by-id
+ls -l /dev/ttyUSB0
+
+
+
+===== ZIGBEE2MQTT ======================================================
+sudo systemctl start zigbee2mqtt
+sudo systemctl stop zigbee2mqtt
+sudo systemctl restart zigbee2mqtt
+------------------------------------------------------------------------
+tail -f /opt/zigbee2mqtt/data/log/*/log.txt
+sudo journalctl -u zigbee2mqtt.service -f
+tail -f mqtt2caldav/logs/mqtt2caldav.log
+------------------------------------------------------------------------
+sudo vi /etc/systemd/system/zigbee2mqtt.service
+------------------------------------------------------------------------
+vi /opt/zigbee2mqtt/data/configuration.yaml
+less /opt/zigbee2mqtt/data/configuration.yaml
+
+
+
+===== LINUX ============================================================
+sudo iftop
+watch -n 1 netstat -t
+watch -n 5 'sudo iptables -nvL | grep -v "0     0"'
+sudo netstat -aeptcnl | egrep -via '192.168.2.100|0 0.0.0.0|:::2'
+
+
+
+===== MOSQUITTO ========================================================
+sudo tail -f /var/log/mosquitto/mosquitto.log
+mosquitto_sub -h localhost -p 1883 -u mqtt -P <your_password> -v -t '#'
+mosquitto_sub -h localhost -p 1883 -u mqtt -P <your_password> -v -t '#' -F %X
+mosquitto_sub -h localhost -p 1883 -u mqtt -P <your_password> -v -t 'zigbee2mqtt/Ikea_Square_Button'
+
+
+
+===== IPTABLES =========================================================
+sudo iptables -L -nvx --line-numbers
+less /etc/iptables/rules.v4
+#sudo iptables -F (flush all rules temporary)
+
+
+
+===== PASSWORD UPDATE ==================================================
+mosquitto       sudo mosquitto_passwd -c /etc/mosquitto/passwd mqtt
+zigbee2mqtt     vi /opt/zigbee2mqtt/data/configuration.yaml
+mqtt2caldav     vi mqtt2caldav/config/config.json
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+
+
+
+==========================================================================================
+==== Reading Log Entries (plus examples) =================================================
+==========================================================================================
+
+    → Mosquitto Server
+        sudo tail -f /var/log/mosquitto/mosquitto.log
+         	> 1605857209: New connection from ::1 on port 1883.
+         	> 1605857209: New client connected from ::1 as mosqsub|812-BTN (c1, k60).
+         	> 1605857255: Socket error on client mosqsub|812-BTN, disconnecting.
+
+-------------------------------------------------------------------------------------------
+
+    → Mosquitto Subscriber Client
+    ~ https://mosquitto.org/man/mosquitto_sub-1.html
+
+        mosquitto_sub -u mqtt -P ???????? -h localhost -p 1883 -v -t '#'
+         	> mqtt/Ikea_Square_Button {"action":"on","linkquality":92}
+
+
+        mosquitto_sub -u mqtt -P ???????? -h localhost -p 1883 -v -t '#' | xargs -d$'\n' -L1 sh -c 'date "+%D %T $0"'
+         	> 11/20/20 15:26:51 mqtt/Ikea_Square_Button {"action":"on","linkquality":49}
+
+
+        mosquitto_sub -u mqtt -P ???????? -h localhost -p 1883 -v -d -t '#'
+         	> Client mosqsub|809-BTN received PUBLISH (d0, q0, r0, m0, 'mqtt/Ikea_Round_Remote_Control', ... (71 bytes))
+         	> mqtt/Ikea_Round_Remote_Control {"action":"arrow_left_click","linkquality":60,"update_available":false}
+
+
+    → The client allows to format the data output - see some examples below
+    → Check the manual pages via 'man mosquitto_sub'
+        mosquitto_sub -u mqtt -P ???????? -h localhost -p 1883 -v -t '#' -F %X
+         	> 7B22616374696F6E223A22746F67676C65222C226C696E6B7175616C697479223A38362C227570646174655F617661696C61626C65223A66616C73657D
+
+
+        mosquitto_sub -u mqtt -P ???????? -h localhost -p 1883 -v -t '#' -F "%I_%t_%x"
+         	> 2020-11-20T16:28:41+0800_mqtt/Ikea_Square_Button_7b22616374696f6e223a226f6e222c2262617474657279223a3130302c226c696e6b7175616c697479223a39347d
+
+
+        mosquitto_sub -u mqtt -P ???????? -h localhost -p 1883 -v -t 'mqtt/Ikea_Square_Button'
+         	> mqtt/Ikea_Square_Button {"action":"on","linkquality":84}
+
+-------------------------------------------------------------------------------------------
+
+    → Linux Journal Daemon
+    ~ https://man7.org/linux/man-pages/man1/journalctl.1.html
+        sudo journalctl -u zigbee2mqtt.service -f
+         	> Nov 20 15:26:51 BTN npm[677]: Zigbee2MQTT:info  2020-11-20 15:26:51: MQTT publish: topic 'mqtt/Ikea_Square_Button {"action":"on","linkquality":49}'
+
+    → Zigbee2MQTT Log Files
+        tail -f /opt/zigbee2mqtt/data/log/*/log.txt
+         	> info  2020-11-20 15:26:51: MQTT publish: topic 'mqtt/Ikea_Square_Button {"action":"on","linkquality":49}'
+
+
+
+
+
+==========================================================================================
+==== Installing additional software ======================================================
+==========================================================================================
+
+    → Run an update beforehand
+        sudo apt-get update
+
+    → Check installed Python 3 version
+        python3 --version
+
+    → Install 'pip'
+        sudo apt-get -y install python3-pip
+
+    → Install 'iftop'
+        sudo apt-get install iftop
+
+    → Upgrade 'setuptools'
+        pip3 install --upgrade setuptools
+
+    → Install 'libxml'
+        sudo apt-get install python3-lxml
+
+    → Install 'pytz'
+        pip3 install pytz
+
+    → Install 'caldav' (this may take a while)
+        pip3 install caldav
+
+    → If you need to install an older version use the following command
+        pip3 install caldav==0.7.1
+
+    → Install 'paho-mqtt'
+        pip3 install paho-mqtt
+
+
+
+
+
+==========================================================================================
+==== Installing mqtt2caldav ==============================================================
+==========================================================================================
+
+    → Download mqtt2caldav
+    ~ https://github.com/107208579/mqtt2caldav
+
+
+    → Configure 'config.json'
+            vi mqtt2caldav/config/config.json
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{
+  "MQTT_SERVER":{
+    "MQTT_SERVER_ADDRESS": "localhost",
+    "MQTT_SERVER_PORT": "1883",
+    "MQTT_USERNAME": "mqtt",
+    "MQTT_PASSWORD": "<your_password>"
+  },
+
+  "CALDAV_SERVER":{
+    "CALDAV_SERVER_ADDRESS": "https://server.com/remote.php/dav/calendars/user",
+    "CALDAV_USERNAME": "user",
+    "CALDAV_PASSWORD": "<your_password>"
+  },
+
+  "TRIGGERS": [
+    {
+      "MQTT_TOPIC": "mqtt/OPP_BTN_SQR_601",
+      "MQTT_EVENT": {"action":"button_1_single"},
+      "EVENT_CALENDAR": "https://server.com/remote.php/dav/calendars/user/entertainment",
+      "EVENT_SUMMARY": "ENT - Computer",
+      "EVENT_LOCATION": "",
+      "EVENT_GEO": "",
+      "EVENT_CATEGORIES": "",
+      "EVENT_URL": "",
+      "EVENT_DESCRIPTION": "",
+      "EVENT_TRANSP": "TRANSPARENT",
+      "EVENT_TIMEZONE": "Asia/Singapore",
+      "EVENT_TRIGGER": "",
+      "EVENT_SECONDS": "False",
+      "EVENT_ROUNDING": "5",
+      "EVENT_DURATION": "5"
+    }
+  ]
+}
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+    → Manually run the program to check for errors
+        python3 main.py
+
+
+    → Or automatically start the script after at system boot
+        crontab -e
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# .---------------- minute       (0 - 59)
+# |  .------------- hour         (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month        (1 - 12) OR (jan,feb,mar,apr..)
+# |  |  |  |  .---- day of week  (0 - 6) (Sunday=0 or 7) OR (sun,mon,tue,wed,thu,fri,sat)
+# |  |  |  |  |
+# *  *  *  *  *  command to be executed
+
+# Run mqtt2caldav upon boot
+@reboot sleep 30 && python3 /home/pi/mqtt2caldav/main.py
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+
+
+
+==========================================================================================
+==== IpTables Configuration ==============================================================
+==========================================================================================
+
+    → Useful links
+    ~ https://crm.vpscheap.net/knowledgebase.php?action=displayarticle&id=29
+    ~ https://www.thegeekstuff.com/scripts/iptables-rules
+
+    → Install 'iptables-persistent'
+         sudo apt-get install iptables-persistent
+
+    → Use the following tools to check traffic connections
+    → Check for a 'SYN_SENT' but not an 'ESTABLISHED'
+         sudo iftop
+         sudo netstat -aeptcnl | egrep -via '192.168.2.100|0 0.0.0.0|:::2'
+         watch -n 5 'sudo iptables -nvL | grep -v "0     0"'
+
+    → Add the following rules to iptables to only have local access
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+sudo iptables -A INPUT -i lo -j ACCEPT
+sudo iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+sudo iptables -A INPUT -s 10.0.0.0/8 -j RETURN
+sudo iptables -A INPUT -s 172.16.0.0/12 -j RETURN
+sudo iptables -A INPUT -s 192.168.0.0/16 -j RETURN
+sudo iptables -A INPUT -s 195.30.252.25 -j RETURN
+sudo iptables -A INPUT -p udp --sport 53 -j ACCEPT
+sudo iptables -A INPUT -p tcp --sport 53 -j ACCEPT
+sudo iptables -A INPUT -p udp --sport 123 -j ACCEPT
+sudo iptables -A INPUT -p udp --sport 1883 -j ACCEPT
+sudo iptables -A INPUT -j DROP
+
+sudo iptables -A OUTPUT -o lo -j ACCEPT
+sudo iptables -A OUTPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+sudo iptables -A OUTPUT -s 10.0.0.0/8 -j RETURN
+sudo iptables -A OUTPUT -s 172.16.0.0/12 -j RETURN
+sudo iptables -A OUTPUT -s 192.168.0.0/16 -j RETURN
+sudo iptables -A OUTPUT -d 195.30.252.25 -j RETURN
+sudo iptables -A OUTPUT -p udp --dport 53 -j ACCEPT
+sudo iptables -A OUTPUT -p tcp --dport 53 -j ACCEPT
+sudo iptables -A OUTPUT -p udp --dport 123 -j ACCEPT
+sudo iptables -A OUTPUT -p udp --dport 1883 -j ACCEPT
+sudo iptables -A OUTPUT -j DROP
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+    → IMPORTANT: Test your rules before saving it permanently!
+
+    → Once confirmed save the rules to the configuration file
+         sudo sh -c "iptables-save > /etc/iptables/rules.v4"
+
+    → Check if the rules have been added to the file
+         less /etc/iptables/rules.v4
+
+    → List the currently configured iptables rules
+         sudo iptables -nL INPUT
+         sudo iptables -L -nvx --line-numbers
