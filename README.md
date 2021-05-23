@@ -193,7 +193,7 @@ The smallest event duration logged is 5 minutes. Here are some event example eve
 <br />
 <br />
 
-On my iPhone I have created bookmarks for my [iOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) (examples show iOS12 and iOS14):
+On my iPhone I have created one-touch[iOS Shortcut](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) bookmarks (screenshots show iOS12 and iOS14):
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_iOS12_Shortcuts.png" width="250">    
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_iOS14_Shortcuts.png" width="250">
@@ -202,7 +202,7 @@ On my iPhone I have created bookmarks for my [iOS Shortcuts](https://support.app
 <br />
 
 
-At home I have several wireless [Zigbee Switches](https://www.zigbee2mqtt.io/information/supported_devices.html) that send a unique signal upon a button press. The signal is received by a [Zigbee Antenna (Electrolama)](https://www.zigbee2mqtt.io/information/supported_adapters.html) and forwarded to a [Raspberry Pi Zero W](https://www.raspberrypi.org/) who sends a new calendar event to my central [Nextcloud](http://nextcloud.com/) server. From there, all events are sync'ed across all other connected calendars.
+At home I have several wireless [Zigbee Switches](https://www.zigbee2mqtt.io/information/supported_devices.html) that send a signal upon a button press. The signal is received by a [Zigbee antenna (Electrolama)](https://www.zigbee2mqtt.io/information/supported_adapters.html) and forwarded to a [Raspberry Pi Zero W](https://www.raspberrypi.org/) who creates a new calendar event on my central [Nextcloud](http://nextcloud.com/) server. From there, all events are sync'ed via CalDAV across all connected calendars.
 
 I've written up a tutorial on how to get a [Raspberry Pi OS](https://github.com/107208579/calendar-tracking/blob/main/setup_zigbee/1_setup_raspberrypi.txt) base installation and how to setup [Zigbee switches](https://github.com/107208579/calendar-tracking/blob/main/setup_zigbee/2_setup_zigbee.txt) with all the required software.
 
