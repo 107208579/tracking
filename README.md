@@ -41,9 +41,9 @@ Literally any calendar you are comfortable with. Below you find a small list of 
 
 * **Servers**   
   * Cloud Hosted
-    * [iCloud Calendar](https://www.icloud.com/calendar/) 
-    * [Google Calendar](http://calendar.google.com)
-    * [Yahoo Calendar](http://calendar.yahoo.com)
+     * [iCloud Calendar](https://www.icloud.com/calendar/) 
+     * [Google Calendar](http://calendar.google.com)
+     * [Yahoo Calendar](http://calendar.yahoo.com)
    * Self Hosted
      * [Baïkal](http://www.baikal-server.com)
      * [Nextcloud](http://nextcloud.com) 
@@ -56,21 +56,21 @@ Literally any calendar you are comfortable with. Below you find a small list of 
      * [One Calendar](https://www.onecalendar.nl)
      * [Thunderbird](https://www.thunderbird.net/en-US/calendar/)
   * Linux
-    * [Evolution](https://wiki.gnome.org/Apps/Evolution) 
-    * [Gnome Calendar](https://snapcraft.io/gnome-calendar)
-    * [KOrganizer](https://apps.kde.org/en/korganizer)
+     * [Evolution](https://wiki.gnome.org/Apps/Evolution) 
+     * [Gnome Calendar](https://snapcraft.io/gnome-calendar)
+     * [KOrganizer](https://apps.kde.org/en/korganizer)
   * macOS
-    * [Apple Calendar](http://support.apple.com/guide/calendar/welcome/mac)
-    * [BusyCal](https://www.busymac.com/busycal/)
-    * [Fantastical](https://flexibits.com/)
+     * [Apple Calendar](http://support.apple.com/guide/calendar/welcome/mac)
+     * [BusyCal](https://www.busymac.com/busycal/)
+     * [Fantastical](https://flexibits.com/)
   * iOS
-    * [Apple Calendar](https://support.apple.com/guide/iphone/iph3d110f84/ios)
-    * [BusyCal](https://apps.apple.com/us/app/id1035689743)
-    * [Fantastical](https://apps.apple.com/app/id718043190)
+     * [Apple Calendar](https://support.apple.com/guide/iphone/iph3d110f84/ios)
+     * [BusyCal](https://apps.apple.com/us/app/id1035689743)
+     * [Fantastical](https://apps.apple.com/app/id718043190)
   * Android
-    * [Business Calendar 2](https://play.google.com/store/apps/details?id=com.appgenix.bizcal)
-    * [CalenGoo](https://play.google.com/store/apps/details?id=com.calengoo.android)
-    * [One Calendar](https://play.google.com/store/apps/details?id=biz.codespark.xcalendarapp)
+     * [Business Calendar 2](https://play.google.com/store/apps/details?id=com.appgenix.bizcal)
+     * [CalenGoo](https://play.google.com/store/apps/details?id=com.calengoo.android)
+     * [One Calendar](https://play.google.com/store/apps/details?id=biz.codespark.xcalendarapp)
 <br />  
 <br />  
 
@@ -155,7 +155,7 @@ Apart from manually adding events to a calendar there are many other options. Be
 <br />
 
 ## What setup do you use specifically?  
-I have a [Nextcloud](http://nextcloud.com/) server running which keeps my iPhone, iPad, and iMac calendars via CalDAV in sync. On the go, I mostly log events on my iPhone via [iOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios). At home I use Zigbee switches that allow me to log events via a simple button press. I also modify events in the [macOS Calendar](http://support.apple.com/guide/calendar/welcome/mac) app or via [BusyCal](https://www.busymac.com/busycal/) if really required.
+I have a [Nextcloud](http://nextcloud.com/) server running which keeps my iPhone, iPad, and iMac calendars via CalDAV in sync. On the go, I mostly log events on my iPhone via [iOS Shortcuts](https://github.com/107208579/calendar-tracking/tree/main/shortcuts). At home I use wireless Zigbee switches that allow me to log events via a simple button press. I also modify events in the [macOS Calendar](http://support.apple.com/guide/calendar/welcome/mac) app or via [BusyCal](https://www.busymac.com/busycal/) if really required.
 
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup.png" width="600">    
@@ -193,7 +193,7 @@ The smallest event duration logged is 5 minutes. Here are some event example eve
 <br />
 <br />
 
-On my iPhone I have created one-touch [iOS Shortcut](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) bookmarks:
+On my iPhone I have created one-touch [iOS Shortcut](https://github.com/107208579/calendar-tracking/tree/main/shortcuts) bookmarks:
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_iOS14_Shortcuts.png" width="250">
 </p>
