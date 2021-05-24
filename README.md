@@ -4,7 +4,7 @@
 ## Why track your time?  
 Have you ever asked yourself where your time goes? Or have you ever wished you could remember what you were doing on a specific day in the past?
 
-Back in 2012 I was very curious on how I spend my 10,080 minutes in a week and decided to track my life in calendar. I wanted to:
+Back in 2012 I was very curious on how I spend my 10,080 minutes in a week and decided to track my life in a calendar. I wanted to:
 - easily remember past events
 - learn more about myself
 - plan better ahead
