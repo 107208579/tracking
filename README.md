@@ -8,9 +8,9 @@ Back in 2012 I was very curious on how I spend my 10,080 minutes in a week and d
 - easily remember past events
 - learn more about myself
 - plan better ahead
-- have a visualization of my life
 - increase my productivity
 - change personal behaviour
+- have a visualization of my life
 - leave a digital legacy
 
 Here are some other great people that track their life in a calendar:
