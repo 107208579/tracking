@@ -30,7 +30,7 @@ Here are some other great people that track their life in a calendar:
 ## How does this all work?  
 The easiest way is to create events in a calendar. Use a calendar service such as [Apple Calendar](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) that acts as a central storage and allows all your calendar apps to connect and automatically synchronise events with each other.
 <p align="center">
-<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Setup.png" width="350"> 
+<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Setup.png" width="420"> 
 </p>
 <br />
 <br />
@@ -154,11 +154,11 @@ Apart from manually adding events to a calendar there are many other options. Be
 <br />
 <br />
 
-## What setup do you use specifically?  
+## What setup do you specifically use?  
 I have a [Nextcloud](http://nextcloud.com/) server running which keeps my iPhone, iPad, and iMac calendars via CalDAV in sync. On the go, I mostly log events on my iPhone via some of these [iOS shortcuts](https://github.com/107208579/calendar-tracking/tree/main/shortcuts). At home I use wireless Zigbee switches that allow me to log events via a simple button press. I also modify events in the [macOS Calendar](http://support.apple.com/guide/calendar/welcome/mac) app or via [BusyCal](https://www.busymac.com/busycal/) if really required.
 
 <p align="center">
-<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup.png" width="600">    
+<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup.png" width="740">    
 </p>
 
 My setup has different calendars, such as Employment, Entertainment, Transportation, etc
@@ -179,7 +179,7 @@ Each event receives a different event title with more details:
 * …
 
 <p align="center">
-<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Overview.png" width="620">
+<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Overview.png" width="740">
 </p>
 <br />
 <br />
@@ -206,7 +206,7 @@ At home I have several battery powered [Zigbee switches](https://www.zigbee2mqtt
 I've written up a tutorial on how to get a Raspberry Pi OS [base installation](https://github.com/107208579/calendar-tracking/blob/main/setup_zigbee/1_setup_raspberrypi.txt) and how to setup Zigbee switches with all [required software](https://github.com/107208579/calendar-tracking/blob/main/setup_zigbee/2_setup_zigbee.txt).
 
 <p align="center">
-<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup_Zigbee.png" width="600">    
+<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup_Zigbee.png" width="740">    
 </p>
 <br />
 <br />
