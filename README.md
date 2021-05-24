@@ -75,7 +75,7 @@ Literally any calendar you are comfortable with. Below you find a small list of 
 <br />  
 
 ## What tools can add events?  
-Apart from manually adding events to a calendar there are many other options. Below is a list of different ways I have come across to create calendar events. 
+Apart from manually adding events into a calendar there are other options, including automatic event generation. Below is a list of different ways I have come across to create calendar events. 
  * **Via Application**  
    * macOS
      * [Apple Event Script](https://github.com/107208579/calendar-tracking/tree/main/applescript) - event creation via AppleScript
