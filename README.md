@@ -164,13 +164,23 @@ I have a [Nextcloud](http://nextcloud.com/) server running with the default [Cal
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup.png" width="740">    
 </p>
 
-My setup has different calendars, such as Employment, Entertainment, Transportation, etc
+My setup has different calendars, such as Education, Employment, Errands, Entertainment, Food, Health, Housework, Hygiene, Projectss Rest, Socialising, Sports, and Transportation.
+* EDU  
 * EMP   
-* ENT   
+* ERR  
+* ENT  
+* FOO  
+* HEA  
+* HOU  
+* HYG  
+* PRO  
+* RES  
+* SOC  
+* SPO  
 * TRA   
-* …
+* …  
 
-Each event receives a different event title with more details:
+Each logged even receives a different event title with more details:
 * EMP - Work
 * EMP - Meeting
 * EMP - Interview 
