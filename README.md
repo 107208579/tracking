@@ -7,7 +7,7 @@ Have you ever asked yourself where your time goes? Or have you ever wished you c
 Back in 2012 I was very curious on how I spend my 10,080 minutes in a week and decided to track my life in a calendar. I wanted to:
 - easily remember past events
 - learn more about myself
-- plan better ahead
+- become a better planner
 - increase my productivity
 - change personal behaviour
 - have a visualization of my life
@@ -24,6 +24,7 @@ Here are some other great people that track their life in a calendar:
 * [I Tracked Every Minute Of My Life For 1 Week](https://www.youtube.com/watch?v=CtyJR2e1Fco) (Antoniya Ivanova)
 * [I Tracked Every Minute Of My Life For 3 Months](https://www.youtube.com/watch?v=LUjTvPy_UAg) (Matt D'Avella)
 * [How Six Months of Tracking Everything Increased my Awareness](https://vimeo.com/78020552) (David Achkar)
+* [What I Learned After Analyzing Every Minute of My Life for 30 Days](https://zapier.com/blog/time-tracking-tutorial/)(Erin Greenawald)
 <br />
 <br />
 
@@ -144,8 +145,10 @@ Apart from manually adding events into a calendar there are other options, inclu
 
 ## How can events be exported?  
 * macOS  
-  * [Export Calendars Pro](http://apps.apple.com/app/id663835623) - export events into spreadsheets
-  * [TimeTable](https://apps.apple.com/app/id1191331765) - export events into spreadsheets
+  * [Export Calendars Pro](http://apps.apple.com/app/id663835623) - export events into a spreadsheet
+  * [TimeTable](https://apps.apple.com/app/id1191331765) - export events into a spreadsheet
+* Cloud Hosted
+  * [Zapier](https://zapier.com) - export Google calendar events into a spreadsheet
 <br />
 <br />
 
