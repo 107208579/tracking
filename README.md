@@ -167,8 +167,8 @@ I have a [Nextcloud](http://nextcloud.com/) server running with the default [Cal
 My setup has different calendars, such as Education, Employment, Errands, Entertainment, Food, Health, Housework, Hygiene, Projectss Rest, Socialising, Sports, and Transportation.
 * EDU  
 * EMP   
-* ERR  
 * ENT  
+* ERR  
 * FOO  
 * HEA  
 * HOU  
