@@ -570,19 +570,19 @@ dtoverlay=disable-bt
          > Single Press Center	mqtt/Ikea_Round_Remote_Control {"action":"toggle","linkquality":81,"update_available":false}
 
          > Long Press Left	mqtt/Ikea_Round_Remote_Control {"action":"arrow_left_hold","linkquality":28,"update_available":false}
-								mqtt/Ikea_Round_Remote_Control {"action":"arrow_left_release","duration":2.811,"linkquality":78,"update_available":false}
+				mqtt/Ikea_Round_Remote_Control {"action":"arrow_left_release","duration":2.811,"linkquality":78,"update_available":false}
 
          > Long Press Right	mqtt/Ikea_Round_Remote_Control {"action":"arrow_right_hold","linkquality":70,"update_available":false}
-								mqtt/Ikea_Round_Remote_Control {"action":"arrow_right_release","duration":1.875,"linkquality":86,"update_available":false}	
+				mqtt/Ikea_Round_Remote_Control {"action":"arrow_right_release","duration":1.875,"linkquality":86,"update_available":false}	
 
          > Long Press Up	mqtt/Ikea_Round_Remote_Control {"action":"brightness_up_hold","linkquality":63,"update_available":false}
-								mqtt/Ikea_Round_Remote_Control {"action":"brightness_up_release","linkquality":92,"update_available":false}
+				mqtt/Ikea_Round_Remote_Control {"action":"brightness_up_release","linkquality":92,"update_available":false}
 
          > Long Press Down	mqtt/Ikea_Round_Remote_Control {"action":"brightness_down_hold","linkquality":92,"update_available":false}
-								mqtt/Ikea_Round_Remote_Control {"action":"brightness_down_release","linkquality":68,"update_available":false}
+				mqtt/Ikea_Round_Remote_Control {"action":"brightness_down_release","linkquality":68,"update_available":false}
 
-         > Long Press Center	 mqtt/Ikea_Round_Remote_Control {"action":"toggle","linkquality":84,"update_available":false}
-								mqtt/Ikea_Round_Remote_Control {"action":"toggle_hold","linkquality":86,"update_available":false}
+         > Long Press Center	mqtt/Ikea_Round_Remote_Control {"action":"toggle","linkquality":84,"update_available":false}
+				mqtt/Ikea_Round_Remote_Control {"action":"toggle_hold","linkquality":86,"update_available":false}
 
 -------------------------------------------------------------------------------------------
 
@@ -659,6 +659,8 @@ permit_join: false
 ==========================================================================================
 
     → Add the following cheat file to your servers home directory
+        vi readme.txt
+
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 ===== CC2652 ===========================================================
 sudo lsusb
@@ -816,9 +818,10 @@ mqtt2caldav     vi mqtt2caldav/config/config.json
 ==== Installing mqtt2caldav ==============================================================
 ==========================================================================================
 
-    → Download mqtt2caldav
+    → Download 'mqtt2caldav' to your home directory
     ~ https://github.com/107208579/mqtt2caldav
 
+    → Read the README.md file
 
     → Configure 'config.json'
             vi mqtt2caldav/config/config.json
@@ -894,7 +897,7 @@ mqtt2caldav     vi mqtt2caldav/config/config.json
     ~ https://www.thegeekstuff.com/scripts/iptables-rules
 
 
-    → Install 'iptables-persistent'
+    → Install 'iptables-persistent' if you want to secure your server
          sudo apt-get install iptables-persistent
 
 
