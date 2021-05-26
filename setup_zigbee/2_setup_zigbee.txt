@@ -563,25 +563,25 @@ dtoverlay=disable-bt
 
 
     → Here are the button press options
-         > Single = Left	      mqtt/Ikea_Round_Remote_Control {"action":"arrow_left_click","linkquality":60,"update_available":false}
+         > Single = Left	mqtt/Ikea_Round_Remote_Control {"action":"arrow_left_click","linkquality":60,"update_available":false}
          > Single Press Right 	mqtt/Ikea_Round_Remote_Control {"action":"arrow_right_click","linkquality":42,"update_available":false}
-         > Single Press Up		  mqtt/Ikea_Round_Remote_Control {"action":"brightness_up_click","linkquality":73,"update_available":false}
-         > Single Press Down	  mqtt/Ikea_Round_Remote_Control {"action":"brightness_down_click","linkquality":76,"update_available":false}
+         > Single Press Up	mqtt/Ikea_Round_Remote_Control {"action":"brightness_up_click","linkquality":73,"update_available":false}
+         > Single Press Down	mqtt/Ikea_Round_Remote_Control {"action":"brightness_down_click","linkquality":76,"update_available":false}
          > Single Press Center	mqtt/Ikea_Round_Remote_Control {"action":"toggle","linkquality":81,"update_available":false}
 
-         > Long Press Left		  mqtt/Ikea_Round_Remote_Control {"action":"arrow_left_hold","linkquality":28,"update_available":false}
+         > Long Press Left	mqtt/Ikea_Round_Remote_Control {"action":"arrow_left_hold","linkquality":28,"update_available":false}
 								mqtt/Ikea_Round_Remote_Control {"action":"arrow_left_release","duration":2.811,"linkquality":78,"update_available":false}
 
-         > Long Press Right		  mqtt/Ikea_Round_Remote_Control {"action":"arrow_right_hold","linkquality":70,"update_available":false}
+         > Long Press Right	mqtt/Ikea_Round_Remote_Control {"action":"arrow_right_hold","linkquality":70,"update_available":false}
 								mqtt/Ikea_Round_Remote_Control {"action":"arrow_right_release","duration":1.875,"linkquality":86,"update_available":false}	
 
-         > Long Press Up		    mqtt/Ikea_Round_Remote_Control {"action":"brightness_up_hold","linkquality":63,"update_available":false}
+         > Long Press Up	mqtt/Ikea_Round_Remote_Control {"action":"brightness_up_hold","linkquality":63,"update_available":false}
 								mqtt/Ikea_Round_Remote_Control {"action":"brightness_up_release","linkquality":92,"update_available":false}
 
-         > Long Press Down		  mqtt/Ikea_Round_Remote_Control {"action":"brightness_down_hold","linkquality":92,"update_available":false}
+         > Long Press Down	mqtt/Ikea_Round_Remote_Control {"action":"brightness_down_hold","linkquality":92,"update_available":false}
 								mqtt/Ikea_Round_Remote_Control {"action":"brightness_down_release","linkquality":68,"update_available":false}
 
-         > Long Press Center	  mqtt/Ikea_Round_Remote_Control {"action":"toggle","linkquality":84,"update_available":false}
+         > Long Press Center	 mqtt/Ikea_Round_Remote_Control {"action":"toggle","linkquality":84,"update_available":false}
 								mqtt/Ikea_Round_Remote_Control {"action":"toggle_hold","linkquality":86,"update_available":false}
 
 -------------------------------------------------------------------------------------------
@@ -592,9 +592,9 @@ dtoverlay=disable-bt
 
 
     → Here are the button press options
-         > Single Press			mqtt/0x00124b001f8ab0cd {"action":"single","linkquality":13}'
-         > Double Press			mqtt/0x00124b001f8ab0cd {"action":"double","linkquality":13}'
-         > Long Press			  mqtt/0x00124b001f8ab0cd {"action":"long","linkquality":15}'
+         > Single Press		mqtt/0x00124b001f8ab0cd {"action":"single","linkquality":13}'
+         > Double Press		mqtt/0x00124b001f8ab0cd {"action":"double","linkquality":13}'
+         > Long Press		mqtt/0x00124b001f8ab0cd {"action":"long","linkquality":15}'
 
 -------------------------------------------------------------------------------------------
 
@@ -604,14 +604,14 @@ dtoverlay=disable-bt
 
 
     → Here are the button press options
-         > Single Press			mqtt/XiaoMi_Test_1 {"action":"single","battery":100,"linkquality":86,"voltage":3052}'
-         > Double Press			mqtt/XiaoMi_Test_1 {"action":"double","battery":100,"linkquality":94,"voltage":3052}'
-         > Triple Press			mqtt/XiaoMi_Test_1 {"action":"triple","battery":100,"linkquality":102,"voltage":3052}'
+         > Single Press		mqtt/XiaoMi_Test_1 {"action":"single","battery":100,"linkquality":86,"voltage":3052}'
+         > Double Press		mqtt/XiaoMi_Test_1 {"action":"double","battery":100,"linkquality":94,"voltage":3052}'
+         > Triple Press		mqtt/XiaoMi_Test_1 {"action":"triple","battery":100,"linkquality":102,"voltage":3052}'
          > Quadruple Press	mqtt/XiaoMi_Test_1 {"action":"quadruple","battery":100,"linkquality":102,"voltage":3052}'
-         > Many (4+)			  mqtt/XiaoMi_Test_1 {"action":"many","battery":100,"linkquality":92,"voltage":3052}'
-         > Long Hold			  mqtt/XiaoMi_Test_1 {"action":"hold","battery":100,"linkquality":94,"voltage":3052}'
-         > Release				  mqtt/XiaoMi_Test_1 {"action":"release","battery":100,"duration":2417,"linkquality":86,"voltage":3052}'
-         > Battery				  mqtt/XiaoMi_Test_1 {"battery":100,"linkquality":52,"voltage":3700}'		
+         > Many (4+)		mqtt/XiaoMi_Test_1 {"action":"many","battery":100,"linkquality":92,"voltage":3052}'
+         > Long Hold		mqtt/XiaoMi_Test_1 {"action":"hold","battery":100,"linkquality":94,"voltage":3052}'
+         > Release		mqtt/XiaoMi_Test_1 {"action":"release","battery":100,"duration":2417,"linkquality":86,"voltage":3052}'
+         > Battery		mqtt/XiaoMi_Test_1 {"battery":100,"linkquality":52,"voltage":3700}'		
 
 -------------------------------------------------------------------------------------------
 
