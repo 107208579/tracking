@@ -4,7 +4,7 @@
 ## Why track your time?  
 Have you ever asked yourself where your time goes? Or have you ever wished you could remember what you were doing on a specific day in the past?
 
-Back in 2012 I was very curious on how I spend my 10,080 minutes in a week and decided to track my life in a calendar. I wanted to:
+Back in 2012 I was very curious on how I spent my 10,080 minutes in a week and decided to track my life in a calendar. I wanted to:
 - easily remember past events
 - learn more about myself
 - become a better planner
@@ -164,7 +164,7 @@ I have a [Nextcloud](http://nextcloud.com/) server running with the default [Cal
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup.png" width="740">    
 </p>
 
-My setup has different calendars, such as Education, Employment, Errands, Entertainment, Food, Health, Housework, Hygiene, Projectss Rest, Socialising, Sports, and Transportation.
+My setup has different calendars, such as Education, Employment, Errands, Entertainment, Food, Health, Housework, Hygiene, Projects, Rest, Socialising, Sports, and Transportation.
 * EDU  
 * EMP   
 * ENT  
