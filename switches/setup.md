@@ -96,9 +96,8 @@ https://www.raspberrypi.org/downloads/
 
 
 ## Configure Locale
-→ Set your time-zone<br />
+→ Set your time-zone ([list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones))<br />
 `sudo timedatectl set-timezone UTC`<br />
-`sudo timedatectl set-timezone Asia/Singapore`
 
 → Set your keyboard layout to US<br />
 ` sudo vi /etc/default/keyboard`
