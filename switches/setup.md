@@ -110,7 +110,7 @@ https://www.raspberrypi.org/downloads/
 
 
 ## Configure Locale
-→ Set your time-zone ([list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones))<br />
+→ Set your preferred [time-zone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)<br />
 `sudo timedatectl set-timezone UTC`<br />
 
 → Set your keyboard layout to US<br />
