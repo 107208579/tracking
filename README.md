@@ -182,7 +182,7 @@ Apart from manually adding events into a calendar there are other options, inclu
 
 
 ## What setup do you specifically use?  
-I have a [Nextcloud](http://nextcloud.com/) server running with the default [Calendar app](https://apps.nextcloud.com/apps/calendar) which keeps my iPhone, iPad, and iMac calendars in sync. On the go, I mostly log events on my iPhone via some of these [iOS shortcuts](https://github.com/107208579/calendar-tracking/tree/main/shortcuts). At home I use wireless Zigbee switches that allow me to log events via a simple button press. I also modify events in the [macOS Calendar](http://support.apple.com/guide/calendar/welcome/mac) app or via [BusyCal](https://www.busymac.com/busycal/) if really required.
+I have a [Nextcloud](http://nextcloud.com/) server running that keeps my iPhone, iPad, and iMac calendars in sync. On the go, I log events on my iPhone via some of these [iOS shortcuts](https://github.com/107208579/calendar-tracking/tree/main/shortcuts). At home I use wireless [Zigbee switches](https://github.com/107208579/calendar-tracking/blob/main/switches/setup.md) that allow me to log events via a simple button press. I also modify events directly in the [macOS Calendar](http://support.apple.com/guide/calendar/welcome/mac) or in [BusyCal](https://www.busymac.com/busycal/) if really required.
 
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup.png" width="740">    
@@ -232,7 +232,7 @@ The smallest event duration logged is 5 minutes. Here are some event example eve
 
 
 
-On my iPhone I have created one-touch [iOS Shortcut](https://github.com/107208579/calendar-tracking/tree/main/shortcuts) bookmarks:
+On my iPhone I have created 'one-click' [iOS Shortcut](https://github.com/107208579/calendar-tracking/tree/main/shortcuts) bookmarks:
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_iOS14_Shortcuts.png" width="250">
 </p>
