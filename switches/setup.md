@@ -935,7 +935,7 @@ https://man7.org/linux/man-pages/man1/journalctl.1.html<br />
 → Manually run the program to check for errors<br />
 `python3 main.py`
 
-→ Or automatically start the script after upon system boot<br />
+→ Or automatically start the script upon system boot<br />
 `crontab -e`
         
     # Run mqtt2caldav upon boot
