@@ -1,4 +1,4 @@
-# Calendar Tracking via Zigbee Switches
+# Calendar Tracking (Zigbee Switches)
 
 When a Zigbee switch/button is pressed, a wireless signal on the 2.4 GHz band is sent. The Zigbee signal is received by a Zigbee adapter that is connected to a server ([Raspberry Pi](https://www.raspberrypi.org)). The server receives and converts the Zigbee signal to MQTT ([zigbee2mqtt](https://www.zigbee2mqtt.io)) and creates a calendar event ([mqtt2caldav](https://github.com/107208579/mqtt2caldav)) via a pre-defined event template. The calendar event is sent to a CalDAV server for event storage and synchronisation.
 <p align="center">
