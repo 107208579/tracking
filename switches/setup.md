@@ -11,7 +11,7 @@ Here's a little video on how it works:
 
 
 ## Functionality
-When a Zigbee switch/button is pressed, a wireless signal is sent. The Zigbee signal is received by a Zigbee antenna ([Electrolama CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick)) that is connected to a Linux server ([Raspberry Pi](https://www.raspberrypi.org)). The server receives and converts the Zigbee signal to MQTT message (via [zigbee2mqtt](https://www.zigbee2mqtt.io)) which then creates a calendar event via a pre-defined event template (via [mqtt2caldav](https://github.com/107208579/mqtt2caldav)). The calendar event is sent to a CalDAV server for event storage and synchronisation with other CalDAV clients.
+When a Zigbee switch/button is pressed, a wireless signal is sent. The Zigbee signal is received by a Zigbee receiver ([Electrolama zzh! CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick)) that is connected to a Linux server ([Raspberry Pi](https://www.raspberrypi.org)). The server receives and converts the Zigbee signal to MQTT message (via [zigbee2mqtt](https://www.zigbee2mqtt.io)) which then creates a calendar event via a pre-defined event template (via [mqtt2caldav](https://github.com/107208579/mqtt2caldav)). The calendar event is sent to a CalDAV server for event storage and synchronisation with other CalDAV clients.
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup_Detail.png" width="740"> 
 </p>
@@ -22,7 +22,7 @@ When a Zigbee switch/button is pressed, a wireless signal is sent. The Zigbee si
 
 ## Requirements
 • Zigbee Switches ([Overview](https://www.zigbee2mqtt.io/information/supported_devices.html))<br />
-• Zigbee Adpater ([Electrolama CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick/))<br />
+• Zigbee Adapter ([Electrolama zzh! CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick/))<br />
 • Linux Server ([Raspberry Pi](https://www.raspberrypi.org)<br />
 • CalDAV server ([Apple Calendar](https://www.icloud.com/calendar/), [Google Calendar](http://calendar.google.com), etc)
 <p align="center">
@@ -245,7 +245,7 @@ https://www.raspberrypi.org/downloads/
 
 
 ## Get a Zigbee Adapter
-→ The Zigbee adapter used here is an [Electrolama CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick) but others might work too
+→ The Zigbee adapter used here is an [Electrolama zzh! CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick) but [others](https://www.zigbee2mqtt.io/information/supported_adapters.html) should work too
 <br />
 <br />
 
@@ -254,11 +254,11 @@ https://www.raspberrypi.org/downloads/
 ## Flash the Zigbee Adapter
 → Follow the instructions for flashing the CC2652 chip<br />
 https://www.zigbee2mqtt.io/information/supported_adapters.html
-https://electrolama.com/projects/zig-a-zig-ah/#flash-firmware
+https://electrolama.com/radio-docs/#step-3-flash-the-firmware-on-your-stick
 
-→ The following steps are outlined for macOS<br />
+→ NOTE: The following steps outlined are for macOS<br />
 
-→ Connect the CC2652 via USB and check if it was detected<br />
+→ Connect the Zigbee adapter via USB and check if it was detected<br />
 `sudo dmesg | grep AppleUSBCH`<br />
 *[1458325.212772]: IOUserSerial::AppleUSBCHCOM::<private>: 127 0x600002c9c058*
 *[1458325.213170]: DK: AppleUSBCHCOM-0x100048d92::start(IOUSBHostInterface-0x100048d90) ok*
@@ -676,7 +676,7 @@ https://www.zigbee2mqtt.io/how_tos/how_to_improve_network_range_and_stability.ht
 → Restart your server for the changes to take effect<br /> 
 `sudo reboot`
 
-→ Ideally us an USB extension to physically distance the Zigbee receiver from the server<br />
+→ Ideally us an USB extension to physically distance the Zigbee adapter from the server<br />
 <br />
 <br />
 
