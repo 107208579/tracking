@@ -1,5 +1,8 @@
 # Calendar Tracking  
 <br />
+<br />
+
+
 
 ## Why track your time?  
 Have you ever asked yourself where your time goes? Or have you ever wished you could remember what you were doing on a specific day in the past?
@@ -28,6 +31,8 @@ Here are some other great people that track their life in a calendar:
 <br />
 <br />
 
+
+
 ## How does this all work?  
 The easiest way is to create events in a calendar. Use a calendar service such as [Apple Calendar](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) that acts as a central storage and allows all your calendar apps to connect and automatically synchronise events with each other.
 <p align="center">
@@ -37,12 +42,13 @@ The easiest way is to create events in a calendar. Use a calendar service such a
 <br />
 
 
+
 ## What calendar apps can be used?
 Literally any calendar you are comfortable with. Below you find a small list of services and applications that support CalDAV and allow for easy synchronisation of events between different devices (such as your computer, laptop, or mobile phone) and across different computer systems (such as Windows, macOS, iOS, Linux).
 
 * **Servers**   
   * Cloud Hosted
-     * [iCloud Calendar](https://www.icloud.com/calendar/) 
+     * [Apple Calendar](https://www.icloud.com/calendar/) 
      * [Google Calendar](http://calendar.google.com)
      * [Yahoo Calendar](http://calendar.yahoo.com)
    * Self Hosted
@@ -50,6 +56,8 @@ Literally any calendar you are comfortable with. Below you find a small list of 
      * [Nextcloud](http://nextcloud.com) 
      * [Radicale](http://radicale.org)
 <br />  
+
+
 
 * **Applications**  
   * Windows
@@ -75,6 +83,8 @@ Literally any calendar you are comfortable with. Below you find a small list of 
 <br />  
 <br />  
 
+
+
 ## What tools can add events?  
 Apart from manually adding events into a calendar there are other options, including automatic event generation. Below is a list of different ways I have come across to create calendar events. 
  * **Via Application**  
@@ -92,19 +102,25 @@ Apart from manually adding events into a calendar there are other options, inclu
 	    * [Calendar Helper](https://play.google.com/store/apps/details?id=net.noople.calendarhelper) - event creation via pre-defined templates
 	    * [CalenGoo](https://play.google.com/store/apps/details?id=com.calengoo.android) - event creation via pre-defined templates
 <br />
-  
+
+
+
  * **Via GPS Location**
    * iOS
      * [Geofency](https://apps.apple.com/app/id615538630) - automatic event creation based on GPS location  
      * [Tyme](https://apps.apple.com/app/id1461456813) - automatic event creation based on GPS location  
 <br />  
-  
+
+
+
  * **Via Bluetooth Location**  
    * iOS  
      * [Geofency](https://apps.apple.com/app/id615538630) + [Bluetooth Beacon](https://www.feasycom.com/product/Bluetooth-Beacon.html) - event creation based on Bluetooth beacon detection
    * Self-Hosted  
      * Linux Server + [monitor](https://github.com/andrewjfreyer/monitor) + [mqtt2caldav](https://github.com/107208579/mqtt2caldav)  
 <br />  
+
+
 
  * **Via Physical Button Press**  
    * macOS
@@ -127,6 +143,8 @@ Apart from manually adding events into a calendar there are other options, inclu
 <br />
 <br />
 
+
+
 ## What other tools are helpful?  
  * iOS  
    * [Arc App](https://apps.apple.com/app/id1063151918) - tracks which locations you have been to and for how long  
@@ -143,6 +161,8 @@ Apart from manually adding events into a calendar there are other options, inclu
 <br />
 <br />
 
+
+
 ## How can events be exported?  
 * macOS  
   * [Export Calendars Pro](http://apps.apple.com/app/id663835623) - export events into a spreadsheet
@@ -152,10 +172,14 @@ Apart from manually adding events into a calendar there are other options, inclu
 <br />
 <br />
 
+
+
 ## How can events be analysed?  
  * [Tableau](https://www.tableau.com) - import spreadsheets and analyse data
 <br />
 <br />
+
+
 
 ## What setup do you specifically use?  
 I have a [Nextcloud](http://nextcloud.com/) server running with the default [Calendar app](https://apps.nextcloud.com/apps/calendar) which keeps my iPhone, iPad, and iMac calendars in sync. On the go, I mostly log events on my iPhone via some of these [iOS shortcuts](https://github.com/107208579/calendar-tracking/tree/main/shortcuts). At home I use wireless Zigbee switches that allow me to log events via a simple button press. I also modify events in the [macOS Calendar](http://support.apple.com/guide/calendar/welcome/mac) app or via [BusyCal](https://www.busymac.com/busycal/) if really required.
@@ -206,12 +230,15 @@ The smallest event duration logged is 5 minutes. Here are some event example eve
 <br />
 <br />
 
+
+
 On my iPhone I have created one-touch [iOS Shortcut](https://github.com/107208579/calendar-tracking/tree/main/shortcuts) bookmarks:
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_iOS14_Shortcuts.png" width="250">
 </p>
 <br />
 <br />
+
 
 
 At home I have several battery powered [Zigbee switches](https://www.zigbee2mqtt.io/information/supported_devices.html) that send a wireless signal upon a button press. The signal is received by a [Zigbee antenna](https://www.zigbee2mqtt.io/information/supported_adapters.html) and forwarded to a [Raspberry Pi Zero W](https://www.raspberrypi.org/) who creates a new calendar event on my central [Nextcloud](http://nextcloud.com/) server. From there, all events are sync'ed via CalDAV across all connected calendars.
@@ -223,3 +250,5 @@ I've written up a tutorial on how to get a Raspberry Pi OS base installation and
 </p>
 <br />
 <br />
+
+
