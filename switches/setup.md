@@ -1,6 +1,6 @@
 # Calendar Tracking (Zigbee Switches)
 
-When a Zigbee switch/button is pressed, a wireless signal on the 2.4 GHz band is sent. The Zigbee signal is received by a Zigbee adapter that is connected to a server ([Raspberry Pi](https://www.raspberrypi.org)). The server receives and converts the Zigbee signal to MQTT ([zigbee2mqtt](https://www.zigbee2mqtt.io)) and creates a calendar event ([mqtt2caldav](https://github.com/107208579/mqtt2caldav)) via a pre-defined event template. The calendar event is sent to a CalDAV server for event storage and synchronisation.
+When a Zigbee switch/button is pressed, a wireless signal is sent. The Zigbee signal is received by a Zigbee adapter ([Electrolama CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick/)) that is connected to a Linux server ([Raspberry Pi](https://www.raspberrypi.org)). The server receives and converts the Zigbee signal to MQTT ([zigbee2mqtt](https://www.zigbee2mqtt.io)) and creates a calendar event via a pre-defined event template ([mqtt2caldav](https://github.com/107208579/mqtt2caldav)). The calendar event is sent to a CalDAV server for event storage and synchronisation with other CalDAV clients.
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup_Detail.png" width="740"> 
 </p>
@@ -10,10 +10,10 @@ When a Zigbee switch/button is pressed, a wireless signal on the 2.4 GHz band is
 
 
 ## Requirements
-• Zigbee Switches - [Overview](https://www.zigbee2mqtt.io/information/supported_devices.html) → to send a signal<br />
-• Zigbee Adpater - [Electrolama](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick/) → to receive and process a signal<br />
-• Linux Server - [Raspberry Pi](https://www.raspberrypi.org) → to convert a signal from 'zigbee' to 'mqtt' to 'caldav'<br />
-• CalDAV server - ([Apple Calendar](https://www.icloud.com/calendar/), [Google Calendar](http://calendar.google.com), etc) → to store and sync calendar events
+• Zigbee Switches - [Overview](https://www.zigbee2mqtt.io/information/supported_devices.html)<br />
+• Zigbee Adpater - [Electrolama CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick/)<br />
+• Linux Server - [Raspberry Pi](https://www.raspberrypi.org)<br />
+• CalDAV server - [Apple Calendar](https://www.icloud.com/calendar/), [Google Calendar](http://calendar.google.com), etc
 <br />
 <br />
 
