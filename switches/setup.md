@@ -937,14 +937,6 @@ https://man7.org/linux/man-pages/man1/journalctl.1.html<br />
 
 → Or automatically start the script after upon system boot<br />
 `crontab -e`
-
-    # .---------------- minute       (0 - 59)
-    # |  .------------- hour         (0 - 23)
-    # |  |  .---------- day of month (1 - 31)
-    # |  |  |  .------- month        (1 - 12) OR (jan,feb,mar,apr..)
-    # |  |  |  |  .---- day of week  (0 - 6) (Sunday=0 or 7) OR (sun,mon,tue,wed,thu,fri,sat)
-    # |  |  |  |  |
-    # *  *  *  *  *  command to be executed
         
     # Run mqtt2caldav upon boot
     @reboot sleep 30 && python3 /home/pi/mqtt2caldav/main.py
