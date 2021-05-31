@@ -21,7 +21,7 @@ When a Zigbee switch/button is pressed, a wireless signal is sent. The Zigbee si
 
 
 ## Requirements
-• Zigbee Switch ([Overview](https://www.zigbee2mqtt.io/information/supported_devices.html))<br />
+• Zigbee Switches ([Overview](https://www.zigbee2mqtt.io/information/supported_devices.html))<br />
 • Zigbee Adpater ([Electrolama CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick/))<br />
 • Linux Server ([Raspberry Pi](https://www.raspberrypi.org)<br />
 • CalDAV server ([Apple Calendar](https://www.icloud.com/calendar/), [Google Calendar](http://calendar.google.com), etc)
