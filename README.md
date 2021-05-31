@@ -216,7 +216,7 @@ On my iPhone I have created one-touch [iOS Shortcut](https://github.com/10720857
 
 At home I have several battery powered [Zigbee switches](https://www.zigbee2mqtt.io/information/supported_devices.html) that send a wireless signal upon a button press. The signal is received by a [Zigbee antenna](https://www.zigbee2mqtt.io/information/supported_adapters.html) and forwarded to a [Raspberry Pi Zero W](https://www.raspberrypi.org/) who creates a new calendar event on my central [Nextcloud](http://nextcloud.com/) server. From there, all events are sync'ed via CalDAV across all connected calendars.
 
-I've written up a tutorial on how to get a Raspberry Pi OS [base installation](https://github.com/107208579/calendar-tracking/blob/main/setup_zigbee/1_setup_raspberrypi.txt) and how to setup Zigbee switches with all [required software](https://github.com/107208579/calendar-tracking/blob/main/setup_zigbee/2_setup_zigbee.txt).
+I've written up a tutorial on how to get a Raspberry Pi OS base installation and how to setup Zigbee switches with all required software [here](https://github.com/107208579/calendar-tracking/blob/main/switches/setup.md).
 
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup_Zigbee.png" width="740">    
