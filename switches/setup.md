@@ -22,10 +22,10 @@ Here's a little video on how it works:
 
 
 ## Requirements
-• Zigbee Switches - [Overview](https://www.zigbee2mqtt.io/information/supported_devices.html)<br />
-• Zigbee Adpater - [Electrolama CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick/)<br />
-• Linux Server - [Raspberry Pi](https://www.raspberrypi.org)<br />
-• CalDAV server - [Apple Calendar](https://www.icloud.com/calendar/), [Google Calendar](http://calendar.google.com), etc
+• Zigbee Switche ([Overview](https://www.zigbee2mqtt.io/information/supported_devices.html))<br />
+• Zigbee Adpater ([Electrolama CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick/))<br />
+• Linux Server ([Raspberry Pi](https://www.raspberrypi.org)<br />
+• CalDAV server ([Apple Calendar](https://www.icloud.com/calendar/), [Google Calendar](http://calendar.google.com), etc)
 <br />
 <br />
 
@@ -56,7 +56,7 @@ https://www.raspberrypi.org/downloads/
 → Eject the SD Card<br />
 `hdiutil eject /Volumes/boot/`
 
-→ Transfer the SD Card to your Raspberry Pi and boot it up
+→ Transfer the SD Card to your Raspberry Pi and start the server
 <br />
 <br />
 
