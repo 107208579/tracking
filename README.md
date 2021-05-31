@@ -92,6 +92,7 @@ Apart from manually adding events into a calendar there are other options, inclu
      * [Apple Event Script](https://github.com/107208579/calendar-tracking/tree/main/applescript) - event creation via AppleScript
    * iOS
      * [iOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) - event creation with shortcuts
+     * [iOS Shortcuts Extensions](https://appraven.net/collection.php?listId=5e9631e1f2701d7f562d3e55) - event creation with shortcuts
      * [iOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) + [NFC Tags](https://www.matthewcassinelli.com/nfc-tags-siri-shortcuts/) - event creation with shortcuts and NFC tags
      * [Duplicator](https://apps.apple.com/app/id863270136) - event duplication of existing events
      * [Calendar Paste](https://apps.apple.com/app/id581693524) - event creation via pre-defined templates 
