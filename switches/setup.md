@@ -516,7 +516,7 @@ https://www.zigbee2mqtt.io/information/configuration.html
 
 → Check the journal <br />
 `sudo journalctl -u zigbee2mqtt.service -f`
-⁃  zigbee2mqtt@1.18.1 start /opt/zigbee2mqtt
+*zigbee2mqtt@1.18.1 start /opt/zigbee2mqtt*
 
 → Configure Zigbee2MQTT to run as daemon in the background<br />
 `sudo vi /etc/systemd/system/zigbee2mqtt.service`
@@ -608,12 +608,12 @@ https://support.metageek.com/hc/en-us/articles/203845040-Zigbee-and-WiFi-Coexist
 
 → Check the last log entry to figure out which channel Zigbee uses <br />
 `less /opt/zigbee2mqtt/data/log/*/log.txt | grep channel | awk -F\network\"\: '{print $2}'`<br />
-⁃  {"channel":11,"extendedPanID":"0xdddddddddddddddd","panID":6754},"permit_join":true,"version":"1.15.0"}'<br />
+*{"channel":11,"extendedPanID":"0xdddddddddddddddd","panID":6754},"permit_join":true,"version":"1.15.0"}'*<br />
 
 → Check your devices' wireless network connection and look for 'Frequency'<br />
 `iwconfig wlan0`<br />
-⁃  wlan0     IEEE 802.11  ESSID:"INTERNET"<br />
-⁃  Mode:Managed  Frequency:2.462 GHz  Access Point: E2:63:DA:1C:53:C6<br />
+*wlan0     IEEE 802.11  ESSID:"INTERNET"*<br />
+*Mode:Managed  Frequency:2.462 GHz  Access Point: E2:63:DA:1C:53:C6*<br />
 
 → Scan your network to compare the frequency with the channel<br />
 `sudo iwlist wlan0 scan | grep 'Frequency' | sort | uniq -c | sort -n`<br />
@@ -754,7 +754,7 @@ https://www.zigbee2mqtt.io/devices/WXKG01LM.html
       '0x00124b001f4ab0cd':
         friendly_name: 'Sonoff_Test_1'
 
-→ Set 'permit_join' to 'false' AFTER all devices have been paired
+→ Set 'permit_join' to 'false' AFTER all devices have been paired<br />
 `vi /opt/zigbee2mqtt/data/configuration.yaml`
 
     permit_join: false
@@ -767,7 +767,7 @@ https://www.zigbee2mqtt.io/devices/WXKG01LM.html
 
 
 ## Add a Cheat Sheet 
-→ Add the following cheat file to your servers home directory
+→ Add the following cheat file to your servers home directory<br />
 `vi readme.txt`
 
     ===== CC2652 ===========================================================
