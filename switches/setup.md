@@ -253,8 +253,8 @@ https://www.raspberrypi.org/downloads/
 
 ## Flash the Zigbee Adapter
 → Follow the instructions for flashing the CC2652 chip<br />
-https://www.zigbee2mqtt.io/information/supported_adapters.html
-https://electrolama.com/radio-docs/#step-3-flash-the-firmware-on-your-stick
+https://www.zigbee2mqtt.io/information/supported_adapters.html<br />
+https://electrolama.com/radio-docs/#step-3-flash-the-firmware-on-your-stick<br />
 
 → NOTE: The following steps outlined are for macOS<br />
 
