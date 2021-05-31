@@ -31,7 +31,7 @@ Here are some other great people that track their life in a calendar:
 ## How does this all work?  
 The easiest way is to create events in a calendar. Use a calendar service such as [Apple Calendar](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) that acts as a central storage and allows all your calendar apps to connect and automatically synchronise events with each other.
 <p align="center">
-<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Setup.png" width="420"> 
+<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Setup.png" width="740"> 
 </p>
 <br />
 <br />
