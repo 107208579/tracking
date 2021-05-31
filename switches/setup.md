@@ -4,6 +4,7 @@
 
 
 ## 
+Here's a little video on how it works:
 <br />
 <br />
 
@@ -14,8 +15,6 @@ When a Zigbee switch/button is pressed, a wireless signal is sent. The Zigbee si
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup_Detail.png" width="740"> 
 </p>
-
-Here's a little video on how it works:
 <br />
 <br />
 
