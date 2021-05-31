@@ -1,5 +1,21 @@
 # Calendar Tracking via Zigbee Switches
 
+When a Zigbee switch/button is pressed, a wireless signal on the 2.4 GHz band is sent. The Zigbee signal is received by a Zigbee adapter that is connected to a server ([Raspberry Pi](https://www.raspberrypi.org)). The server receives and converts the Zigbee signal to MQTT ([zigbee2mqtt](https://www.zigbee2mqtt.io)) and creates a calendar event ([mqtt2caldav](https://github.com/107208579/mqtt2caldav)) via a pre-defined event template. The calendar event is sent to a CalDAV server for event storage and synchronisation.
+<p align="center">
+<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup_Detail.png" width="740"> 
+</p>
+<br />
+<br />
+
+
+
+## Requirements
+• Zigbee Switches - [Overview](https://www.zigbee2mqtt.io/information/supported_devices.html) → to send a signal<br />
+• Zigbee Adpater - [Electrolama](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick/) → to receive and process a signal<br />
+• Linux Server - [Raspberry Pi](https://www.raspberrypi.org) → to convert a signal from 'zigbee' to 'mqtt' to 'caldav'<br />
+• CalDAV server - ([Apple Calendar](https://www.icloud.com/calendar/), [Google Calendar](http://calendar.google.com), etc) → to store and sync calendar events
+<br />
+<br />
 
 
 
@@ -215,14 +231,15 @@ https://www.raspberrypi.org/downloads/
 
 
 
-## Get a Zigbee Receiver
+## Get a Zigbee Adapter
 https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick/
+→ The Zigbee adapter is necessary to receive and process Zigbee signals.
 <br />
 <br />
 
 
 
-## Flash the Zigbee Receiver
+## Flash the Zigbee Adapter
 → Follow the instructions for flashing the CC2652 chip<br />
 https://www.zigbee2mqtt.io/information/supported_adapters.html
 https://electrolama.com/projects/zig-a-zig-ah/#flash-firmware
@@ -231,8 +248,8 @@ https://electrolama.com/projects/zig-a-zig-ah/#flash-firmware
 
 → Connect the CC2652 via USB and check if it was detected<br />
 `sudo dmesg | grep AppleUSBCH`<br />
-⁃ [1458325.212772]: IOUserSerial::AppleUSBCHCOM::<private>: 127 0x600002c9c058
-⁃ [1458325.213170]: DK: AppleUSBCHCOM-0x100048d92::start(IOUSBHostInterface-0x100048d90) ok
+*[1458325.212772]: IOUserSerial::AppleUSBCHCOM::<private>: 127 0x600002c9c058*
+*[1458325.213170]: DK: AppleUSBCHCOM-0x100048d92::start(IOUSBHostInterface-0x100048d90) ok*
 
 → Install python3 and pip<br />
 `xcode-select --install`<br />
@@ -248,11 +265,11 @@ https://github.com/JelmerT/cc2538-bsl
 
 → Look for the latest 'Electrolama zzh' firmware
 https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.x.0/bin
-⁃ CC2652R_coordinator_20210120.zip
+*CC2652R_coordinator_20210120.zip*
 
 → Check the exact device location the CC2652 is connected to<br />
 `ls -l /dev/tty.usbserial-*`
-⁃ /dev/tty.usbserial-1460
+*/dev/tty.usbserial-1460*
 
 → Flash the CC2652 by pressing the reset button on the board<br />
 → Keep pressing while plugging the device back into the USB port<br />
@@ -260,20 +277,20 @@ https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.x.0
 
 → Run the following command (note the device location)<br />
 `./cc2538-bsl.py -p /dev/tty.usbserial-1460 -evw CC26X2R1_20201026.hex`<br />
-⁃ Opening port /dev/tty.usbserial-1460, baud 500000<br />
-⁃ Reading data from CC26X2R1_20201026.hex<br />
-⁃ Your firmware looks like an Intel Hex file<br />
-⁃ Connecting to target...<br />
-⁃ CC1350 PG2.0 (7x7mm): 352KB Flash, 20KB SRAM, CCFG.BL_CONFIG at 0x00057FD8<br />
-⁃ Primary IEEE Address: 00:12:4B:00:21:B7:77:5E<br />
-⁃      Performing mass erase<br />
-⁃ Erasing all main bank flash sectors<br />
-⁃      Erase done<br />
-⁃  Writing 360448 bytes starting at address 0x00000000<br />
-⁃ > Write 104 bytes at 0x00057F980<br />
-⁃      Write done<br />
-⁃  Verifying by comparing CRC32 calculations.<br />
-⁃      Verified (match: 0x0a0682b4)<br />
+*Opening port /dev/tty.usbserial-1460, baud 500000*<br />
+*Reading data from CC26X2R1_20201026.hex*<br />
+*Your firmware looks like an Intel Hex file*<br />
+*Connecting to target...*<br />
+*CC1350 PG2.0 (7x7mm): 352KB Flash, 20KB SRAM, CCFG.BL_CONFIG at 0x00057FD8*<br />
+*Primary IEEE Address: 00:12:4B:00:21:B7:77:5E*<br />
+*Performing mass erase*<br />
+*Erasing all main bank flash sectors*<br />
+*Erase done*<br />
+*Writing 360448 bytes starting at address 0x00000000*<br />
+*Write 104 bytes at 0x00057F980*<br />
+*Write done*<br />
+*Verifying by comparing CRC32 calculations.*<br />
+*Verified (match: 0x0a0682b4)*<br />
 
 → Remove the device from the USB port
 <br />
@@ -281,37 +298,37 @@ https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.x.0
 
 	
 	
-## Connect the Zigbee Receiver 
-→ Connect your Zigbee receiver to the Raspberry Pi USB port<br />
-→ Ideally use an USB extension cable to distance the antenna from the Raspberry Pi<br />
+## Connect the Zigbee Adapter 
+→ Connect your Zigbee adapter to the Raspberry Pi USB port<br />
+→ Ideally use an USB extension cable to distance the adapter from the Raspberry Pi<br />
 → Determine the device location<br />
 `ls -l /dev/serial/by-id`<br />
-⁃ lrwxrwxrwx 1 root 13 Dec  4 20:34 usb-1a86_USB_Serial-if00-port0 -> ../../ttyUSB0<br />
+*lrwxrwxrwx 1 root 13 Dec  4 20:34 usb-1a86_USB_Serial-if00-port0 -> ../../ttyUSB0*<br />
 
 `ls -l /dev/ttyUSB0`<br />
-⁃ crw-rw---- 1 root 188, 0 Dec  4 20:34 /dev/ttyUSB0<br />
+*crw-rw---- 1 root 188, 0 Dec  4 20:34 /dev/ttyUSB0*<br />
 
 → For troubleshooting run any of the following commands<br />
 `sudo lsusb`<br /><br />
-⁃ Bus 001 Device 002: ID 1a86:7523 QinHeng Electronics HL-340 USB-Serial adapter<br />
-⁃ Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub<br />
+*Bus 001 Device 002: ID 1a86:7523 QinHeng Electronics HL-340 USB-Serial adapter*<br />
+*Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub*<br />
 
 `sudo lsusb -v`<br />
-⁃ idVendor           0x1a86 QinHeng Electronics<br />
-⁃ idProduct          0x7523 HL-340 USB-Serial adapter<br />
-⁃  ...<br />
+*idVendor           0x1a86 QinHeng Electronics*<br />
+*idProduct          0x7523 HL-340 USB-Serial adapter*<br />
+*...*<br />
 
 `sudo less /var/log/messages | grep ch341`<br />
-⁃ [   17.901271] usbcore: registered new interface driver ch341<br />
-⁃ [   17.901432] usbserial: USB Serial support registered for ch341-uart<br />
-⁃ [   17.901604] ch341 1-1:1.0: ch341-uart converter detected<br />
-⁃ [   17.992707] usb 1-1: ch341-uart converter now attached to ttyUSB0<br />
+*[   17.901271] usbcore: registered new interface driver ch341*<br />
+*[   17.901432] usbserial: USB Serial support registered for ch341-uart*<br />
+*[   17.901604] ch341 1-1:1.0: ch341-uart converter detected*<br />
+*[   17.992707] usb 1-1: ch341-uart converter now attached to ttyUSB0*<br />
 
 `dmesg | tail -100`<br />
-⁃ [   18.410939] usbcore: registered new interface driver ch341<br />
-⁃ [   18.411103] usbserial: USB Serial support registered for ch341-uart<br />
-⁃ [   18.411294] ch341 1-1:1.0: ch341-uart converter detected<br />
-⁃ [   18.474904] usb 1-1: ch341-uart converter now attached to ttyUSB0<br />
+*[   18.410939] usbcore: registered new interface driver ch341*<br />
+*[   18.411103] usbserial: USB Serial support registered for ch341-uart*<br />
+*[   18.411294] ch341 1-1:1.0: ch341-uart converter detected*<br />
+*[   18.474904] usb 1-1: ch341-uart converter now attached to ttyUSB0*<br />
 <br />
 <br />
 
@@ -325,10 +342,10 @@ https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/
 
 → Check the running Mosquitto version<br />
 `mosquitto -v`<br />
-⁃ 1604153551: mosquitto version 1.5.7 starting<br />
-⁃ 1604153551: Using default config.<br />
-⁃ 1604153551: Opening ipv4 listen socket on port 1883.<br />
-⁃ 1604153551: Error: Address already in use
+*1604153551: mosquitto version 1.5.7 starting*<br />
+*1604153551: Using default config.*<br />
+*1604153551: Opening ipv4 listen socket on port 1883.*<br />
+*1604153551: Error: Address already in use*
 <br />
 <br />
 
@@ -354,30 +371,32 @@ https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/
 `mosquitto_sub -h localhost -v -t '#' -p 1883 -u mqtt -P <your_password>`
 
 → Incorrect access will send an error message<br />
-⁃ Connection Refused: not authorised.
+*Connection Refused: not authorised.*
 <br />
 <br />
 
 
 
 ## Install Zigbee2MQTT 
+→ Zigbee2MQTT converts the Zigbee signal to an MQTT event<br />
+
 → Look for the latest Zigbee2MQTT installation<br />
 https://www.zigbee2mqtt.io/getting_started/running_zigbee2mqtt.html<br />
 `sudo curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -`
 
 → If you receive an error message as below:<br />
-⁃  ## You appear to be running on ARMv6 hardware. Unfortunately this is not<br />
-⁃ currently supported by the NodeSource Linux distributions. Please use the<br />
-⁃ 'linux-armv6l' binary tarballs available directly from nodejs.org for<br />
-⁃ Node.js 4 and later.
+*## You appear to be running on ARMv6 hardware. Unfortunately this is not*<br />
+*currently supported by the NodeSource Linux distributions. Please use the*<br />
+*'linux-armv6l' binary tarballs available directly from nodejs.org for*<br />
+*Node.js 4 and later.*
 
 → Check your ARM architecture version<br />
 `uname -m`<br />
-⁃ armv6l
+*armv6l*
 
 → Or use this command<br />
 `cat /proc/cpuinfo`<br />
-⁃ model name	: ARMv6-compatible processor rev 7 (v6l)
+*model name	: ARMv6-compatible processor rev 7 (v6l)*
 
 → Manually download and install an unoffical NodeJS version<br />
 https://unofficial-builds.nodejs.org/download/release/<br />
@@ -388,11 +407,11 @@ https://unofficial-builds.nodejs.org/download/release/<br />
 
 → Check if the download was successful<br />
 `node -v`<br />
-⁃ v12.9.1
+*v12.9.1*
 
 → Check if the download was successful (this may take a bit)<br />
 `npm -v`<br />
-⁃ 6.10.2
+*6.10.2*
 
 → Install git, gcc, and g++<br />
 `sudo apt-get install -y git make g++ gcc`
@@ -408,27 +427,27 @@ https://unofficial-builds.nodejs.org/download/release/<br />
 
 → Install dependencies (this may take ~20 minutes on a Rasperry Pi Zero)<br />
 `npm ci --production`<br />
-⁃ [..................] | extractTree: verb extractTree extracting dependencies to node_modules/<br />
-⁃ [ .................] | extractTree: sill extract ms@2.0.0 extracted to /opt/zigbee2mqtt/node_modules/ms (5844ms)<br />
-⁃ [  ................] - extractTree: sill extract jest-util@26.3.0 extracted to /opt/zigbee2mqtt/node_modules/jest-util (15625ms)<br />
-⁃ [        ..........] / extractTree: sill extract path-dirname@1.0.2 extracted to /opt/zigbee2mqtt/node_modules/path-dirname (11930ms)<br />
-⁃ [         .........] \ reify:@babel/code-frame: timing reify:loadBundles Completed in 0ms<br />
-⁃ [          ........] \ reify:has-values: http fetch GET 200 https://registry.npmjs.org/ansi-styles/-/ansi-styles-4.2.1.tgz 276431ms<br />
-⁃ [           .......] \ reify:parse-json: timing reifyNode:node_modules/path-type Completed in 386566ms<br />
-⁃ [            ......] \ reify:define-property: timing reifyNode:node_modules/once Completed in 392704ms<br />
-⁃ [             .....] | reify:jest-environment-jsdom: timing reifyNode:node_modules/jest-environment-node Completed in 432610ms<br />
-⁃ [              ....] / reify:has-flag: timing reifyNode:node_modules/graceful-fs Completed in 471319ms<br />
-⁃ [              ....] / reify:has-flag: timing reifyNode:node_modules/graceful-fs Completed in 471319ms<br />
-⁃ [               ...] | reify:ms: timing reifyNode:node_modules/eslint-config-google Completed in 506123ms<br />
-⁃ [                ..] \ reify:concat-stream: http fetch GET 200 https://registry.npmjs.org/acorn-walk/-/acorn-walk-7.2.0.tgz 363501ms<br />
-⁃ [                 .] - reify:@jest/globals: timing reifyNode:node_modules/@jest/source-map Completed in 567117ms<br />
-⁃ [                  ] - reify:@typescript-eslint/types: http fetch GET 200 https://registry.npmjs.org/argparse/-/argparse-1.0.10.tgz 408920ms<br />
-⁃  ...<br />
-⁃  ...<br />
+*[..................] | extractTree: verb extractTree extracting dependencies to node_modules/*<br />
+*[ .................] | extractTree: sill extract ms@2.0.0 extracted to /opt/zigbee2mqtt/node_modules/ms (5844ms)*<br />
+*[  ................] - extractTree: sill extract jest-util@26.3.0 extracted to /opt/zigbee2mqtt/node_modules/jest-util (15625ms)*<br />
+*[        ..........] / extractTree: sill extract path-dirname@1.0.2 extracted to /opt/zigbee2mqtt/node_modules/path-dirname (11930ms)*<br />
+*[         .........] \ reify:@babel/code-frame: timing reify:loadBundles Completed in 0ms*<br />
+*[          ........] \ reify:has-values: http fetch GET 200 https://registry.npmjs.org/ansi-styles/-/ansi-styles-4.2.1.tgz 276431ms*<br />
+*[           .......] \ reify:parse-json: timing reifyNode:node_modules/path-type Completed in 386566ms*<br />
+*[            ......] \ reify:define-property: timing reifyNode:node_modules/once Completed in 392704ms*<br />
+*[             .....] | reify:jest-environment-jsdom: timing reifyNode:node_modules/jest-environment-node Completed in 432610ms*<br />
+*[              ....] / reify:has-flag: timing reifyNode:node_modules/graceful-fs Completed in 471319ms*<br />
+*[              ....] / reify:has-flag: timing reifyNode:node_modules/graceful-fs Completed in 471319ms*<br />
+*[               ...] | reify:ms: timing reifyNode:node_modules/eslint-config-google Completed in 506123ms*<br />
+*[                ..] \ reify:concat-stream: http fetch GET 200 https://registry.npmjs.org/acorn-walk/-/acorn-walk-7.2.0.tgz 363501ms*<br />
+*[                 .] - reify:@jest/globals: timing reifyNode:node_modules/@jest/source-map Completed in 567117ms*<br />
+*[                  ] - reify:@typescript-eslint/types: http fetch GET 200 https://registry.npmjs.org/argparse/-/argparse-1.0.10.tgz 408920ms*<br />
+*...*<br />
+*...*<br />
 
 → Verify that your final output line is similar to this:<br />
-⁃ gyp info ok<br />
-⁃ added 827 packages in 352.324s
+*gyp info ok*<br />
+*added 827 packages in 352.324s*
 <br />
 <br />
 
@@ -486,15 +505,15 @@ https://www.zigbee2mqtt.io/information/configuration.html
 → Quickly check if your node started up and runs correctly<br />
 `cd /opt/zigbee2mqtt`<br />
 `npm start `<br />
-⁃ zigbee2mqtt@1.15.0 start /opt/zigbee2mqtt<br />
-⁃  node index.js<br />
-⁃ <br />
-⁃ Zigbee2MQTT:info  2020-10-31 22:30:23: Logging to console and directory: '/opt/zigbee2mqtt/data/log/2020-10-31.22-30-22' filename: log.txt<br />
-⁃ Zigbee2MQTT:info  2020-10-31 22:30:28: Starting Zigbee2MQTT version 1.15.0 (commit #ed8b4e5)<br />
-⁃  ...<br />
-⁃  Zigbee2MQTT:info  2020-10-31 22:30:38: Connecting to MQTT server at mqtt://localhost<br />
-⁃  Zigbee2MQTT:info  2020-10-31 22:30:40: Connected to MQTT server<br />
-⁃  ...<br />
+*zigbee2mqtt@1.15.0 start /opt/zigbee2mqtt*<br />
+*node index.js*<br />
+*<br />*
+*Zigbee2MQTT:info  2020-10-31 22:30:23: Logging to console and directory: '/opt/zigbee2mqtt/data/log/2020-10-31.22-30-22' filename: log.txt*<br />
+*Zigbee2MQTT:info  2020-10-31 22:30:28: Starting Zigbee2MQTT version 1.15.0 (commit #ed8b4e5)*<br />
+*...*<br />
+*Zigbee2MQTT:info  2020-10-31 22:30:38: Connecting to MQTT server at mqtt://localhost*<br />
+*Zigbee2MQTT:info  2020-10-31 22:30:40: Connected to MQTT server*<br />
+*  ...<br />
 
 → Check the journal <br />
 `sudo journalctl -u zigbee2mqtt.service -f`
@@ -651,7 +670,7 @@ https://www.zigbee2mqtt.io/how_tos/how_to_improve_network_range_and_stability.ht
 
 
 
-## Pairing Switches to ZigBee
+## Pair Switches with the ZigBee Adapter
 → Check that your configuration.yaml allows to join new devices<br />
 `less /opt/zigbee2mqtt/data/configuration.yaml`
 
@@ -665,29 +684,29 @@ https://www.zigbee2mqtt.io/devices/E1524_E1810.html
 → Press connect button inside casing 4 times in short order
 
 → You should see an output similar to this:<br />
-⁃  zigbee2mqtt/bridge/state online<br />
-⁃  zigbee2mqtt/bridge/config {"commit":"ed8b4e5","coordinator":{"meta":{"maintrel":3,"majorrel":2,"minorrel":6,"product":0,"revision":20190608,"transportrev":2},"type":"zStack12"},"log_level":"info","network":{"channel":11,"extendedPanID":"0xdddddddddddddddd","panID":6754},"permit_join":true,"version":"1.15.0"}<br />
-⁃  zigbee2mqtt/bridge/log {"message":"announce","meta":{"friendly_name":"0xbc33acfffed4ed8b"},"type":"device_announced"}<br />
+*zigbee2mqtt/bridge/state online*<br />
+*zigbee2mqtt/bridge/config {"commit":"ed8b4e5","coordinator":{"meta":{"maintrel":3,"majorrel":2,"minorrel":6,"product":0,"revision":20190608,"transportrev":2},"type":"zStack12"},"log_level":"info","network":{"channel":11,"extendedPanID":"0xdddddddddddddddd","panID":6754},"permit_join":true,"version":"1.15.0"}*<br />
+*zigbee2mqtt/bridge/log {"message":"announce","meta":{"friendly_name":"0xbc33acfffed4ed8b"},"type":"device_announced"}*<br />
 
 → Alternatively check the systems journald log files<br />
 `sudo journalctl -u zigbee2mqtt.service -f`
 
 → Here are the button press options<br />
-⁃  Single = Left	mqtt/Ikea_Round_Remote_Control {"action":"arrow_left_click","linkquality":60,"update_available":false}<br />
-⁃  Single Press Right 	mqtt/Ikea_Round_Remote_Control {"action":"arrow_right_click","linkquality":42,"update_available":false}<br />
-⁃  Single Press Up	mqtt/Ikea_Round_Remote_Control {"action":"brightness_up_click","linkquality":73,"update_available":false}<br />
-⁃  Single Press Down	mqtt/Ikea_Round_Remote_Control {"action":"brightness_down_click","linkquality":76,"update_available":false}<br />
-⁃  Single Press Center	mqtt/Ikea_Round_Remote_Control {"action":"toggle","linkquality":81,"update_available":false}<br />
-⁃  Long Press Left	mqtt/Ikea_Round_Remote_Control {"action":"arrow_left_hold","linkquality":28,"update_available":false}<br />
-				mqtt/Ikea_Round_Remote_Control {"action":"arrow_left_release","duration":2.811,"linkquality":78,"update_available":false}<br />
-⁃  Long Press Right	mqtt/Ikea_Round_Remote_Control {"action":"arrow_right_hold","linkquality":70,"update_available":false}<br />
-				mqtt/Ikea_Round_Remote_Control {"action":"arrow_right_release","duration":1.875,"linkquality":86,"update_available":false}<br />	
-⁃  Long Press Up	mqtt/Ikea_Round_Remote_Control {"action":"brightness_up_hold","linkquality":63,"update_available":false}<br />
-				mqtt/Ikea_Round_Remote_Control {"action":"brightness_up_release","linkquality":92,"update_available":false}<br />
-⁃  Long Press Down	mqtt/Ikea_Round_Remote_Control {"action":"brightness_down_hold","linkquality":92,"update_available":false}<br />
-				mqtt/Ikea_Round_Remote_Control {"action":"brightness_down_release","linkquality":68,"update_available":false}<br />
-⁃  Long Press Center	mqtt/Ikea_Round_Remote_Control {"action":"toggle","linkquality":84,"update_available":false}<br />
-				mqtt/Ikea_Round_Remote_Control {"action":"toggle_hold","linkquality":86,"update_available":false}<br />
+*Single Left		mqtt/Ikea_Round_Remote_Control {"action":"arrow_left_click","linkquality":60,"update_available":false}*<br />
+*Single Press Right 	mqtt/Ikea_Round_Remote_Control {"action":"arrow_right_click","linkquality":42,"update_available":false}*<br />
+*Single Press Up	mqtt/Ikea_Round_Remote_Control {"action":"brightness_up_click","linkquality":73,"update_available":false}*<br />
+*Single Press Down	mqtt/Ikea_Round_Remote_Control {"action":"brightness_down_click","linkquality":76,"update_available":false}*<br />
+*Single Press Center	mqtt/Ikea_Round_Remote_Control {"action":"toggle","linkquality":81,"update_available":false}*<br />
+*Long Press Left	mqtt/Ikea_Round_Remote_Control {"action":"arrow_left_hold","linkquality":28,"update_available":false}*<br />
+			mqtt/Ikea_Round_Remote_Control {"action":"arrow_left_release","duration":2.811,"linkquality":78,"update_available":false}*<br />
+*Long Press Right	mqtt/Ikea_Round_Remote_Control {"action":"arrow_right_hold","linkquality":70,"update_available":false}*<br />
+			mqtt/Ikea_Round_Remote_Control {"action":"arrow_right_release","duration":1.875,"linkquality":86,"update_available":false}*<br />
+*Long Press Up		mqtt/Ikea_Round_Remote_Control {"action":"brightness_up_hold","linkquality":63,"update_available":false}*<br />
+			mqtt/Ikea_Round_Remote_Control {"action":"brightness_up_release","linkquality":92,"update_available":false}*<br />
+*Long Press Down	mqtt/Ikea_Round_Remote_Control {"action":"brightness_down_hold","linkquality":92,"update_available":false}*<br />
+			mqtt/Ikea_Round_Remote_Control {"action":"brightness_down_release","linkquality":68,"update_available":false}*<br />
+*Long Press Center	mqtt/Ikea_Round_Remote_Control {"action":"toggle","linkquality":84,"update_available":false}*<br />
+			mqtt/Ikea_Round_Remote_Control {"action":"toggle_hold","linkquality":86,"update_available":false}*<br />
 <br />
 <br />
 
@@ -698,9 +717,9 @@ https://www.zigbee2mqtt.io/devices/SNZB-01.html<br />
 → Long press reset button for 5 seconds until the LED indicator flashes three times, which means the device has entered pairing mode<br />
 
 → Here are the button press options<br />
-⁃  Single Press		mqtt/0x00124b001f8ab0cd {"action":"single","linkquality":13}'<br />
-⁃  Double Press		mqtt/0x00124b001f8ab0cd {"action":"double","linkquality":13}'<br />
-⁃  Long Press		mqtt/0x00124b001f8ab0cd {"action":"long","linkquality":15}'<br />
+*Single Press		mqtt/0x00124b001f8ab0cd {"action":"single","linkquality":13}'*<br />
+*Double Press		mqtt/0x00124b001f8ab0cd {"action":"double","linkquality":13}'*<br />
+*Long Press		mqtt/0x00124b001f8ab0cd {"action":"long","linkquality":15}'*<br />
 <br />
 
 → Example:XiaoMi Aqara WXKG01LM (Round Button)<br />
@@ -709,13 +728,13 @@ https://www.zigbee2mqtt.io/devices/WXKG01LM.html
 → Press and hold the reset button on the device for 5 seconds until the blue light starts blinking<br />
 
 → Here are the button press options
-⁃  Single Press		mqtt/XiaoMi_Test_1 {"action":"single","battery":100,"linkquality":86,"voltage":3052}'<br />
-⁃  Double Press		mqtt/XiaoMi_Test_1 {"action":"double","battery":100,"linkquality":94,"voltage":3052}'<br />
-⁃  Triple Press		mqtt/XiaoMi_Test_1 {"action":"triple","battery":100,"linkquality":102,"voltage":3052}'<br />
-⁃  Quadruple Press	mqtt/XiaoMi_Test_1 {"action":"quadruple","battery":100,"linkquality":102,"voltage":3052}'<br />
-⁃  Many (4+)		mqtt/XiaoMi_Test_1 {"action":"many","battery":100,"linkquality":92,"voltage":3052}'<br />
-⁃  Long Hold		mqtt/XiaoMi_Test_1 {"action":"hold","battery":100,"linkquality":94,"voltage":3052}'<br />
-⁃  Release		mqtt/XiaoMi_Test_1 {"action":"release","battery":100,"duration":2417,"linkquality":86,"voltage":3052}'<br />
+*Single Press		mqtt/XiaoMi_Test_1 {"action":"single","battery":100,"linkquality":86,"voltage":3052}'*<br />
+*Double Press		mqtt/XiaoMi_Test_1 {"action":"double","battery":100,"linkquality":94,"voltage":3052}'*<br />
+*Triple Press		mqtt/XiaoMi_Test_1 {"action":"triple","battery":100,"linkquality":102,"voltage":3052}'*<br />
+*Quadruple Press	mqtt/XiaoMi_Test_1 {"action":"quadruple","battery":100,"linkquality":102,"voltage":3052}'*<br />
+*Many (4+)		mqtt/XiaoMi_Test_1 {"action":"many","battery":100,"linkquality":92,"voltage":3052}'*<br />
+*Long Hold		mqtt/XiaoMi_Test_1 {"action":"hold","battery":100,"linkquality":94,"voltage":3052}'*<br />
+*Release		mqtt/XiaoMi_Test_1 {"action":"release","battery":100,"duration":2417,"linkquality":86,"voltage":3052}'*<br />
 
 → Check your configuration file again and see if all devices have been added successfully<br />
 `less /opt/zigbee2mqtt/data/configuration.yaml`
@@ -802,48 +821,50 @@ https://www.zigbee2mqtt.io/devices/WXKG01LM.html
 ## How To Read MQTT Logs
 → Mosquitto Server
 `sudo tail -f /var/log/mosquitto/mosquitto.log`<br />
-⁃   1605857209: New connection from ::1 on port 1883.<br />
-⁃  1605857209: New client connected from ::1 as mosqsub|812-BTN (c1, k60).<br />
-⁃  1605857255: Socket error on client mosqsub|812-BTN, disconnecting.<br />
+*1605857209: New connection from ::1 on port 1883.*<br />
+*1605857209: New client connected from ::1 as mosqsub|812-BTN (c1, k60).*<br />
+*1605857255: Socket error on client mosqsub|812-BTN, disconnecting.*<br />
 
 → Mosquitto Subscriber Client<br />
 https://mosquitto.org/man/mosquitto_sub-1.html
 
 `mosquitto_sub -u mqtt -P ???????? -h localhost -p 1883 -v -t '#'`<br />
-⁃  mqtt/Ikea_Square_Button {"action":"on","linkquality":92}<br />
+*mqtt/Ikea_Square_Button {"action":"on","linkquality":92}*<br />
 
 `mosquitto_sub -u mqtt -P ???????? -h localhost -p 1883 -v -t '#' | xargs -d$'\n' -L1 sh -c 'date "+%D %T $0"'`<br />
-⁃  11/20/20 15:26:51 mqtt/Ikea_Square_Button {"action":"on","linkquality":49}<br />
+*11/20/20 15:26:51 mqtt/Ikea_Square_Button {"action":"on","linkquality":49}*<br />
 
 `mosquitto_sub -u mqtt -P ???????? -h localhost -p 1883 -v -d -t '#'`<br />
-⁃  Client mosqsub|809-BTN received PUBLISH (d0, q0, r0, m0, 'mqtt/Ikea_Round_Remote_Control', ... (71 bytes))<br />
-⁃  mqtt/Ikea_Round_Remote_Control {"action":"arrow_left_click","linkquality":60,"update_available":false}<br />
+*Client mosqsub|809-BTN received PUBLISH (d0, q0, r0, m0, 'mqtt/Ikea_Round_Remote_Control', ... (71 bytes))*<br />
+*mqtt/Ikea_Round_Remote_Control {"action":"arrow_left_click","linkquality":60,"update_available":false}*<br />
 
 → The Mosquitto client allows to format the data output - see some examples below<br />
 → Check the manual pages via 'man mosquitto_sub'<br />
 `mosquitto_sub -u mqtt -P ???????? -h localhost -p 1883 -v -t '#' -F %X`<br />
-⁃  7B22616374696F6E223A22746F67676C65222C226C696E6B7175616C697479223A38362C227570646174655F617661696C61626C65223A66616C73657D<br />
+*7B22616374696F6E223A22746F67676C65222C226C696E6B7175616C697479223A38362C227570646174655F617661696C61626C65223A66616C73657D*<br />
 
 `mosquitto_sub -u mqtt -P ???????? -h localhost -p 1883 -v -t '#' -F "%I_%t_%x"`<br />
-⁃  2020-11-20T16:28:41+0800_mqtt/Ikea_Square_Button_7b22616374696f6e223a226f6e222c2262617474657279223a3130302c226c696e6b7175616c697479223a39347d<br />
+*2020-11-20T16:28:41+0800_mqtt/Ikea_Square_Button_7b22616374696f6e223a226f6e222c2262617474657279223a3130302c226c696e6b7175616c697479223a39347d*<br />
 
 `mosquitto_sub -u mqtt -P ???????? -h localhost -p 1883 -v -t 'mqtt/Ikea<br />_Square_Button'`<br />
-⁃  mqtt/Ikea_Square_Button {"action":"on","linkquality":84}
+*mqtt/Ikea_Square_Button {"action":"on","linkquality":84}*
 
 → Linux Journal Daemon<br />
 https://man7.org/linux/man-pages/man1/journalctl.1.html<br />
 `sudo journalctl -u zigbee2mqtt.service -f`<br />
-⁃  Nov 20 15:26:51 BTN npm[677]: Zigbee2MQTT:info  2020-11-20 15:26:51: MQTT publish: topic 'mqtt/Ikea_Square_Button {"action":"on","linkquality":49}'<br />
+*Nov 20 15:26:51 BTN npm[677]: Zigbee2MQTT:info  2020-11-20 15:26:51: MQTT publish: topic 'mqtt/Ikea_Square_Button {"action":"on","linkquality":49}'*<br />
 
 → Zigbee2MQTT Log Files<br />
 `tail -f /opt/zigbee2mqtt/data/log/*/log.txt`<br />
-⁃  info  2020-11-20 15:26:51: MQTT publish: topic 'mqtt/Ikea_Square_Button {"action":"on","linkquality":49}'<br />
+*info  2020-11-20 15:26:51: MQTT publish: topic 'mqtt/Ikea_Square_Button {"action":"on","linkquality":49}'*<br />
 <br />
 <br />
 
 	
 
 ## Install mqtt2caldav <br />
+→ mqtt2caldav converts the MQTT event to a CalDAV event<br />
+
 → Check installed Python 3 version<br />
 `python3 --version`
 
@@ -931,5 +952,4 @@ https://man7.org/linux/man-pages/man1/journalctl.1.html<br />
 <br />
 <br />
 
-	
-	
+
