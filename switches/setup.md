@@ -20,14 +20,27 @@ When a Zigbee switch/button is pressed, a wireless signal is sent. The Zigbee si
 
 
 
-## Hardware Requirements
+## Requirements
 • Zigbee Switches ([Overview](https://www.zigbee2mqtt.io/information/supported_devices.html))<br />
 • Zigbee Adapter ([Electrolama zzh! CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick/))<br />
 • Linux Server ([Raspberry Pi](https://www.raspberrypi.org))<br />
-• CalDAV server ([Apple Calendar](https://www.icloud.com/calendar/), [Google Calendar](http://calendar.google.com), etc)
+• CalDAV server ([Apple Calendar](https://www.icloud.com/calendar/), [Google Calendar](http://calendar.google.com), etc
+
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup_Zigbee.png" width="740">    
 </p>
+<br />
+<br />
+
+
+## Disclaimer
+The below information 
+
+and requires a fundamental understanding of Linux, the use of a command-line terminal, and 
+
+following tutorial requires at least a fundamental understanding of Linux, the use of command-line terminal, and 
+
+Any information may be incomplete, incorrect, outdated, obsolete. Use at your own risk.
 <br />
 <br />
 
@@ -68,7 +81,7 @@ https://www.raspberrypi.org/downloads/
 → Locate your Raspberry Pi network address<br />
 `arp -a | grep -ia b8:27:eb`
 
-→ Connect to your Raspberry Pi via 'ssh' via default logins<br />
+→ Connect to your Raspberry Pi remotley via 'ssh'<br />
 `ssh pi@xxx.xxx.xxx.xxx`<br />
 • username: pi<br />
 • password: raspberry
@@ -88,7 +101,7 @@ https://www.raspberrypi.org/downloads/
 
 
 
-## Configure System
+## Deactivate Radio Antennas
 → If possible, disable Bluetooth to avoid interference with Zigbee
 
 	dtoverlay=disable-bt
@@ -96,47 +109,6 @@ https://www.raspberrypi.org/downloads/
 → If possible, connect over Ethernet and disable Wifi to avoid interference with Zigbee
 
 	dtoverlay=disable-wifi
-<br />
-<br />
-
-
-
-## Configure Locale
-→ Set your preferred [time-zone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)<br />
-`sudo timedatectl set-timezone UTC`<br />
-
-→ Set your keyboard layout to US<br />
-` sudo vi /etc/default/keyboard`
-
-	XKBMODEL="pc105"
-	XKBLAYOUT="us"
-
-→ Remove locale user setting in case you receive error messages when running commands<br />
-`sudo vi /etc/ssh/sshd_config`
-
-	#AcceptEnv LANG LC_*
-
-→ Update the locale file<br />
-`sudo vi /etc/locale.gen`
-
-	#en_GB.UTF-8 UTF-8
-	en_US.UTF-8 UTF-8
-
-→ Re-configure your locale configuration<br />
-`sudo dpkg-reconfigure locales`
-
-→ Alternatively et the locale manually<br />
-`sudo vi /etc/default/locale`
-
-	LANG="en_US.UTF-8"
-	LC_ALL="en_US.UTF-8"
-	LANGUAGE="en_US.UTF-8"
-
-→ Check your locale settings<br />
-`locale`
-
-→ Better reboot after locale change<br />
-`sudo reboot`
 <br />
 <br />
 
@@ -182,7 +154,7 @@ https://www.raspberrypi.org/downloads/
 → Always check the start-up logfile for any potential errors<br />
 `dmesg`
 
-→ Check the boot.log<br />
+→ Check the boot.log file<br />
 `less /var/log/boot.log`
 <br />
 <br />
@@ -228,7 +200,8 @@ https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.x.0
 `ls -l /dev/tty.usbserial-*`
 */dev/tty.usbserial-1460*
 
-→ Flash the CC2652 by pressing the reset button on the board<br />
+→ Remove the Zigbee adapter from the USB port
+→ Whilst removed, press the reset button on the board<br />
 → Keep pressing while plugging the device back into the USB port<br />
 → Release the button after 3 seconds<br />
 
@@ -249,15 +222,15 @@ https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.x.0
 *Verifying by comparing CRC32 calculations.*<br />
 *Verified (match: 0x0a0682b4)*<br />
 
-→ Remove the device from the USB port
+→ Remove the flashed Zigbee adapter from the macOS USB port
 <br />
 <br />
 
 	
 	
 ## Connect the Zigbee Adapter 
-→ Connect your Zigbee adapter to the Raspberry Pi USB port<br />
-→ Ideally use an USB extension cable to distance the adapter from the Raspberry Pi<br />
+→ Connect the flashed Zigbee adapter to the Raspberry Pi USB port<br />
+→ Ideally use an USB extension cable to physically distance the adapter from the Raspberry Pi<br />
 → Determine the device location<br />
 `ls -l /dev/serial/by-id`<br />
 *lrwxrwxrwx 1 root 13 Dec  4 20:34 usb-1a86_USB_Serial-if00-port0 -> ../../ttyUSB0*<br />
