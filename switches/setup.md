@@ -10,11 +10,6 @@ When a Zigbee switch/button is pressed, a wireless signal is sent. The Zigbee si
 <br />
 <br />
 
-
-
-## 
-Here's a little video that shows how simple calendar tracking can be:<br />
-
 https://user-images.githubusercontent.com/6289141/120297608-d7eac800-c2fb-11eb-97d8-41e60def8116.mov
 
 <br />
