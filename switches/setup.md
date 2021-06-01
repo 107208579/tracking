@@ -94,7 +94,7 @@ https://www.raspberrypi.org/downloads/
 
 
 
-## Deactivate Radio Antennas
+## Deactivate Radios
 → If possible, disable Bluetooth to avoid interference with Zigbee
 
 	dtoverlay=disable-bt
@@ -120,24 +120,6 @@ https://www.raspberrypi.org/downloads/
 → Remove downloaded .deb packages from /var/cache/apt/archives/<br />
 `sudo apt-get clean`<br />
 `sudo apt-get --purge -y autoremove`
-<br />
-<br />
-
-
-
-## Reboot Raspberry Pi OS
-   → Update the crontab if you want to reboot your server weekly<br />
-`crontab -e`
-
-	# .---------------- minute       (0 - 59)
-	# |  .------------- hour         (0 - 23)
-	# |  |  .---------- day of month (1 - 31)
-	# |  |  |  .------- month        (1 - 12) OR (jan,feb,mar,apr..)
-	# |  |  |  |  .---- day of week  (0 - 6) (Sunday=0 or 7) OR (sun,mon,tue,wed,thu,fri,sat)
-	# |  |  |  |  |
-	# *  *  *  *  *  command to be executed
-	# Reboot Every Sunday 04:00
-	0 4 * * 0 /sbin/shutdown -r now
 <br />
 <br />
 
