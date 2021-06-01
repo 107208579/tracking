@@ -31,21 +31,17 @@ https://user-images.githubusercontent.com/6289141/120297608-d7eac800-c2fb-11eb-9
 
 
 ## Disclaimer
-The below information 
-
-and requires a fundamental understanding of Linux, the use of a command-line terminal, and 
-
-following tutorial requires at least a fundamental understanding of Linux, the use of command-line terminal, and 
-
-Any information may be incomplete, incorrect, outdated, obsolete. Use at your own risk.
+The below information requires a fundamental understanding of Linux and the use of a command line terminal. Any information may be incomplete, incorrect, outdated, obsolete. Use at your own risk.
 <br />
 <br />
 
 
 
 ## Install Raspberry Pi OS
-→ Get the Raspberry Pi Imager to write the image to an SD card<br />
+→ Get the Raspberry Pi Imager to write the Raspberry Pi OS image to an SD card<br />
 https://www.raspberrypi.org/downloads/
+
+→ NOTE: The following steps are performed via macOS<br />
 
 → For SSH connectivity add the following file to the root of the SD card<br />
 `touch /Volumes/boot/ssh`
@@ -170,7 +166,7 @@ https://www.raspberrypi.org/downloads/
 https://www.zigbee2mqtt.io/information/supported_adapters.html<br />
 https://electrolama.com/radio-docs/#step-3-flash-the-firmware-on-your-stick<br />
 
-→ NOTE: The following steps outlined are for flashin the CC2652 chip under macOS<br />
+→ NOTE: The following steps outlined are for flashing the CC2652 chip under macOS<br />
 
 → Connect the Zigbee adapter via USB and check if it was detected<br />
 `sudo dmesg | grep AppleUSBCH`<br />
