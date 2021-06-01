@@ -11,7 +11,7 @@ Here's a little video on how it works:
 
 
 ## Functionality
-When a Zigbee switch/button is pressed, a wireless signal is sent. The Zigbee signal is received by a Zigbee receiver ([Electrolama zzh! CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick)) that is connected to a Linux server ([Raspberry Pi](https://www.raspberrypi.org)). The server receives and converts the Zigbee signal to MQTT message (via [zigbee2mqtt](https://www.zigbee2mqtt.io)) which then creates a calendar event via a pre-defined event template (via [mqtt2caldav](https://github.com/107208579/mqtt2caldav)). The calendar event is sent to a CalDAV server for event storage and synchronisation with other CalDAV clients.
+When a Zigbee switch/button is pressed, a wireless signal is sent. The Zigbee signal is received by a Zigbee receiver ([Electrolama zzh! CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick)) that is connected to a Linux server ([Raspberry Pi Zero W](https://www.raspberrypi.org)). The server receives and converts the Zigbee signal to MQTT message (via [zigbee2mqtt](https://www.zigbee2mqtt.io)) which then creates a calendar event via a pre-defined event template (via [mqtt2caldav](https://github.com/107208579/mqtt2caldav)). The calendar event is sent to a CalDAV server for event storage and synchronisation with other CalDAV clients.
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup_Detail.png" width="740"> 
 </p>
@@ -20,7 +20,7 @@ When a Zigbee switch/button is pressed, a wireless signal is sent. The Zigbee si
 
 
 
-## Requirements
+## Hardware Requirements
 • Zigbee Switches ([Overview](https://www.zigbee2mqtt.io/information/supported_devices.html))<br />
 • Zigbee Adapter ([Electrolama zzh! CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick/))<br />
 • Linux Server ([Raspberry Pi](https://www.raspberrypi.org))<br />
@@ -84,24 +84,16 @@ https://www.raspberrypi.org/downloads/
 → Change the default password for user 'root'<br />
 ` sudo passwd root`
 <br />
+<br />
+
 
 
 ## Configure System
-→ Set the GPU memory to 16 MB if you don't use a display<br />
-`sudo vi /boot/config.txt`
-
-	gpu_mem=16
-
-→ Disable Bluetooth to avoid interference with Zigbee
+→ If possible, disable Bluetooth to avoid interference with Zigbee
 
 	dtoverlay=disable-bt
 
-→ Disable HDMI circuits if you don't use a display
-`sudo vi /etc/rc.local`
-
-	/usr/bin/tvservice -o
-
-→ Disable Wifi if you connect over Ethernet
+→ If possible, connect over Ethernet and disable Wifi to avoid interference with Zigbee
 
 	dtoverlay=disable-wifi
 <br />
@@ -168,46 +160,6 @@ https://www.raspberrypi.org/downloads/
 
 
 
-## Secure Raspberry Pi OS
-
-→ Update your ssh daemon configuration file<br />
-`sudo vi /etc/ssh/sshd_config`
-
-	LoginGraceTime 120
-	PermitRootLogin no
-	PermitEmptyPasswords no
-
-→ Restart the service so that changes take effect<br />
-`sudo service ssh restart`
-<br />
-<br />
-
-
-
-## Deactivate Unnecessary Services
-→ Check what active services are running<br />
-`systemctl --type=service --state=active`
-
-→ Check the status of a specific service<br />
-`sudo service fail2ban status`
-
-→ Here are some services that probably can be disabled<br />
-`systemctl disable bluetooth`<br />
-`systemctl disable avahi-daemon`<br />
-`systemctl disable triggerhappy`
-
-   → Check which services delay boot-up time of your device<br />
-`systemd-analyze`<br />
-`systemd-analyze blame`<br />
-`systemd-analyze critical-chain`
-
-   → Show a tree of all processes<br />
-`pstree`
-<br />
-<br />
-
-
-
 ## Reboot Raspberry Pi OS
    → Update the crontab if you want to reboot your server weekly<br />
 `crontab -e`
@@ -225,27 +177,20 @@ https://www.raspberrypi.org/downloads/
 <br />
 
 
+
 ## Check Log Files for Errors
 → Always check the start-up logfile for any potential errors<br />
 `dmesg`
 
 → Check the boot.log<br />
 `less /var/log/boot.log`
-
-→ Check the kernel and driver-related information<br />
-`sudo less /var/log/messages`<br />
-• /var/log/messages    Contains all kernel- and driver-related information.<br />
-• /var/log/auth.log    Contains system authorization information.<br />
-• /var/log/boot.log    Contains information that is logged when the system boots up.<br />
-• /var/log/daemon.log  Contains information logged by the various background daemons.<br />
-• /var/log/dpkg.log    Contains information that is logged when a package is either installed or removed
 <br />
 <br />
 
 
 
 ## Get a Zigbee Adapter
-→ The Zigbee adapter used here is an [Electrolama zzh! CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick) but [others](https://www.zigbee2mqtt.io/information/supported_adapters.html) should work too
+→ The Zigbee adapter used here is an [Electrolama zzh! CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick) but [others](https://www.zigbee2mqtt.io/information/supported_adapters.html) should work too.
 <br />
 <br />
 
@@ -256,7 +201,7 @@ https://www.raspberrypi.org/downloads/
 https://www.zigbee2mqtt.io/information/supported_adapters.html<br />
 https://electrolama.com/radio-docs/#step-3-flash-the-firmware-on-your-stick<br />
 
-→ NOTE: The following steps outlined are for macOS<br />
+→ NOTE: The following steps outlined are for flashin the CC2652 chip under macOS<br />
 
 → Connect the Zigbee adapter via USB and check if it was detected<br />
 `sudo dmesg | grep AppleUSBCH`<br />
