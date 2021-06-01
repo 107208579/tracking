@@ -858,7 +858,7 @@ https://mosquitto.org/man/mosquitto_sub-1.html
 `mosquitto_sub -u mqtt -P ???????? -h localhost -p 1883 -v -t '#' -F "%I_%t_%x"`<br />
 *2020-11-20T16:28:41+0800_mqtt/Ikea_Square_Button_7b22616374696f6e223a226f6e222c2262617474657279223a3130302c226c696e6b7175616c697479223a39347d*<br />
 
-`mosquitto_sub -u mqtt -P ???????? -h localhost -p 1883 -v -t 'mqtt/Ikea<br />_Square_Button'`<br />
+`mosquitto_sub -u mqtt -P ???????? -h localhost -p 1883 -v -t 'mqtt/Ikea_Square_Button'`<br />
 *mqtt/Ikea_Square_Button {"action":"on","linkquality":84}*
 
 → Linux Journal Daemon<br />
