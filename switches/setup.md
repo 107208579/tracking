@@ -161,7 +161,7 @@ https://www.raspberrypi.org/downloads/
 `sudo apt-get dist-upgrade`
 
 → Remove downloaded .deb packages from /var/cache/apt/archives/<br />
-`sudo apt-get clean`
+`sudo apt-get clean`<br />
 `sudo apt-get --purge -y autoremove`
 <br />
 <br />
