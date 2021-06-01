@@ -182,11 +182,16 @@ Apart from manually adding events into a calendar there are other options, inclu
 
 
 ## What setup do you specifically use?  
-I have a [Nextcloud](http://nextcloud.com/) server running that keeps my iPhone, iPad, and iMac calendars in sync. On the go, I log events on my iPhone via some of these [iOS shortcuts](https://github.com/107208579/calendar-tracking/tree/main/shortcuts). At home I use wireless [Zigbee switches](https://github.com/107208579/calendar-tracking/blob/main/switches/setup.md) that allow me to log events via a simple button press. I also modify events directly in the [macOS Calendar](http://support.apple.com/guide/calendar/welcome/mac) or in [BusyCal](https://www.busymac.com/busycal/) if really required.
+Here is a list of 
+- iOS Shortcuts
+- 
+
+My setup consists of a [Nextcloud](http://nextcloud.com/) server that keeps my iPhone, iPad, and iMac calendars in sync. In addition, I log 
 
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup.png" width="740">    
 </p>
+
 
 My setup has different calendars, such as Education, Employment, Errands, Entertainment, Food, Health, Housework, Hygiene, Projects, Rest, Socialising, Sports, and Transportation.
 * EDU  
@@ -215,6 +220,8 @@ Each logged even receives a different event title with more details:
 * TRA - Car  
 * …
 
+I modify events directly in the [macOS Calendar](http://support.apple.com/guide/calendar/welcome/mac) or in [BusyCal](https://www.busymac.com/busycal/) if required.
+
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Overview.png" width="740">
 </p>
@@ -232,7 +239,7 @@ The smallest event duration logged is 5 minutes. Here are some event example eve
 
 
 
-On my iPhone I have created 'one-click' [iOS Shortcut](https://github.com/107208579/calendar-tracking/tree/main/shortcuts) bookmarks:
+On the go, I log events on my iPhone via some of these 'one-click' [iOS shortcuts](https://github.com/107208579/calendar-tracking/tree/main/shortcuts) bookmarks.
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_iOS14_Shortcuts.png" width="250">
 </p>
@@ -241,14 +248,10 @@ On my iPhone I have created 'one-click' [iOS Shortcut](https://github.com/107208
 
 
 
-At home I have several battery powered Zigbee switches that send a wireless signal upon a button press. The signal is received by a Zigbee adapter and forwarded to a Raspberry Pi Zero W who creates a new calendar event on my central Nextcloud server. From there, all events are sync'ed via CalDAV across all connected calendars.
-
-I've written up a tutorial on how to get a Raspberry Pi OS base installation and how to setup Zigbee switches with all required software here: https://github.com/107208579/calendar-tracking/blob/main/switches/setup.md
+At home I use wireless switches that allow me to log events via a simple button press. I've written up a tutorial on how to get a Raspberry Pi OS base installation and how to setup Zigbee switches with all required software here: https://github.com/107208579/calendar-tracking/blob/main/switches/setup.md
 
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup_Zigbee.png" width="740">    
 </p>
 <br />
 <br />
-
-
