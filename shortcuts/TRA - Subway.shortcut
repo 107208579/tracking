@@ -123,7 +123,7 @@
 										<key>attachmentsByRange</key>
 										<dict/>
 										<key>string</key>
-										<string>TRA - Car</string>
+										<string>TRA - Subway</string>
 									</dict>
 									<key>WFSerializationType</key>
 									<string>WFTextTokenString</string>
@@ -310,9 +310,9 @@
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>WFCommentActionText</key>
-				<string>-----------------------------------------------
--- Round time up/down to the closest 5 minute
------------------------------------------------</string>
+				<string>------------------------------------------------
+--- Round time up/down to the closest 5 minute
+------------------------------------------------</string>
 			</dict>
 		</dict>
 		<dict>
@@ -446,7 +446,7 @@
 			<dict>
 				<key>WFCommentActionText</key>
 				<string>-----------------------------------------
--- Set event start date
+--- Set event start date
 -----------------------------------------</string>
 			</dict>
 		</dict>
@@ -480,7 +480,7 @@
 			<dict>
 				<key>WFCommentActionText</key>
 				<string>-----------------------------------------
--- Set event end date
+--- Set event end date
 -----------------------------------------</string>
 			</dict>
 		</dict>
@@ -605,7 +605,7 @@
 			<dict>
 				<key>WFCommentActionText</key>
 				<string>-----------------------------------------
--- Find existing event
+--- Find existing event
 -----------------------------------------</string>
 			</dict>
 		</dict>
@@ -850,7 +850,7 @@
 										<string>WFTextTokenAttachment</string>
 									</dict>
 									<key>Number</key>
-									<string>1</string>
+									<integer>1</integer>
 									<key>Unit</key>
 									<integer>16</integer>
 								</dict>
@@ -1022,7 +1022,7 @@
 			<dict>
 				<key>WFCommentActionText</key>
 				<string>-----------------------------------------
--- Get existing event start date
+--- Get existing event start date
 -----------------------------------------</string>
 			</dict>
 		</dict>
@@ -1063,7 +1063,7 @@
 			<dict>
 				<key>WFCommentActionText</key>
 				<string>-----------------------------------------
--- Create event based on existing event
+--- Create event based on existing event
 -----------------------------------------</string>
 			</dict>
 		</dict>
@@ -1234,7 +1234,7 @@
 			<dict>
 				<key>WFCommentActionText</key>
 				<string>-----------------------------------------
--- Remove existing event
+--- Remove existing event
 -----------------------------------------</string>
 			</dict>
 		</dict>
@@ -1275,7 +1275,7 @@
 			<dict>
 				<key>WFCommentActionText</key>
 				<string>-----------------------------------------
--- Create brand new event
+--- Create brand new event
 -----------------------------------------</string>
 			</dict>
 		</dict>
@@ -1459,7 +1459,7 @@
 			<dict>
 				<key>WFCommentActionText</key>
 				<string>----------------------------------------------
--- Vibrate based on rounded event start time
+--- Vibrate based on rounded event start time
 ----------------------------------------------</string>
 			</dict>
 		</dict>
@@ -1714,7 +1714,7 @@
 			<dict>
 				<key>WFCommentActionText</key>
 				<string>----------------------------------------------
--- Troubleshooting Section
+--- Troubleshooting Section
 ----------------------------------------------
 Add the following shortcut action to the bottom:
 'Quick Look' | 'Show Text in Quick Look'</string>
@@ -2157,7 +2157,7 @@ Time Between Dates	￼ seconds
 	<key>WFWorkflowIcon</key>
 	<dict>
 		<key>WFWorkflowIconGlyphNumber</key>
-		<integer>59452</integer>
+		<integer>59792</integer>
 		<key>WFWorkflowIconStartColor</key>
 		<integer>4292093695</integer>
 	</dict>
