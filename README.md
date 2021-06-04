@@ -139,7 +139,8 @@ Apart from manually adding events into a calendar there are other options, inclu
      * [Zigbee Buttons](https://www.zigbee2mqtt.io/information/supported_devices.html) + [Sonoff Zigbee Gateway](https://www.itead.cc/sonoff-zbbridge.html) - [flashed](https://www.digiblur.com/2020/07/how-to-use-sonoff-zigbee-bridge-with.html) + Linux Server + [mqtt2caldav](https://github.com/107208579/mqtt2caldav) 
      * [RF Buttons](https://www.amazon.com/s?k=433MHz+Button) + [Sonoff RF Gateway](https://sonoff.tech/product/accessories/433-rf-bridge) - [flashed](https://www.youtube.com/watch?v=o4Qa43c_shM) + Linux Server + [zigbee2mqtt](https://www.zigbee2mqtt.io) + [mqtt2caldav](https://github.com/107208579/mqtt2caldav)
    * Self-Built
-     * [Onion Omega 2](https://onion.io/omega2/) - [guide](http://frederickvandenbosch.be/?p=2345) + [IFTTT (iOS Calendar)](https://ifttt.com/ios_calendar) / [IFTTT (Google Calendar)](https://ifttt.com/google_calendar)
+     * [Philips Hue Wall Switch](https://www.philips-hue.com/en-gb/p/hue-philips-hue-wall-switch-module/8719514318045) + [Apple HomeKit](https://support.apple.com/en-sg/HT204893) ([guide](https://riedel.wtf/philipps-hue-wall-switch/))
+     * [Onion Omega 2](https://onion.io/omega2/) ([guide](http://frederickvandenbosch.be/?p=2345)) + [IFTTT (iOS Calendar)](https://ifttt.com/ios_calendar) / [IFTTT (Google Calendar)](https://ifttt.com/google_calendar)
 <br />
 <br />
 
