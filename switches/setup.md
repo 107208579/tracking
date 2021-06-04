@@ -500,7 +500,7 @@ https://github.com/Koenkk/zigbee2mqtt/tags
 → Verify that Zigbee and WiFi run on different channels to avoid signal interference
 https://www.zigbee2mqtt.io/how_tos/how_to_improve_network_range_and_stability.html
 https://www.digi.com/resources/documentation/digidocs/90001537/references/r_channels_zigbee.htm
-https://support.metageek.com/hc/en-us/articles/203845040-Zigbee-and-WiFi-Coexistence
+https://support.metageek.com/hc/en-us/articles/203845040-Zigbee-and-WiFi-Coexistence<br />
 • Zigbee operates on 2.4 Ghz with 16 channels between 11 and 26<br />
 • Zigbee channels 25 and 26 might not be supported by all hardware<br />
 
