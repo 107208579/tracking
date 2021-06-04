@@ -20,7 +20,7 @@ https://user-images.githubusercontent.com/6289141/120297608-d7eac800-c2fb-11eb-9
 
 
 ## Requirements
-• Zigbee Switches ([Devices List](https://www.zigbee2mqtt.io/information/supported_devices.html))<br />
+• Zigbee Switches ([Supported Switches](https://www.zigbee2mqtt.io/information/supported_devices.html))<br />
 • Zigbee Adapter ([Electrolama zzh! CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick/))<br />
 • Linux Server ([Raspberry Pi](https://www.raspberrypi.org))<br />
 • CalDAV server ([Apple Calendar](https://www.icloud.com/calendar/), [Google Calendar](http://calendar.google.com), [NextCloud](https://nextcloud.com))
