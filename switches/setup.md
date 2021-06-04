@@ -420,7 +420,7 @@ https://www.zigbee2mqtt.io/information/configuration.html
 *...*<br />
 *Zigbee2MQTT:info  2020-10-31 22:30:38: Connecting to MQTT server at mqtt://localhost*<br />
 *Zigbee2MQTT:info  2020-10-31 22:30:40: Connected to MQTT server*<br />
-*  ...<br />
+*...*<br />
 
 → Check the journal <br />
 `sudo journalctl -u zigbee2mqtt.service -f`
