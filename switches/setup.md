@@ -3,12 +3,14 @@
 
 
 ## Functionality
-When a Zigbee switch/button is pressed, a wireless signal is sent. The Zigbee signal is received by a Zigbee adapter ([Electrolama zzh! CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick)) that is connected to a Linux server ([Raspberry Pi Zero W](https://www.raspberrypi.org)). The server receives and converts the Zigbee signal to an MQTT message (via [zigbee2mqtt](https://www.zigbee2mqtt.io)) which is used to create a calendar event from a user-defined event template (via [mqtt2caldav](https://github.com/107208579/mqtt2caldav)). The calendar event is sent to a CalDAV server for event storage and synchronisation with other CalDAV clients.
+When a Zigbee switch/button is pressed, a wireless signal is sent. The Zigbee signal is received by a Zigbee adapter ([Electrolama zzh! CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick)) that is connected to a Linux server ([Raspberry Pi Zero W](https://www.raspberrypi.org)). The server receives and converts the Zigbee signal to an MQTT message (via [zigbee2mqtt](https://www.zigbee2mqtt.io)) which is used to create a calendar event from a user-defined template (via [mqtt2caldav](https://github.com/107208579/mqtt2caldav)). The calendar event is sent to a CalDAV server for storage and synchronisation with other CalDAV clients.
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup_Detail.png" width="740"> 
 </p>
 <br />
 <br />
+
+Here's a video that shows how it works:
 
 https://user-images.githubusercontent.com/6289141/120297608-d7eac800-c2fb-11eb-97d8-41e60def8116.mov
 
@@ -18,10 +20,10 @@ https://user-images.githubusercontent.com/6289141/120297608-d7eac800-c2fb-11eb-9
 
 
 ## Requirements
-• Zigbee Switches ([Overview](https://www.zigbee2mqtt.io/information/supported_devices.html))<br />
+• Zigbee Switches ([Devices List](https://www.zigbee2mqtt.io/information/supported_devices.html))<br />
 • Zigbee Adapter ([Electrolama zzh! CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick/))<br />
 • Linux Server ([Raspberry Pi](https://www.raspberrypi.org))<br />
-• CalDAV server ([Apple Calendar](https://www.icloud.com/calendar/), [Google Calendar](http://calendar.google.com), etc)
+• CalDAV server ([Apple Calendar](https://www.icloud.com/calendar/), [Google Calendar](http://calendar.google.com), [NextCloud](https://nextcloud.com))
 
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup_Zigbee.png" width="740">    
