@@ -75,7 +75,7 @@ https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.x.0
 *CC2652R_coordinator_20210120.zip*
 
 → Check the exact device location the CC2652 is connected to<br />
-`ls -l /dev/tty.usbserial-*`
+`ls -l /dev/tty.usbserial-*`<br />
 */dev/tty.usbserial-1460*
 
 → Remove the Zigbee adapter from the USB port<br />
