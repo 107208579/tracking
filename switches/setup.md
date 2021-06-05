@@ -33,7 +33,7 @@ https://user-images.githubusercontent.com/6289141/120297608-d7eac800-c2fb-11eb-9
 
 
 ## Disclaimer
-The below information requires a fundamental understanding of Linux and the use of a command line terminal. Any information may be incomplete, incorrect, outdated, obsolete. Use at your own risk.
+The below information requires a fundamental understanding of Linux and the use of a command line terminal. Information may be incomplete, incorrect, outdated, obsolete. Use at your own risk.
 <br />
 <br />
 
