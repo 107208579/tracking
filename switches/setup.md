@@ -206,9 +206,14 @@ https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.x.0
 	
 	
 ## Connect the Zigbee Adapter 
+→ Shutdown your Raspberry Pi<br />
+`sudo shutdown -h now`<br />
+
 → Connect the flashed Zigbee adapter to the Raspberry Pi USB port<br />
 → Ideally use an USB extension cable to physically distance the adapter from the Raspberry Pi<br />
-→ Determine the device location<br />
+
+→ Boot up your Raspberry Pi
+→ Check the device location of the Zigbee adapter<br />
 `ls -l /dev/serial/by-id`<br />
 *lrwxrwxrwx 1 root 13 Dec  4 20:34 usb-1a86_USB_Serial-if00-port0 -> ../../ttyUSB0*<br />
 
