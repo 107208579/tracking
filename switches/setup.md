@@ -47,11 +47,11 @@ The below information requires a fundamental understanding of Linux and the use 
  
  
 ## Flash the Zigbee Adapter
-→ Follow the instructions for flashing the CC2652 chip<br />
+→ Follow the instructions for flashing the CC2652<br />
 https://www.zigbee2mqtt.io/information/supported_adapters.html<br />
 https://electrolama.com/radio-docs/#step-3-flash-the-firmware-on-your-stick<br />
 
-→ NOTE: The following steps outlined are for flashing the CC2652 chip via macOS as host system<br />
+→ NOTE: The following steps outlined are for flashing the CC2652 via macOS as host system<br />
 
 → Connect the Zigbee adapter via USB and check if it was detected<br />
 `sudo dmesg | grep AppleUSBCH`<br />
