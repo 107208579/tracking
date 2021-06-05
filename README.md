@@ -183,10 +183,6 @@ Apart from manually adding events into a calendar there are other options, inclu
 
 
 ## What setup do you specifically use?  
-Here is a list of 
-- iOS Shortcuts
-- 
-
 My setup consists of a [Nextcloud](http://nextcloud.com/) server that keeps my iPhone, iPad, and iMac calendars in sync. In addition, I log 
 
 <p align="center">
