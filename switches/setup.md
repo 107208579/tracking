@@ -63,14 +63,14 @@ https://electrolama.com/radio-docs/#step-3-flash-the-firmware-on-your-stick<br /
 `brew install python3`
  
 → Upgrade 'pip' and install the following packages<br />
-https://github.com/JelmerT/cc2538-bsl
+https://github.com/JelmerT/cc2538-bsl<br />
 `sudo pip3 install --upgrade pip`<br />
 `pip3 install pyserial intelhex python-magic`
 
 → Download the boot loader<br />
 `wget -O cc2538-bsl.zip https://codeload.github.com/JelmerT/cc2538-bsl/zip/master && unzip cc2538-bsl.zip`
 
-→ Look for the latest 'Electrolama zzh' firmware
+→ Look for the latest 'Electrolama zzh' firmware<br />
 https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.x.0/bin
 *CC2652R_coordinator_20210120.zip*
 
