@@ -177,7 +177,7 @@ https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.x.0
 `ls -l /dev/tty.usbserial-*`
 */dev/tty.usbserial-1460*
 
-→ Remove the Zigbee adapter from the USB port
+→ Remove the Zigbee adapter from the USB port<br />
 → Whilst removed, press the reset button on the board<br />
 → Keep pressing while plugging the device back into the USB port<br />
 → Release the button after 3 seconds<br />
