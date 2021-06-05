@@ -39,6 +39,75 @@ The below information requires a fundamental understanding of Linux and the use 
 
 
 
+## Get a Zigbee Adapter
+→ The Zigbee adapter used here is an [Electrolama zzh! CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick) but [others](https://www.zigbee2mqtt.io/information/supported_adapters.html) should work too.
+<br />
+<br />
+ 
+ 
+ 
+## Flash the Zigbee Adapter
+→ Follow the instructions for flashing the CC2652 chip<br />
+https://www.zigbee2mqtt.io/information/supported_adapters.html<br />
+https://electrolama.com/radio-docs/#step-3-flash-the-firmware-on-your-stick<br />
+
+→ NOTE: The following steps outlined are for flashing the CC2652 chip via macOS as host system<br />
+
+→ Connect the Zigbee adapter via USB and check if it was detected<br />
+`sudo dmesg | grep AppleUSBCH`<br />
+*[1458325.212772]: IOUserSerial::AppleUSBCHCOM::<private>: 127 0x600002c9c058*
+*[1458325.213170]: DK: AppleUSBCHCOM-0x100048d92::start(IOUSBHostInterface-0x100048d90) ok*
+
+→ Install python3 and pip<br />
+`xcode-select --install`<br />
+`brew install python3`
+ 
+→ Upgrade 'pip' and install the following packages<br />
+https://github.com/JelmerT/cc2538-bsl
+`sudo pip3 install --upgrade pip`<br />
+`pip3 install pyserial intelhex python-magic`
+
+→ Download the boot loader<br />
+`wget -O cc2538-bsl.zip https://codeload.github.com/JelmerT/cc2538-bsl/zip/master && unzip cc2538-bsl.zip`
+
+→ Look for the latest 'Electrolama zzh' firmware
+https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.x.0/bin
+*CC2652R_coordinator_20210120.zip*
+
+→ Check the exact device location the CC2652 is connected to<br />
+`ls -l /dev/tty.usbserial-*`
+*/dev/tty.usbserial-1460*
+
+→ Remove the Zigbee adapter from the USB port<br />
+→ Whilst removed, press the reset button on the board<br />
+→ Keep pressing while plugging the device back into the USB port<br />
+→ Release the button after 3 seconds<br />
+
+→ Run the following command (note the device location)<br />
+`./cc2538-bsl.py -p /dev/tty.usbserial-1460 -evw CC26X2R1_20201026.hex`<br />
+*Opening port /dev/tty.usbserial-1460, baud 500000*<br />
+*Reading data from CC26X2R1_20201026.hex*<br />
+*Your firmware looks like an Intel Hex file*<br />
+*Connecting to target...*<br />
+*CC1350 PG2.0 (7x7mm): 352KB Flash, 20KB SRAM, CCFG.BL_CONFIG at 0x00057FD8*<br />
+*Primary IEEE Address: 00:12:4B:00:21:B7:77:5E*<br />
+*Performing mass erase*<br />
+*Erasing all main bank flash sectors*<br />
+*Erase done*<br />
+*Writing 360448 bytes starting at address 0x00000000*<br />
+*Write 104 bytes at 0x00057F980*<br />
+*Write done*<br />
+*Verifying by comparing CRC32 calculations.*<br />
+*Verified (match: 0x0a0682b4)*<br />
+
+→ Remove the flashed Zigbee adapter from the USB port<br />
+→ Connect the flashed Zigbee adapter to the Raspberry Pi USB port<br />
+→ Ideally use an USB extension cable to physically distance the adapter from the Raspberry Pi<br />
+<br />
+<br />
+ 
+ 
+ 
 ## Install Raspberry Pi OS
 → Get the Raspberry Pi Imager to write the Raspberry Pi OS image to an SD card<br />
 https://www.raspberrypi.org/downloads/
@@ -136,84 +205,10 @@ https://www.raspberrypi.org/downloads/
 <br />
 <br />
 
-
-
-## Get a Zigbee Adapter
-→ The Zigbee adapter used here is an [Electrolama zzh! CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick) but [others](https://www.zigbee2mqtt.io/information/supported_adapters.html) should work too.
-<br />
-<br />
-
-
-
-## Flash the Zigbee Adapter
-→ Follow the instructions for flashing the CC2652 chip<br />
-https://www.zigbee2mqtt.io/information/supported_adapters.html<br />
-https://electrolama.com/radio-docs/#step-3-flash-the-firmware-on-your-stick<br />
-
-→ NOTE: The following steps outlined are for flashing the CC2652 chip under macOS<br />
-
-→ Connect the Zigbee adapter via USB and check if it was detected<br />
-`sudo dmesg | grep AppleUSBCH`<br />
-*[1458325.212772]: IOUserSerial::AppleUSBCHCOM::<private>: 127 0x600002c9c058*
-*[1458325.213170]: DK: AppleUSBCHCOM-0x100048d92::start(IOUSBHostInterface-0x100048d90) ok*
-
-→ Install python3 and pip<br />
-`xcode-select --install`<br />
-`brew install python3`
- 
-→ Upgrade 'pip' and install the following packages<br />
-https://github.com/JelmerT/cc2538-bsl
-`sudo pip3 install --upgrade pip`<br />
-`pip3 install pyserial intelhex python-magic`
-
-→ Download the boot loader<br />
-`wget -O cc2538-bsl.zip https://codeload.github.com/JelmerT/cc2538-bsl/zip/master && unzip cc2538-bsl.zip`
-
-→ Look for the latest 'Electrolama zzh' firmware
-https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.x.0/bin
-*CC2652R_coordinator_20210120.zip*
-
-→ Check the exact device location the CC2652 is connected to<br />
-`ls -l /dev/tty.usbserial-*`
-*/dev/tty.usbserial-1460*
-
-→ Remove the Zigbee adapter from the USB port<br />
-→ Whilst removed, press the reset button on the board<br />
-→ Keep pressing while plugging the device back into the USB port<br />
-→ Release the button after 3 seconds<br />
-
-→ Run the following command (note the device location)<br />
-`./cc2538-bsl.py -p /dev/tty.usbserial-1460 -evw CC26X2R1_20201026.hex`<br />
-*Opening port /dev/tty.usbserial-1460, baud 500000*<br />
-*Reading data from CC26X2R1_20201026.hex*<br />
-*Your firmware looks like an Intel Hex file*<br />
-*Connecting to target...*<br />
-*CC1350 PG2.0 (7x7mm): 352KB Flash, 20KB SRAM, CCFG.BL_CONFIG at 0x00057FD8*<br />
-*Primary IEEE Address: 00:12:4B:00:21:B7:77:5E*<br />
-*Performing mass erase*<br />
-*Erasing all main bank flash sectors*<br />
-*Erase done*<br />
-*Writing 360448 bytes starting at address 0x00000000*<br />
-*Write 104 bytes at 0x00057F980*<br />
-*Write done*<br />
-*Verifying by comparing CRC32 calculations.*<br />
-*Verified (match: 0x0a0682b4)*<br />
-
-→ Remove the flashed Zigbee adapter from the macOS USB port
-<br />
-<br />
-
 	
 	
-## Connect the Zigbee Adapter 
-→ Shutdown your Raspberry Pi<br />
-`sudo shutdown -h now`<br />
-
-→ Connect the flashed Zigbee adapter to the Raspberry Pi USB port<br />
-→ Ideally use an USB extension cable to physically distance the adapter from the Raspberry Pi<br />
-
-→ Boot up your Raspberry Pi<br />
-→ Check the device location of the Zigbee adapter<br />
+## Check the Zigbee Adapter 
+→ Check the device location of the Zigbee adapter (should be called 'ttyUSB0')<br />
 `ls -l /dev/serial/by-id`<br />
 *lrwxrwxrwx 1 root 13 Dec  4 20:34 usb-1a86_USB_Serial-if00-port0 -> ../../ttyUSB0*<br />
 
@@ -246,7 +241,7 @@ https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.x.0
 
 	
 	
-## Install  MQTT (Mosquitto)
+## Install MQTT (Mosquitto)
 → Install the Mosquitto broker and clients<br />
 https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/<br />
 `sudo apt install -y mosquitto mosquitto-clients`<br />
