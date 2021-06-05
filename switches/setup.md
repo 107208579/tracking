@@ -117,7 +117,7 @@ https://www.raspberrypi.org/downloads/
 → For SSH connectivity add the following file to the root of the SD card<br />
 `touch /Volumes/boot/ssh`
 
-→ For WiFi connectivity add the following file to the root of the SD card<br /><br />
+→ For WiFi connectivity add the following file to the root of the SD card<br />
 `vi /Volumes/boot/wpa_supplicant.conf`
 
     ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
