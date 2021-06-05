@@ -700,9 +700,7 @@ https://www.zigbee2mqtt.io/devices/WXKG01LM.html
     less /opt/zigbee2mqtt/data/configuration.yaml
 
     ===== LINUX ============================================================
-    sudo iftop
     watch -n 1 netstat -t
-    watch -n 5 'sudo iptables -nvL | grep -v "0     0"'
     sudo netstat -aeptcnl | egrep -via '192.168.2.100|0 0.0.0.0|:::2'
 
     ===== MOSQUITTO ========================================================
@@ -710,11 +708,6 @@ https://www.zigbee2mqtt.io/devices/WXKG01LM.html
     mosquitto_sub -h localhost -p 1883 -u mqtt -P <your_password> -v -t '#'
     mosquitto_sub -h localhost -p 1883 -u mqtt -P <your_password> -v -t '#' -F %X
     mosquitto_sub -h localhost -p 1883 -u mqtt -P <your_password> -v -t 'zigbee2mqtt/Ikea_Square_Button'
-
-    ===== IPTABLES =========================================================
-    sudo iptables -L -nvx --line-numbers
-    less /etc/iptables/rules.v4
-    #sudo iptables -F (flush all rules temporary)
 
     ===== PASSWORD UPDATE ==================================================
     mosquitto       sudo mosquitto_passwd -c /etc/mosquitto/passwd mqtt
