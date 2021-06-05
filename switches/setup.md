@@ -335,16 +335,16 @@ https://unofficial-builds.nodejs.org/download/release/<br />
 → Install dependencies (this may take ~20 minutes on a Rasperry Pi Zero)<br />
 `npm ci --production`<br />
 *[..................] | extractTree: verb extractTree extracting dependencies to node_modules/*<br />
-*[ .................] | extractTree: sill extract ms@2.0.0 extracted to /opt/zigbee2mqtt/node_modules/ms (5844ms)*<br />
-*[  ................] - extractTree: sill extract jest-util@26.3.0 extracted to /opt/zigbee2mqtt/node_modules/jest-util (15625ms)*<br />
-*[        ..........] / extractTree: sill extract path-dirname@1.0.2 extracted to /opt/zigbee2mqtt/node_modules/path-dirname (11930ms)*<br />
-*[         .........] \ reify:@babel/code-frame: timing reify:loadBundles Completed in 0ms*<br />
-*[          ........] \ reify:has-values: http fetch GET 200 https://registry.npmjs.org/ansi-styles/-/ansi-styles-4.2.1.tgz 276431ms*<br />
-*[           .......] \ reify:parse-json: timing reifyNode:node_modules/path-type Completed in 386566ms*<br />
-*[            ......] \ reify:define-property: timing reifyNode:node_modules/once Completed in 392704ms*<br />
-*[             .....] | reify:jest-environment-jsdom: timing reifyNode:node_modules/jest-environment-node Completed in 432610ms*<br />
-*[              ....] / reify:has-flag: timing reifyNode:node_modules/graceful-fs Completed in 471319ms*<br />
-*[              ....] / reify:has-flag: timing reifyNode:node_modules/graceful-fs Completed in 471319ms*<br />
+*[  ................] | extractTree: sill extract ms@2.0.0 extracted to /opt/zigbee2mqtt/node_modules/ms (5844ms)*<br />
+*[    ..............] - extractTree: sill extract jest-util@26.3.0 extracted to /opt/zigbee2mqtt/node_modules/jest-util (15625ms)*<br />
+*[     .............] / extractTree: sill extract path-dirname@1.0.2 extracted to /opt/zigbee2mqtt/node_modules/path-dirname (11930ms)*<br />
+*[       ...........] \ reify:@babel/code-frame: timing reify:loadBundles Completed in 0ms*<br />
+*[         .........] \ reify:has-values: http fetch GET 200 https://registry.npmjs.org/ansi-styles/-/ansi-styles-4.2.1.tgz 276431ms*<br />
+*[          ........] \ reify:parse-json: timing reifyNode:node_modules/path-type Completed in 386566ms*<br />
+*[           .......] \ reify:define-property: timing reifyNode:node_modules/once Completed in 392704ms*<br />
+*[            ......] | reify:jest-environment-jsdom: timing reifyNode:node_modules/jest-environment-node Completed in 432610ms*<br />
+*[             .....] / reify:has-flag: timing reifyNode:node_modules/graceful-fs Completed in 471319ms*<br />
+*[               ...] / reify:has-flag: timing reifyNode:node_modules/graceful-fs Completed in 471319ms*<br />
 *[               ...] | reify:ms: timing reifyNode:node_modules/eslint-config-google Completed in 506123ms*<br />
 *[                ..] \ reify:concat-stream: http fetch GET 200 https://registry.npmjs.org/acorn-walk/-/acorn-walk-7.2.0.tgz 363501ms*<br />
 *[                 .] - reify:@jest/globals: timing reifyNode:node_modules/@jest/source-map Completed in 567117ms*<br />
