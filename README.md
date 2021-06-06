@@ -186,7 +186,7 @@ Apart from manually adding events into a calendar there are other options, inclu
 
 
 ## What setup do you specifically use?  
-My setup consists of a [Nextcloud](http://nextcloud.com/) server that keeps my iPhone, iPad, and iMac calendars in sync. In addition, I log 
+My setup consists of a [Nextcloud](http://nextcloud.com/) server that keeps my iPhone, iPad, and iMac calendars in sync.
 
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup.png" width="740">    
