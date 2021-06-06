@@ -176,7 +176,10 @@ Apart from manually adding events into a calendar there are other options, inclu
 
 
 ## How can events be analysed?  
- * [Tableau](https://www.tableau.com) - import spreadsheets and analyse data
+ * Various Platforms
+   * [Tableau](https://www.tableau.com) - import spreadsheets and analyse data
+ * Microsoft
+   * [Power Bi](https://powerbi.microsoft.com) - import spreadsheets and analyse data
 <br />
 <br />
 
