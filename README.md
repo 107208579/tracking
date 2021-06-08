@@ -88,23 +88,23 @@ Literally any calendar you are comfortable with. Below you find a small list of 
 Apart from manually adding events into a calendar there are other options, including automatic event generation. Below is a list of different ways I have come across to create calendar events. 
  * **Via Application**  
    * macOS
-     * [Apple Event Script](https://github.com/107208579/calendar-tracking/tree/main/applescript) - event creation via AppleScript
-     * macOS Shortcuts - event creation with shortcuts
+     * [Apple Event Script](https://github.com/107208579/calendar-tracking/tree/main/applescript)
+     * macOS Shortcuts
    * iOS
-     * [iOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) - event creation with shortcuts
-     * [iOS Shortcuts Extensions](https://appraven.net/collection.php?listId=5e9631e1f2701d7f562d3e55) - event creation with shortcuts
-     * [iOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) + [NFC Tags](https://www.matthewcassinelli.com/nfc-tags-siri-shortcuts/) - event creation with shortcuts and NFC tags
-     * [Duplicator](https://apps.apple.com/app/id863270136) - event duplication of existing events
-     * [Calendar Paste](https://apps.apple.com/app/id581693524) - event creation via pre-defined templates 
-     * [Week Calendar](https://apps.apple.com/app/id381059732) - event creation via pre-defined templates 
+     * [iOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios)
+     * [iOS Shortcuts Extensions](https://appraven.net/collection.php?listId=5e9631e1f2701d7f562d3e55)
+     * [iOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) + [NFC Tags](https://www.matthewcassinelli.com/nfc-tags-siri-shortcuts/)
+     * [Duplicator](https://apps.apple.com/app/id863270136)
+     * [Calendar Paste](https://apps.apple.com/app/id581693524)
+     * [Week Calendar](https://apps.apple.com/app/id381059732)
    * Android
-	    * [Add Quick Event](https://play.google.com/store/apps/details?id=com.a3w4u.addquickeventfree) - event creation via shortcut
-	    * [Add Your Template](https://play.google.com/store/apps/details?id=streim.de.quickaddroidpro) - event creation via pre-defined templates 
-	    * [Calendar Helper](https://play.google.com/store/apps/details?id=net.noople.calendarhelper) - event creation via pre-defined templates
-	    * [CalenGoo](https://play.google.com/store/apps/details?id=com.calengoo.android) - event creation via pre-defined templates
-	    * [Automate](https://play.google.com/store/apps/details?id=com.llamalab.automate) - event creation
-	    * [MacroDroid](https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid) - event creation
-	    * [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm) - event creation
+     * [Add Quick Event](https://play.google.com/store/apps/details?id=com.a3w4u.addquickeventfree)
+     * [Add Your Template](https://play.google.com/store/apps/details?id=streim.de.quickaddroidpro) 
+     * [Calendar Helper](https://play.google.com/store/apps/details?id=net.noople.calendarhelper)
+     * [CalenGoo](https://play.google.com/store/apps/details?id=com.calengoo.android)
+     * [Automate](https://play.google.com/store/apps/details?id=com.llamalab.automate)
+     * [MacroDroid](https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid)
+     * [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm)
 <br />
 
 
@@ -119,7 +119,7 @@ Apart from manually adding events into a calendar there are other options, inclu
 
  * **Via Bluetooth Location**  
    * iOS  
-     * [Geofency](https://apps.apple.com/app/id615538630) + [Bluetooth Beacon](https://www.feasycom.com/product/Bluetooth-Beacon.html) - event creation based on Bluetooth beacon detection
+     * [Geofency](https://apps.apple.com/app/id615538630) + [Bluetooth Beacon](https://www.feasycom.com/product/Bluetooth-Beacon.html)
    * Self-Hosted  
      * Linux Server + [monitor](https://github.com/andrewjfreyer/monitor) + [mqtt2caldav](https://github.com/107208579/mqtt2caldav)  
 <br />  
@@ -170,10 +170,10 @@ Apart from manually adding events into a calendar there are other options, inclu
 
 ## How can events be exported?  
 * macOS  
-  * [Export Calendars Pro](http://apps.apple.com/app/id663835623) - export events into a spreadsheet
-  * [TimeTable](https://apps.apple.com/app/id1191331765) - export events into a spreadsheet
+  * [Export Calendars Pro](http://apps.apple.com/app/id663835623)
+  * [TimeTable](https://apps.apple.com/app/id1191331765)
 * Cloud Hosted
-  * [Zapier](https://zapier.com) - export Google calendar events into a spreadsheet
+  * [Zapier](https://zapier.com)
 <br />
 <br />
 
@@ -181,9 +181,9 @@ Apart from manually adding events into a calendar there are other options, inclu
 
 ## How can events be analysed?  
  * Various Platforms
-   * [Tableau](https://www.tableau.com) - import spreadsheets and analyse data
+   * [Tableau](https://www.tableau.com)
  * Microsoft
-   * [Power Bi](https://powerbi.microsoft.com) - import spreadsheets and analyse data
+   * [Power Bi](https://powerbi.microsoft.com)
 <br />
 <br />
 
