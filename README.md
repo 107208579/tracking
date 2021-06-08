@@ -89,6 +89,7 @@ Apart from manually adding events into a calendar there are other options, inclu
  * **Via Application**  
    * macOS
      * [Apple Event Script](https://github.com/107208579/calendar-tracking/tree/main/applescript) - event creation via AppleScript
+     * macOS Shortcuts - event creation with shortcuts
    * iOS
      * [iOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) - event creation with shortcuts
      * [iOS Shortcuts Extensions](https://appraven.net/collection.php?listId=5e9631e1f2701d7f562d3e55) - event creation with shortcuts
@@ -97,10 +98,13 @@ Apart from manually adding events into a calendar there are other options, inclu
      * [Calendar Paste](https://apps.apple.com/app/id581693524) - event creation via pre-defined templates 
      * [Week Calendar](https://apps.apple.com/app/id381059732) - event creation via pre-defined templates 
    * Android
-	    * [Add Quick Event](https://play.google.com/store/apps/details?id=com.a3w4u.addquickeventfree) - event creation via shortcut text
+	    * [Add Quick Event](https://play.google.com/store/apps/details?id=com.a3w4u.addquickeventfree) - event creation via shortcut
 	    * [Add Your Template](https://play.google.com/store/apps/details?id=streim.de.quickaddroidpro) - event creation via pre-defined templates 
 	    * [Calendar Helper](https://play.google.com/store/apps/details?id=net.noople.calendarhelper) - event creation via pre-defined templates
 	    * [CalenGoo](https://play.google.com/store/apps/details?id=com.calengoo.android) - event creation via pre-defined templates
+	    * [Automate](https://play.google.com/store/apps/details?id=com.llamalab.automate) - event creation
+	    * [MacroDroid](https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid) - event creation
+	    * [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm) - event creation
 <br />
 
 
