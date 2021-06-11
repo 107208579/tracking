@@ -118,8 +118,8 @@ Apart from manually adding events into a calendar there are other options, inclu
 
  * **Via GPS Location**
    * iOS
-     * [Geofency](https://apps.apple.com/app/id615538630) - automatic event creation based on GPS location  
-     * [Tyme](https://apps.apple.com/app/id1461456813) - automatic event creation based on GPS location  
+     * [Geofency](https://apps.apple.com/app/id615538630) 
+     * [Tyme](https://apps.apple.com/app/id1461456813)
 <br />  
 <br />  
 
