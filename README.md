@@ -89,9 +89,9 @@ Apart from manually adding events into a calendar there are other options, inclu
  * **Via Application**  
    * macOS
      * [Apple Event Script](https://github.com/107208579/calendar-tracking/tree/main/applescript)
-     * macOS Shortcuts
+     * macOS Shortcuts ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md) | [Forum](https://www.reddit.com/r/shortcuts))
    * iOS
-     * [iOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios)
+     * [iOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md) | [Forum](https://www.reddit.com/r/shortcuts))
      * [iOS Shortcuts Extensions](https://appraven.net/collection.php?listId=5e9631e1f2701d7f562d3e55)
      * [iOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) + [NFC Tags](https://www.matthewcassinelli.com/nfc-tags-siri-shortcuts/)
      * [Duplicator](https://apps.apple.com/app/id863270136)
@@ -243,7 +243,7 @@ The smallest event duration logged is 5 minutes. Here are some event example eve
 
 
 
-On the go, I log events on my iPhone via some of these 'one-click' [iOS shortcuts](https://github.com/107208579/calendar-tracking/tree/main/shortcuts) bookmarks.
+On the go, I log events on my iPhone via some of these 'one-click' [iOS shortcuts](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md) bookmarks.
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_iOS14_Shortcuts.png" width="250">
 </p>
@@ -252,7 +252,7 @@ On the go, I log events on my iPhone via some of these 'one-click' [iOS shortcut
 
 
 
-At home I use wireless switches that allow me to log events via a simple button press. I've written up a tutorial on how to get a Raspberry Pi OS base installation and how to setup Zigbee switches with all required software here: https://github.com/107208579/calendar-tracking/blob/main/switches/setup.md
+At home I use wireless switches that allow me to log events via a simple button press. I've written up a tutorial on how to get a Raspberry Pi OS base installation and how to setup Zigbee switches with all required software here: https://github.com/107208579/calendar-tracking/blob/main/switches/README.md
 
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup_Zigbee.png" width="740">    
