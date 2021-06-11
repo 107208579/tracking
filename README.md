@@ -56,8 +56,6 @@ Literally any calendar you are comfortable with. Below you find a small list of 
      * [Radicale](http://radicale.org)
 <br />  
 
-
-
 * **Applications**  
   * Windows
      * [eM Client](http://www.emclient.com)
@@ -106,6 +104,7 @@ Apart from manually adding events into a calendar there are other options, inclu
      * [MacroDroid](https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid)
      * [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm)
 <br />
+<br />  
 
 
 
