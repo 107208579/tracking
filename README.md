@@ -89,14 +89,14 @@ Apart from manually adding events into a calendar there are other options, inclu
  * **Via Application**  
    * macOS
      * [Apple Event Script](https://github.com/107208579/calendar-tracking/tree/main/applescript)
-     * macOS Shortcuts ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md) | [Forum](https://www.reddit.com/r/shortcuts))
+     * Shortcuts ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md) | [Forum](https://www.reddit.com/r/shortcuts))
    * iOS
-     * [iOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md) | [Forum](https://www.reddit.com/r/shortcuts))
-     * [iOS Shortcuts Extensions](https://appraven.net/collection.php?listId=5e9631e1f2701d7f562d3e55)
-     * [iOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) + [NFC Tags](https://www.matthewcassinelli.com/nfc-tags-siri-shortcuts/)
      * [Duplicator](https://apps.apple.com/app/id863270136)
      * [Calendar Paste](https://apps.apple.com/app/id581693524)
+     * [Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md) | [Forum](https://www.reddit.com/r/shortcuts))
+     * [Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) + [Extensions](https://appraven.net/collection.php?listId=5e9631e1f2701d7f562d3e55)
      * [Week Calendar](https://apps.apple.com/app/id381059732)
+
    * Android
      * [Add Quick Event](https://play.google.com/store/apps/details?id=com.a3w4u.addquickeventfree)
      * [Add Your Template](https://play.google.com/store/apps/details?id=streim.de.quickaddroidpro) 
@@ -109,10 +109,19 @@ Apart from manually adding events into a calendar there are other options, inclu
 
 
 
+ * **Via Tap**
+   * iOS
+     * [Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) + [NFC Tags](https://www.matthewcassinelli.com/nfc-tags-siri-shortcuts/)
+<br />
+<br />  
+
+
+
  * **Via GPS Location**
    * iOS
      * [Geofency](https://apps.apple.com/app/id615538630) - automatic event creation based on GPS location  
      * [Tyme](https://apps.apple.com/app/id1461456813) - automatic event creation based on GPS location  
+<br />  
 <br />  
 
 
@@ -122,6 +131,7 @@ Apart from manually adding events into a calendar there are other options, inclu
      * [Geofency](https://apps.apple.com/app/id615538630) + [Bluetooth Beacon](https://www.feasycom.com/product/Bluetooth-Beacon.html)
    * Self-Hosted  
      * Linux Server + [monitor](https://github.com/andrewjfreyer/monitor) + [mqtt2caldav](https://github.com/107208579/mqtt2caldav)  
+<br />  
 <br />  
 
 
