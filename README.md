@@ -192,6 +192,11 @@ Apart from manually creating events directly in a calendar application there are
   * [Outlook Export](https://support.microsoft.com/en-us/office/import-and-export-outlook-email-contacts-and-calendar-92577192-3881-4502-b79d-c3bbada6c8ef)
 * Cloud Hosted
   * [Google Calendar Export](https://support.google.com/calendar/answer/37111)
+* Scripts
+  * [ical2csv](https://github.com/search?q=ical2csv&type=Repositories)
+  * [ical-parser](https://github.com/snafuz/ical-parser)
+  * [icaltool](https://github.com/randomchars42/icaltool)
+  * [gcal-to-csv](https://github.com/search?q=gcal-to-csv&type=Repositories)
 <br />
 <br />
 
