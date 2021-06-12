@@ -43,9 +43,9 @@ The easiest way is to create events in a calendar. Use a calendar service such a
 
 
 ## What calendar applications can be used?
-Literally any calendar you are comfortable with. Below you find a small list of services and applications that support CalDAV and allow for easy synchronisation of events between different devices (such as your computer, laptop, or mobile phone) and across different computer systems (such as Windows, macOS, iOS, Linux).
+Literally any calendar you are comfortable with. Below you find a small list of services and applications that support CalDAV and allow for easy synchronisation of events between different calendars, devices (such as your computer, laptop, or mobile phone) and across different computer systems (such as Windows, Linux, macOS, iOS, Android, Linux, etc).
 
-* **Services**   
+* **Calendar Services**   
   * Cloud Hosted
      * [Apple Calendar](https://www.icloud.com/calendar/) 
      * [Google Calendar](http://calendar.google.com)
@@ -56,7 +56,7 @@ Literally any calendar you are comfortable with. Below you find a small list of 
      * [Radicale](http://radicale.org)
 <br />  
 
-* **Applications**  
+* **Calendar Applications**  
   * macOS
      * [Apple Calendar](http://support.apple.com/guide/calendar/welcome/mac)
      * [BusyCal](https://www.busymac.com/busycal/)
@@ -66,27 +66,33 @@ Literally any calendar you are comfortable with. Below you find a small list of 
      * [One Calendar](https://www.onecalendar.nl)
      * [Thunderbird](https://www.thunderbird.net/en-US/calendar/)
   * Linux
+     * [Calcurse](https://calcurse.org)
      * [Evolution](https://wiki.gnome.org/Apps/Evolution) 
      * [Gnome Calendar](https://snapcraft.io/gnome-calendar)
      * [KOrganizer](https://apps.kde.org/en/korganizer)
+  * Android
+     * [Google Calendar](https://play.google.com/store/apps/details?id=com.google.android.calendar)
+     * [One Calendar](https://play.google.com/store/apps/details?id=biz.codespark.xcalendarapp)
   * iOS
-     * [Apple Calendar](https://support.apple.com/guide/iphone/iph3d110f84/ios)
+     * [Apple Calendar](https://apps.apple.com/app/id1108185179)
+     * [Google Calendar](https://apps.apple.com/app/id909319292)
      * [BusyCal](https://apps.apple.com/us/app/id1035689743)
      * [Fantastical](https://apps.apple.com/app/id718043190)
+     * [One Calendar](https://apps.apple.com/app/id1238379385)
 <br />  
 <br />  
 
 
 
-## What tools can add events?  
-Apart from manually creating events in a calendar there are other options, including automatic ones. Below is a list of different ways I have come across to create calendar events. 
- * **Via Application**  
-   * macOS
-     * [Apple Event Script](https://github.com/107208579/calendar-tracking/tree/main/applescript)
-     * Shortcuts ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md) | [Forum](https://www.reddit.com/r/shortcuts))
-   * Windows
-   * Linux
-   * Android
+## What other tools can create events?  
+Apart from manually creating events directly in a calendar there are many other ways to do so. Below is a list of different ways I have come across to create calendar events.
+* **Via Application**  
+  * macOS
+     * [Apple Script](https://github.com/107208579/calendar-tracking/tree/main/applescript)
+     * [Shortcuts]() ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md) | [Forum](https://www.reddit.com/r/shortcuts))
+  * Linux
+     * [GCal CLI](https://github.com/insanum/gcalcli)
+  * Android
      * [Add Quick Event](https://play.google.com/store/apps/details?id=com.a3w4u.addquickeventfree)
      * [Add Your Template](https://play.google.com/store/apps/details?id=streim.de.quickaddroidpro) 
      * [Calendar Helper](https://play.google.com/store/apps/details?id=net.noople.calendarhelper)
@@ -94,20 +100,22 @@ Apart from manually creating events in a calendar there are other options, inclu
      * [Automate](https://play.google.com/store/apps/details?id=com.llamalab.automate)
      * [MacroDroid](https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid)
      * [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm)
-   * iOS
+  * iOS
      * [Duplicator](https://apps.apple.com/app/id863270136)
      * [Calendar Paste](https://apps.apple.com/app/id581693524)
      * [Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md) | [Forum](https://www.reddit.com/r/shortcuts))
      * [Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) + [Extensions](https://appraven.net/collection.php?listId=5e9631e1f2701d7f562d3e55)
      * [Week Calendar](https://apps.apple.com/app/id381059732)
-   * watchOS
+  * watchOS
      * [Shortcuts](https://support.apple.com/en-gb/guide/watch/apd99050d435/watchos) ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md) | [Forum](https://www.reddit.com/r/shortcuts))
+  * Cloud Hosted
+    * [Zapier](https://zapier.com)
    * Cross Platform
-      * [Slack](https://slack.com) + [Eventbot](https://geteventbot.com)
+     * [Slack](https://slack.com) + [Eventbot](https://geteventbot.com)
 <br />
 
- * **Via Tap**
-   * iOS
+* **Via Tap**
+  * iOS
      * [Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) + NFC Tags ([Tutorial](https://www.matthewcassinelli.com/nfc-tags-siri-shortcuts/))
 <br />
 
@@ -124,23 +132,23 @@ Apart from manually creating events in a calendar there are other options, inclu
      * Server + [monitor](https://github.com/andrewjfreyer/monitor) + [mqtt2caldav](https://github.com/107208579/mqtt2caldav)   
 <br />
 
- * **Via Physical Button Press**  
-   * macOS
+* **Via Physical Button Press**  
+  * macOS
      * [Keyboard](https://www.apple.com/sg/shop/product/MLA22ZA/A/magic-keyboard-us-english) + [Keyboard Shortcuts](https://support.apple.com/en-gb/guide/mac-help/mchlp2271/11.0/mac/11.0) + [Apple Event Script](https://github.com/107208579/calendar-tracking/tree/main/applescript)
      * [Keyboard](https://www.apple.com/sg/shop/product/MLA22ZA/A/magic-keyboard-us-english) + [KeyBoardMaestro](https://www.keyboardmaestro.com) + [Apple Event Script](https://github.com/107208579/calendar-tracking/tree/main/applescript)
      * [Flic Button](https://flic.io/) + [macOS Flic App](https://flic.io/mac-app) + [Flic Shell Plugin](https://github.com/MikeDocker/Flic-Plugin) + [Apple Event Script](https://github.com/107208579/calendar-tracking/tree/main/applescript)
      * [StreamDeck](https://www.elgato.com/en/gaming/stream-deck) + [macOS StreamDeck App](https://www.elgato.com/en/gaming/downloads) + [Apple Event Script](https://github.com/107208579/calendar-tracking/tree/main/applescript)
-   * iOS 
+  * iOS 
      * [Flic Button](https://flic.io/) + [iOS Flic App](https://apps.apple.com/app/id977593793) + [IFTTT (iOS Calendar)](https://ifttt.com/ios_calendar) / [IFTTT (Google Calendar)](https://ifttt.com/google_calendar)
-   * Android
+  * Android
      * [Flic Button](https://flic.io/) + [Android Flic App](https://play.google.com/store/apps/details?id=io.flic.app) + [IFTTT (Google Calendar)](https://ifttt.com/google_calendar)
-   * Cloud Hosted
+  * Cloud Hosted
      * [Flic Button](https://flic.io/) + [Flic Hub](https://flic.io/) + [IFTTT (iOS Calendar)](https://ifttt.com/ios_calendar) / [IFTTT (Google Calendar)](https://ifttt.com/google_calendar)
-   * Self Hosted
+  * Self Hosted
      * [Zigbee Buttons](https://www.zigbee2mqtt.io/information/supported_devices.html) + [Zigbee Receiver](https://www.zigbee2mqtt.io/information/supported_adapters.html) + Linux Server + [zigbee2mqtt](https://www.zigbee2mqtt.io) + [mqtt2caldav](https://github.com/107208579/mqtt2caldav)
      * [Zigbee Buttons](https://www.zigbee2mqtt.io/information/supported_devices.html) + [Sonoff Zigbee Gateway](https://www.itead.cc/sonoff-zbbridge.html) - [flashed](https://www.digiblur.com/2020/07/how-to-use-sonoff-zigbee-bridge-with.html) + Linux Server + [mqtt2caldav](https://github.com/107208579/mqtt2caldav) 
      * [RF Buttons](https://www.amazon.com/s?k=433MHz+Button) + [Sonoff RF Gateway](https://sonoff.tech/product/accessories/433-rf-bridge) - [flashed](https://www.youtube.com/watch?v=o4Qa43c_shM) + Linux Server + [zigbee2mqtt](https://www.zigbee2mqtt.io) + [mqtt2caldav](https://github.com/107208579/mqtt2caldav)
-   * Self Built
+  * Self Built
      * [Philips Hue Wall Switch](https://www.philips-hue.com/en-gb/p/hue-philips-hue-wall-switch-module/8719514318045) + [Apple HomeKit](https://support.apple.com/en-sg/HT204893) + [iOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) ([guide](https://riedel.wtf/philipps-hue-wall-switch/))
      * [Onion Omega 2](https://onion.io/omega2/) ([guide](http://frederickvandenbosch.be/?p=2345)) + [IFTTT (iOS Calendar)](https://ifttt.com/ios_calendar) / [IFTTT (Google Calendar)](https://ifttt.com/google_calendar)
 <br />
@@ -148,13 +156,12 @@ Apart from manually creating events in a calendar there are other options, inclu
 
 
 
-## What other tools are helpful?  
+## What other tools are useful?  
 * macOS
    * [iCalBuddy](https://hasseg.org/icalBuddy/) - command line tool to query calendars
    * [iCalBuddy64](https://github.com/DavidKaluta/icalBuddy64) - command line tool to query calendars
-* Windows 
-* Linux
-   * [Calcurse](https://calcurse.org) + [calcurse-caldav](https://calcurse.org/files/calcurse-caldav.html) 
+ * Windows 
+ * Linux
  * iOS  
    * [Arc App](https://apps.apple.com/app/id1063151918) - tracks which locations you have been to and for how long  
    * [Geofency](https://apps.apple.com/app/id615538630) - tracks which locations you have been to and for how long  
@@ -173,8 +180,10 @@ Apart from manually creating events in a calendar there are other options, inclu
 * macOS  
   * [Export Calendars Pro](http://apps.apple.com/app/id663835623)
   * [TimeTable](https://apps.apple.com/app/id1191331765)
-* Cloud Hosted
-  * [Zapier](https://zapier.com)
+* Linux
+  * [Google Calencar Export](https://support.google.com/calendar/answer/37111)
+* Windows 
+  * [Outlook Export](https://support.microsoft.com/en-us/office/import-and-export-outlook-email-contacts-and-calendar-92577192-3881-4502-b79d-c3bbada6c8ef)
 <br />
 <br />
 
@@ -198,7 +207,7 @@ My setup consists of a [Nextcloud](http://nextcloud.com/) server that keeps my i
 </p>
 
 
-My setup has different calendars, such as Education, Employment, Errands, Entertainment, Food, Health, Housework, Hygiene, Projects, Rest, Socialising, Sports, and Transportation.
+I have different calendars, such as Education, Employment, Errands, Entertainment, Food, Health, Housework, Hygiene, Projects, Rest, Socialising, Sports, and Transportation.
 * EDU  
 * EMP   
 * ENT  
@@ -253,7 +262,7 @@ On the go, I log events on my iPhone via some of these 'one-click' [iOS shortcut
 
 
 
-At home I use wireless switches that allow me to log events via a simple button press. I've written up a tutorial on how to get a Raspberry Pi OS base installation and how to setup Zigbee switches with all required software here: https://github.com/107208579/calendar-tracking/blob/main/switches/README.md
+At home I use wireless switches that allow me to log events via a simple button press. I've written up a tutorial on how to get a Raspberry Pi OS base installation and how to setup Zigbee switches with all required software here: https://github.com/107208579/calendar-tracking/blob/main/switches/README.md.
 
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup_Zigbee.png" width="740">    
