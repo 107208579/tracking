@@ -6,7 +6,7 @@
 ## Why track your time?  
 Have you ever asked yourself where your time goes? Or have you ever wished you could remember what you were doing on a specific day in the past?
 
-Back in 2012 I was very curious on how I spent my 10,080 minutes in a week and decided to track my life in a calendar. I wanted to:
+Back in 2012 I was curious on how I spent my 10,080 minutes of a week and decided to start tracking my life in a calendar. I wanted to
 - easily remember past events
 - learn more about myself
 - become a better planner
@@ -14,7 +14,14 @@ Back in 2012 I was very curious on how I spent my 10,080 minutes in a week and d
 - change personal behaviour
 - have a visualization of my life
 - leave a digital legacy
+<br />
 
+
+
+
+
+
+## Who does that?  
 Here are some other great people that track their life in a calendar:
 * [Every Step I Take](https://www.youtube.com/watch?v=MazwAPVO70Y) (Nicholas Feltron)
 * [Productivity Hacking](http://www.jamesmaa.com/2012/12/02/james-maas-productivity-hacking-guide/) (James Maa)
@@ -32,18 +39,20 @@ Here are some other great people that track their life in a calendar:
 
 
 
-## How does this all work?  
-The easiest way is to create events in a calendar. Use a calendar service such as [Apple Calendar](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) that acts as a central storage and allows all your calendar apps to connect and automatically synchronise events with each other.
+## How does calendar tracking work?  
+The easiest way is to log all your events in a calendar, export the data, and then analyze it.
+
+GIVE BETTER INTRODUCTION BEFORE JUMPING INTO TOOLS. MOVE THINGS UP?
+GIVE BETTER INTRODUCTION BEFORE JUMPING INTO TOOLS. MOVE THINGS UP?
+GIVE BETTER INTRODUCTION BEFORE JUMPING INTO TOOLS. MOVE THINGS UP?
+GIVE BETTER INTRODUCTION BEFORE JUMPING INTO TOOLS. MOVE THINGS UP?
+
+Use a service such as [Apple Calendar](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) as central storage which automatically syncs between 
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Setup.png" width="740"> 
 </p>
-<br />
-<br />
 
-
-
-## What calendar applications can be used?
-Literally any calendar you are comfortable with. Below you find a small list of services and applications that support CalDAV and allow for easy synchronisation of events between different calendars, devices (such as your computer, laptop, or mobile phone) and across different computer systems (such as Windows, Linux, macOS, iOS, Android, Linux, etc).
+Below a list of other services and applications that support universal calendar synchronisation (called 'CalDAV') and which allows to mix and match different calendars applications independently of the device (such as your computer, laptop, tablet, mobile phone, etc) or the operating system (such as Windows, Linux, macOS, iOS, Android, Linux, etc).
 
 * **Calendar Services**   
   * Cloud Hosted
@@ -85,7 +94,7 @@ Literally any calendar you are comfortable with. Below you find a small list of 
 
 
 ## What other tools can create events?  
-Apart from manually creating events directly in a calendar there are many other ways to do so. Below is a list of different ways I have come across to create calendar events.
+Apart from manually creating events directly in a calendar application there are many other ways. Below is a list of different ways I have come across to create calendar events.
 * **Via Application**  
   * macOS
      * [Apple Script](https://github.com/107208579/calendar-tracking/tree/main/applescript)
@@ -114,7 +123,7 @@ Apart from manually creating events directly in a calendar there are many other 
      * [Slack](https://slack.com) + [Eventbot](https://geteventbot.com)
 <br />
 
-* **Via Tap**
+* **Via Device Tap**
   * iOS
      * [Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) + NFC Tags ([Tutorial](https://www.matthewcassinelli.com/nfc-tags-siri-shortcuts/))
 <br />
@@ -129,7 +138,7 @@ Apart from manually creating events directly in a calendar there are many other 
    * iOS  
      * [Geofency](https://apps.apple.com/app/id615538630) + [Bluetooth Beacon](https://www.feasycom.com/product/Bluetooth-Beacon.html)
    * Self-Hosted  
-     * Server + [monitor](https://github.com/andrewjfreyer/monitor) + [mqtt2caldav](https://github.com/107208579/mqtt2caldav)   
+     * [monitor](https://github.com/andrewjfreyer/monitor) + [mqtt2caldav](https://github.com/107208579/mqtt2caldav)   
 <br />
 
 * **Via Physical Button Press**  
@@ -148,6 +157,7 @@ Apart from manually creating events directly in a calendar there are many other 
      * [Zigbee Buttons](https://www.zigbee2mqtt.io/information/supported_devices.html) + [Zigbee Receiver](https://www.zigbee2mqtt.io/information/supported_adapters.html) + Linux Server + [zigbee2mqtt](https://www.zigbee2mqtt.io) + [mqtt2caldav](https://github.com/107208579/mqtt2caldav)
      * [Zigbee Buttons](https://www.zigbee2mqtt.io/information/supported_devices.html) + [Sonoff Zigbee Gateway](https://www.itead.cc/sonoff-zbbridge.html) - [flashed](https://www.digiblur.com/2020/07/how-to-use-sonoff-zigbee-bridge-with.html) + Linux Server + [mqtt2caldav](https://github.com/107208579/mqtt2caldav) 
      * [RF Buttons](https://www.amazon.com/s?k=433MHz+Button) + [Sonoff RF Gateway](https://sonoff.tech/product/accessories/433-rf-bridge) - [flashed](https://www.youtube.com/watch?v=o4Qa43c_shM) + Linux Server + [zigbee2mqtt](https://www.zigbee2mqtt.io) + [mqtt2caldav](https://github.com/107208579/mqtt2caldav)
+     * [StreamDeck](https://www.elgato.com/en/gaming/stream-deck) + [MQTT](https://michaeldot.com/blog/2020/2/15/streamdeckmqttopenhab) + [mqtt2caldav](https://github.com/107208579/mqtt2caldav)
   * Self Built
      * [Philips Hue Wall Switch](https://www.philips-hue.com/en-gb/p/hue-philips-hue-wall-switch-module/8719514318045) + [Apple HomeKit](https://support.apple.com/en-sg/HT204893) + [iOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) ([guide](https://riedel.wtf/philipps-hue-wall-switch/))
      * [Onion Omega 2](https://onion.io/omega2/) ([guide](http://frederickvandenbosch.be/?p=2345)) + [IFTTT (iOS Calendar)](https://ifttt.com/ios_calendar) / [IFTTT (Google Calendar)](https://ifttt.com/google_calendar)
@@ -160,8 +170,6 @@ Apart from manually creating events directly in a calendar there are many other 
 * macOS
    * [iCalBuddy](https://hasseg.org/icalBuddy/) - command line tool to query calendars
    * [iCalBuddy64](https://github.com/DavidKaluta/icalBuddy64) - command line tool to query calendars
- * Windows 
- * Linux
  * iOS  
    * [Arc App](https://apps.apple.com/app/id1063151918) - tracks which locations you have been to and for how long  
    * [Geofency](https://apps.apple.com/app/id615538630) - tracks which locations you have been to and for how long  
@@ -180,19 +188,19 @@ Apart from manually creating events directly in a calendar there are many other 
 * macOS  
   * [Export Calendars Pro](http://apps.apple.com/app/id663835623)
   * [TimeTable](https://apps.apple.com/app/id1191331765)
-* Linux
-  * [Google Calencar Export](https://support.google.com/calendar/answer/37111)
 * Windows 
   * [Outlook Export](https://support.microsoft.com/en-us/office/import-and-export-outlook-email-contacts-and-calendar-92577192-3881-4502-b79d-c3bbada6c8ef)
+* Cloud Hosted
+  * [Google Calendar Export](https://support.google.com/calendar/answer/37111)
 <br />
 <br />
 
 
 
 ## How can events be analysed?  
- * Cross Platform
+* Cross Platform
    * [Tableau](https://www.tableau.com)
- * Microsoft
+* Microsoft
    * [Power Bi](https://powerbi.microsoft.com)
 <br />
 <br />
