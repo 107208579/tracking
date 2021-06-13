@@ -94,7 +94,7 @@ Below a list of other services and applications that support universal calendar 
 
 
 ## What other tools can create events?  
-Apart from manually creating events directly in a calendar application there are many other ways. Below is a list of different ways I have come across to create calendar events.
+Apart from manually creating events directly in a calendar application there are many other ways. Below is a list of different apps and methods I have come across.
 * **Via Application**  
   * macOS
      * [Apple Script](https://github.com/107208579/calendar-tracking/tree/main/applescript)
@@ -104,21 +104,19 @@ Apart from manually creating events directly in a calendar application there are
   * Android
      * [Add Quick Event](https://play.google.com/store/apps/details?id=com.a3w4u.addquickeventfree)
      * [Add Your Template](https://play.google.com/store/apps/details?id=streim.de.quickaddroidpro) 
+     * [Automate](https://play.google.com/store/apps/details?id=com.llamalab.automate)
      * [Calendar Helper](https://play.google.com/store/apps/details?id=net.noople.calendarhelper)
      * [CalenGoo](https://play.google.com/store/apps/details?id=com.calengoo.android)
-     * [Automate](https://play.google.com/store/apps/details?id=com.llamalab.automate)
      * [MacroDroid](https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid)
      * [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm)
   * iOS
-     * [Duplicator](https://apps.apple.com/app/id863270136)
      * [Calendar Paste](https://apps.apple.com/app/id581693524)
+     * [Duplicator](https://apps.apple.com/app/id863270136)
      * [Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md) | [Forum](https://www.reddit.com/r/shortcuts))
      * [Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) + [Extensions](https://appraven.net/collection.php?listId=5e9631e1f2701d7f562d3e55)
      * [Week Calendar](https://apps.apple.com/app/id381059732)
   * watchOS
      * [Shortcuts](https://support.apple.com/en-gb/guide/watch/apd99050d435/watchos) ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md) | [Forum](https://www.reddit.com/r/shortcuts))
-  * Cloud Hosted
-    * [Zapier](https://zapier.com)
    * Cross Platform
      * [Slack](https://slack.com) + [Eventbot](https://geteventbot.com)
 <br />
@@ -161,6 +159,14 @@ Apart from manually creating events directly in a calendar application there are
   * Self Built
      * [Philips Hue Wall Switch](https://www.philips-hue.com/en-gb/p/hue-philips-hue-wall-switch-module/8719514318045) + [Apple HomeKit](https://support.apple.com/en-sg/HT204893) + [iOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) ([guide](https://riedel.wtf/philipps-hue-wall-switch/))
      * [Onion Omega 2](https://onion.io/omega2/) ([guide](http://frederickvandenbosch.be/?p=2345)) + [IFTTT (iOS Calendar)](https://ifttt.com/ios_calendar) / [IFTTT (Google Calendar)](https://ifttt.com/google_calendar)
+<br />
+
+* **Via Workflow Automation**  
+  * Services
+    * [Automate](https://automate.io) 
+    * [IFTTT](https://ifttt.com)
+    * [Integromat](https://www.integromat.com)
+    * [Zapier](https://zapier.com)
 <br />
 <br />
 
