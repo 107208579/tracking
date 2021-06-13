@@ -513,9 +513,10 @@ https://support.metageek.com/hc/en-us/articles/203845040-Zigbee-and-WiFi-Coexist
 • Wifi Channel 11 interferes with Zigbee channels 19, 20, 21, 22, 23, 24<br />
 
 → Ideally both networks are being set on opposing ends of the channel spectrum<br />
-→ Make sure you don't have a 'smart' WiFi router which automatically changes channels<br />
 • Wifi Channel 01 with Zigbee channels 19, 20, 21, 22, 23, 24<br />
 • Wifi Channel 11 with Zigbee channels 11, 12, 13, 14, 15, 16, 17<br />
+
+→ Make sure you don't have a 'smart' WiFi router which automatically changes channels<br />
 
 → Check the last log entry to figure out which channel Zigbee uses <br />
 `less /opt/zigbee2mqtt/data/log/*/log.txt | grep channel | awk -F\network\"\: '{print $2}'`<br />
@@ -542,7 +543,7 @@ https://support.metageek.com/hc/en-us/articles/203845040-Zigbee-and-WiFi-Coexist
 ## Change Zigbee Channel 
 → In order to change the default Zigbee channel edit the configuration.yaml<br />
 → Use a 'Zigbee Light Link' channel to avoid problems: 11, 15, 20<br />
-→ IMPORTANT: Change of channel requires re-pairing of all devices<br />
+→ IMPORTANT: Change of channel requires re-pairing of all connected Zigbee devices<br />
 https://www.zigbee2mqtt.io/information/configuration.html
 
 `vi /opt/zigbee2mqtt/data/configuration.yaml`<br />
@@ -574,7 +575,7 @@ https://www.zigbee2mqtt.io/how_tos/how_to_improve_network_range_and_stability.ht
 → Restart your server for the changes to take effect<br /> 
 `sudo reboot`
 
-→ Ideally us an USB extension to physically distance the Zigbee adapter from the server<br />
+→ Ideally use an USB extension to physically distance the Zigbee adapter from the server<br />
 <br />
 <br />
 
@@ -586,11 +587,13 @@ https://www.zigbee2mqtt.io/how_tos/how_to_improve_network_range_and_stability.ht
 
     permit_join: true
 
-→ Subscribe with the Mosquitto client to all topics<br />
+→ Subscribe with the Mosquitto client to all topics to see incoming messages during the pairing process<br />
 `mosquitto_sub -u mqtt -P <your_password> -h localhost -p 1883 -v -t '#'`
 
-→ Example: Ikea Tradfri E1524/E1810 (Round Remote Control)<br />
-https://www.zigbee2mqtt.io/devices/E1524_E1810.html
+→ More information about device specific pairing steps can be found in the [Zigbee2MQTT supported devices list](https://www.zigbee2mqtt.io/information/supported_devices.html).
+
+→ EXAMPLE: Ikea Tradfri E1524/E1810 (Round Remote Control)<br />
+https://www.zigbee2mqtt.io/devices/E1524_E1810.html<br />
 → Press connect button inside casing 4 times in short order
 
 → You should see an output similar to this:<br />
@@ -622,7 +625,7 @@ https://www.zigbee2mqtt.io/devices/E1524_E1810.html
 
 	
 	
-→ Example: Sonoff SNZB-01 (Square Button)<br />
+→ EXAMPLE: Sonoff SNZB-01 (Square Button)<br />
 https://www.zigbee2mqtt.io/devices/SNZB-01.html<br />
 → Long press reset button for 5 seconds until the LED indicator flashes three times, which means the device has entered pairing mode<br />
 
@@ -632,7 +635,7 @@ https://www.zigbee2mqtt.io/devices/SNZB-01.html<br />
 *Long Press		mqtt/0x00124b001f8ab0cd {"action":"long","linkquality":15}'*<br />
 <br />
 
-→ Example:XiaoMi Aqara WXKG01LM (Round Button)<br />
+→ EXAMPLE: XiaoMi Aqara WXKG01LM (Round Button)<br />
 https://www.zigbee2mqtt.io/devices/WXKG01LM.html
 
 → Press and hold the reset button on the device for 5 seconds until the blue light starts blinking<br />
@@ -656,13 +659,13 @@ https://www.zigbee2mqtt.io/devices/WXKG01LM.html
       '0x00124b001f8ab0cd':
         friendly_name: '0x00124b001f4ab0cd'
 
-→ Give your devices a nicer name by editing the 'friendly_name'<br />
+→ Give your devices a nicer name by editing the 'friendly_name' section<br />
 
     devices:
-      '0x00158d000403091a':
+      '0x00158d000402091a':
         friendly_name: 'XiaoMi_Test_1'
         legacy: false
-      '0x00124b001f4ab0cd':
+      '0x00124b001f4ac0cd':
         friendly_name: 'Sonoff_Test_1'
 
 → Set 'permit_join' to 'false' AFTER all devices have been paired<br />
@@ -702,10 +705,6 @@ https://www.zigbee2mqtt.io/devices/WXKG01LM.html
     vi /opt/zigbee2mqtt/data/configuration.yaml
     less /opt/zigbee2mqtt/data/configuration.yaml
 
-    ===== LINUX ============================================================
-    watch -n 1 netstat -t
-    sudo netstat -aeptcnl | egrep -via '192.168.2.100|0 0.0.0.0|:::2'
-
     ===== MOSQUITTO ========================================================
     sudo tail -f /var/log/mosquitto/mosquitto.log
     mosquitto_sub -h localhost -p 1883 -u mqtt -P <your_password> -v -t '#'
@@ -721,43 +720,41 @@ https://www.zigbee2mqtt.io/devices/WXKG01LM.html
 
 	
 	
-## How To Read MQTT Logs
-→ Mosquitto Server
+## How To Read Log Files
+→ Mosquitto Server Logs<br />
 `sudo tail -f /var/log/mosquitto/mosquitto.log`<br />
 *1605857209: New connection from ::1 on port 1883.*<br />
 *1605857209: New client connected from ::1 as mosqsub|812-BTN (c1, k60).*<br />
 *1605857255: Socket error on client mosqsub|812-BTN, disconnecting.*<br />
 
-→ Mosquitto Subscriber Client<br />
-https://mosquitto.org/man/mosquitto_sub-1.html
-
-`mosquitto_sub -u mqtt -P ???????? -h localhost -p 1883 -v -t '#'`<br />
+→ Mosquitto Subscriber Logs<br />
+`mosquitto_sub -u <username> -P <password> -h localhost -p 1883 -v -t '#'`<br />
 *mqtt/Ikea_Square_Button {"action":"on","linkquality":92}*<br />
 
-`mosquitto_sub -u mqtt -P ???????? -h localhost -p 1883 -v -t '#' | xargs -d$'\n' -L1 sh -c 'date "+%D %T $0"'`<br />
+`mosquitto_sub -u <username> -P <password> -h localhost -p 1883 -v -t '#' | xargs -d$'\n' -L1 sh -c 'date "+%D %T $0"'`<br />
 *11/20/20 15:26:51 mqtt/Ikea_Square_Button {"action":"on","linkquality":49}*<br />
 
-`mosquitto_sub -u mqtt -P ???????? -h localhost -p 1883 -v -d -t '#'`<br />
+`mosquitto_sub -u <username> -P <password> -h localhost -p 1883 -v -d -t '#'`<br />
 *Client mosqsub|809-BTN received PUBLISH (d0, q0, r0, m0, 'mqtt/Ikea_Round_Remote_Control', ... (71 bytes))*<br />
 *mqtt/Ikea_Round_Remote_Control {"action":"arrow_left_click","linkquality":60,"update_available":false}*<br />
 
 → The Mosquitto client allows to format the data output - see some examples below<br />
 → Check the manual pages via 'man mosquitto_sub'<br />
-`mosquitto_sub -u mqtt -P ???????? -h localhost -p 1883 -v -t '#' -F %X`<br />
+`mosquitto_sub -u <username> -P <password> -h localhost -p 1883 -v -t '#' -F %X`<br />
 *7B22616374696F6E223A22746F67676C65222C226C696E6B7175616C697479223A38362C227570646174655F617661696C61626C65223A66616C73657D*<br />
 
-`mosquitto_sub -u mqtt -P ???????? -h localhost -p 1883 -v -t '#' -F "%I_%t_%x"`<br />
+`mosquitto_sub -u <username> -P <password> -h localhost -p 1883 -v -t '#' -F "%I_%t_%x"`<br />
 *2020-11-20T16:28:41+0800_mqtt/Ikea_Square_Button_7b22616374696f6e223a226f6e222c2262617474657279223a3130302c226c696e6b7175616c697479223a39347d*<br />
 
-`mosquitto_sub -u mqtt -P ???????? -h localhost -p 1883 -v -t 'mqtt/Ikea_Square_Button'`<br />
+`mosquitto_sub -u <username> -P <password> -h localhost -p 1883 -v -t 'mqtt/Ikea_Square_Button'`<br />
 *mqtt/Ikea_Square_Button {"action":"on","linkquality":84}*
 
-→ Linux Journal Daemon<br />
+→ Linux Journal Daemon Logs<br />
 https://man7.org/linux/man-pages/man1/journalctl.1.html<br />
 `sudo journalctl -u zigbee2mqtt.service -f`<br />
 *Nov 20 15:26:51 BTN npm[677]: Zigbee2MQTT:info  2020-11-20 15:26:51: MQTT publish: topic 'mqtt/Ikea_Square_Button {"action":"on","linkquality":49}'*<br />
 
-→ Zigbee2MQTT Log Files<br />
+→ Zigbee2MQTT Logs<br />
 `tail -f /opt/zigbee2mqtt/data/log/*/log.txt`<br />
 *info  2020-11-20 15:26:51: MQTT publish: topic 'mqtt/Ikea_Square_Button {"action":"on","linkquality":49}'*<br />
 <br />
@@ -765,7 +762,7 @@ https://man7.org/linux/man-pages/man1/journalctl.1.html<br />
 
 	
 
-## Install mqtt2caldav <br />
+## Install mqtt2caldav<br />
 → mqtt2caldav converts the MQTT event to a CalDAV event<br />
 
 → Check installed Python 3 version<br />
@@ -844,7 +841,14 @@ https://github.com/107208579/mqtt2caldav
         
     # Run mqtt2caldav upon boot
     @reboot sleep 30 && python3 /home/pi/mqtt2caldav/main.py
-<br />
-<br />
 
 
+→ Press a Zigbee button and check if the MQTT event has been received and has been matched<br />
+`tail -f mqtt2caldav/logs/mqtt2caldav.log`<br />
+*2021/06/13 14:47:29 [MQTT] Event Received | mqtt/OPP_BTN_SQR_601 | {"action":"button_1_single"}*<br />
+*2021/06/13 14:47:29 [MQTT] Event Matched  | mqtt/OPP_BTN_SQR_601 | {"action":"button_1_single"}*<br />
+*2021/06/13 14:59:47 [MQTT] Event Received | mqtt/OPP_BTN_SQR_601 | {"action":"button_3_single"}*<br />
+*2021/06/13 14:59:47 [MQTT] Event Matched  | mqtt/OPP_BTN_SQR_601 | {"action":"button_3_single"}*<br />
+*...*
+<br />
+<br />
