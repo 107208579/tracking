@@ -33,7 +33,7 @@ https://user-images.githubusercontent.com/6289141/120297608-d7eac800-c2fb-11eb-9
 
 
 ## Disclaimer
-The below information lists a headless servier installation and requires a fundamental understanding of Linux and the use of a command line terminal. Information may be incomplete, incorrect, outdated, obsolete. Use at your own risk.
+The below information explains a headless Raspberry Pi OS server installation and requires a fundamental understanding of Linux and the use of a command line terminal. Information may be incomplete, incorrect, outdated, obsolete. Use at your own risk.
 <br />
 <br />
 
