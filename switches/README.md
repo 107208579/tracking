@@ -55,7 +55,7 @@ https://electrolama.com/radio-docs/#step-3-flash-the-firmware-on-your-stick<br /
 
 → Connect the Zigbee adapter via USB and check if it was detected<br />
 `sudo dmesg | grep AppleUSBCH`<br />
-*[1458325.212772]: IOUserSerial::AppleUSBCHCOM::<private>: 127 0x600002c9c058*
+*[1458325.212772]: IOUserSerial::AppleUSBCHCOM::<private>: 127 0x600002c9c058*<br />
 *[1458325.213170]: DK: AppleUSBCHCOM-0x100048d92::start(IOUSBHostInterface-0x100048d90) ok*
 
 → Install python3 and pip<br />
@@ -81,7 +81,7 @@ https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.x.0
 → Remove the Zigbee adapter from the USB port<br />
 → Whilst removed, press the reset button on the board<br />
 → Keep pressing while plugging the device back into the USB port<br />
-→ Release the button after 3 seconds<br />
+→ Release the button after 2 seconds<br />
 
 → Run the following command (note the device location)<br />
 `./cc2538-bsl.py -p /dev/tty.usbserial-1460 -evw CC26X2R1_20201026.hex`<br />
@@ -101,7 +101,7 @@ https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.x.0
 *Verified (match: 0x0a0682b4)*<br />
 
 → Remove the flashed Zigbee adapter from the USB port<br />
-→ Connect the flashed Zigbee adapter to the Raspberry Pi USB port<br />
+→ Connect the flashed Zigbee adapter to the Raspberry Pi<br />
 → Ideally use an USB extension cable to physically distance the adapter from the Raspberry Pi<br />
 <br />
 <br />
@@ -216,7 +216,7 @@ https://www.raspberrypi.org/downloads/
 *crw-rw---- 1 root 188, 0 Dec  4 20:34 /dev/ttyUSB0*<br />
 
 → For troubleshooting run any of the following commands<br />
-`sudo lsusb`<br /><br />
+`sudo lsusb`<br />
 *Bus 001 Device 002: ID 1a86:7523 QinHeng Electronics HL-340 USB-Serial adapter*<br />
 *Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub*<br />
 
@@ -327,12 +327,12 @@ https://unofficial-builds.nodejs.org/download/release/<br />
 `sudo git clone https://github.com/Koenkk/zigbee2mqtt.git /opt/zigbee2mqtt`
 
 → Change permissions to your local user<br />
-`udo chown -R pi:pi /opt/zigbee2mqtt`
+`sudo chown -R pi:pi /opt/zigbee2mqtt`
 
 → Change into the Zigbee directory<br />
 `cd /opt/zigbee2mqtt`
 
-→ Install dependencies (this may take ~20 minutes on a Rasperry Pi Zero)<br />
+→ Install dependencies (this may take ~10 minutes on a Rasperry Pi Zero)<br />
 `npm ci --production`<br />
 *[..................] | extractTree: verb extractTree extracting dependencies to node_modules/*<br />
 *[  ................] | extractTree: sill extract ms@2.0.0 extracted to /opt/zigbee2mqtt/node_modules/ms (5844ms)*<br />
@@ -364,21 +364,6 @@ https://unofficial-builds.nodejs.org/download/release/<br />
 → Basic configuration as shown below - further details underneath<br />
 `vi /opt/zigbee2mqtt/data/configuration.yaml`<br />
 
-    serial:
-      port: /dev/ttyUSB0
-    permit_join: true
-    homeassistant: false
-    mqtt:
-      base_topic: mqtt
-      server: 'mqtt://localhost'
-      user: mqtt
-      password: <your_password>
-    advanced:
-      network_key: GENERATE
-      pan_id: 0x1a62
-      elapsed: false
-      timestamp_format: 'YYYY/MM/DD HH:mm:ss'
-
 → Configure Zigbee2MQTT for the correct USB device location<br />
 
     serial:
@@ -409,7 +394,25 @@ https://www.zigbee2mqtt.io/information/configuration.html
       network_key: GENERATE
       pan_id: 0x1a62
 
-→ Quickly check if your node started up and runs correctly<br />
+→ A completed configuration file may look like this:
+	
+    serial:
+      port: /dev/ttyUSB0
+    permit_join: true
+    homeassistant: false
+    mqtt:
+      base_topic: mqtt
+      server: 'mqtt://localhost'
+      user: mqtt
+      password: <your_password>
+    advanced:
+      network_key: GENERATE
+      pan_id: 0x1a62
+      elapsed: false
+      timestamp_format: 'YYYY/MM/DD HH:mm:ss'
+
+
+→ Save the 'configuration.yaml' and check if your node started up and runs correctly<br />
 `cd /opt/zigbee2mqtt`<br />
 `npm start `<br />
 *zigbee2mqtt@1.15.0 start /opt/zigbee2mqtt*<br />
