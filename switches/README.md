@@ -790,7 +790,10 @@ https://man7.org/linux/man-pages/man1/journalctl.1.html<br />
 `pip3 install paho-mqtt`
 
 → Download 'mqtt2caldav' to your servers home directory<br />
-https://github.com/107208579/mqtt2caldav
+https://github.com/107208579/mqtt2caldav<br />
+`wget https://github.com/107208579/mqtt2caldav/archive/refs/heads/main.zip`
+`unzip mqtt2caldav-main.zip`
+`mv mqtt2caldav-main mqtt2caldav`
 
 → Read the [README.md](https://github.com/107208579/mqtt2caldav#readme)<br />
 
