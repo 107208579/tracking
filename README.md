@@ -182,7 +182,7 @@ Apart from manually creating events directly in a calendar application there are
    * [Geofy](https://apps.apple.com/app/id894390468) - tracks which locations you have been to and for how long  
    * [Life Cycle](https://apps.apple.com/app/id1064955217) - tracks which locations you have been to and for how long  
    * [Tyme](https://apps.apple.com/app/id1461456813) - tracks which locations you have been to and for how long  
-* Self Hosted
+* Scripts
    * [http2mqtt](https://github.com/oliverlorenz/http2mqtt) - converts http requests to mqtt messages
    * [mqtt2caldav](https://github.com/107208579/mqtt2caldav) - converts mqtt messages to calendar events
 <br />
