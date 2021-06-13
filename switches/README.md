@@ -40,7 +40,7 @@ The below information explains a headless Raspberry Pi OS server installation an
 
 
 ## Get a Zigbee Adapter
-→ The Zigbee adapter used here is an [Electrolama zzh! CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick) but [others](https://www.zigbee2mqtt.io/information/supported_adapters.html) should work too.
+→ The Zigbee adapter in this tutorial is an [Electrolama zzh! CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick) but [other receivers](https://www.zigbee2mqtt.io/information/supported_adapters.html) should work too.
 <br />
 <br />
  
