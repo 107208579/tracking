@@ -39,6 +39,24 @@ The below information explains a headless Raspberry Pi OS server installation an
 
 
 
+# DRAFT - Download
+Below 
+[ApplePi-Baker](https://www.tweaking4all.com/software/macosx-software/applepi-baker-v2/)?
+[Raspberry Pi Imager](https://www.raspberrypi.org/software/)?
+
+https://www.mediafire.com
+https://workupload.com
+https://mega.nz
+https://anonfiles.com
+https://upl.io
+https://www.mediafire.com
+https://pixeldrain.com
+https://yadi.sk
+<br />
+<br />
+
+
+
 ## Get a Zigbee Adapter
 → The Zigbee adapter in this tutorial is an [Electrolama zzh! CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick) but [other receivers](https://www.zigbee2mqtt.io/information/supported_adapters.html) should work too.
 <br />
