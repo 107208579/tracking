@@ -40,18 +40,20 @@ The below information explains a headless Raspberry Pi OS server installation an
 
 
 # DRAFT - Download
+# DRAFT - Download
+# DRAFT - Download
 Below 
-[ApplePi-Baker](https://www.tweaking4all.com/software/macosx-software/applepi-baker-v2/)?
-[Raspberry Pi Imager](https://www.raspberrypi.org/software/)?
-
-https://www.mediafire.com
-https://workupload.com
-https://mega.nz
-https://anonfiles.com
-https://upl.io
-https://www.mediafire.com
-https://pixeldrain.com
-https://yadi.sk
+[ApplePi-Baker](https://www.tweaking4all.com/software/macosx-software/applepi-baker-v2/)?<br />
+[Raspberry Pi Imager](https://www.raspberrypi.org/software/)?<br />
+<br />
+https://www.mediafire.com<br />
+https://workupload.com<br />
+https://mega.nz<br />
+https://anonfiles.com<br />
+https://upl.io<br />
+https://www.mediafire.com<br />
+https://pixeldrain.com<br />
+https://yadi.sk<br />
 <br />
 <br />
 
