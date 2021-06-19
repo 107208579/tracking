@@ -20,10 +20,13 @@ https://user-images.githubusercontent.com/6289141/120297608-d7eac800-c2fb-11eb-9
 
 
 ## Requirements
-• Zigbee Switches ([Supported Devices](https://www.zigbee2mqtt.io/information/supported_devices.html))<br />
+• CalDAV Server ([Apple Calendar](https://www.icloud.com/calendar/), [Google Calendar](http://calendar.google.com), [NextCloud](https://nextcloud.com), etc)<br />
+• Linux Server ([Raspberry Pi Zero W](https://www.raspberrypi.org))<br />
+• Zigbee Switch ([Supported Switches](https://www.zigbee2mqtt.io/information/supported_devices.html))<br />
 • Zigbee Adapter ([Electrolama zzh! CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick/))<br />
-• Linux Server ([Raspberry Pi](https://www.raspberrypi.org))<br />
-• CalDAV server ([Apple Calendar](https://www.icloud.com/calendar/), [Google Calendar](http://calendar.google.com), [NextCloud](https://nextcloud.com), etc)
+• USB Cable ([UGree OTG 2.0](https://www.ugreen.com/products/micro-usb-2-0-otg-adapter-cable), etc)<br />
+
+
 
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup_Zigbee.png" width="740">    
