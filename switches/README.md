@@ -63,7 +63,7 @@ https://yadi.sk<br />
 
 
 ## Get a Zigbee Adapter
-→ The Zigbee adapter in this tutorial is an [Electrolama zzh! CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick) but [other receivers](https://www.zigbee2mqtt.io/information/supported_adapters.html) should work too.
+→ The Zigbee adapter in this tutorial is an [Electrolama zzh! CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick) but [other adapters](https://www.zigbee2mqtt.io/information/supported_adapters.html) should work too.
 <br />
 <br />
  
