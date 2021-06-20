@@ -41,6 +41,8 @@ GIVE BETTER INTRODUCTION BEFORE JUMPING INTO TOOLS. MOVE THINGS UP?
 GIVE BETTER INTRODUCTION BEFORE JUMPING INTO TOOLS. MOVE THINGS UP?
 GIVE BETTER INTRODUCTION BEFORE JUMPING INTO TOOLS. MOVE THINGS UP?
 
+Not a fan of applications with timers where you need to start and stop an event - easy to forget.
+
 Use a service such as [Apple Calendar](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) as central storage which automatically syncs between 
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Setup.png" width="740"> 
