@@ -17,15 +17,15 @@
 
 | Time Manipulation | Action |
 |:---------|:-------|
-|[Stop Event Now](https://www.icloud.com/shortcuts/745c9a9e4e724a51b39195a551f16fd2)         |Moves the end time of a selected event to the nearest 5 minute from now
-|[Move Event +5 minutes](https://www.icloud.com/shortcuts/6929ae3ba572421d9bb1770d368328a9)  |Moves the start time and the end time of a selected event to 5 minutes later| 
-|[Move Event -5 minutes](https://www.icloud.com/shortcuts/167fdd98b5814630b1eebe65a2f66e50)  |Moves the start time and the end time of a selected event to 5 minutes earlier| 
+|[Stop Event Now](https://www.icloud.com/shortcuts/31552dfb24774a1686f956e695ac9032)    |Moves the end time of a selected event to the nearest 5 minute from now  |
+|[Move Event Earlier](https://www.icloud.com/shortcuts/6f1466e97e654e3b8cbbfbc376dd1b4d)|Shifts a selected event with start time and end time to 5 minutes earlier| 
+|[Move Event Later](https://www.icloud.com/shortcuts/55bc65bd5be149f1a184cd5fb4841185)  |Shifts a selected event with start time and end time to 5 minutes later  |
 <br />
 <br />
 
 
 ## Configuration
-The shortcuts open a variety of configuration options. 
+The shortcuts open a variety of configuration options which can be found atop each shortcut in the 'Settings' section.
 <br />
 
 **Shortcuts :: versionNumber**  
