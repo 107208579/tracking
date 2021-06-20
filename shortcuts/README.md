@@ -86,20 +86,20 @@ Specifies the event extension in minutes. When a shortcut is run, it will check 
 
 **Shortcuts :: eventSearchMinusTime**  
 Specifies the amount of minutes the search function should look back in time from now to find the same type of event.
-* 5
+* 1
 * 5
 * ...
 <br />
 
 **Shortcuts :: eventSearchPlusTime**  
-Specifies the amount of minutes the search function should look back in time from now to find the same type of event.
+Specifies the amount of minutes the search function should look forward in time from now to find the same type of event.
 * 5
 * 10
 * ...
 <br />
 
 **Shortcuts :: acousticFeedbackVoice**  
-Specifies text the device should say when the shortcut is run.
+Specifies text the device says when the shortcut is run.
 * Woohoo!
 * Shortcut run successfully!
 * ...
@@ -113,7 +113,7 @@ Specifies the audio file used for devices without vibration functionality to ind
 <br />
 
 **Shortcuts :: acousticFeedbackVolume**  
-Specifies the volume level at which acoustic feedback is provided.
+Specifies the volume level at which acoustic feedback is played.
 * 0.1
 * 0.9
 * ...
