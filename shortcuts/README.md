@@ -37,8 +37,8 @@ Specifies the shortcut version number in YYYYMMDD format.
 
 **Shortcuts :: eventCalendar**  
 Specifies the calendar name the event should be logged in.
-* Home
 * Work
+* Home
 * ...
 <br />
 
