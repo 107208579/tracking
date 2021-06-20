@@ -1,12 +1,10 @@
 # Calendar Tracking  
 <br />
 
-
-
 ## Why track your time?  
-Have you ever asked yourself where your time goes? Or have you ever wished you could remember what you were doing on a specific day in the past?
+Have you ever asked yourself where your time goes? Or have you ever wished you could remember what you were doing on a specific day?
 
-Back in 2012 I was curious on how I spent my 10,080 minutes of a week and decided to start tracking my life in a calendar. I wanted to
+I had the same questions back in 2012 and wanted to know how I spend my 10,080 minutes in a week - so I decided to start tracking my life in a calendar. I specifically wanted to:
 - easily remember past events
 - learn more about myself
 - become a better planner
@@ -15,14 +13,10 @@ Back in 2012 I was curious on how I spent my 10,080 minutes of a week and decide
 - have a visualization of my life
 - leave a digital legacy
 <br />
-
-
-
-
-
+<br />
 
 ## Who does that?  
-Here are some other great people that track their life in a calendar:
+Here are some great people that track their life with the help of a calendar.
 * [Every Step I Take](https://www.youtube.com/watch?v=MazwAPVO70Y) (Nicholas Feltron)
 * [Productivity Hacking](http://www.jamesmaa.com/2012/12/02/james-maas-productivity-hacking-guide/) (James Maa)
 * [Keeping Track of Time](https://vimeo.com/57823452) (Awais Hussain)
@@ -33,7 +27,7 @@ Here are some other great people that track their life in a calendar:
 * [I Tracked Every Minute Of My Life For 1 Week](https://www.youtube.com/watch?v=CtyJR2e1Fco) (Antoniya Ivanova)
 * [I Tracked Every Minute Of My Life For 3 Months](https://www.youtube.com/watch?v=LUjTvPy_UAg) (Matt D'Avella)
 * [How Six Months of Tracking Everything Increased my Awareness](https://vimeo.com/78020552) (David Achkar)
-* [What I Learned After Analyzing Every Minute of My Life for 30 Days](https://zapier.com/blog/time-tracking-tutorial/)(Erin Greenawald)
+* [What I Learned After Analyzing Every Minute of My Life for 30 Days](https://zapier.com/blog/time-tracking-tutorial/) (Erin Greenawald)
 <br />
 <br />
 
