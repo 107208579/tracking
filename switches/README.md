@@ -10,7 +10,7 @@ When a Zigbee switch/button is pressed, a wireless signal is sent. The Zigbee si
 <br />
 <br />
 
-Here's a short video that shows the basic function:
+Here's a short video that shows a button press that generates a new calendar and syncs it to two calendars. 
 
 https://user-images.githubusercontent.com/6289141/120297608-d7eac800-c2fb-11eb-97d8-41e60def8116.mov
 
@@ -21,12 +21,10 @@ https://user-images.githubusercontent.com/6289141/120297608-d7eac800-c2fb-11eb-9
 
 ## Requirements
 • CalDAV Server ([Apple Calendar](https://www.icloud.com/calendar/), [Google Calendar](http://calendar.google.com), [NextCloud](https://nextcloud.com), etc)<br />
-• Linux Server ([Raspberry Pi Zero W](https://www.raspberrypi.org))<br />
-• Zigbee Switch ([Supported Switches](https://www.zigbee2mqtt.io/information/supported_devices.html))<br />
-• Zigbee Adapter ([Electrolama zzh! CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick/))<br />
-• USB Cable ([UGree OTG 2.0](https://www.ugreen.com/products/micro-usb-2-0-otg-adapter-cable), etc)<br />
-
-
+• Linux Server ([Raspberry Pi Zero W](https://www.raspberrypi.org)  ~10 USD)<br />
+• Zigbee Switch ([Supported Switches](https://www.zigbee2mqtt.io/information/supported_devices.html) ~10 USD)<br />
+• Zigbee Adapter ([Electrolama zzh! CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick/) ~30 USD)<br />
+• USB Extension Cable ([UGreen OTG 2.0](https://www.ugreen.com/products/micro-usb-2-0-otg-adapter-cable) ~3 USD)<br />
 
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup_Zigbee.png" width="740">    
@@ -35,17 +33,31 @@ https://user-images.githubusercontent.com/6289141/120297608-d7eac800-c2fb-11eb-9
 <br />
 
 
+
 ## Disclaimer
-The below information explains a headless Raspberry Pi OS server installation and requires a fundamental understanding of Linux and the use of a command line terminal. Information may be incomplete, incorrect, outdated, obsolete. Use at your own risk.
+The below information explains a headless Raspberry Pi OS server installation and requires a fundamental understanding of Linux and the use of a command line. Information may be incomplete, incorrect, outdated, obsolete. Use at your own risk.
 <br />
 <br />
 
 
 
-# DRAFT - Download
-# DRAFT - Download
-# DRAFT - Download
-Below 
+# DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download
+
+For anybody 
+
+Below you can find a pre-compiled image that you 
+
+Raspberry Pi OS Lite 32-bit<br />
+• Release Date: <br />
+• Kernel Version: <br />
+• Username: pi<br />
+• Password: raspberry<br />
+
+MQTT<br />
+• Username: mqtt<br />
+• Password:<br />
+
+
 [ApplePi-Baker](https://www.tweaking4all.com/software/macosx-software/applepi-baker-v2/)?<br />
 [Raspberry Pi Imager](https://www.raspberrypi.org/software/)?<br />
 <br />
