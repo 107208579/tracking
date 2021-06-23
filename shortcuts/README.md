@@ -10,7 +10,7 @@
 |[TRA - Bus](https://www.icloud.com/shortcuts/eedbb943135745b0bdeeaa8c09fd0f95)     |Bus            |
 |[TRA - Taxi](https://www.icloud.com/shortcuts/d2b2c0be68af41119cd701136b156f53)    |Taxi           |
 |[TRA - Subway](https://www.icloud.com/shortcuts/818c30f91a68425b897a567ceaf59c7e)  |Subway         |
-|[TRA - Connect |Connects the last two TRA events by setting the end time of the first event to the start time of the second event|
+|[TRA - Connect](https://www.icloud.com/shortcuts/eb6a3d3859fd456b9b493a7ef31975ea) |Connects the last two events by setting the end time of the first event to the start time of the second event|
 <br />
 <br />
 
@@ -25,11 +25,11 @@
 
 
 ## Configuration
-The shortcuts open a variety of configuration options which can be found atop each shortcut in the 'Settings' section.
+The shortcuts offer a variety of configuration options which can be found atop each shortcut in the 'Settings' section.
 <br />
 
 **Shortcuts :: versionNumber**  
-Specifies the shortcut version number in YYYYMMDD format.
+Documents the shortcut version number in YYYYMMDD format. This can be any number.
 * 20201031
 * 20210606
 * ...
@@ -64,42 +64,42 @@ Specifies event notes.
 <br />
 
 **Shortcuts :: eventRoundMinute**  
-Rounds the event start time up or down to the nearest specified minute. As an example, if the 'eventRoundMinute' is set to '5' minutes a shortcut that is run at 11:22:35 will be rounded up to 11:25:00. A shortcut that is run at 11:22:25 will be rounded down to 11:20:00.
+Rounds the event start time up or down to the nearest specified minute. As an example, if the 'eventRoundMinute' is set to '5' minutes a shortcut that is run at 11:22:35 will be rounded up to 11:25:00. A shortcut that is run at 11:22:25 will be rounded down to 11:20:00. Setting can not be '0'.
 * 1
 * 5
 * ...
 <br />
 
 **Shortcuts :: eventDuration**  
-Sets the default event duration in minutes. As an example, if the 'eventDuration' is set to '5' minutes a newly created event with start time of 11:25:00 will have the end time set to 11:30:00.
+Sets the default event duration in minutes. As an example, if the 'eventDuration' is set to '5' minutes an event with start time of 11:25:00 will have the end time set to 11:30:00.
 * 1
 * 5
 * ...
 <br />
 
 **Shortcuts :: eventExtension**  
-Specifies the event extension in minutes. When a shortcut is run, it will check if the same type of event already exists, and if so, will remove the existing event and replace it with a new event by setting the original start time but extending the end time. This is to quickly update the duration minutes of an already xisting event.
+Specifies the event extension in minutes. When a shortcut is run, it will check if the same type of event already exists in the calendar, and if so, will remove the existing event and replace it with a new event by setting the original start time but extending the end time. This allows to quickly update the duration of an already existing event.
 * 1
 * 5
 * ...
 <br />
 
 **Shortcuts :: eventSearchMinusTime**  
-Specifies the amount of minutes the search function should look back in time from now to find the same type of event.
+Specifies the amount of minutes the search should look back in time from now to find the same type of event. This setting ties in with the 'eventExtension'.
 * 1
 * 5
 * ...
 <br />
 
 **Shortcuts :: eventSearchPlusTime**  
-Specifies the amount of minutes the search function should look forward in time from now to find the same type of event.
+Specifies the amount of minutes the search function should look forward in time from now to find the same type of event. This setting ties in with the 'eventExtension'.
 * 5
 * 10
 * ...
 <br />
 
 **Shortcuts :: acousticFeedbackVoice**  
-Specifies text the device says when the shortcut is run.
+Specifies text the device says when the shortcut is run. By default this is set with an empty space character to mute any notification.
 * Woohoo!
 * Shortcut run successfully!
 * ...
@@ -113,7 +113,7 @@ Specifies the audio file used for devices without vibration functionality to ind
 <br />
 
 **Shortcuts :: acousticFeedbackVolume**  
-Specifies the volume level at which acoustic feedback is played.
+Specifies the volume level at which acoustic feedback is played. The shortcut retains the original volume level and only temporary changes the autoput volume. 
 * 0.1
 * 0.9
 * ...
