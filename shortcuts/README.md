@@ -78,7 +78,7 @@ Sets the default event duration in minutes. As an example, if the 'eventDuration
 <br />
 
 **Shortcuts :: eventExtension**  
-Specifies the event extension in minutes. When a shortcut is run, it will check if the same type of event already exists in the calendar, and if so, will remove the existing event and replace it with a new event by setting the original start time but extending the end time. This allows to quickly update the duration of an already existing event.
+Specifies the event extension in minutes. When a shortcut is run, it will check if the same type of event already exists, and if so, will remove the existing event and replace it with a new event by using the original start time but extending the end time with the set value. This allows to quickly update the duration of an already existing event.
 * 1
 * 5
 * ...
@@ -113,7 +113,7 @@ Specifies the audio file used for devices without vibration functionality to ind
 <br />
 
 **Shortcuts :: acousticFeedbackVolume**  
-Specifies the volume level at which acoustic feedback is played. The shortcut retains the original volume level and only temporary changes the autoput volume. 
+Specifies the volume level at which acoustic feedback is played. The shortcut retains the original system volume level and only temporary changes the output volume. 
 * 0.1
 * 0.9
 * ...
