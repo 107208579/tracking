@@ -238,7 +238,7 @@ I have different calendars, such as Education, Employment, Errands, Entertainmen
 * TRA   
 * …  
 
-Each logged even receives a different event title with more details:
+Each logged event receives a different event title with more details:
 * EMP - Work
 * EMP - Meeting
 * EMP - Interview 
