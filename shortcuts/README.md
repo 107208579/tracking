@@ -29,7 +29,7 @@ The shortcuts offer a variety of configuration options which can be found atop e
 <br />
 
 **Shortcuts :: versionNumber**  
-Documents the shortcut version number in YYYYMMDD format. This can be any number.
+Documents the shortcut version number in YYYYMMDD format. Technically this can be any text.
 * 20201031
 * 20210606
 * ...
@@ -78,7 +78,7 @@ Sets the default event duration in minutes. As an example, if the 'eventDuration
 <br />
 
 **Shortcuts :: eventExtension**  
-Specifies the event extension in minutes. When a shortcut is run, it will check if the same type of event already exists, and if so, will remove the existing event and replace it with a new event by using the original start time but extending the end time with the set value. This allows to quickly update the duration of an already existing event.
+Specifies the event extension in minutes. When a shortcut is run, it will check if the same type of event already exists, and if so, will remove the existing event and replace it with a new event by using the original start time but extending the end time by adding the 'eventExtension' minutes. This function allows to quickly update the duration of an already existing event.
 * 1
 * 5
 * ...
@@ -106,7 +106,7 @@ Specifies text the device says when the shortcut is run. By default this is set 
 <br />
 
 **Shortcuts :: acousticFeedbackFile**  
-Specifies the audio file used for devices without vibration functionality to indicate if an event was rounded up or down based on the 'eventRoundMinute' setting. The audio file will be played once if an event start time was rounded down, and will play twice if an event start time was rounded up.
+Specifies an audio file used for devices without vibration functionality to indicate if an event was rounded up or down based on the 'eventRoundMinute' setting. The audio file will be played once if an event start time was rounded down, and will play twice if an event start time was rounded up.
 * file:///System/Library/Audio/UISound/begin_record.caf
 * http://awesomesounds.com/IceCream/Scream.aaf
 * ...
