@@ -7,17 +7,35 @@ Have you ever asked yourself where your time goes? Or have you ever wished you c
 I had the same questions back in 2012 and wanted to know how I spend my 10,080 minutes in a week - so I decided to start tracking my life in a calendar.
 
 I specifically wanted to:
-- easily remember past events
 - learn more about myself
 - become a better planner
 - increase my productivity
 - change personal behaviour
+- easily remember past events
 - have a visualization of my life
 - leave a digital legacy
 <br />
 <br />
 
-## Who does that?  
+
+## How does calendar tracking work?  
+The easiest way is to log all your events in a calendar, export the data, and then analyze it.
+
+
+Use a service such as [Apple Calendar](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) as central storage which automatically syncs between 
+<p align="center">
+<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Setup.png" width="740"> 
+</p>
+GIVE BETTER INTRODUCTION BEFORE JUMPING INTO TOOLS. MOVE THINGS UP?
+GIVE BETTER INTRODUCTION BEFORE JUMPING INTO TOOLS. MOVE THINGS UP?
+GIVE BETTER INTRODUCTION BEFORE JUMPING INTO TOOLS. MOVE THINGS UP?
+GIVE BETTER INTRODUCTION BEFORE JUMPING INTO TOOLS. MOVE THINGS UP?
+
+Not a fan of applications with timers where you need to start and stop an event - easy to forget.
+
+
+
+## Who else does that?  
 Here are some great people that track their life with the help of a calendar.
 * [Every Step I Take](https://www.youtube.com/watch?v=MazwAPVO70Y) (Nicholas Feltron)
 * [Productivity Hacking](http://www.jamesmaa.com/2012/12/02/james-maas-productivity-hacking-guide/) (James Maa)
@@ -35,20 +53,8 @@ Here are some great people that track their life with the help of a calendar.
 
 
 
-## How does calendar tracking work?  
-The easiest way is to log all your events in a calendar, export the data, and then analyze it.
 
-GIVE BETTER INTRODUCTION BEFORE JUMPING INTO TOOLS. MOVE THINGS UP?
-GIVE BETTER INTRODUCTION BEFORE JUMPING INTO TOOLS. MOVE THINGS UP?
-GIVE BETTER INTRODUCTION BEFORE JUMPING INTO TOOLS. MOVE THINGS UP?
-GIVE BETTER INTRODUCTION BEFORE JUMPING INTO TOOLS. MOVE THINGS UP?
 
-Not a fan of applications with timers where you need to start and stop an event - easy to forget.
-
-Use a service such as [Apple Calendar](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) as central storage which automatically syncs between 
-<p align="center">
-<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Setup.png" width="740"> 
-</p>
 
 Below a list of other services and applications that support universal calendar synchronisation (called 'CalDAV') and which allows to mix and match different calendars applications independently of the device (such as your computer, laptop, tablet, mobile phone, etc) or the operating system (such as Windows, Linux, macOS, iOS, Android, Linux, etc).
 
