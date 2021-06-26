@@ -1,25 +1,31 @@
 # Calendar Tracking (Shortcuts)
 <br />
 
-
 ## Downloads
-| Transportation | Action |
-|:---------|:-------|
-|[TRA - Walk](https://www.icloud.com/shortcuts/a182ea15d56f4f9493d37f46c0e0ed93)    |Walk           |
-|[TRA - Car](https://www.icloud.com/shortcuts/618a22e19144425681ff7c5d7b1bf2ba)     |Car            |
-|[TRA - Bus](https://www.icloud.com/shortcuts/eedbb943135745b0bdeeaa8c09fd0f95)     |Bus            |
-|[TRA - Taxi](https://www.icloud.com/shortcuts/d2b2c0be68af41119cd701136b156f53)    |Taxi           |
-|[TRA - Subway](https://www.icloud.com/shortcuts/818c30f91a68425b897a567ceaf59c7e)  |Subway         |
-|[TRA - Connect](https://www.icloud.com/shortcuts/eb6a3d3859fd456b9b493a7ef31975ea) |Connects the last two events by setting the end time of the first event to the start time of the second event|
+| Hygiene |
+|:---------|
+|[HYG - Personal](https://www.icloud.com/shortcuts/601083e57e1640a6bf9d5d1899be549a)|
+|[HYG - Shower](https://www.icloud.com/shortcuts/f40e55c060af4fa58d2adb3d3b210d4a)  |
+|[HYG - Toilet](https://www.icloud.com/shortcuts/b9914c3e2b3b4648bc7ca8eea67ae615)  |
+|[HYG - Haircut](https://www.icloud.com/shortcuts/e7189da916b540c8836a9fcc69efb6d8) |
+<br />
+
+| Transportation |
+|:---------|
+|[TRA - Walk](https://www.icloud.com/shortcuts/a182ea15d56f4f9493d37f46c0e0ed93)    |
+|[TRA - Car](https://www.icloud.com/shortcuts/618a22e19144425681ff7c5d7b1bf2ba)     |
+|[TRA - Bus](https://www.icloud.com/shortcuts/eedbb943135745b0bdeeaa8c09fd0f95)     |
+|[TRA - Taxi](https://www.icloud.com/shortcuts/d2b2c0be68af41119cd701136b156f53)    |
+|[TRA - Subway](https://www.icloud.com/shortcuts/818c30f91a68425b897a567ceaf59c7e)  |
 <br />
 <br />
 
-
-| Event Manipulation | Action |
+| Manipulation | Action |
 |:---------|:-------|
 |[Stop Event Now](https://www.icloud.com/shortcuts/31552dfb24774a1686f956e695ac9032)    |Moves the end time of a selected event to the nearest 5 minute from now|
-|[Move Event Earlier](https://www.icloud.com/shortcuts/6f1466e97e654e3b8cbbfbc376dd1b4d)|Shifts a selected event to 5 minutes earlier by updating the event start time and end time|
-|[Move Event Later](https://www.icloud.com/shortcuts/55bc65bd5be149f1a184cd5fb4841185)  |Shifts a selected event to 5 minutes later by updating the event start time and end time|
+|[Move Event Earlier](https://www.icloud.com/shortcuts/6f1466e97e654e3b8cbbfbc376dd1b4d)|Shifts a selected event to X minutes earlier by updating the event start time and end time|
+|[Move Event Later](https://www.icloud.com/shortcuts/55bc65bd5be149f1a184cd5fb4841185)  |Shifts a selected event to X minutes later by updating the event start time and end time|
+|[Connect](https://www.icloud.com/shortcuts/eb6a3d3859fd456b9b493a7ef31975ea)           |Connects the last two 'TRA' events by moving the end time of the first event to the start time of the second event|
 <br />
 <br />
 
