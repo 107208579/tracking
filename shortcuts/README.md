@@ -77,14 +77,14 @@ Rounds the event start time up or down to the nearest specified minute. As an ex
 <br />
 
 **Shortcuts :: eventDuration**  
-Sets the default event duration in minutes. As an example, if the 'eventDuration' is set to '5' minutes an event with start time of 11:25:00 will have the end time set to 11:30:00.
+Specifies the default event duration in minutes. As an example, if the 'eventDuration' is set to '5' minutes an new created event with start time of 11:25:00 will have the end time automatically set to 11:30:00.
 * 1
 * 5
 * ...
 <br />
 
 **Shortcuts :: eventExtension**  
-Specifies the event extension in minutes. When a shortcut is run, it will check if the same type of event already exists, and if so, will remove the existing event and replace it with a new event by using the original start time but extending the end time by adding the 'eventExtension' minutes. This function allows to quickly update the duration of an already existing event.
+Specifies the event extension in minutes. When a shortcut (to create a new event) is run, it will check if the same type of event already exists, and if so, will remove the existing event and replace it with a new event by using the original start time but extending the end time by adding the 'eventExtension' minutes. This function allows to quickly update the duration of an event by simply running the same event multiple times in succession.
 * 1
 * 5
 * ...
