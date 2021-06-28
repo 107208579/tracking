@@ -18,7 +18,6 @@
 |[TRA - Taxi](https://www.icloud.com/shortcuts/d2b2c0be68af41119cd701136b156f53)    |
 |[TRA - Subway](https://www.icloud.com/shortcuts/818c30f91a68425b897a567ceaf59c7e)  |
 <br />
-<br />
 
 | Manipulation | Action |
 |:---------|:-------|
@@ -29,9 +28,9 @@
 <br />
 <br />
 
-| Maintenace | Action |
+| Maintenance | Action |
 |:---------|:-------|
-|[Backup & Restore](https://www.icloud.com/shortcuts/bd469c0b7f36476baeeb6f6ffae165a3)   |Saves and restores Shortcuts in iCloud |
+|[Backup & Restore](https://www.icloud.com/shortcuts/bd469c0b7f36476baeeb6f6ffae165a3)   |Saves and restores Shortcuts from iCloud|
 <br />
 <br />
 
