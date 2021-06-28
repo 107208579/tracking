@@ -29,6 +29,12 @@
 <br />
 <br />
 
+| Maintenace | Action |
+|:---------|:-------|
+|[Backup & Restore](https://www.icloud.com/shortcuts/bd469c0b7f36476baeeb6f6ffae165a3)   |Saves and restores Shortcuts in iCloud |
+<br />
+<br />
+
 
 ## Configuration
 The shortcuts offer a variety of configuration options which can be found atop each shortcut in the 'Settings' section.
