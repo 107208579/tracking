@@ -25,7 +25,7 @@
 |[Stop Event Now](https://www.icloud.com/shortcuts/31552dfb24774a1686f956e695ac9032)     |Moves the end time of a selected event to the nearest 5 minute from now|
 |[Move Event Earlier](https://www.icloud.com/shortcuts/6f1466e97e654e3b8cbbfbc376dd1b4d) |Shifts a selected event to 5 minutes earlier by updating the event start and end time|
 |[Move Event Later](https://www.icloud.com/shortcuts/55bc65bd5be149f1a184cd5fb4841185)   |Shifts a selected event to 5 minutes later by updating the event start and end time|
-|[Connect](https://www.icloud.com/shortcuts/eb6a3d3859fd456b9b493a7ef31975ea)            |Connects the last two 'TRA' events by moving the end time of the first event to the start time of the second event|
+|[Connect](https://www.icloud.com/shortcuts/12d8c5ecfdc14a82b01cf76987f53cb9)            |Connects the last two 'TRA' events by moving the end time of the first event to the start time of the second event|
 <br />
 <br />
 
