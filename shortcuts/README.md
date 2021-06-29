@@ -30,7 +30,7 @@
 
 | Maintenance | Action |
 |:---------|:-------|
-|[Backup & Restore](https://www.icloud.com/shortcuts/bd469c0b7f36476baeeb6f6ffae165a3)   |Saves and restores Shortcuts from iCloud|
+|[Backup & Restore](https://www.icloud.com/shortcuts/bd469c0b7f36476baeeb6f6ffae165a3)   |Saves and restores Shortcuts within an iCloud folder|
 <br />
 <br />
 
