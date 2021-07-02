@@ -3,7 +3,7 @@
 ## Downloads
 | Food                                                                                    | 
 |:-                                                                                       |
-|[FOO](https://www.icloud.com/shortcuts/fb70fa1014854434b37b7d2b620747f2)                 |
+|[FOO - Meal](https://www.icloud.com/shortcuts/fb70fa1014854434b37b7d2b620747f2)          |
 
 | Errands                                                                                 | 
 |:-                                                                                       |
