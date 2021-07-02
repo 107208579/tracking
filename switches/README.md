@@ -39,11 +39,8 @@ The below information explains a headless Raspberry Pi OS server installation an
 
 
 
-# DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download # DRAFT - Download
-
-For anybody 
-
-Below you can find a pre-compiled image that you 
+## Download
+Follow the installation instructions below or download a pre-compiled image for a Raspberry Pi Zero W. Use the [Rasperry Pi Imager](https://www.raspberrypi.org/software/) to write the image to an SD card.
 
 Raspberry Pi OS Lite 32-bit<br />
 • Release Date: <br />
@@ -72,14 +69,15 @@ https://yadi.sk<br />
 
 
 
-## Get a Zigbee Adapter
+## Installation
+### Get a Zigbee Adapter
 → The Zigbee adapter in this tutorial is an [Electrolama zzh! CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick) but [other adapters](https://www.zigbee2mqtt.io/information/supported_adapters.html) should work too.
 <br />
 <br />
  
  
  
-## Flash the Zigbee Adapter
+### Flash the Zigbee Adapter
 → Follow the instructions for flashing the CC2652<br />
 https://www.zigbee2mqtt.io/information/supported_adapters.html<br />
 https://electrolama.com/radio-docs/#step-3-flash-the-firmware-on-your-stick<br />
@@ -141,7 +139,7 @@ https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.x.0
  
  
  
-## Install Raspberry Pi OS
+### Install Raspberry Pi OS
 → Get the Raspberry Pi Imager to write the Raspberry Pi OS image to an SD card<br />
 https://www.raspberrypi.org/downloads/
 
@@ -174,7 +172,7 @@ https://www.raspberrypi.org/downloads/
 
 
 
-## Logon to the Raspberry Pi
+### Logon to the Raspberry Pi
 → Locate your Raspberry Pi network address<br />
 `arp -a | grep -ia b8:27:eb`
 
@@ -187,7 +185,7 @@ https://www.raspberrypi.org/downloads/
 
 
 
-## Change Default Passwords
+### Change Default Passwords
 → Change the default password for user 'pi'<br />
 `passwd`
 
@@ -198,7 +196,7 @@ https://www.raspberrypi.org/downloads/
 
 
 
-## Deactivate Radios
+### Deactivate Radios
 → If possible, disable Bluetooth to avoid interference with Zigbee
 
 	dtoverlay=disable-bt
@@ -211,7 +209,7 @@ https://www.raspberrypi.org/downloads/
 
 
 
-## Update Raspberry Pi OS 
+### Update Raspberry Pi OS 
 → Check your operating system<br />
 ` uname -a`
 
@@ -229,7 +227,7 @@ https://www.raspberrypi.org/downloads/
 
 
 
-## Check Log Files for Errors
+### Check Log Files for Errors
 → Always check the start-up logfile for any potential errors<br />
 `dmesg`
 
@@ -240,7 +238,7 @@ https://www.raspberrypi.org/downloads/
 
 	
 	
-## Check the Zigbee Adapter 
+### Check the Zigbee Adapter 
 → Check the device location of the Zigbee adapter (should be called 'ttyUSB0')<br />
 `ls -l /dev/serial/by-id`<br />
 *lrwxrwxrwx 1 root 13 Dec  4 20:34 usb-1a86_USB_Serial-if00-port0 -> ../../ttyUSB0*<br />
@@ -274,7 +272,7 @@ https://www.raspberrypi.org/downloads/
 
 	
 	
-## Install MQTT (Mosquitto)
+### Install MQTT (Mosquitto)
 → Install the Mosquitto broker and clients<br />
 https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/<br />
 `sudo apt install -y mosquitto mosquitto-clients`<br />
@@ -291,7 +289,7 @@ https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/
 
 
 
-## Secure MQTT (Mosquitto)
+### Secure MQTT (Mosquitto)
 → Set a user and password<br />
 `sudo mosquitto_passwd -c /etc/mosquitto/passwd mqtt`<br />
 • User		mqtt<br />
@@ -317,7 +315,7 @@ https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/
 
 
 
-## Install Zigbee2MQTT 
+### Install Zigbee2MQTT 
 → Zigbee2MQTT converts the Zigbee signal to an MQTT event<br />
 
 → Look for the latest Zigbee2MQTT installation<br />
@@ -393,7 +391,7 @@ https://unofficial-builds.nodejs.org/download/release/<br />
 
 
 
-## Configure Zigbee2MQTT<br />
+### Configure Zigbee2MQTT<br />
 → Basic configuration as shown below - further details underneath<br />
 `vi /opt/zigbee2mqtt/data/configuration.yaml`<br />
 
@@ -495,7 +493,7 @@ https://www.zigbee2mqtt.io/information/configuration.html
 
 
 
-## Upgrade Zigbee2MQTT<br />
+### Upgrade Zigbee2MQTT<br />
 → Stop Zigbee2MQTT<br />
 `sudo systemctl stop zigbee2mqtt`
 `cd /opt/zigbee2mqtt`
@@ -516,7 +514,7 @@ https://www.zigbee2mqtt.io/information/configuration.html
 
 	
 	
-## Roll back Zigbee2MQTT<br />
+### Roll back Zigbee2MQTT<br />
 → Find the version to rollback to<br /> 
 https://github.com/Koenkk/zigbee2mqtt/tags
 
@@ -532,7 +530,7 @@ https://github.com/Koenkk/zigbee2mqtt/tags
 
 	
 
-## Zigbee and WiFi Interference 
+### Zigbee and WiFi Interference 
 → Verify that Zigbee and WiFi run on different channels to avoid signal interference
 https://www.zigbee2mqtt.io/how_tos/how_to_improve_network_range_and_stability.html
 https://www.digi.com/resources/documentation/digidocs/90001537/references/r_channels_zigbee.htm
@@ -573,7 +571,7 @@ https://support.metageek.com/hc/en-us/articles/203845040-Zigbee-and-WiFi-Coexist
 
 	
 
-## Change Zigbee Channel 
+### Change Zigbee Channel 
 → In order to change the default Zigbee channel edit the configuration.yaml<br />
 → Use a 'Zigbee Light Link' channel to avoid problems: 11, 15, 20<br />
 → IMPORTANT: Change of channel requires re-pairing of all connected Zigbee devices<br />
@@ -591,7 +589,7 @@ https://www.zigbee2mqtt.io/information/configuration.html
 
 
 	
-## Zigbee and BlueTooth Interference<br />
+### Zigbee and BlueTooth Interference<br />
 → Bluetooth signals are a potential source of interference for ZigBee and WiFi networks<br />
 https://www.zigbee2mqtt.io/how_tos/how_to_improve_network_range_and_stability.html
 
@@ -614,7 +612,7 @@ https://www.zigbee2mqtt.io/how_tos/how_to_improve_network_range_and_stability.ht
 
 
 
-## Pair Switches with the ZigBee Adapter
+### Pair Switches with the ZigBee Adapter
 → Check that your configuration.yaml allows to join new devices<br />
 `less /opt/zigbee2mqtt/data/configuration.yaml`
 
@@ -713,7 +711,7 @@ https://www.zigbee2mqtt.io/devices/WXKG01LM.html
 
 
 
-## Add a Cheat Sheet 
+### Add a Cheat Sheet 
 → Add the following cheat file to your servers home directory<br />
 `vi readme.txt`
 
@@ -753,7 +751,7 @@ https://www.zigbee2mqtt.io/devices/WXKG01LM.html
 
 	
 	
-## How To Read Log Files
+### How To Read Log Files
 → Mosquitto Server Logs<br />
 `sudo tail -f /var/log/mosquitto/mosquitto.log`<br />
 *1605857209: New connection from ::1 on port 1883.*<br />
@@ -795,7 +793,7 @@ https://man7.org/linux/man-pages/man1/journalctl.1.html<br />
 
 	
 
-## Install mqtt2caldav<br />
+### Install mqtt2caldav<br />
 → mqtt2caldav converts the MQTT event to a CalDAV event<br />
 
 → Check installed Python 3 version<br />
