@@ -1,41 +1,36 @@
 # Calendar Tracking (Shortcuts)
-<br />
 
 ## Downloads
-| Hygiene |
-|:---------|
-|[HYG - Personal](https://www.icloud.com/shortcuts/601083e57e1640a6bf9d5d1899be549a)|
-|[HYG - Shower](https://www.icloud.com/shortcuts/f40e55c060af4fa58d2adb3d3b210d4a)  |
-|[HYG - Toilet](https://www.icloud.com/shortcuts/b9914c3e2b3b4648bc7ca8eea67ae615)  |
-|[HYG - Haircut](https://www.icloud.com/shortcuts/e7189da916b540c8836a9fcc69efb6d8) |
-<br />
+| Food                                                                                    | 
+|:-                                                                                       |
+|[FOO](https://www.icloud.com/shortcuts/fb70fa1014854434b37b7d2b620747f2)                 |
 
-| Transportation |
-|:---------|
-|[TRA - Walk](https://www.icloud.com/shortcuts/a182ea15d56f4f9493d37f46c0e0ed93)    |
-|[TRA - Car](https://www.icloud.com/shortcuts/618a22e19144425681ff7c5d7b1bf2ba)     |
-|[TRA - Bus](https://www.icloud.com/shortcuts/eedbb943135745b0bdeeaa8c09fd0f95)     |
-|[TRA - Taxi](https://www.icloud.com/shortcuts/d2b2c0be68af41119cd701136b156f53)    |
-|[TRA - Subway](https://www.icloud.com/shortcuts/818c30f91a68425b897a567ceaf59c7e)  |
-<br />
+| Errands                                                                                 | 
+|:-                                                                                       |
+|[ERR - Shopping](https://www.icloud.com/shortcuts/d8b6d55ffe0146adbd26ebd23a5962ad)      |
 
-| Food |
-|:---------|
-|[FOO](https://www.icloud.com/shortcuts/fb70fa1014854434b37b7d2b620747f2)           |
-<br />
+| Transportation                                                                          | 
+|:-                                                                                       |
+|[TRA - Walk](https://www.icloud.com/shortcuts/a182ea15d56f4f9493d37f46c0e0ed93)          |
+|[TRA - Car](https://www.icloud.com/shortcuts/618a22e19144425681ff7c5d7b1bf2ba)           |
+|[TRA - Bus](https://www.icloud.com/shortcuts/eedbb943135745b0bdeeaa8c09fd0f95)           |
+|[TRA - Taxi](https://www.icloud.com/shortcuts/d2b2c0be68af41119cd701136b156f53)          |
+|[TRA - Subway](https://www.icloud.com/shortcuts/818c30f91a68425b897a567ceaf59c7e)        |
 
-| Manipulation | Action |
-|:---------|:-------|
-|[Stop Event Now](https://www.icloud.com/shortcuts/31552dfb24774a1686f956e695ac9032)     |Moves the end time of a selected event to the nearest 5 minute from now|
-|[Move Event Earlier](https://www.icloud.com/shortcuts/6f1466e97e654e3b8cbbfbc376dd1b4d) |Shifts a selected event to 5 minutes earlier by updating the event start and end time|
-|[Move Event Later](https://www.icloud.com/shortcuts/55bc65bd5be149f1a184cd5fb4841185)   |Shifts a selected event to 5 minutes later by updating the event start and end time|
-|[Connect](https://www.icloud.com/shortcuts/12d8c5ecfdc14a82b01cf76987f53cb9)            |Connects the last two 'TRA' events by moving the end time of the first event to the start time of the second event|
-<br />
-<br />
+| Hygiene                                                                                 | 
+|:-                                                                                       |
+|[HYG - Personal](https://www.icloud.com/shortcuts/601083e57e1640a6bf9d5d1899be549a)      |
+|[HYG - Shower](https://www.icloud.com/shortcuts/f40e55c060af4fa58d2adb3d3b210d4a)        |
+|[HYG - Toilet](https://www.icloud.com/shortcuts/b9914c3e2b3b4648bc7ca8eea67ae615)        |
+|[HYG - Haircut](https://www.icloud.com/shortcuts/e7189da916b540c8836a9fcc69efb6d8)       |
 
-| Maintenance | Action |
-|:---------|:-------|
-|[Backup & Restore](https://www.icloud.com/shortcuts/bd469c0b7f36476baeeb6f6ffae165a3)   |Saves and restores Shortcuts within an iCloud folder|
+| Other                                                                                   | Action |
+|:-                                                                                       |:-      |
+|[Stop Event Now](https://www.icloud.com/shortcuts/31552dfb24774a1686f956e695ac9032)      |Moves the end time of a selected event to the nearest 5 minute from now|
+|[Move Event Earlier](https://www.icloud.com/shortcuts/6f1466e97e654e3b8cbbfbc376dd1b4d)  |Shifts a selected event to 5 minutes earlier by updating the event start and end time|
+|[Move Event Later](https://www.icloud.com/shortcuts/55bc65bd5be149f1a184cd5fb4841185)    |Shifts a selected event to 5 minutes later by updating the event start and end time|
+|[Connect](https://www.icloud.com/shortcuts/12d8c5ecfdc14a82b01cf76987f53cb9)             |Connects the last two 'TRA' events by moving the end time of the first event to the start time of the second event|
+|[Backup & Restore](https://www.icloud.com/shortcuts/bd469c0b7f36476baeeb6f6ffae165a3)    |Saves and restores Shortcuts|
 <br />
 <br />
 
