@@ -32,29 +32,18 @@ https://user-images.githubusercontent.com/6289141/120297608-d7eac800-c2fb-11eb-9
 
 
 
-## Disclaimer
-The below information explains a headless Raspberry Pi OS server installation and requires a fundamental understanding of Linux and the use of a command line. Information may be incomplete, incorrect, outdated, obsolete. Use at your own risk.
-<br />
-<br />
-
-
-
 ## Download
-Follow the installation instructions below or download a pre-compiled image for a Raspberry Pi Zero W. Use the [Rasperry Pi Imager](https://www.raspberrypi.org/software/) to write the image to an SD card.
+Follow the installation instructions below or download a pre-compiled image for a Raspberry Pi Zero W. Use the [Rasperry Pi Imager](https://www.raspberrypi.org/software/) to write the image to the SD card.<br />
 
 Raspberry Pi OS Lite 32-bit<br />
 • Release Date: <br />
 • Kernel Version: <br />
-• Username: pi<br />
-• Password: raspberry<br />
-
-MQTT<br />
-• Username: mqtt<br />
-• Password:<br />
+• SERVER username: pi<br />
+• SERVER password: raspberry<br />
+• MQTT username: mqtt<br />
+• MQTT password: <br />
 
 
-[ApplePi-Baker](https://www.tweaking4all.com/software/macosx-software/applepi-baker-v2/)?<br />
-[Raspberry Pi Imager](https://www.raspberrypi.org/software/)?<br />
 <br />
 https://www.mediafire.com<br />
 https://workupload.com<br />
@@ -64,6 +53,13 @@ https://upl.io<br />
 https://www.mediafire.com<br />
 https://pixeldrain.com<br />
 https://yadi.sk<br />
+<br />
+<br />
+
+
+
+## Disclaimer
+The below information explains a headless Raspberry Pi OS server installation and requires a fundamental understanding of Linux and the use of a command line. Information may be incomplete, incorrect, outdated, obsolete. Use at your own risk.
 <br />
 <br />
 
