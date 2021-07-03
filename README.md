@@ -1,5 +1,4 @@
 # Calendar Tracking  
-<br />
 
 ## Why track your time?  
 Have you ever asked yourself where your time goes? Or have you ever wished you could remember what you were doing on a specific day?
