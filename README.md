@@ -16,8 +16,23 @@ I specifically wanted to:
 <br />
 <br />
 
+## Who does that?  
+Here are some great people that track their life with the help of a calendar.
+* [Every Step I Take](https://www.youtube.com/watch?v=MazwAPVO70Y) (Nicholas Feltron)
+* [Productivity Hacking](http://www.jamesmaa.com/2012/12/02/james-maas-productivity-hacking-guide/) (James Maa)
+* [Keeping Track of Time](https://vimeo.com/57823452) (Awais Hussain)
+* [Tracking My Time Spent](https://blog.usejournal.com/quantified-self-tracking-my-time-spent-1fdb97652595) (Stephanie Rogers)
+* [Time blocking and time tracking](https://www.youtube.com/watch?v=X57gxhIHjBE) (Aparna Kher)
+* [How and Why I Create a Quantified Self](https://www.jacksondame.com/blog/lifelogging-how-and-why-i-create-a-quantified-self) (Jackson Dame)
+* [I Tracked Every Minute Of My Life For 7 Days](https://www.youtube.com/watch?v=FLLiFl1m9I4) (Nathaniel Drew)
+* [I Tracked Every Minute Of My Life For 1 Week](https://www.youtube.com/watch?v=CtyJR2e1Fco) (Antoniya Ivanova)
+* [I Tracked Every Minute Of My Life For 3 Months](https://www.youtube.com/watch?v=LUjTvPy_UAg) (Matt D'Avella)
+* [How Six Months of Tracking Everything Increased my Awareness](https://vimeo.com/78020552) (David Achkar)
+* [What I Learned After Analyzing Every Minute of My Life for 30 Days](https://zapier.com/blog/time-tracking-tutorial/) (Erin Greenawald)
+<br />
+<br />
 
-## How does calendar tracking work?  
+## How does this work?  
 The easiest way is to log all your events in a calendar, export the data, and then analyze it.
 
 
@@ -33,22 +48,6 @@ GIVE BETTER INTRODUCTION BEFORE JUMPING INTO TOOLS. MOVE THINGS UP?
 Not a fan of applications with timers where you need to start and stop an event - easy to forget.
 
 
-
-## Who else does that?  
-Here are some great people that track their life with the help of a calendar.
-* [Every Step I Take](https://www.youtube.com/watch?v=MazwAPVO70Y) (Nicholas Feltron)
-* [Productivity Hacking](http://www.jamesmaa.com/2012/12/02/james-maas-productivity-hacking-guide/) (James Maa)
-* [Keeping Track of Time](https://vimeo.com/57823452) (Awais Hussain)
-* [Tracking My Time Spent](https://blog.usejournal.com/quantified-self-tracking-my-time-spent-1fdb97652595) (Stephanie Rogers)
-* [Time blocking and time tracking](https://www.youtube.com/watch?v=X57gxhIHjBE) (Aparna Kher)
-* [How and Why I Create a Quantified Self](https://www.jacksondame.com/blog/lifelogging-how-and-why-i-create-a-quantified-self) (Jackson Dame)
-* [I Tracked Every Minute Of My Life For 7 Days](https://www.youtube.com/watch?v=FLLiFl1m9I4) (Nathaniel Drew)
-* [I Tracked Every Minute Of My Life For 1 Week](https://www.youtube.com/watch?v=CtyJR2e1Fco) (Antoniya Ivanova)
-* [I Tracked Every Minute Of My Life For 3 Months](https://www.youtube.com/watch?v=LUjTvPy_UAg) (Matt D'Avella)
-* [How Six Months of Tracking Everything Increased my Awareness](https://vimeo.com/78020552) (David Achkar)
-* [What I Learned After Analyzing Every Minute of My Life for 30 Days](https://zapier.com/blog/time-tracking-tutorial/) (Erin Greenawald)
-<br />
-<br />
 
 
 
