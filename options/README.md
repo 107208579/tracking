@@ -8,6 +8,7 @@ Below a list of other services and applications that support universal calendar 
 
 
 ## What calendar can be used?  
+The following calendar applications 
 * **Calendar Services**   
   * Cloud Hosted
      * [Apple Calendar](https://www.icloud.com/calendar/) 
@@ -48,7 +49,7 @@ Below a list of other services and applications that support universal calendar 
 
 
 ## What tools can create events?  
-Apart from manually creating an event directly in a calendar app there are many other ways to do so - some of them via a press of a button or even fully automatic.
+Apart from manually creating an event directly in a calendar app there are many other ways - some of them even via a press of a button or fully automatic.
   * macOS
      * [Apple Script](https://github.com/107208579/calendar-tracking/tree/main/applescript)
      * [Shortcuts]() ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md) | [Forum](https://www.reddit.com/r/shortcuts))
@@ -74,7 +75,7 @@ Apart from manually creating an event directly in a calendar app there are many 
      * [Slack](https://slack.com) + [Eventbot](https://geteventbot.com)
 <br />
 
-* **Via Device Tap**
+* **Via NFC Tap**
   * iOS
      * [Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) + NFC Tags ([Tutorial](https://www.matthewcassinelli.com/nfc-tags-siri-shortcuts/))
 <br />
