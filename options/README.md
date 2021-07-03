@@ -8,7 +8,6 @@ Below a list of other services and applications that support universal calendar 
 
 
 ## What calendar can be used?  
-The following calendar applications 
 * **Calendar Services**   
   * Cloud Hosted
      * [Apple Calendar](https://www.icloud.com/calendar/) 
