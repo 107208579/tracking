@@ -1,6 +1,7 @@
 # Calendar Tracking (Shortcuts)
 
 ## Downloads
+Shortcuts need to be configured via the 'Settings' section that can be found atop each shortcut. A description of all settings can be found further below.
 | Food                                                                                    | 
 |:-                                                                                       |
 |[FOO - Meal](https://www.icloud.com/shortcuts/792fbe1a035c4231a7a89173e0c44b19)          |
@@ -27,9 +28,9 @@
 | Other                                                                                   | Action |
 |:-                                                                                       |:-      |
 |[Connect](https://www.icloud.com/shortcuts/12d8c5ecfdc14a82b01cf76987f53cb9)             |Connects the last two events of a selected calendar by moving the end time of the first event to the start time of the second event|
-|[Stop Event Now](https://www.icloud.com/shortcuts/31552dfb24774a1686f956e695ac9032)      |Moves the end time of a selected event to the nearest 5 minute from now|
-|[Move Event Earlier](https://www.icloud.com/shortcuts/6f1466e97e654e3b8cbbfbc376dd1b4d)  |Shifts a selected event to 5 minutes earlier by updating the event start and end time|
-|[Move Event Later](https://www.icloud.com/shortcuts/55bc65bd5be149f1a184cd5fb4841185)    |Shifts a selected event to 5 minutes later by updating the event start and end time|
+|[Stop Event Now](https://www.icloud.com/shortcuts/31552dfb24774a1686f956e695ac9032)      |Moves the end time of a selected event to the nearest X minute from now|
+|[Move Event Earlier](https://www.icloud.com/shortcuts/6f1466e97e654e3b8cbbfbc376dd1b4d)  |Shifts a selected event to X minutes earlier by updating the event start and end time|
+|[Move Event Later](https://www.icloud.com/shortcuts/55bc65bd5be149f1a184cd5fb4841185)    |Shifts a selected event to X minutes later by updating the event start and end time|
 |[Backup & Restore](https://www.icloud.com/shortcuts/bd469c0b7f36476baeeb6f6ffae165a3)    |Saves and restores Shortcuts|
 <br />
 <br />
