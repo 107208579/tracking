@@ -2,7 +2,12 @@
 
 ## Overview
 Below a list of other services and applications that support universal calendar synchronisation (called 'CalDAV') and which allows to mix and match different calendars applications independently of the device (such as your computer, laptop, tablet, mobile phone, etc) or the operating system (such as Windows, Linux, macOS, iOS, Android, Linux, etc).
+<br />  
+<br />  
 
+
+
+## What calendar can be used?  
 * **Calendar Services**   
   * Cloud Hosted
      * [Apple Calendar](https://www.icloud.com/calendar/) 
@@ -42,9 +47,8 @@ Below a list of other services and applications that support universal calendar 
 
 
 
-## What other tools can create events?  
-Apart from manually creating events directly in a calendar application there are many other ways. Below is a list of different apps and methods I have come across.
-* **Via Application**  
+## What tools can create events?  
+Apart from manually creating an event directly in a calendar app there are many other ways to do so - some of them via a press of a button or even fully automatic.
   * macOS
      * [Apple Script](https://github.com/107208579/calendar-tracking/tree/main/applescript)
      * [Shortcuts]() ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md) | [Forum](https://www.reddit.com/r/shortcuts))
@@ -139,7 +143,7 @@ Apart from manually creating events directly in a calendar application there are
 
 
 
-## How can events be exported?  
+## How can calendar events be exported?  
 * macOS  
   * [Export Calendars Pro](http://apps.apple.com/app/id663835623)
   * [TimeTable](https://apps.apple.com/app/id1191331765)
@@ -157,7 +161,7 @@ Apart from manually creating events directly in a calendar application there are
 
 
 
-## How can events be analysed?  
+## How can calendar events be analysed?  
 * Cross Platform
    * [Tableau](https://www.tableau.com)
 * Microsoft
