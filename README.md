@@ -3,14 +3,15 @@
 ## Why track your time?  
 Have you ever asked yourself where your time goes? Or have you ever wished you could remember what you were doing on a specific day? What about remembering the last time you meet up with a friend or relative?
 
-Back in 2012 I had the same questions back and wanted to get to the bottom of how I spend my 10,080 minutes in a week. So I decided to start tracking my life in a calendar to:
+Back in 2012 I had similar questions and wanted to get to the bottom of how I spend my 10,080 minutes in a week. So I decided to start tracking my life in a calendar.
+
+Specifically I wanted to:
 - remember past events
 - learn more about myself
 - become a better planner
 - increase my productivity
 - change personal behaviour
 - have a visualization of my life
-- leave a digital legacy
 <br />
 <br />
 
