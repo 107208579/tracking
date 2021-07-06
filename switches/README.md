@@ -396,7 +396,7 @@ https://unofficial-builds.nodejs.org/download/release/<br />
       port: /dev/ttyUSB0
 
 → Secure your Zigbee2MQTT network to run with a key<br />
-https://www.zigbee2mqtt.io/information/configuration.html
+https://www.zigbee2mqtt.io/information/configuration.html<br />
 https://www.zigbee2mqtt.io/how_tos/how_to_secure_network.html
 
     advanced:
