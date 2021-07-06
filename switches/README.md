@@ -657,7 +657,6 @@ https://www.zigbee2mqtt.io/devices/E1524_E1810.html<br />
 → EXAMPLE: Sonoff SNZB-01 (Square Button)<br />
 https://www.zigbee2mqtt.io/devices/SNZB-01.html<br />
 → Long press reset button for 5 seconds until the LED indicator flashes three times, which means the device has entered pairing mode<br />
-
 → Here are the button press options<br />
 |Button |Message|
 |:------|:---   |
@@ -665,12 +664,13 @@ https://www.zigbee2mqtt.io/devices/SNZB-01.html<br />
 |Double Press		|mqtt/0x00124b001f8ab0cd {"action":"double","linkquality":13}'|
 |Long Press		|mqtt/0x00124b001f8ab0cd {"action":"long","linkquality":15}'|
 <br />
+<br />
+
+
 
 → EXAMPLE: XiaoMi Aqara WXKG01LM (Round Button)<br />
 https://www.zigbee2mqtt.io/devices/WXKG01LM.html
-
 → Press and hold the reset button on the device for 5 seconds until the blue light starts blinking<br />
-
 → Here are the button press options
 |Button |Message|
 |:------|:---   |
