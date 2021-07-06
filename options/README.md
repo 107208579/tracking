@@ -48,7 +48,7 @@ Below a list of other services and applications that support universal calendar 
 
 
 ## What tools can create events?  
-Apart from manually creating an event directly in a calendar app there are many other ways - some of them even via a press of a button or fully automatic.
+Apart from manually creating an event directly in a calendar app there are many other ways - some of them as simple as pressing a button.
   * macOS
      * [Apple Script](https://github.com/107208579/calendar-tracking/tree/main/applescript)
      * [Shortcuts]() ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md) | [Forum](https://www.reddit.com/r/shortcuts))
