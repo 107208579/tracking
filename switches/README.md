@@ -270,7 +270,6 @@ https://www.raspberrypi.org/downloads/
 	
 ### Install MQTT (Mosquitto)
 → Install the Mosquitto broker and clients<br />
-https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/<br />
 `sudo apt install -y mosquitto mosquitto-clients`<br />
 `sudo systemctl enable mosquitto.service`
 
