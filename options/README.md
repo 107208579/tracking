@@ -1,13 +1,8 @@
 # Calendar Tracking (Options)
 
-## Overview
-Below a list of other services and applications that support universal calendar synchronisation (called 'CalDAV') and which allows to mix and match different calendars applications independently of the device (such as your computer, laptop, tablet, mobile phone, etc) or the operating system (such as Windows, Linux, macOS, iOS, Android, Linux, etc).
-<br />  
-<br />  
-
-
-
 ## What calendar can be used?  
+Below a list of calendar services and applications that support synchronisation (called 'CalDAV') with other calendars. Events will be synced independent on the device used (such as your computer, laptop, tablet, mobile phone, etc) and independent of the operating system (such as Windows, Linux, macOS, iOS, Android, Linux, etc). Mix & match!
+
 * **Calendar Services**   
   * Cloud Hosted
      * [Apple Calendar](https://www.icloud.com/calendar/) 
@@ -48,7 +43,7 @@ Below a list of other services and applications that support universal calendar 
 
 
 ## What tools can create events?  
-Apart from manually creating an event directly in a calendar app there are many other ways - some of them as simple as pressing a button.
+Apart from manually logging an event in a calendar app there are lots of other ways - some of them as simple as pressing a button, duplicating an existing event, or even logging events automatically based on your location.
   * macOS
      * [Apple Script](https://github.com/107208579/calendar-tracking/tree/main/applescript)
      * [Shortcuts]() ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md) | [Forum](https://www.reddit.com/r/shortcuts))
