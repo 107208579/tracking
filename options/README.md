@@ -126,10 +126,8 @@ Apart from manually logging an event in a calendar app there are lots of other w
    * [iCalBuddy64](https://github.com/DavidKaluta/icalBuddy64) - command line tool to query calendars
  * iOS  
    * [Arc App](https://apps.apple.com/app/id1063151918) - tracks which locations you have been to and for how long  
-   * [Geofency](https://apps.apple.com/app/id615538630) - tracks which locations you have been to and for how long  
    * [Geofy](https://apps.apple.com/app/id894390468) - tracks which locations you have been to and for how long  
    * [Life Cycle](https://apps.apple.com/app/id1064955217) - tracks which locations you have been to and for how long  
-   * [Tyme](https://apps.apple.com/app/id1461456813) - tracks which locations you have been to and for how long  
 * Scripts
    * [http2mqtt](https://github.com/oliverlorenz/http2mqtt) - converts http requests to mqtt messages
    * [mqtt2caldav](https://github.com/107208579/mqtt2caldav) - converts mqtt messages to calendar events
