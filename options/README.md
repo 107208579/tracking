@@ -1,6 +1,6 @@
 # Calendar Tracking (Options)
 
-## What calendar can be used?  
+## What calendars can be used?  
 Below a list of calendar services and applications that support synchronisation (called 'CalDAV') with other calendars. Events will be synced independent on the device used (such as your computer, laptop, tablet, mobile phone, etc) and independent of the operating system (such as Windows, Linux, macOS, iOS, Android, Linux, etc). Mix & match!
 
 * **Calendar Services**   
