@@ -80,12 +80,12 @@ https://electrolama.com/radio-docs/#step-3-flash-the-firmware-on-your-stick<br /
 
 → NOTE: The following steps outlined are for flashing the CC2652 via macOS as host system<br />
 
-→ Connect the Zigbee adapter via USB and check if it was detected<br />
+→ Connect the Zigbee adapter via USB to your macOS system and check if it was detected<br />
 `sudo dmesg | grep AppleUSBCH`<br />
 *[1458325.212772]: IOUserSerial::AppleUSBCHCOM::<private>: 127 0x600002c9c058*<br />
 *[1458325.213170]: DK: AppleUSBCHCOM-0x100048d92::start(IOUSBHostInterface-0x100048d90) ok*
 
-→ Install python3 and pip<br />
+→ Install python3 and pip on your macOS system<br />
 `xcode-select --install`<br />
 `brew install python3`
  
@@ -94,7 +94,7 @@ https://github.com/JelmerT/cc2538-bsl<br />
 `sudo pip3 install --upgrade pip`<br />
 `pip3 install pyserial intelhex python-magic`
 
-→ Download the boot loader<br />
+→ Download the latest boot loader<br />
 `wget -O cc2538-bsl.zip https://codeload.github.com/JelmerT/cc2538-bsl/zip/master && unzip cc2538-bsl.zip`
 
 → Look for the latest 'Electrolama zzh' firmware<br />
@@ -488,7 +488,7 @@ https://www.zigbee2mqtt.io/information/configuration.html
 
 
 
-### Upgrade Zigbee2MQTT<br />
+### Upgrade Zigbee2MQTT if required<br />
 → Stop Zigbee2MQTT<br />
 `sudo systemctl stop zigbee2mqtt`
 `cd /opt/zigbee2mqtt`
@@ -509,7 +509,7 @@ https://www.zigbee2mqtt.io/information/configuration.html
 
 	
 	
-### Roll back Zigbee2MQTT<br />
+### Roll back Zigbee2MQTT if required<br />
 → Find the version to rollback to<br /> 
 https://github.com/Koenkk/zigbee2mqtt/tags
 
