@@ -145,6 +145,7 @@ https://www.raspberrypi.org/downloads/
 `touch /Volumes/boot/ssh`
 
 → For WiFi connectivity add the following file to the root of the SD card<br />
+→ Note that the Raspberry Pi Zero only supports 2.4Ghz WiFi connectivity<br />
 `vi /Volumes/boot/wpa_supplicant.conf`
 
     ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
