@@ -95,8 +95,11 @@ Apart from manually logging an event in a calendar app there are lots of other w
      * [StreamDeck](https://www.elgato.com/en/gaming/stream-deck) + [macOS StreamDeck App](https://www.elgato.com/en/gaming/downloads) + [Apple Event Script](https://github.com/107208579/calendar-tracking/tree/main/applescript)
   * iOS 
      * [Flic Button](https://flic.io/) + [iOS Flic App](https://apps.apple.com/app/id977593793) + [IFTTT (iOS Calendar)](https://ifttt.com/ios_calendar) / [IFTTT (Google Calendar)](https://ifttt.com/google_calendar)
+     * [BroadLink Smart Button](https://www.ibroadlink.com/products/smart-button) + [iOS Broadlink App](https://apps.apple.com/app/id1450257910) + [IFTTT (iOS Calendar)](https://ifttt.com/ios_calendar) / [IFTTT (Google Calendar)](https://ifttt.com/google_calendar)
   * Android
      * [Flic Button](https://flic.io/) + [Android Flic App](https://play.google.com/store/apps/details?id=io.flic.app) + [IFTTT (Google Calendar)](https://ifttt.com/google_calendar)
+     * [BroadLink Smart Button](https://www.ibroadlink.com/products/smart-button) + [Android Broadlink App](https://play.google.com/store/apps/details?id=cn.com.broadlink.econtrol.international) + [IFTTT (iOS Calendar)](https://ifttt.com/ios_calendar) / [IFTTT (Google Calendar)](https://ifttt.com/google_calendar)
+
   * Cloud Hosted
      * [Flic Button](https://flic.io/) + [Flic Hub](https://flic.io/) + [IFTTT (iOS Calendar)](https://ifttt.com/ios_calendar) / [IFTTT (Google Calendar)](https://ifttt.com/google_calendar)
   * Self Hosted
