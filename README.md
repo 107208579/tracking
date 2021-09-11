@@ -32,13 +32,13 @@ Here are some great people that track their life with the help of a calendar.
 <br />
 
 ## How does this work?  
-The easiest way is to log all your events in a calendar, export the data, and then analyze it.
-
-
-Use a service such as [Apple Calendar](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) as central storage which automatically syncs between 
+The easiest way is to log all your events in a calendar, export the data, and then analyze it. Use a calendar service such as [Apple Calendar](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) that can also act as central storage and automatically sync events between different devices. 
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Setup.png" width="740"> 
 </p>
+
+
+
 GIVE BETTER INTRODUCTION BEFORE JUMPING INTO TOOLS. MOVE THINGS UP?
 GIVE BETTER INTRODUCTION BEFORE JUMPING INTO TOOLS. MOVE THINGS UP?
 GIVE BETTER INTRODUCTION BEFORE JUMPING INTO TOOLS. MOVE THINGS UP?
