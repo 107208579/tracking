@@ -1,44 +1,37 @@
 # Calendar Tracking (Shortcuts)
 
+## What are shortcuts? 
+Apple shortcuts are small programs that can be created by connecting simple action blocks. The below collection of shortcuts are used to create and update calendar events.
+
+Note: In order to allow updating of calendar events in your calendar app without manual confirmation, open the iOS 'Settings' app, go to 'Shortcuts' -> 'Advanced' and activate 'Allow Deleting Without Confirmation'. This setting is optional and all shortcuts perform also with manual confirmation.
+<br />
+<br />
+
 ## Downloads
-Shortcuts need to be configured via the 'Settings' section that can be found atop each shortcut. A description of all settings can be found further below.
-| Food                                                                                    | 
-|:-                                                                                       |
-|[FOO - Meal](https://www.icloud.com/shortcuts/792fbe1a035c4231a7a89173e0c44b19)          |
+Shortcuts have a 'Settings' section at the top each shortcut which allows for configuration and customisation. A description of all settings can be found further down below.
 
-| Rest                                                                                    | 
-|:-                                                                                       |
-|[RES - Sleep](https://www.icloud.com/shortcuts/b909328d5cce4c38bcab99d94396b612)         |
 
-| Errands                                                                                 | 
-|:-                                                                                       |
-|[ERR - Shopping](https://www.icloud.com/shortcuts/d8b6d55ffe0146adbd26ebd23a5962ad)      |
-
-| Transportation                                                                          | 
-|:-                                                                                       |
-|[TRA - Walk](https://www.icloud.com/shortcuts/a182ea15d56f4f9493d37f46c0e0ed93)          |
-|[TRA - Car](https://www.icloud.com/shortcuts/618a22e19144425681ff7c5d7b1bf2ba)           |
-|[TRA - Bus](https://www.icloud.com/shortcuts/eedbb943135745b0bdeeaa8c09fd0f95)           |
-|[TRA - Taxi](https://www.icloud.com/shortcuts/d2b2c0be68af41119cd701136b156f53)          |
-|[TRA - Subway](https://www.icloud.com/shortcuts/818c30f91a68425b897a567ceaf59c7e)        |
-
-| Hygiene                                                                                 | 
-|:-                                                                                       |
-|[HYG - Personal](https://www.icloud.com/shortcuts/601083e57e1640a6bf9d5d1899be549a)      |
-|[HYG - Shower](https://www.icloud.com/shortcuts/f40e55c060af4fa58d2adb3d3b210d4a)        |
-|[HYG - Toilet](https://www.icloud.com/shortcuts/b9914c3e2b3b4648bc7ca8eea67ae615)        |
-|[HYG - Haircut](https://www.icloud.com/shortcuts/e7189da916b540c8836a9fcc69efb6d8)       |
-
-| Other                                                                                   | Action |
-|:-                                                                                       |:-      |
-|[Connect](https://www.icloud.com/shortcuts/12d8c5ecfdc14a82b01cf76987f53cb9)             |Connects the last two events of a selected calendar by setting the end time of the first event to the start time of the second event. This is useful when logging Transportation events where for example a walk followed by a bus ride and another walk need to be connected. |
-|[Stop Event Now](https://www.icloud.com/shortcuts/31552dfb24774a1686f956e695ac9032)      |Moves the end time of a selected event to the nearest X minute from now|
-|[Move Event Earlier](https://www.icloud.com/shortcuts/6f1466e97e654e3b8cbbfbc376dd1b4d)  |Shifts a selected event to X minutes earlier by updating the event start and end time|
-|[Move Event Later](https://www.icloud.com/shortcuts/55bc65bd5be149f1a184cd5fb4841185)    |Shifts a selected event to X minutes later by updating the event start and end time|
-|[Backup & Restore](https://www.icloud.com/shortcuts/bd469c0b7f36476baeeb6f6ffae165a3)    |Saves and restores Shortcuts|
+|Category|Shortcut|Description|
+|:-         |:-                                                                                      |:-           |
+| Food      |[FOO - Meal](https://www.icloud.com/shortcuts/792fbe1a035c4231a7a89173e0c44b19)         |             |
+| Rest      |[RES - Sleep](https://www.icloud.com/shortcuts/b909328d5cce4c38bcab99d94396b612)        |             |
+| Errands   |[ERR - Shopping](https://www.icloud.com/shortcuts/d8b6d55ffe0146adbd26ebd23a5962ad)     |             |
+| Transport |[TRA - Walk](https://www.icloud.com/shortcuts/a182ea15d56f4f9493d37f46c0e0ed93)         |             |
+| Transport |[TRA - Car](https://www.icloud.com/shortcuts/618a22e19144425681ff7c5d7b1bf2ba)          |             |
+| Transport |[TRA - Bus](https://www.icloud.com/shortcuts/eedbb943135745b0bdeeaa8c09fd0f95)          |             |
+| Transport |[TRA - Taxi](https://www.icloud.com/shortcuts/d2b2c0be68af41119cd701136b156f53)         |             | 
+| Transport |[TRA - Subway](https://www.icloud.com/shortcuts/818c30f91a68425b897a567ceaf59c7e)       |             |
+| Hygiene   |[HYG - Personal](https://www.icloud.com/shortcuts/601083e57e1640a6bf9d5d1899be549a)     |             |
+| Hygiene   |[HYG - Shower](https://www.icloud.com/shortcuts/f40e55c060af4fa58d2adb3d3b210d4a)       |             |
+| Hygiene   |[HYG - Toilet](https://www.icloud.com/shortcuts/b9914c3e2b3b4648bc7ca8eea67ae615)       |             |
+| Hygiene   |[HYG - Haircut](https://www.icloud.com/shortcuts/e7189da916b540c8836a9fcc69efb6d8)      |             |
+| Other     |[Connect](https://www.icloud.com/shortcuts/96dee8d7f3b94da48b530aff56dcb4c9)            |Connects the last two calendar events by setting the end time of the first event to the start time of the second event. This is useful to connect two events by removing the gap in between. |
+| Other     |[Stop Event Now](https://www.icloud.com/shortcuts/31552dfb24774a1686f956e695ac9032)     |Moves the end time of a selected event to the nearest X minute from now|
+| Other     |[Move Event Earlier](https://www.icloud.com/shortcuts/6f1466e97e654e3b8cbbfbc376dd1b4d) |Shifts a selected event to X minutes earlier by updating the event start and end time|
+| Other     |[Move Event Later](https://www.icloud.com/shortcuts/55bc65bd5be149f1a184cd5fb4841185)   |Shifts a selected event to X minutes later by updating the event start and end time|
+| Other     |[Backup & Restore](https://www.icloud.com/shortcuts/bd469c0b7f36476baeeb6f6ffae165a3)   |Saves and restores your shortcuts collection|
 <br />
 <br />
-
 
 ## Configuration
 The shortcuts offer a variety of configuration options which can be found atop each shortcut in the 'Settings' section.
