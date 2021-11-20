@@ -47,7 +47,7 @@ It's simple - log events in a calendar via a computer or a mobile phone. Utilise
 
 
 ## What setup do you specifically use?  
-My setup consists of a [Nextcloud](http://nextcloud.com/) server that keeps my iPhone, iPad, and iMac calendars in sync.
+My setup consists of a [Nextcloud](http://nextcloud.com/) server that keeps my calendar data between my devices in sync.
 
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup.png" width="740">    
