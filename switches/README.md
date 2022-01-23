@@ -33,7 +33,7 @@ https://user-images.githubusercontent.com/6289141/120297608-d7eac800-c2fb-11eb-9
 
 
 ## Download
-Follow the installation instructions below or download a pre-compiled image for a Raspberry Pi Zero W. Use the [Rasperry Pi Imager](https://www.raspberrypi.org/software/) to write the image to the SD card.<br />
+Follow the installation instructions below or download a pre-compiled image for a Raspberry Pi Zero 1 Wireless. Use the [Rasperry Pi Imager](https://www.raspberrypi.org/software/) to write the image to the SD card.<br />
 
 Raspberry Pi OS Lite 32-bit<br />
 • Release Date: <br />
