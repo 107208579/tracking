@@ -97,20 +97,20 @@ https://github.com/JelmerT/cc2538-bsl<br />
 → Download the latest boot loader<br />
 `wget -O cc2538-bsl.zip https://codeload.github.com/JelmerT/cc2538-bsl/zip/master && unzip cc2538-bsl.zip`
 
-→ Look for the latest 'Electrolama zzh' firmware<br />
-https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.x.0/bin
-*CC2652R_coordinator_20210120.zip*
+→ Download the latest 'Electrolama zzh' firmware and unzip it<br />
+https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.x.0/bin<br />
+Example: CC26X2R1_20201026.hex<br />
 
 → Check the exact device location the CC2652 is connected to<br />
 `ls -l /dev/tty.usbserial-*`<br />
-*/dev/tty.usbserial-1460*
+*/dev/tty.usbserial-1460*<br />
 
-→ Remove the Zigbee adapter from the USB port<br />
-→ Whilst removed, press the reset button on the board<br />
-→ Keep pressing while plugging the device back into the USB port<br />
-→ Release the button after 2 seconds<br />
+→ Remove the CC2652 adapter from the USB port<br />
+→ Press the reset button on the board<br />
+→ Keep pressing the button while plugging the board back into the USB port<br />
+→ Release the button after 1 second<br />
 
-→ Run the following command (note the device location)<br />
+→ Run the following command (verify the device location)<br />
 `./cc2538-bsl.py -p /dev/tty.usbserial-1460 -evw CC26X2R1_20201026.hex`<br />
 *Opening port /dev/tty.usbserial-1460, baud 500000*<br />
 *Reading data from CC26X2R1_20201026.hex*<br />
