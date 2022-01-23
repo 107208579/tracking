@@ -200,10 +200,6 @@ https://www.raspberrypi.org/downloads/
 → If possible, disable Bluetooth to avoid interference with Zigbee
 
 	dtoverlay=disable-bt
-
-→ If possible, connect over Ethernet and disable Wifi to avoid interference with Zigbee
-
-	dtoverlay=disable-wifi
 <br />
 <br />
 
