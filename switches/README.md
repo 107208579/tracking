@@ -43,6 +43,9 @@ Raspberry Pi OS Lite 32-bit<br />
 • MQTT username: mqtt<br />
 • MQTT password: <br />
 
+• WiFi network: <br />
+• WiFi username: <br />
+• WiFi password: <br />
 
 <br />
 https://www.mediafire.com<br />
