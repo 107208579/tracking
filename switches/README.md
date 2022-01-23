@@ -196,15 +196,6 @@ https://www.raspberrypi.org/downloads/
 
 
 
-### Deactivate Radios
-→ If possible, disable Bluetooth to avoid interference with Zigbee
-
-	dtoverlay=disable-bt
-<br />
-<br />
-
-
-
 ### Update Raspberry Pi OS 
 → Check your operating system<br />
 ` uname -a`
