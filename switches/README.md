@@ -595,7 +595,6 @@ https://www.zigbee2mqtt.io/how_tos/how_to_improve_network_range_and_stability.ht
 → Permanently disable Bluetooth<br />
 `sudo vi /boot/config.txt`
 
-    # Uncomment to enable Bluetooth
     dtoverlay=disable-bt
 
 → Restart your server for the changes to take effect<br /> 
