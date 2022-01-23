@@ -349,7 +349,7 @@ https://unofficial-builds.nodejs.org/download/release/<br />
 → Change into the Zigbee directory<br />
 `cd /opt/zigbee2mqtt`
 
-→ Install dependencies (this may take ~10 minutes on a Rasperry Pi Zero)<br />
+→ Install dependencies (this may take ~10 minutes on a Rasperry Pi Zero 1)<br />
 `npm ci --production`<br />
 *[..................] | extractTree: verb extractTree extracting dependencies to node_modules/*<br />
 *[  ................] | extractTree: sill extract ms@2.0.0 extracted to /opt/zigbee2mqtt/node_modules/ms (5844ms)*<br />
@@ -802,7 +802,7 @@ https://man7.org/linux/man-pages/man1/journalctl.1.html<br />
 → Install 'pytz'<br />
 `pip3 install pytz`
 
-→ Install 'caldav' (this may take a while)<br />
+→ Install 'caldav' (this may take a bit)<br />
 `pip3 install caldav`
 
 → If you need to install an older version use the following command<br />
