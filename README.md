@@ -46,13 +46,14 @@ It's simple - log events in a calendar via a computer or a mobile phone. Utilise
 
 
 
-## What setup do you specifically use?  
-My setup consists of a [Nextcloud](http://nextcloud.com/) server that keeps my calendar data between my devices in sync.
+## What setup do you use?  
+I have an iMac and log events directly in the [macOS Calendar](http://support.apple.com/guide/calendar/welcome/mac) app.
 
 <p align="center">
-<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup.png" width="740">    
+<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Overview.png" width="740">
 </p>
-
+<br />
+<br />
 
 I have different calendars, such as Education, Employment, Errands, Entertainment, Food, Health, Housework, Hygiene, Projects, Rest, Socialising, Sports, and Transportation.
 * EDU  
@@ -69,8 +70,10 @@ I have different calendars, such as Education, Employment, Errands, Entertainmen
 * SPO  
 * TRA   
 * …  
+<br />
+<br />
 
-Each logged event receives a different event title with more details:
+Each event has a different event title with more details:
 * EMP - Work
 * EMP - Meeting
 * EMP - Interview 
@@ -80,16 +83,10 @@ Each logged event receives a different event title with more details:
 * TRA - Bus  
 * TRA - Car  
 * …
-
-I modify events directly in the [macOS Calendar](http://support.apple.com/guide/calendar/welcome/mac) or in [BusyCal](https://www.busymac.com/busycal/) if required.
-
-<p align="center">
-<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Overview.png" width="740">
-</p>
 <br />
 <br />
 
-The smallest event duration logged is 5 minutes. Here are some event example events:
+The smallest event duration logged is 5 minutes. Here are some event example events where I also include additional details in the 'Notes' section:
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Event_001.png" width="250">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Event_002.png" width="250">
@@ -99,8 +96,7 @@ The smallest event duration logged is 5 minutes. Here are some event example eve
 <br />
 
 
-
-On the go, I log events on my iPhone via some of these 'one-click' [iOS shortcuts](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md) bookmarks.
+On the go, I log events on my iPhone via [iOS shortcuts](https://support.apple.com/en-sg/guide/shortcuts/welcome/ios) which I have documented [here](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md).
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_iOS14_Shortcuts.png" width="250">
 </p>
@@ -108,11 +104,17 @@ On the go, I log events on my iPhone via some of these 'one-click' [iOS shortcut
 <br />
 
 
-
-At home I use wireless switches that allow me to log events via a simple button press. I've written up a tutorial on how to get a Raspberry Pi OS base installation and how to setup Zigbee switches with all required software here: https://github.com/107208579/calendar-tracking/blob/main/switches/README.md.
+At home I use wireless Zigbee switches that allow me to log events via a simple button press. I've written up a tutorial on how to setup a Raspberry Pi OS base installation and how to connect switches with all required software here: https://github.com/107208579/calendar-tracking/blob/main/switches/README.md.
 
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup_Zigbee.png" width="740">    
+</p>
+<br />
+<br />
+
+I run a private [Nextcloud](http://nextcloud.com/) server that keeps my calendar data between my devices in sync.
+<p align="center">
+<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup.png" width="740">    
 </p>
 <br />
 <br />
