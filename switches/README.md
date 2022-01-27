@@ -18,7 +18,7 @@ https://user-images.githubusercontent.com/6289141/120297608-d7eac800-c2fb-11eb-9
 
 
 ## Requirements
-• CalDAV Server ([Apple Calendar](https://www.icloud.com/calendar/), [Google Calendar](http://calendar.google.com), [NextCloud](https://nextcloud.com), etc)<br />
+• CalDAV Server ([Apple iCloud Calendar](https://www.icloud.com/calendar/), [Google Calendar](http://calendar.google.com), [NextCloud](https://nextcloud.com), etc)<br />
 • Linux Server ([Raspberry Pi Zero W](https://www.raspberrypi.org)  ~10 USD)<br />
 • Zigbee Switch ([Supported Switches](https://www.zigbee2mqtt.io/information/supported_devices.html) ~10 USD)<br />
 • Zigbee Adapter ([Electrolama zzh! CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick/) ~30 USD)<br />
