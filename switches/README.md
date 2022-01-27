@@ -110,7 +110,7 @@ Example: CC26X2R1_20201026.hex<br />
 
 → Remove the CC2652 adapter from the USB port<br />
 → Press the reset button on the board<br />
-→ Keep pressing the button while plugging the board back into the USB port<br />
+→ Keep pressing the reset button while plugging the board back into the USB port<br />
 → Release the button after 1 second<br />
 
 → Run the following command (verify the device location)<br />
