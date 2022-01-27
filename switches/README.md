@@ -421,7 +421,7 @@ https://www.zigbee2mqtt.io/information/configuration.html
       base_topic: mqtt
       server: 'mqtt://localhost'
       user: mqtt
-      password: <your_password>
+      password: secretpassword123
     advanced:
       network_key: GENERATE
       pan_id: 0x1a62
@@ -443,7 +443,7 @@ https://www.zigbee2mqtt.io/information/configuration.html
 *...*<br />
 
 → Check the journal <br />
-`sudo journalctl -u zigbee2mqtt.service -f`
+`sudo journalctl -u zigbee2mqtt.service -f`<br />
 *zigbee2mqtt@1.18.1 start /opt/zigbee2mqtt*
 
 → Configure Zigbee2MQTT to run as daemon in the background<br />
@@ -696,7 +696,7 @@ https://www.zigbee2mqtt.io/devices/WXKG01LM.html
     permit_join: false
 
 → Restart the service for the changes to take effect<br />
-`sudo systemctl start zigbee2mqtt1`
+`sudo systemctl start zigbee2mqtt`
 <br />
 <br />
 
@@ -813,9 +813,9 @@ https://man7.org/linux/man-pages/man1/journalctl.1.html<br />
 
 → Download 'mqtt2caldav' to your servers home directory<br />
 https://github.com/107208579/mqtt2caldav<br />
-`wget https://github.com/107208579/mqtt2caldav/archive/refs/heads/main.zip`
-`unzip mqtt2caldav-main.zip`
-`mv mqtt2caldav-main mqtt2caldav`
+`wget https://github.com/107208579/mqtt2caldav/archive/refs/heads/main.zip`<br />
+`unzip mqtt2caldav-main.zip`<br />
+`mv mqtt2caldav-main mqtt2caldav`<br />
 
 → Read the [README.md](https://github.com/107208579/mqtt2caldav#readme)<br />
 
