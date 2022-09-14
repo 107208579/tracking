@@ -89,6 +89,10 @@ The smallest event duration logged is 5 minutes. Here are some event example eve
 ### At my computer
 I log events directly on my iMac, mostly cloning existing events from the previous days via copy ⌘C and paste ⌘V. I also log events via a simple button-press on my [Streamdeck](https://www.elgato.com/en/stream-deck) that connects to [macOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts-mac/apdf22b0444c/mac) ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md)).
 
+<p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_StreamDeck_Setup.png" width="740"></p>
+<br />
+<br />
+
 ### On the go
 When being mobile I log events on my iPhone via one-touch [iOS shortcuts](https://support.apple.com/en-sg/guide/shortcuts/welcome/ios) ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md)).
 <p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_iOS14_Shortcuts.png" width="250"></p>
@@ -98,10 +102,9 @@ When being mobile I log events on my iPhone via one-touch [iOS shortcuts](https:
 ### Around the home
 Around my house I also use another setup that includes Zigbee switches that allow me to log events via a simple physical button press. Zigbee switches are cheap physical buttons that run on a coin cell battery and when pressed send a wireless signal to a server which creates a calendar event.
 
+The setup is a bit more complicated as I run a dedicated [Nextcloud](http://nextcloud.com/) server to keep my calendar data in sync between my devices. I assume that [Apple Calendar](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) might be a suitable options but I have no experience.
 
-
-
-The setup is a bit more complicated as I run a dedicated [Nextcloud](http://nextcloud.com/) server that keeps my calendar data between my devices in sync. I assume that [Apple Calendar](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) might be a suitable options but I have no experience. I've written up a tutorial on what hardware is required and how to setup a Raspberry Pi installation to make things work, which can be [found here](https://github.com/107208579/calendar-tracking/blob/main/switches/README.md).
+I've written up a tutorial on what hardware is required and how to setup a Raspberry Pi installation to make things work, which can be [found here](https://github.com/107208579/calendar-tracking/blob/main/switches/README.md).
 <p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup.png" width="740"></p>
 <br />
 <p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup_Zigbee.png" width="740"></p>
