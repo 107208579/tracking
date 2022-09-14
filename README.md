@@ -101,7 +101,7 @@ Around my house I also use another setup that includes Zigbee switches that allo
 
 
 
-The setup is a bit more complicated as I run a dedicated [Nextcloud](http://nextcloud.com/) server that keeps my calendar data between my devices in sync. I assume that ([Apple Calendar](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) would be a suitable replacement but I have no experience. I've written up a tutorial on what hardware is required and how to setup a Raspberry Pi installation to make things work, which can be [found here](https://github.com/107208579/calendar-tracking/blob/main/switches/README.md).
+The setup is a bit more complicated as I run a dedicated [Nextcloud](http://nextcloud.com/) server that keeps my calendar data between my devices in sync. I assume that [Apple Calendar](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) might be a suitable options but I have no experience. I've written up a tutorial on what hardware is required and how to setup a Raspberry Pi installation to make things work, which can be [found here](https://github.com/107208579/calendar-tracking/blob/main/switches/README.md).
 <p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup.png" width="740"></p>
 <br />
 <p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup_Zigbee.png" width="740"></p>
