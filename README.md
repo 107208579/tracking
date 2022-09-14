@@ -87,13 +87,11 @@ The smallest event duration logged is 5 minutes. Here are some event example eve
 
 ## What tools do you use to log events?  
 ### At my computer
-- I log events directly on my iMac, mostly cloning existing events from the previous days via copy ⌘C and paste ⌘V.
-- I also log events via a simple button-press on my [Streamdeck](https://www.elgato.com/en/stream-deck) that triggers [macOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts-mac/apdf22b0444c/mac) ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md)).
+I log events directly on my iMac, mostly cloning existing events from the previous days via copy ⌘C and paste ⌘V. I also log events via a simple button-press on my [Streamdeck](https://www.elgato.com/en/stream-deck) that triggers [macOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts-mac/apdf22b0444c/mac) ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md)).
 
 ### On the go
 When being mobile I log events on my iPhone via one-touch [iOS shortcuts](https://support.apple.com/en-sg/guide/shortcuts/welcome/ios) ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md)).
-<p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_iOS14_Shortcuts.png" width="250">
-</p>
+<p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_iOS14_Shortcuts.png" width="250"></p>
 <br />
 <br />
 
