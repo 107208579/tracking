@@ -87,7 +87,7 @@ The smallest event duration logged is 5 minutes. Here are some event example eve
 
 ## What tools do you use to log events?  
 ### At my computer
-I log events directly on my iMac, mostly cloning existing events from the previous days via copy ⌘C and paste ⌘V. I also log events via a simple button-press on my [Streamdeck](https://www.elgato.com/en/stream-deck) that triggers [macOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts-mac/apdf22b0444c/mac) ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md)).
+I log events directly on my iMac, mostly cloning existing events from the previous days via copy ⌘C and paste ⌘V. I also log events via a simple button-press on my [Streamdeck](https://www.elgato.com/en/stream-deck) that connects to [macOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts-mac/apdf22b0444c/mac) ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md)).
 
 ### On the go
 When being mobile I log events on my iPhone via one-touch [iOS shortcuts](https://support.apple.com/en-sg/guide/shortcuts/welcome/ios) ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md)).
