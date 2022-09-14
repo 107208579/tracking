@@ -13,7 +13,7 @@ Shortcuts have a 'Settings' section at the top each shortcut which allows for co
 
 |Category|Shortcut|Description|
 |:-         |:-                                                                                      |:-           |
-| Food      |[FOO - Meal](https://www.icloud.com/shortcuts/792fbe1a035c4231a7a89173e0c44b19)         |             |
+| Food      |[FOO - Meal](https://www.icloud.com/shortcuts/792fbe1a035c4231a7a89173e0c44b19)         |Logs Breakfast, Lunch, Dinner depending on the time of the day|
 | Rest      |[RES - Sleep](https://www.icloud.com/shortcuts/b909328d5cce4c38bcab99d94396b612)        |             |
 | Errands   |[ERR - Shopping](https://www.icloud.com/shortcuts/d8b6d55ffe0146adbd26ebd23a5962ad)     |             |
 | Transport |[TRA - Walk](https://www.icloud.com/shortcuts/a182ea15d56f4f9493d37f46c0e0ed93)         |             |
