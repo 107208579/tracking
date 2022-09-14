@@ -96,19 +96,15 @@ When being mobile I log events on my iPhone via one-touch [iOS shortcuts](https:
 <br />
 
 ### Around the home
-Around my house I also use another setup that includes Zigbee switches that allow me to log events via a simple physical button press. Zigbee switches are cheap physical buttons that run on a coin cell battery and when pressed send a wireless signal to a server, which then connects to a calendar an creates an event.
+Around my house I also use another setup that includes Zigbee switches that allow me to log events via a simple physical button press. Zigbee switches are cheap physical buttons that run on a coin cell battery and when pressed send a wireless signal to a server which creates a calendar event.
 
-I've written up a tutorial on what hardware is required and how to setup a Raspberry Pi installation to make things work, which can be [found here](https://github.com/107208579/calendar-tracking/blob/main/switches/README.md).
 
-<p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup_Zigbee.png" width="740">    
-</p>
+
+
+The setup is a bit more complicated as I run a dedicated [Nextcloud](http://nextcloud.com/) server that keeps my calendar data between my devices in sync. I assume that ([Apple Calendar](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) would be a suitable replacement but I have no experience. I've written up a tutorial on what hardware is required and how to setup a Raspberry Pi installation to make things work, which can be [found here](https://github.com/107208579/calendar-tracking/blob/main/switches/README.md).
+<p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup.png" width="740"></p>
 <br />
-<br />
-
-I run a private [Nextcloud](http://nextcloud.com/) server that keeps my calendar data between my devices in sync.
-<p align="center">
-<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup.png" width="740">    
-</p>
+<p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup_Zigbee.png" width="740"></p>
 <br />
 <br />
 
