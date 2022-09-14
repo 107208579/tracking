@@ -8,7 +8,7 @@ When a Zigbee switch/button is pressed, a wireless Zigbee signal is sent. The Zi
 <br />
 <br />
 
-Here's a short video that shows a button press that generates a new calendar and syncs it to two calendars. 
+Here's a short video that shows a button press that generates a new event and syncs it to two calendars in a few seconds. 
 
 https://user-images.githubusercontent.com/6289141/120297608-d7eac800-c2fb-11eb-97d8-41e60def8116.mov
 
