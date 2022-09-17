@@ -12,6 +12,7 @@ Note: In order to automatically allow updating of calendar events in your calend
 ## Downloads
 The below listed shortcuts have a 'Settings' section at the top each shortcut which allows for configuration and customisation. A description of all settings can be found further down below.
 
+<div align="center">
 
 |Shortcut|Description|
 |:-                                                                                      |:-           |
@@ -27,11 +28,13 @@ The below listed shortcuts have a 'Settings' section at the top each shortcut wh
 |[HYG - Shower](https://www.icloud.com/shortcuts/f40e55c060af4fa58d2adb3d3b210d4a)       |Hygiene, logs a shower|
 |[HYG - Toilet](https://www.icloud.com/shortcuts/b9914c3e2b3b4648bc7ca8eea67ae615)       |Hygiene, logs toilet time|
 |[HYG - Haircut](https://www.icloud.com/shortcuts/e7189da916b540c8836a9fcc69efb6d8)      |Hygiene, logs a haircut|
-|[Connect](https://www.icloud.com/shortcuts/96dee8d7f3b94da48b530aff56dcb4c9)            |Connects the last two calendar events by setting the end time of the first event to the start time of the second event. This is useful to connect two events by removing the time gap in between. |
+|[Connect](https://www.icloud.com/shortcuts/96dee8d7f3b94da48b530aff56dcb4c9)            |Connects the last two calendar events by setting the end time of the first event to <br>the start time of the second event. This is useful to connect two events by removing <br>the time gap in between. |
 |[Stop Event Now](https://www.icloud.com/shortcuts/31552dfb24774a1686f956e695ac9032)     |Moves the end time of a selected event to the nearest X minute from now|
 |[Move Event Earlier](https://www.icloud.com/shortcuts/6f1466e97e654e3b8cbbfbc376dd1b4d) |Shifts a selected event to X minutes earlier by updating the event start and end time|
 |[Move Event Later](https://www.icloud.com/shortcuts/55bc65bd5be149f1a184cd5fb4841185)   |Shifts a selected event to X minutes later by updating the event start and end time|
 |[Backup & Restore](https://www.icloud.com/shortcuts/bd469c0b7f36476baeeb6f6ffae165a3)   |Saves and restores your shortcuts collection|
+
+</div>  
 <br />
 <br />
 
@@ -89,7 +92,7 @@ Specifies the default event duration in minutes. As an example, if the 'eventDur
 <br />
 
 **Shortcuts :: eventExtension**  
-Specifies the event extension in minutes. When a shortcut (to create a new event) is run, it will check if the same type of event already exists, and if so, will remove the existing event and replace it with a new event by using the original start time but extending the end time by adding the 'eventExtension' minutes. This function allows to quickly update the duration of an existing event by simply running the same event multiple times in succession. This functionality ties in with the 'eventSearchMinusTime' and 'eventSearchPlusTime' for a more granualar configuration.
+Specifies the event extension in minutes. When a shortcut (to create a new event) is run, it will check if the same type of event already exists, and if so, will remove the existing event and replace it with a new event by using the original start time but extending the end time by adding the 'eventExtension' minutes. This function allows to quickly update the duration of an existing event by simply running the same event multiple times in succession. This functionality ties in with the 'eventSearchMinusTime' and 'eventSearchPlusTime' for a more personalised setup.
 * 1
 * 5
 * ...
