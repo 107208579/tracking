@@ -89,21 +89,21 @@ Specifies the default event duration in minutes. As an example, if the 'eventDur
 <br />
 
 **Shortcuts :: eventExtension**  
-Specifies the event extension in minutes. When a shortcut (to create a new event) is run, it will check if the same type of event already exists, and if so, will remove the existing event and replace it with a new event by using the original start time but extending the end time by adding the 'eventExtension' minutes. This function allows to quickly update the duration of an event by simply running the same event multiple times in succession.
+Specifies the event extension in minutes. When a shortcut (to create a new event) is run, it will check if the same type of event already exists, and if so, will remove the existing event and replace it with a new event by using the original start time but extending the end time by adding the 'eventExtension' minutes. This function allows to quickly update the duration of an existing event by simply running the same event multiple times in succession. This functionality ties in with the 'eventSearchMinusTime' and 'eventSearchPlusTime' for a more granualar configuration.
 * 1
 * 5
 * ...
 <br />
 
 **Shortcuts :: eventSearchMinusTime**  
-Specifies the amount of minutes the search should look back in time from now to find the same type of event. This setting ties in with the 'eventExtension'.
+Specifies the amount of minutes the search should look back in time from now to find the same type of event. This setting ties in with the 'eventExtension'. Set to '0' if existing events should not be touched and a brand-new event should be created instead.
 * 1
 * 5
 * ...
 <br />
 
 **Shortcuts :: eventSearchPlusTime**  
-Specifies the amount of minutes the search function should look forward in time from now to find the same type of event. This setting ties in with the 'eventExtension'.
+Specifies the amount of minutes the search function should look forward in time from now to find the same type of event. This setting ties in with the 'eventExtension'. Set to '0' if existing events should not be touched and a brand-new event should be created instead.
 * 5
 * 10
 * ...
@@ -124,7 +124,7 @@ Specifies an audio file used for devices without vibration functionality to indi
 <br />
 
 **Shortcuts :: acousticFeedbackVolume**  
-Specifies the volume level at which acoustic feedback is played. The shortcut retains the original system volume level and only temporary changes the output volume. 
+Specifies the volume level at which acoustic feedback is played. The shortcut retains the original system volume level and only temporary changes the output volume to provide feedback.
 * 0.1
 * 0.9
 * ...
