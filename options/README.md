@@ -44,6 +44,8 @@ Below a list of calendar services and applications that support synchronisation 
 
 ## What tools can create events?  
 Apart from manually logging an event in a calendar app there are lots of other ways - some of them as simple as pressing a button, duplicating an existing event, or even logging events automatically based on your location.
+  
+* **Via an Operating System App**
   * macOS
      * [Apple Script](https://github.com/107208579/calendar-tracking/tree/main/applescript)
      * [Shortcuts](https://support.apple.com/en-gb/guide/shortcuts-mac/apdf22b0444c/mac) ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md) | [Forum](https://www.reddit.com/r/shortcuts))
