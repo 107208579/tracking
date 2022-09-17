@@ -1,3 +1,5 @@
+
+
 # Calendar Tracking  
 
 ## Why track your time?  
@@ -44,21 +46,26 @@ I have an Apple iMac and use the default [macOS Calendar](http://support.apple.c
 <br />
 <br />
 
-I have different calendars, such as Education, Employment, Errands, Entertainment, Food, Health, Housework, Hygiene, Projects, Rest, Socialising, Sports, and Transportation. For convenience, I shortened their names to 3 letters: 
-* EDU  
-* EMP   
-* ENT  
-* ERR  
-* FOO  
-* HEA  
-* HOU  
-* HYG  
-* PRO  
-* RES  
-* SOC  
-* SPO  
-* TRA   
-* …  
+I have different calendars setup to better categorise :
+<div align="center">
+
+|CAL|Calendar|Used for|
+|:--:|:--|:--|
+|**EDU**|Education| |
+|**EMP**|Employment|Work related events, including work hours, meetings, etc|
+|**ENT**|Entertainment|Time spent on a computer, television, with a book, etc|
+|**ERR**|Errands|Shopping|
+|**FOO**|Food|Eating breakfast, lunch, dinner, or some snacks|
+|**HEA**|Health|
+|**HOU**|Housework|Work at home - Cooking, cleaning, maintaining, etc|  
+|**HYG**|Hygiene|Personal care, showers, toilet, haircut, etc|
+|**PRO**|Project|
+|**RES**|Rest|Sleep hours|
+|**SOC**|Social|
+|**SPO**|Sport|Physical activity events|
+|**TRA**|Transportation|Time spent moving, such as car, taxi, subway, walking, etc|
+
+</div>
 <br />
 <br />
 
@@ -87,10 +94,21 @@ The smallest event duration logged is 5 minutes. Here are some event example eve
 
 ## What tools do you use to log events?  
 ### At my computer
-I log events directly on my iMac, mostly cloning existing events from the previous days via copy ⌘C and paste ⌘V. I also log events via a simple button-press on my [Streamdeck](https://www.elgato.com/en/stream-deck) that connects to [macOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts-mac/apdf22b0444c/mac) ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md)).
+I log events directly on my iMac, mostly cloning existing events from the previous days via copy ⌘C and paste ⌘V. I also log events via a simple button-press from my [Streamdeck](https://www.elgato.com/en/stream-deck) that triggers [macOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts-mac/apdf22b0444c/mac) ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md)).
 
+<div align="center">
+  
+|Col1|Col2|Col3|Col4|Col5| 
+|:--:|:--:|:--:|:--:|:--:|
+|ENT - Computer|ENT - TV  |          |Move -5m      | |
+|SOC - Home    |SOC - Meet|          |Restart Server|Connect Event|
+|EMP - Work    |EMP - Meet|Add Person|EMP - 1:1     |Stop Event|
+
+</div>
+<br />
 <p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_StreamDeck_Photo.png" width="740"></p>
 <p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_StreamDeck_Setup.png" width="740"></p>
+
 <br />
 <br />
 
@@ -101,11 +119,13 @@ When being mobile I log events on my iPhone via one-touch [iOS shortcuts](https:
 <br />
 
 ### Around the home
-Around my house I also use another setup that includes Zigbee switches that allow me to log events via a simple physical button press. Zigbee switches are cheap physical buttons that run on a coin cell battery and when pressed send a wireless signal to a server which creates a calendar event.
+Around my house I also use another setup that includes Zigbee switches that allow me to log events via a simple physical button press. Zigbee switches are cheap physical buttons that run on a coin cell battery and when pressed send a wireless signal to a server, which creates a calendar event.
 
-The setup is a bit more complicated as I run a dedicated [Nextcloud](http://nextcloud.com/) server to keep my calendar data in sync between my devices. I assume that [Apple Calendar](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) might be a suitable options but I have no experience.
+The setup is a bit more complicated but anybody with Linux and command
 
-I've written up a tutorial on what hardware is required and how to setup a Raspberry Pi installation to make things work, which can be [found here](https://github.com/107208579/calendar-tracking/blob/main/switches/README.md).
+I run a dedicated [Nextcloud](http://nextcloud.com/) server to keep my calendar data in sync between my devices. I assume that [Apple Calendar](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) might be a suitable options but I have no experience.
+
+I've written up a tutorial on what hardware is required and how to setup a Raspberry Pi which can be [found here](https://github.com/107208579/calendar-tracking/blob/main/switches/README.md).
 <p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup.png" width="740"></p>
 <br />
 <p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup_Zigbee.png" width="740"></p>
