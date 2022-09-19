@@ -28,6 +28,8 @@ Below a list of calendar services and applications that support synchronisation 
      * [Evolution](https://wiki.gnome.org/Apps/Evolution) 
      * [Gnome Calendar](https://snapcraft.io/gnome-calendar)
      * [KOrganizer](https://apps.kde.org/en/korganizer)
+  * Terminal
+     * [Khal](https://lostpackets.de/khal/) 
   * Android
      * [Google Calendar](https://play.google.com/store/apps/details?id=com.google.android.calendar)
      * [One Calendar](https://play.google.com/store/apps/details?id=biz.codespark.xcalendarapp)
