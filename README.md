@@ -1,7 +1,9 @@
+
+
 # Calendar Tracking  
-DRAFT - DRAFT - DRAFT
-DRAFT - DRAFT - DRAFT
-DRAFT - DRAFT - DRAFT
+DRAFT - DRAFT - DRAFT   
+DRAFT - DRAFT - DRAFT   
+DRAFT - DRAFT - DRAFT   
 
 ## Why track your time?  
 Have you ever asked yourself where your time goes? Or have you ever wished you could remember what you were doing on a specific day? What about remembering the last time you meet up with a friend or relative? Or the name of the restaurant with the great desert you visited last year when you were on a business trip?
@@ -70,20 +72,7 @@ I have different calendars to better categorise events:
 <br />
 <br />
 
-Each event has a different event title with more details:
-* EMP - Work
-* EMP - Meeting
-* EMP - Interview 
-* ENT - Computer
-* ENT - Television
-* TRA - Walk  
-* TRA - Bus  
-* TRA - Car  
-* …
-<br />
-<br />
-
-The smallest event duration logged is 5 minutes. Here are some event example events where I also include additional details in the 'Notes' section:
+Each event has a different event title and event notes with more details. The smallest event duration logged is 5 minutes. Here are some event examples:
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Event_001.png" width="250">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Event_002.png" width="250">
