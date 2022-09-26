@@ -85,16 +85,6 @@ Each event has a different event title and event notes with more details. The sm
 ## What tools do you use to log events?  
 ### At my computer
 I log events directly on my iMac, mostly cloning existing events from the previous days via copy ⌘C and paste ⌘V. I also log events via a simple button-press from my [Streamdeck](https://www.elgato.com/en/stream-deck) that triggers [macOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts-mac/apdf22b0444c/mac) ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md)).
-
-<div align="center">
-  
-|Col1|Col2|Col3|Col4|Col5| 
-|:--:|:--:|:--:|:--:|:--:|
-|ENT - Computer|ENT - TV  |          |Move -5m      | |
-|SOC - Home    |SOC - Meet|          |Restart Server|Connect Event|
-|EMP - Work    |EMP - Meet|Add Person|EMP - 1:1     |Stop Event|
-
-</div>
 <br />
 <p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_StreamDeck_Photo.png" width="740"></p>
 <p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_StreamDeck_Setup.png" width="740"></p>
@@ -109,7 +99,7 @@ When being mobile I log events on my iPhone via one-touch [iOS shortcuts](https:
 <br />
 
 ### Around the home
-Around my house I also use another setup that includes Zigbee switches that allow me to log events via a simple physical button press. Zigbee switches are cheap physical buttons that run on a coin cell battery and when pressed send a wireless signal to a server, which creates a calendar event.
+Around my house I also use another setup that includes wireless Zigbee switches that allow me to log events via a simple button press. Zigbee switches are cheap buttons that run on a coin cell battery and when pressed send a signal to a server, which creates a calendar event.
 
 The setup is a bit more complicated but anybody with Linux and command
 
