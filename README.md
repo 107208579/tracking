@@ -1,5 +1,3 @@
-
-
 # Calendar Tracking  
 DRAFT - DRAFT - DRAFT
 DRAFT - DRAFT - DRAFT
@@ -49,24 +47,24 @@ I have an Apple iMac and use the default [macOS Calendar](http://support.apple.c
 <br />
 <br />
 
-I have different calendars setup to better categorise :
+I have different calendars to better categorise events:
 <div align="center">
 
 |CAL|Calendar|Used for|
 |:--:|:--|:--|
-|**EDU**|Education| |
-|**EMP**|Employment|Work related events, including work hours, meetings, etc|
+|**EDU**|Education|Learning related activity, such as training, courses, etc|
+|**EMP**|Employment|Work events, including work hours, meetings, interviews, etc|
 |**ENT**|Entertainment|Time spent on a computer, television, with a book, etc|
-|**ERR**|Errands|Shopping|
-|**FOO**|Food|Eating breakfast, lunch, dinner, or some snacks|
-|**HEA**|Health|
-|**HOU**|Housework|Work at home - Cooking, cleaning, maintaining, etc|  
-|**HYG**|Hygiene|Personal care, showers, toilet, haircut, etc|
-|**PRO**|Project|
+|**ERR**|Errands|Shopping for groceries, clothing, electronics, etc|
+|**FOO**|Food|Eating breakfast, lunch, dinner, or snacks|
+|**HEA**|Health|Doctor visits for medical, dental, etc| 
+|**HOU**|Housework|Cooking, cleaning, doing the laundry, etc|  
+|**HYG**|Hygiene|Personal care such as showers, bathroom visits, haircuts, etc|
+|**PRO**|Project|Personal interest projects|
 |**RES**|Rest|Sleep hours|
-|**SOC**|Social|
-|**SPO**|Sport|Physical activity events|
-|**TRA**|Transportation|Time spent moving, such as car, taxi, subway, walking, etc|
+|**SOC**|Social|Social activities, such as meeting friends, etc|
+|**SPO**|Sport|Physical activity, including running, cycling, sailing, etc|
+|**TRA**|Transportation|Time spent on the move via car, subway, walking, etc|
 
 </div>
 <br />
