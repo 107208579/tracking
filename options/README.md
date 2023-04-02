@@ -167,6 +167,8 @@ Apart from manually logging an event in a calendar app there are lots of other w
    * [Google Data Studio](https://datastudio.google.com/)
    * [Microsoft Power Bi](https://powerbi.microsoft.com)
 * Self Hosted
-   * [Metabase](https://www.metabase.com) 
+   * [Metabase](https://www.metabase.com)
+* Google Calendar Plugins
+   * [TimeTackle](https://www.timetackle.com) 
 <br />
 <br />
