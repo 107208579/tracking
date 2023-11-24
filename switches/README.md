@@ -190,7 +190,7 @@ https://www.raspberrypi.org/downloads/
 `passwd`
 
 → Change the default password for user 'root'<br />
-` sudo passwd root`
+`sudo passwd root`
 <br />
 <br />
 
@@ -198,7 +198,7 @@ https://www.raspberrypi.org/downloads/
 
 ### Update Raspberry Pi OS 
 → Check your operating system<br />
-` uname -a`
+`uname -a`
 
 → Update your system's package list<br />
 `sudo apt-get update`
