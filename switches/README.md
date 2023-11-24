@@ -22,7 +22,7 @@ https://user-images.githubusercontent.com/6289141/120297608-d7eac800-c2fb-11eb-9
 • Linux Server ([Raspberry Pi Zero W](https://www.raspberrypi.org)  ~10 USD)<br />
 • Zigbee Switch ([Supported Switches](https://www.zigbee2mqtt.io/information/supported_devices.html) ~10 USD)<br />
 • Zigbee Adapter ([Electrolama zzh! CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick/) ~30 USD)<br />
-• USB Extension Cable ([UGreen OTG 2.0](https://www.ugreen.com/products/micro-usb-2-0-otg-adapter-cable) ~3 USD)<br />
+• USB Extension Cable ([UGreen OTG 2.0](https://uk.ugreen.com/products/ugreen-micro-usb-2-0-otg-adapter) ~5 USD)<br />
 
 <p align="center">
 <img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup_Zigbee.png" width="740">    
