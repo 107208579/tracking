@@ -109,7 +109,7 @@ Apart from manually logging an event in a calendar app there are lots of other w
      * [RF Buttons](https://www.amazon.com/s?k=433MHz+Button) + [Sonoff RF Gateway](https://sonoff.tech/product/accessories/433-rf-bridge) ([Guide](https://www.youtube.com/watch?v=o4Qa43c_shM)) + Linux Server + [zigbee2mqtt](https://www.zigbee2mqtt.io) + [mqtt2caldav](https://github.com/107208579/mqtt2caldav)
   * Self Built
      * [Philips Hue Wall Switch](https://www.philips-hue.com/en-gb/p/hue-philips-hue-wall-switch-module/8719514318045) + [Apple HomeKit](https://support.apple.com/en-sg/HT204893) + [iOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) ([Guide](https://riedel.wtf/philipps-hue-wall-switch/))
-     * [Onion Omega 2](https://onion.io/omega2/) ([Guide](http://frederickvandenbosch.be/?p=2345)) + [IFTTT (iOS Calendar)](https://ifttt.com/ios_calendar) / [IFTTT (Google Calendar)](https://ifttt.com/google_calendar)
+     * [Onion Omega 2](https://onion.io/omega2/) ([Guide](https://web.archive.org/web/20220521002821/https://frederickvandenbosch.be/?p=2345)) + [IFTTT (iOS Calendar)](https://ifttt.com/ios_calendar) / [IFTTT (Google Calendar)](https://ifttt.com/google_calendar)
 <br />
 
 * **Via Workflow Automation**  
