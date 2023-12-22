@@ -16,24 +16,23 @@ The below listed shortcuts have a 'Settings' section at the top each shortcut wh
 
 |Shortcut|Description|
 |:-                                                                                      |:-           |
-|[FOO - Meal](https://www.icloud.com/shortcuts/792fbe1a035c4231a7a89173e0c44b19)         |Food, logs Breakfast, Lunch, Dinner |
-|[RES - Sleep](https://www.icloud.com/shortcuts/b909328d5cce4c38bcab99d94396b612)        |Rest, asks your Sleep & Drowse times |
-|[ERR - Shopping](https://www.icloud.com/shortcuts/d8b6d55ffe0146adbd26ebd23a5962ad)     |Errands, logs shopping activity|
-|[TRA - Walk](https://www.icloud.com/shortcuts/a182ea15d56f4f9493d37f46c0e0ed93)         |Transportation, logs a walk|
-|[TRA - Car](https://www.icloud.com/shortcuts/618a22e19144425681ff7c5d7b1bf2ba)          |Transportation, logs a car ride|
-|[TRA - Bus](https://www.icloud.com/shortcuts/eedbb943135745b0bdeeaa8c09fd0f95)          |Transportation, logs a bus ride|
-|[TRA - Taxi](https://www.icloud.com/shortcuts/d2b2c0be68af41119cd701136b156f53)         |Transportation, logs a taxi ride| 
-|[TRA - Subway](https://www.icloud.com/shortcuts/818c30f91a68425b897a567ceaf59c7e)       |Transportation, logs a subway ride|
-|[HYG - Personal](https://www.icloud.com/shortcuts/601083e57e1640a6bf9d5d1899be549a)     |Hygiene, logs personal bathroom time|
-|[HYG - Shower](https://www.icloud.com/shortcuts/f40e55c060af4fa58d2adb3d3b210d4a)       |Hygiene, logs a shower|
-|[HYG - Toilet](https://www.icloud.com/shortcuts/b9914c3e2b3b4648bc7ca8eea67ae615)       |Hygiene, logs toilet time|
-|[HYG - Haircut](https://www.icloud.com/shortcuts/e7189da916b540c8836a9fcc69efb6d8)      |Hygiene, logs a haircut|
+|[FOO - Meal](https://www.icloud.com/shortcuts/792fbe1a035c4231a7a89173e0c44b19)         |Food - logs Breakfast, Lunch, Dinner |
+|[RES - Sleep](https://www.icloud.com/shortcuts/b909328d5cce4c38bcab99d94396b612)        |Rest - asks your Sleep & Drowse times |
+|[ERR - Shopping](https://www.icloud.com/shortcuts/d8b6d55ffe0146adbd26ebd23a5962ad)     |Errands - logs shopping activity|
+|[TRA - Walk](https://www.icloud.com/shortcuts/a182ea15d56f4f9493d37f46c0e0ed93)         |Transportation - logs a walk|
+|[TRA - Car](https://www.icloud.com/shortcuts/618a22e19144425681ff7c5d7b1bf2ba)          |Transportation - logs a car ride|
+|[TRA - Bus](https://www.icloud.com/shortcuts/eedbb943135745b0bdeeaa8c09fd0f95)          |Transportation - logs a bus ride|
+|[TRA - Taxi](https://www.icloud.com/shortcuts/d2b2c0be68af41119cd701136b156f53)         |Transportation - logs a taxi ride| 
+|[TRA - Subway](https://www.icloud.com/shortcuts/818c30f91a68425b897a567ceaf59c7e)       |Transportation - logs a subway ride|
+|[HYG - Personal](https://www.icloud.com/shortcuts/601083e57e1640a6bf9d5d1899be549a)     |Hygiene - logs personal bathroom time|
+|[HYG - Shower](https://www.icloud.com/shortcuts/f40e55c060af4fa58d2adb3d3b210d4a)       |Hygiene - logs a shower|
+|[HYG - Toilet](https://www.icloud.com/shortcuts/b9914c3e2b3b4648bc7ca8eea67ae615)       |Hygiene - logs toilet time|
+|[HYG - Haircut](https://www.icloud.com/shortcuts/e7189da916b540c8836a9fcc69efb6d8)      |Hygiene - logs a haircut|
 |[Connect](https://www.icloud.com/shortcuts/96dee8d7f3b94da48b530aff56dcb4c9)            |Connects the last two calendar events by setting the end time of the first event to <br>the start time of the second event. This is useful to connect two events by removing <br>the time gap in between. |
 |[Stop Event Now](https://www.icloud.com/shortcuts/31552dfb24774a1686f956e695ac9032)     |Moves the end time of a selected event to the nearest X minute from now|
 |[Move Event Earlier](https://www.icloud.com/shortcuts/6f1466e97e654e3b8cbbfbc376dd1b4d) |Shifts a selected event to X minutes earlier by updating the event start and end time|
 |[Move Event Later](https://www.icloud.com/shortcuts/55bc65bd5be149f1a184cd5fb4841185)   |Shifts a selected event to X minutes later by updating the event start and end time|
 |[Backup & Restore](https://www.icloud.com/shortcuts/bd469c0b7f36476baeeb6f6ffae165a3)   |Saves and restores your shortcuts collection|
-
 </div>  
 <br />
 <br />
