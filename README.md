@@ -1,9 +1,4 @@
-
-
 # Calendar Tracking  
-DRAFT - DRAFT - DRAFT   
-DRAFT - DRAFT - DRAFT   
-DRAFT - DRAFT - DRAFT   
 
 ## Why track your time?  
 Have you ever asked yourself where your time goes? Or have you ever wished you could remember what you were doing on a specific day? What about remembering the last time you meet up with a friend or relative? Or the name of the restaurant with the great desert you visited last year when you were on a business trip?
@@ -22,11 +17,10 @@ Back in 2012 I had similar questions and wanted to get to the bottom of how I sp
 ## Who does that?  
 Here are some great people that track their life with the help of a calendar.
 * [Every Step I Take](https://www.youtube.com/watch?v=MazwAPVO70Y) (Nicholas Feltron)
-* [Productivity Hacking](http://www.jamesmaa.com/2012/12/02/james-maas-productivity-hacking-guide/) (James Maa)
+* [Productivity Hacking](https://jamesmaa.com/productivity_guide/time-management/) (James Maa)
 * [Keeping Track of Time](https://vimeo.com/57823452) (Awais Hussain)
 * [Tracking My Time Spent](https://blog.usejournal.com/quantified-self-tracking-my-time-spent-1fdb97652595) (Stephanie Rogers)
 * [Time blocking and time tracking](https://www.youtube.com/watch?v=X57gxhIHjBE) (Aparna Kher)
-* [How and Why I Create a Quantified Self](https://www.jacksondame.com/blog/lifelogging-how-and-why-i-create-a-quantified-self) (Jackson Dame)
 * [I Tracked Every Minute Of My Life For 7 Days](https://www.youtube.com/watch?v=FLLiFl1m9I4) (Nathaniel Drew)
 * [I Tracked Every Minute Of My Life For 1 Week](https://www.youtube.com/watch?v=CtyJR2e1Fco) (Antoniya Ivanova)
 * [I Tracked Every Minute Of My Life For 3 Months](https://www.youtube.com/watch?v=LUjTvPy_UAg) (Matt D'Avella)
