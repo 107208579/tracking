@@ -95,7 +95,7 @@ When being mobile I log events on my iPhone via one-touch [iOS shortcuts](https:
 <br />
 
 ### Around the home
-At home, I also use a setup that includes wireless switches which allow me to log events via a simple button press. Zigbee switches are cheap buttons that run on a coin cell battery and when pressed send a signal to a server, which in return creates a calendar event. I've written up a setup tutorial which can be [found here](https://github.com/107208579/calendar-tracking/blob/main/switches/README.md).
+At home, I also use a setup that includes wireless switches which allow me to log events via a simple button press. Zigbee switches are cheap buttons that run on a coin cell battery and when pressed send a signal to a server, which in return creates a calendar event. I've written up a full setup tutorial which can be [found here](https://github.com/107208579/calendar-tracking/blob/main/switches/README.md).
 <p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup.png" width="740"></p>
 <br />
 <p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup_Zigbee.png" width="740"></p>
