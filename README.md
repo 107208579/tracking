@@ -110,4 +110,6 @@ I've documented [various alternative software & hardware options](https://github
 ## How do you analyse your data?  
 Events are extracted from my macOS calendar via [Export Calendars Pro](http://apps.apple.com/app/id663835623) and saved in a spreadsheet. [Tableau](https://www.tableau.com/) connects to the data and allows for analysis.
 <br />
+<p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Export Calendars Pro_Overview.png" width="740"></p>
+<br />
 <br />
