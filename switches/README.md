@@ -102,7 +102,7 @@ Example: CC26X2R1_20201026.hex<br />
 
 → Remove the flashed Zigbee adapter from the USB port<br />
 → Connect the flashed Zigbee adapter to the Raspberry Pi<br />
-→ Ideally use an USB extension cable to physically distance the adapter from the Raspberry Pi<br />
+→ Ideally use an USB extension cable to physically distance the adapter from the Raspberry Pi and the WiFi antenna<br />
 <br />
 <br />
  
