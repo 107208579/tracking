@@ -103,7 +103,7 @@ At home, I also use a setup that includes wireless switches which allow me to lo
 <br />
 
 ### Other options
-I've documented [various alternative options](https://github.com/107208579/calendar-tracking/blob/main/options/README.md) across different systems on how to log events to a calendar.
+I've documented [various alternative software & hardware options](https://github.com/107208579/calendar-tracking/blob/main/options/README.md) across different systems on how to log events to a calendar.
 <br />
 <br />
 
