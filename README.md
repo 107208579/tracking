@@ -1,4 +1,6 @@
 # Calendar Tracking  
+<br />
+<br />
 
 ## Why track your time?  
 Have you ever asked yourself where your time goes? Or have you ever wished you could remember what you were doing on a specific day? What about remembering the last time you meet up with a friend or relative? Or the name of the restaurant with the great desert you visited last year when you were on a business trip?
@@ -93,13 +95,7 @@ When being mobile I log events on my iPhone via one-touch [iOS shortcuts](https:
 <br />
 
 ### Around the home
-Around my house I also use another setup that includes wireless Zigbee switches that allow me to log events via a simple button press. Zigbee switches are cheap buttons that run on a coin cell battery and when pressed send a signal to a server, which creates a calendar event.
-
-The setup is a bit more complicated but anybody with Linux and command
-
-I run a dedicated [Nextcloud](http://nextcloud.com/) server to keep my calendar data in sync between my devices. I assume that [Apple Calendar](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) might be a suitable options but I have no experience.
-
-I've written up a tutorial on what hardware is required and how to setup a Raspberry Pi which can be [found here](https://github.com/107208579/calendar-tracking/blob/main/switches/README.md).
+Around my house I also use another setup that includes wireless switches that allow me to log events via a simple button press. Zigbee switches are cheap buttons that run on a coin cell battery and when pressed send a signal to a server, which creates a calendar event. The setup also includes a dedicated [Nextcloud](http://nextcloud.com/) server to keep my calendar data in sync between my devices. I've written up a tutorial which can be [found here](https://github.com/107208579/calendar-tracking/blob/main/switches/README.md).
 <p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup.png" width="740"></p>
 <br />
 <p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup_Zigbee.png" width="740"></p>
@@ -107,4 +103,8 @@ I've written up a tutorial on what hardware is required and how to setup a Raspb
 <br />
 
 ### Other options
-If the above options are not enough for your event logging needs, I've documented [various alternative options](https://github.com/107208579/calendar-tracking/blob/main/options/README.md).
+I've documented [various alternative options](https://github.com/107208579/calendar-tracking/blob/main/options/README.md) on how to log events to a calendar.
+<br />
+<br />
+
+
