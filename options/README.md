@@ -56,7 +56,6 @@ Apart from manually logging an event in a calendar app there are lots of other w
      * [GCal CLI](https://github.com/insanum/gcalcli)
   * Android
      * [Add Quick Event](https://play.google.com/store/apps/details?id=com.a3w4u.addquickeventfree)
-     * [Add Your Template](https://play.google.com/store/apps/details?id=streim.de.quickaddroidpro) 
      * [Automate](https://play.google.com/store/apps/details?id=com.llamalab.automate)
      * [Calendar Helper](https://play.google.com/store/apps/details?id=net.noople.calendarhelper)
      * [CalenGoo](https://play.google.com/store/apps/details?id=com.calengoo.android)
