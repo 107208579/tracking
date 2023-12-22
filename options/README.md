@@ -20,7 +20,7 @@ Below a list of calendar services and applications that support synchronisation 
      * [BusyCal](https://www.busymac.com/busycal/)
      * [Fantastical](https://flexibits.com/)
   * Windows
-     * [eM Client](http://www.emclient.com)
+     * [eM Client](https://www.emclient.com)
      * [One Calendar](https://www.onecalendar.nl)
      * [Thunderbird](https://www.thunderbird.net/en-US/calendar/)
   * Linux
