@@ -63,7 +63,6 @@ I have different calendars to better categorise events:
 |**SOC**|Social|Social activities, such as meeting friends, etc|
 |**SPO**|Sport|Physical activity, including running, cycling, sailing, etc|
 |**TRA**|Transportation|Time spent on the move via car, subway, walking, etc|
-
 </div>
 <br />
 <br />
@@ -84,7 +83,6 @@ I log events directly on my iMac, mostly cloning existing events from the previo
 <br />
 <p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_StreamDeck_Photo.png" width="740"></p>
 <p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_StreamDeck_Setup.png" width="740"></p>
-
 <br />
 <br />
 
@@ -107,9 +105,12 @@ I've documented [various alternative software & hardware options](https://github
 <br />
 <br />
 
+
 ## How do you analyse your data?  
-Events are extracted from my macOS calendar via [Export Calendars Pro](http://apps.apple.com/app/id663835623) and saved in a spreadsheet. [Tableau](https://www.tableau.com/) connects to the data and allows for analysis.
+Events are extracted from my macOS calendar via [Export Calendars Pro](http://apps.apple.com/app/id663835623) and saved in a spreadsheet.
 <br />
 <p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Export Calendars Pro_Overview.png" width="740"></p>
+<br />
+[Tableau](https://www.tableau.com/) connects to the spreadsheet and uses the data for analysis.
 <br />
 <br />
