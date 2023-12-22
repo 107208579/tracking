@@ -68,8 +68,6 @@ Apart from manually logging an event in a calendar app there are lots of other w
      * [Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md) | [Forum](https://www.reddit.com/r/shortcuts) | [Extensions](https://appraven.net/collection.php?listId=5e9631e1f2701d7f562d3e55))
   * watchOS
      * [Shortcuts](https://support.apple.com/en-gb/guide/watch/apd99050d435/watchos) ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md) | [Forum](https://www.reddit.com/r/shortcuts))
-   * Cross Platform
-     * [Slack](https://slack.com) + [Eventbot](https://geteventbot.com)
 <br />
 
 * **Via NFC Tap**
