@@ -65,7 +65,7 @@ Apart from manually logging an event in a calendar app there are lots of other w
      * [Calendar Paste](https://apps.apple.com/app/id581693524)
      * [Duplicator](https://apps.apple.com/app/id863270136)
      * [Week Calendar](https://apps.apple.com/app/id381059732)
-     * [Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md) | [Forum](https://www.reddit.com/r/shortcuts) | [Extensions](https://appraven.net/collection.php?listId=5e9631e1f2701d7f562d3e55))
+     * [Shortcuts](https://support.apple.com/en-gb/guide/shortcuts/welcome/ios) ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md) | [Forum](https://www.reddit.com/r/shortcuts) | [Extensions](https://www.reddit.com/r/shortcuts/wiki/apps/))
   * watchOS
      * [Shortcuts](https://support.apple.com/en-gb/guide/watch/apd99050d435/watchos) ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md) | [Forum](https://www.reddit.com/r/shortcuts))
 <br />
