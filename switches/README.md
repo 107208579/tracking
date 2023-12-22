@@ -25,37 +25,7 @@ https://user-images.githubusercontent.com/6289141/120297608-d7eac800-c2fb-11eb-9
 • USB Extension Cable ([UGreen OTG 2.0](https://uk.ugreen.com/products/ugreen-micro-usb-2-0-otg-adapter) ~5 USD)<br />
 
 <p align="center">
-<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup_Zigbee.png" width="740">    
-</p>
-<br />
-<br />
-
-
-
-## Download
-Follow the installation instructions below or download a pre-compiled image for a Raspberry Pi Zero 1 Wireless. Use the [Rasperry Pi Imager](https://www.raspberrypi.org/software/) to write the image to the SD card.<br />
-
-Raspberry Pi OS Lite 32-bit<br />
-• Release Date: <br />
-• Kernel Version: <br />
-• SERVER username: pi<br />
-• SERVER password: raspberry<br />
-• MQTT username: mqtt<br />
-• MQTT password: <br />
-
-• WiFi network: <br />
-• WiFi username: <br />
-• WiFi password: <br />
-
-<br />
-https://www.mediafire.com<br />
-https://workupload.com<br />
-https://mega.nz<br />
-https://anonfiles.com<br />
-https://upl.io<br />
-https://www.mediafire.com<br />
-https://pixeldrain.com<br />
-https://yadi.sk<br />
+<img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Personal_Setup_Zigbee.png" width="740"></p>
 <br />
 <br />
 
