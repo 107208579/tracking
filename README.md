@@ -111,6 +111,7 @@ Events are extracted from my macOS calendar via [Export Calendars Pro](http://ap
 <br />
 <p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Export Calendars Pro_Overview.png" width="740"></p>
 <br />
+
 The spreadsheet connects to [Tableau](https://www.tableau.com) which is used for analysis.
 <br />
 <p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Tableau_Records_Quarterly.png" width="740"></p>
