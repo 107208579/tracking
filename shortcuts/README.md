@@ -10,7 +10,7 @@ Note: In order to automatically allow updating of calendar events in your calend
 <br />
 
 ## Downloads
-The below listed shortcuts have a 'Settings' section at the top each shortcut which allows for configuration and customisation. A description of all settings can be found further down below.
+In 'Edit' mode, the below shortcuts have a 'Settings' section at the top each shortcut which allows for configuration and customisation. A description of all settings can be found further down below.
 
 <div align="center">
 
