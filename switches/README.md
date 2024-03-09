@@ -1,3 +1,4 @@
+
 # Calendar Tracking (Zigbee Switches)
 
 ## Overview
@@ -19,7 +20,7 @@ https://user-images.githubusercontent.com/6289141/120297608-d7eac800-c2fb-11eb-9
 
 ## Requirements
 • CalDAV Server ([Apple iCloud Calendar](https://www.icloud.com/calendar/), [Google Calendar](http://calendar.google.com), [NextCloud](https://nextcloud.com), etc)<br />
-• Linux Server ([Raspberry Pi Zero W](https://www.raspberrypi.org)  ~10 USD)<br />
+• Linux Server ([Raspberry Pi Zero W 1](https://www.raspberrypi.org)  ~10 USD)<br />
 • Zigbee Switch ([Supported Switches](https://www.zigbee2mqtt.io/information/supported_devices.html) ~10 USD)<br />
 • Zigbee Adapter ([Electrolama zzh! CC2652](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick/) ~30 USD)<br />
 • USB Extension Cable ([UGreen OTG 2.0](https://uk.ugreen.com/products/ugreen-micro-usb-2-0-otg-adapter) ~5 USD)<br />
@@ -32,7 +33,7 @@ https://user-images.githubusercontent.com/6289141/120297608-d7eac800-c2fb-11eb-9
 
 
 ## Disclaimer
-The below information explains a headless Raspberry Pi OS server installation and requires a fundamental understanding of Linux and the use of a command line. Information may be incomplete, incorrect, outdated, obsolete. Use at your own risk.
+The below information explains a headless Raspberry Pi OS server installation on a Raspberry Pi Zero 1 and requires a fundamental understanding of Linux and the use of a command line. Information may be incomplete, incorrect, outdated, obsolete. Use at your own risk.
 <br />
 <br />
 
@@ -108,26 +109,27 @@ Example: CC26X2R1_20201026.hex<br />
  
  
  
-### Install Raspberry Pi OS
-→ Get the Raspberry Pi Imager to write the Raspberry Pi OS image to an SD card<br />
-https://www.raspberrypi.org/downloads/
+### Install Raspbian
+→ This tutorial includes the installation of an older version of Raspbian that is meant to run within a local network with local network access only. In addition, the Raspbian version used in this example is a 'command line only' version with no graphical user interface.<br />
 
-→ NOTE: The following steps are performed via macOS<br />
+→ Download Raspbian Buster Lite [2020-02-13-raspbian-buster-lite.zip](http://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2020-02-14/2020-02-13-raspbian-buster-lite.zip) from the official repository.<br />
+
+→ Use the [Raspberry Pi Imager](https://www.raspberrypi.org/downloads/) to write the Raspbian image to the SD card<br /><br />
 
 → For SSH connectivity add the following file to the root of the SD card<br />
 `touch /Volumes/boot/ssh`
 
 → For WiFi connectivity add the following file to the root of the SD card<br />
-→ Note that the Raspberry Pi Zero only supports 2.4Ghz WiFi connectivity<br />
+→ Note that the Raspberry Pi Zero 1 only supports 2.4Ghz WiFi connectivity<br />
 `vi /Volumes/boot/wpa_supplicant.conf`
 
     ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
     country=CA
     
     network={
-    ssid="<your_network_name>"
+    ssid="your_wifi_network"
     scan_ssid=1
-    psk="<your_password>"
+    psk="your_password"
     }
 
 → The WiFi configuration can later be edited again with the following command<br />
@@ -142,11 +144,11 @@ https://www.raspberrypi.org/downloads/
 
 
 
-### Logon to the Raspberry Pi
+### Connect to the Raspberry Pi
 → Locate your Raspberry Pi network address<br />
-`arp -a | grep -ia b8:27:eb`
+` arp -a | egrep -ia 'b8:27:eb|dc:a6:32|e4:5f:01'`
 
-→ Connect to your Raspberry Pi remotley via 'ssh'<br />
+→ Connect to your Raspberry Pi remotely via 'ssh'<br />
 `ssh pi@xxx.xxx.xxx.xxx`<br />
 • username: pi<br />
 • password: raspberry
@@ -166,35 +168,150 @@ https://www.raspberrypi.org/downloads/
 
 
 
-### Update Raspberry Pi OS 
+### Configure Raspbian 
 → Check your operating system<br />
 `uname -a`
 
-→ Update your system's package list<br />
-`sudo apt-get update`
+→ Set GPU memory & disable Bluetooth<br />
+`sudo vi /boot/config.txt`
 
-→ Upgrade installed packages to their latest version<br />
-`sudo apt-get dist-upgrade`
+    # Set GPU Memory
+    gpu_mem=16
+    # Disable Bluetooth 
+	dtoverlay=disable-bt
 
-→ Remove downloaded .deb packages from /var/cache/apt/archives/<br />
-`sudo apt-get clean`<br />
-`sudo apt-get --purge -y autoremove`
-<br />
-<br />
-
-
-
-### Check Log Files for Errors
-→ Always check the start-up logfile for any potential errors<br />
-`dmesg`
-
-→ Check the boot.log file<br />
-`less /var/log/boot.log`
-<br />
-<br />
-
+→ Disable HDMI circuits<br />
+`sudo vi /etc/rc.local`
 	
+	# Disable HDMI
+	/usr/bin/tvservice -o
+
+→ Disable WiFi controller power_safe for more consistent wireless connectivity<br />
+
+	# Disable WiFi Controller Power Save
+	/sbin/iw dev wlan0 set power_save off
+	exit 0
+
+→ Alternatively also disable Wifi if an Ethernet connection is used. Less radios ensure better Zigbee connectivity.<br />
+
+	# Disable Wifi
+	dtoverlay=disable-wifi
+
+→ Update your system's package list to allow compatible but older software to be installed<br />
+`sudo apt-get update --allow-releaseinfo-change`
+
+→ Deactivate automatic daily check for updates<br />
+`sudo systemctl disable apt-daily.timer`
+`sudo systemctl disable apt-daily.service`
+`sudo systemctl disable apt-daily-upgrade.timer`
+`sudo systemctl disable apt-daily-upgrade.service`
+
+→ Reload the systemctl daemon for the changes to take effect<br />
+`systemctl daemon-reload`
+
+→ Update your ssh daemon configuration file<br />
+`sudo vi /etc/ssh/sshd_config`
+
+	LoginGraceTime 30
+    PermitRootLogin no
+	MaxAuthTries 5
+	PermitEmptyPasswords no
+	X11Forwarding no
+
+→ Disable the following line by prefixing it with a '#'<br />
 	
+	#Subsystem   sftp   /usr/lib/openssh/sftp-server
+
+→ Restart the service so that changes take effect<br />
+
+           sudo service ssh restart
+<br />
+<br />
+
+
+
+### Reconnect WiFi On Lost Connection  
+→ Create the WLAN reconnect script in /usr/local/bin<br />
+`sudo vi /usr/local/bin/wlan_reconnect.sh`
+
+	#!/bin/bash
+	# https://gist.github.com/carry0987/372b9fefdd8041d0374f4e08fbf052b1
+	SSID=$(/sbin/iwgetid --raw)
+	
+	if [ -z "$SSID" ]
+	then
+    echo "`date +"%Y-%m-%d %H:%M:%S"` [WLAN] Interface Disconnected" >> /var/log/wlan.log
+	   sudo ifconfig wlan0 down
+    sleep 30
+    sudo ifconfig wlan0 up
+    echo "`date +"%Y-%m-%d %H:%M:%S"` [WLAN] Interface Reconnected" >> /var/log/wlan.log
+	fi
+
+→ Change file permissions to be able to execute the script <br />
+`sudo chmod +x /usr/local/bin/wlan_reconnect.sh`
+
+→ Update the system crontab to run the script in the background every X minutes<br />
+`sudo vi /etc/crontab`
+
+	# Reconnect WLAN on connectivity loss
+	*/15 * * * *    root    /usr/local/bin/wlan_reconnect.sh
+
+
+→ Test if the script reconnects the WLAN within ~15 minutes<br />
+`sudo ifconfig wlan0 down`
+
+ → Check the log file for status entries<br />
+`less /var/log/wlan.log`
+<br />
+<br />
+
+
+
+### Install IPtables
+→ Install 'iptables-persistent'<br />
+`sudo apt-get install -y iptables-persistent`
+
+→ Add the following rules to restrict access to the server. Access to RFC1918 IP ranges of 10.x, 172.16.x, and 192.168.x is permitted<br />
+→ IMPORTANT: Replace ???.???.???.??? with the IP address of your CalDAV server<br />
+`sudo iptables -A INPUT -i lo -j ACCEPT`
+`sudo iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT`<br />
+`sudo iptables -A INPUT -s 10.0.0.0/8 -j RETURN`<br />
+`sudo iptables -A INPUT -s 172.16.0.0/12 -j RETURN`<br />
+`sudo iptables -A INPUT -s 192.168.0.0/16 -j RETURN`<br />
+`sudo iptables -A INPUT -s ???.???.???.??? -j RETURN`<br />
+`sudo iptables -A INPUT -p udp --sport 53 -j ACCEPT`<br />
+`sudo iptables -A INPUT -p tcp --sport 53 -j ACCEPT`<br />
+`sudo iptables -A INPUT -p udp --sport 123 -j ACCEPT`<br />
+`sudo iptables -A INPUT -p icmp -m state --state ESTABLISHED,RELATED -j ACCEPT`<br />
+`sudo iptables -A INPUT -j DROP`
+
+`sudo iptables -A OUTPUT -o lo -j ACCEPT`<br />
+`sudo iptables -A OUTPUT -m state --state ESTABLISHED,RELATED -j ACCEPT`<br />
+`sudo iptables -A OUTPUT -d 10.0.0.0/8 -j RETURN`<br />
+`sudo iptables -A OUTPUT -d 172.16.0.0/12 -j RETURN`<br />
+`sudo iptables -A OUTPUT -d 192.168.0.0/16 -j RETURN`<br />
+`sudo iptables -A OUTPUT -d ???.???.???.??? -j RETURN`<br />
+`sudo iptables -A OUTPUT -p udp --dport 53 -j ACCEPT`<br />
+`sudo iptables -A OUTPUT -p tcp --dport 53 -j ACCEPT`<br />
+`sudo iptables -A OUTPUT -p udp --dport 123 -j ACCEPT`<br />
+`sudo iptables -A OUTPUT -p icmp -m state --state NEW,ESTABLISHED,RELATED -j ACCEPT`<br />
+`sudo iptables -A OUTPUT -j DROP`
+
+→ IMPORTANT: Test your rules before saving it permanently!<br />
+
+→ Save iptable rules to configuration<br />
+`sudo sh -c "iptables-save > /etc/iptables/rules.v4"`
+
+→ Check if the rules have been added to the file<br />
+`less /etc/iptables/rules.v4`
+
+→ Flush all configured iptables rules temporarily next reboot<br />
+`sudo iptables -F`
+<br />
+<br />
+
+
+
 ### Check the Zigbee Adapter 
 → Check the device location of the Zigbee adapter (should be called 'ttyUSB0')<br />
 `ls -l /dev/serial/by-id`<br />
@@ -231,7 +348,8 @@ https://www.raspberrypi.org/downloads/
 	
 ### Install MQTT (Mosquitto)
 → Install the Mosquitto broker and clients<br />
-`sudo apt install -y mosquitto mosquitto-clients`<br />
+`sudo apt install -y mosquitto=1.5.7-1+deb10u1`<br />
+`sudo apt install -y mosquitto-clients=1.5.7-1+deb10u1`<br />
 `sudo systemctl enable mosquitto.service`
 
 → Check the running Mosquitto version<br />
@@ -249,7 +367,7 @@ https://www.raspberrypi.org/downloads/
 → Set a user and password<br />
 `sudo mosquitto_passwd -c /etc/mosquitto/passwd mqtt`<br />
 • User		mqtt<br />
-• Pass		<your_password>
+• Pass		your_password
 
 → Update the config file and add the following section<br />
 `sudo vi /etc/mosquitto/mosquitto.conf`
@@ -274,27 +392,9 @@ https://www.raspberrypi.org/downloads/
 ### Install Zigbee2MQTT 
 → Zigbee2MQTT converts the Zigbee signal to an MQTT event<br />
 
-→ Look for the latest Zigbee2MQTT installation<br />
-https://www.zigbee2mqtt.io/getting_started/running_zigbee2mqtt.html<br />
-`sudo curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -`
-
-→ If you receive an error message as below:<br />
-*## You appear to be running on ARMv6 hardware. Unfortunately this is not*<br />
-*currently supported by the NodeSource Linux distributions. Please use the*<br />
-*'linux-armv6l' binary tarballs available directly from nodejs.org for*<br />
-*Node.js 4 and later.*
-
-→ Check your ARM architecture version<br />
-`uname -m`<br />
-*armv6l*
-
-→ Or use this command<br />
-`cat /proc/cpuinfo`<br />
-*model name	: ARMv6-compatible processor rev 7 (v6l)*
-
 → Manually download and install an unoffical NodeJS version<br />
 https://unofficial-builds.nodejs.org/download/release/<br />
-`wget https://unofficial-builds.nodejs.org/download/release/v12.9.1/node-v12.9.1-linux-armv6l.tar.xz`<br />
+`wget --no-check-certificate https://unofficial-builds.nodejs.org/download/release/v12.9.1/node-v12.9.1-linux-armv6l.tar.xz`<br />
 `tar -xvf node-v12.9.1-linux-armv6l.tar.xz`<br />
 `sudo cp -R node-v12.9.1-linux-armv6l/* /usr/local/`<br />
 `rm -rf node-v12.9.1-linux-armv6l node-v12.9.1-linux-armv6l.tar.xz`<br />
@@ -307,8 +407,8 @@ https://unofficial-builds.nodejs.org/download/release/<br />
 `npm -v`<br />
 *6.10.2*
 
-→ Install git, gcc, and g++<br />
-`sudo apt-get install -y git make g++ gcc`
+→ Install git<br />
+`sudo apt-get install -y git`
 
 → Clone the Zigbee2MQTT repository<br />
 `sudo git clone https://github.com/Koenkk/zigbee2mqtt.git /opt/zigbee2mqtt`
@@ -319,7 +419,13 @@ https://unofficial-builds.nodejs.org/download/release/<br />
 → Change into the Zigbee directory<br />
 `cd /opt/zigbee2mqtt`
 
-→ Install dependencies (this may take ~10 minutes on a Rasperry Pi Zero 1)<br />
+→ Rollback to Zigbee2MQTT version 1.16.2<br />
+`cd /opt/zigbee2mqtt`
+`git checkout 04c15f7`
+
+	> HEAD is now at 04c15f7f 1.16.2
+
+→ Install dependencies (this may take ~5 minutes on a Rasperry Pi Zero 1)<br />
 `npm ci --production`<br />
 *[..................] | extractTree: verb extractTree extracting dependencies to node_modules/*<br />
 *[  ................] | extractTree: sill extract ms@2.0.0 extracted to /opt/zigbee2mqtt/node_modules/ms (5844ms)*<br />
@@ -399,7 +505,7 @@ https://www.zigbee2mqtt.io/information/configuration.html
       timestamp_format: 'YYYY/MM/DD HH:mm:ss'
 
 
-→ Save the 'configuration.yaml' and check if your node started up and runs correctly<br />
+→ Save the 'configuration.yaml' and check if your node starts up and runs correctly<br />
 `cd /opt/zigbee2mqtt`<br />
 `npm start `<br />
 *zigbee2mqtt@1.15.0 start /opt/zigbee2mqtt*<br />
@@ -412,7 +518,7 @@ https://www.zigbee2mqtt.io/information/configuration.html
 *Zigbee2MQTT:info  2020-10-31 22:30:40: Connected to MQTT server*<br />
 *...*<br />
 
-→ Check the journal <br />
+→ Check the journal via a second command terminal <br />
 `sudo journalctl -u zigbee2mqtt.service -f`<br />
 *zigbee2mqtt@1.18.1 start /opt/zigbee2mqtt*
 
@@ -444,43 +550,6 @@ https://www.zigbee2mqtt.io/information/configuration.html
 
 → Start Zigbee2MQTT upon system boot<br />
 `sudo systemctl enable zigbee2mqtt.service`
-<br />
-<br />
-
-
-
-### Upgrade Zigbee2MQTT if required<br />
-→ Stop Zigbee2MQTT<br />
-`sudo systemctl stop zigbee2mqtt`
-`cd /opt/zigbee2mqtt`
-
-→ Backup configuration<br />
-`cp -R data data-backup`
-
-→ Update<br />
-`git checkout HEAD -- npm-shrinkwrap.json`<br />
-`git pull`<br />
-`npm ci`
-
-→ Restore configuration<br />
-`cp -R data-backup/* data`<br />
-`rm -rf data-backup`
-<br />
-<br />
-
-	
-	
-### Roll back Zigbee2MQTT if required<br />
-→ Find the version to rollback to<br /> 
-https://github.com/Koenkk/zigbee2mqtt/tags
-
-→ Roll back<br />
-`cd /opt/zigbee2mqtt`<br />
-`git checkout 99274c7`
-
-→ Reconfigure 'npm'<br />
-`npm ci --production`<br />
-`npm start`
 <br />
 <br />
 
@@ -757,29 +826,26 @@ https://man7.org/linux/man-pages/man1/journalctl.1.html<br />
 ### Install mqtt2caldav<br />
 → mqtt2caldav converts the MQTT event to a CalDAV event<br />
 
-→ Check installed Python 3 version<br />
-`python3 --version`
-
 → Install 'pip'<br />
 `sudo apt-get -y install python3-pip`
 
-→ Upgrade 'setuptools'<br />
+→ Install 'setuptools'<br />
 `pip3 install --upgrade setuptools`
 
 → Install 'libxml'<br />
 `sudo apt-get install python3-lxml`
 
 → Install 'pytz'<br />
-`pip3 install pytz`
+`pip3 install pytz==2021.1`
 
 → Install 'caldav' (this may take a bit)<br />
-`pip3 install caldav`
-
-→ If you need to install an older version use the following command<br />
 `pip3 install caldav==0.7.1`
 
 → Install 'paho-mqtt'<br />
-`pip3 install paho-mqtt`
+`pip3 install paho-mqtt==1.5.1`
+
+→ Return to your home directory<br />
+`cd`
 
 → Download 'mqtt2caldav' to your servers home directory<br />
 https://github.com/107208579/mqtt2caldav<br />
@@ -797,13 +863,13 @@ https://github.com/107208579/mqtt2caldav<br />
         "MQTT_SERVER_ADDRESS": "localhost",
         "MQTT_SERVER_PORT": "1883",
         "MQTT_USERNAME": "mqtt",
-        "MQTT_PASSWORD": "<your_password>"
+        "MQTT_PASSWORD": "your_password"
       },
     
       "CALDAV_SERVER":{
         "CALDAV_SERVER_ADDRESS": "https://server.com/remote.php/dav/calendars/user",
         "CALDAV_USERNAME": "user",
-        "CALDAV_PASSWORD": "<your_password>"
+        "CALDAV_PASSWORD": "your_password"
       },
     
       "TRIGGERS": [
