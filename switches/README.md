@@ -273,7 +273,7 @@ Example: CC26X2R1_20201026.hex<br />
 
 → Add the following rules to restrict access to the server. Access to RFC1918 IP ranges of 10.x, 172.16.x, and 192.168.x is permitted<br />
 → IMPORTANT: Replace ???.???.???.??? with the IP address of your CalDAV server<br />
-`sudo iptables -A INPUT -i lo -j ACCEPT`
+`sudo iptables -A INPUT -i lo -j ACCEPT`<br />
 `sudo iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT`<br />
 `sudo iptables -A INPUT -s 10.0.0.0/8 -j RETURN`<br />
 `sudo iptables -A INPUT -s 172.16.0.0/12 -j RETURN`<br />
