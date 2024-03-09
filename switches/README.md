@@ -380,7 +380,7 @@ Example: CC26X2R1_20201026.hex<br />
 
 → Verify the user and the password<br />
 → An empty line will be shown if the connection is successul<br />
-`mosquitto_sub -h localhost -v -t '#' -p 1883 -u mqtt -P <your_password>`
+`mosquitto_sub -h localhost -v -t '#' -p 1883 -u mqtt -P your_password`
 
 → Incorrect access will send an error message<br />
 *Connection Refused: not authorised.*
@@ -472,7 +472,7 @@ https://www.zigbee2mqtt.io/how_tos/how_to_secure_network.html
 → And add the user and the password to connect to Mosquitto<br />
 
     user: 'user'
-    password: '<your_password>'
+    password: 'your_password'
 
 → And change the base topic to the correct name<br />
 
@@ -643,7 +643,7 @@ https://www.zigbee2mqtt.io/how_tos/how_to_improve_network_range_and_stability.ht
     permit_join: true
 
 → Subscribe with the Mosquitto client to all topics to see incoming messages during the pairing process<br />
-`mosquitto_sub -u mqtt -P <your_password> -h localhost -p 1883 -v -t '#'`
+`mosquitto_sub -u mqtt -P your_password -h localhost -p 1883 -v -t '#'`
 
 → More information about device specific pairing steps can be found in the [Zigbee2MQTT supported devices list](https://www.zigbee2mqtt.io/information/supported_devices.html).
 
@@ -768,9 +768,9 @@ https://www.zigbee2mqtt.io/devices/WXKG01LM.html
 
     ===== MOSQUITTO ========================================================
     sudo tail -f /var/log/mosquitto/mosquitto.log
-    mosquitto_sub -h localhost -p 1883 -u mqtt -P <your_password> -v -t '#'
-    mosquitto_sub -h localhost -p 1883 -u mqtt -P <your_password> -v -t '#' -F %X
-    mosquitto_sub -h localhost -p 1883 -u mqtt -P <your_password> -v -t 'zigbee2mqtt/Ikea_Square_Button'
+    mosquitto_sub -h localhost -p 1883 -u mqtt -P your_password -v -t '#'
+    mosquitto_sub -h localhost -p 1883 -u mqtt -P your_password -v -t '#' -F %X
+    mosquitto_sub -h localhost -p 1883 -u mqtt -P your_password -v -t 'zigbee2mqtt/Ikea_Square_Button'
 
     ===== PASSWORD UPDATE ==================================================
     mosquitto       sudo mosquitto_passwd -c /etc/mosquitto/passwd mqtt
