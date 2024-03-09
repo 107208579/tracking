@@ -897,12 +897,12 @@ https://github.com/107208579/mqtt2caldav<br />
 → Manually run the program to check for errors<br />
 `python3 mqtt2caldav/main.py`
 
-[CALDAV] Server Connection Successful | user@https://server.com/remote.php/dav/calendars/user<br />
-[CALDAV] Home                  https://server.com/remote.php/dav/calendars/user/home/<br />
-[CALDAV] Work                  https://server.com/remote.php/dav/calendars/user/work/<br />
-[CALDAV] Meetings              https://server.com/remote.php/dav/calendars/user/meetings/<br />
-[MQTT] Broker Connection Successful | mqtt@localhost:1883<br />
-[MQTT] Broker Connection Successful | mqtt@localhost:1883<br />
+*[CALDAV] Server Connection Successful | user@https://server.com/remote.php/dav/calendars/user*<br />
+*[CALDAV] Home                  https://server.com/remote.php/dav/calendars/user/home*<br />
+*[CALDAV] Work                  https://server.com/remote.php/dav/calendars/user/work*<br />
+*[CALDAV] Meetings              https://server.com/remote.php/dav/calendars/user/meetings*<br />
+*[MQTT] Broker Connection Successful | mqtt@localhost:1883*<br />
+*[MQTT] Broker Connection Successful | mqtt@localhost:1883*<br />
 
 
 → Automatically start the script upon system boot<br />
