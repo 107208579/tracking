@@ -192,7 +192,7 @@ Example: CC26X2R1_20201026.hex<br />
 	/sbin/iw dev wlan0 set power_save off
 	exit 0
 
-→ Alternatively also disable Wifi if an Ethernet connection is used. Less radios ensure better Zigbee connectivity.<br />
+→ Alternatively also disable Wifi if an Ethernet connection is used. Fewer radios ensure better Zigbee connectivity with less interference.<br />
 
 	# Disable Wifi
 	dtoverlay=disable-wifi
