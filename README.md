@@ -87,7 +87,7 @@ I log events directly on my iMac via a simple button-press from my [Streamdeck](
 <br />
 
 ### On the go
-When being mobile I log events on my iPhone via one-touch [iOS shortcuts](https://support.apple.com/en-sg/guide/shortcuts/welcome/ios) ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md)).
+When being mobile I log events on my iPhone via one-touch [iOS shortcuts](https://support.apple.com/en-sg/guide/shortcuts/welcome/ios) ([Examples & Downloads](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md)).
 <p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_iOS14_Shortcuts.png" width="250"></p>
 <br />
 <br />
