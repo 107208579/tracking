@@ -110,7 +110,7 @@ Example: CC26X2R1_20201026.hex<br />
  
  
 ### Install Raspbian
-→ This tutorial includes the installation of an older version of Raspbian that is meant to run within a local network with local network access only. In addition, the Raspbian version used in this example is a 'command line only' version with no graphical user interface.<br />
+→ This tutorial includes the installation of an older version of Raspbian that is meant to run within a local network with mostly local network access only. In addition, the Raspbian version used in this example is a 'command line only' version with no graphical user interface.<br />
 
 → Download Raspbian Buster Lite [2020-02-13-raspbian-buster-lite.zip](http://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2020-02-14/2020-02-13-raspbian-buster-lite.zip) from the official repository.<br />
 
