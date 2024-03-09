@@ -201,9 +201,9 @@ Example: CC26X2R1_20201026.hex<br />
 `sudo apt-get update --allow-releaseinfo-change`
 
 → Deactivate automatic daily check for updates<br />
-`sudo systemctl disable apt-daily.timer`
-`sudo systemctl disable apt-daily.service`
-`sudo systemctl disable apt-daily-upgrade.timer`
+`sudo systemctl disable apt-daily.timer`<br />
+`sudo systemctl disable apt-daily.service`<br />
+`sudo systemctl disable apt-daily-upgrade.timer`<br />
 `sudo systemctl disable apt-daily-upgrade.service`
 
 → Reload the systemctl daemon for the changes to take effect<br />
@@ -213,7 +213,7 @@ Example: CC26X2R1_20201026.hex<br />
 `sudo vi /etc/ssh/sshd_config`
 
 	LoginGraceTime 30
-    PermitRootLogin no
+	PermitRootLogin no
 	MaxAuthTries 5
 	PermitEmptyPasswords no
 	X11Forwarding no
@@ -224,7 +224,7 @@ Example: CC26X2R1_20201026.hex<br />
 
 → Restart the service so that changes take effect<br />
 
-           sudo service ssh restart
+`sudo service ssh restart`
 <br />
 <br />
 
