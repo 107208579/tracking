@@ -850,12 +850,12 @@ https://man7.org/linux/man-pages/man1/journalctl.1.html<br />
 → Download 'mqtt2caldav' to your servers home directory<br />
 https://github.com/107208579/mqtt2caldav<br />
 `wget https://github.com/107208579/mqtt2caldav/archive/refs/heads/main.zip`<br />
-`unzip mqtt2caldav-main.zip`<br />
+`unzip main.zip`<br />
 `mv mqtt2caldav-main mqtt2caldav`<br />
 
 → Read the [README.md](https://github.com/107208579/mqtt2caldav#readme)<br />
 
-→ Configure 'config.json'<br />
+→ The config file 'config.json' holds a few examples. Adapt to your setup.<br />
 `vi mqtt2caldav/config/config.json`
 
     {
@@ -895,9 +895,17 @@ https://github.com/107208579/mqtt2caldav<br />
 <br />
 
 → Manually run the program to check for errors<br />
-`python3 main.py`
+`python3 mqtt2caldav/main.py`
 
-→ Or automatically start the script upon system boot<br />
+[CALDAV] Server Connection Successful | user@https://server.com/remote.php/dav/calendars/user<br />
+[CALDAV] Home                  https://server.com/remote.php/dav/calendars/user/home/<br />
+[CALDAV] Work                  https://server.com/remote.php/dav/calendars/user/work/<br />
+[CALDAV] Meetings              https://server.com/remote.php/dav/calendars/user/meetings/<br />
+[MQTT] Broker Connection Successful | mqtt@localhost:1883<br />
+[MQTT] Broker Connection Successful | mqtt@localhost:1883<br />
+
+
+→ Automatically start the script upon system boot<br />
 `crontab -e`
         
     # Run mqtt2caldav upon boot
@@ -908,8 +916,6 @@ https://github.com/107208579/mqtt2caldav<br />
 `tail -f mqtt2caldav/logs/mqtt2caldav.log`<br />
 *2021/06/13 14:47:29 [MQTT] Event Received | mqtt/OPP_BTN_SQR_601 | {"action":"button_1_single"}*<br />
 *2021/06/13 14:47:29 [MQTT] Event Matched  | mqtt/OPP_BTN_SQR_601 | {"action":"button_1_single"}*<br />
-*2021/06/13 14:59:47 [MQTT] Event Received | mqtt/OPP_BTN_SQR_601 | {"action":"button_3_single"}*<br />
-*2021/06/13 14:59:47 [MQTT] Event Matched  | mqtt/OPP_BTN_SQR_601 | {"action":"button_3_single"}*<br />
 *...*
 <br />
 <br />
