@@ -172,6 +172,10 @@ Example: CC26X2R1_20201026.hex<br />
 → Check your operating system<br />
 `uname -a`
 
+→ Expand the file system<br />
+`sudo raspi-config --expand-rootfs`
+`sudo reboot`
+
 → Set GPU memory & disable Bluetooth<br />
 `sudo vi /boot/config.txt`
 
