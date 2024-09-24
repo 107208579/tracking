@@ -173,7 +173,7 @@ Example: CC26X2R1_20201026.hex<br />
 `uname -a`
 
 → Expand the file system<br />
-`sudo raspi-config --expand-rootfs`
+`sudo raspi-config --expand-rootfs`<br />
 `sudo reboot`
 
 → Set GPU memory & disable Bluetooth<br />
