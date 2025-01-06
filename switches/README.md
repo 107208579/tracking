@@ -872,7 +872,7 @@ https://github.com/candrox/mqtt2caldav<br />
     
       "CALDAV_SERVER":{
         "CALDAV_SERVER_ADDRESS": "https://server.com/remote.php/dav/calendars/user",
-        "CALDAV_USERNAME": "user",
+        "CALDAV_USERNAME": "your_username",
         "CALDAV_PASSWORD": "your_password"
       },
     
