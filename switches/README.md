@@ -54,7 +54,7 @@ https://electrolama.com/radio-docs/#step-3-flash-the-firmware-on-your-stick<br /
 
 → NOTE: The following steps outlined are for flashing the CC2652 via macOS as host system<br />
 
-→ Connect the Zigbee adapter via USB to your macOS system and check if it was detected<br />
+→ Connect the Zigbee adapter via USB to your macOS system, open a terminal, and check if the adapter was detected<br />
 `sudo dmesg | grep AppleUSBCH`<br />
 *[1458325.212772]: IOUserSerial::AppleUSBCHCOM::<private>: 127 0x600002c9c058*<br />
 *[1458325.213170]: DK: AppleUSBCHCOM-0x100048d92::start(IOUSBHostInterface-0x100048d90) ok*
