@@ -309,7 +309,7 @@ Example: CC26X2R1_20201026.hex<br />
 → Check if the rules have been added to the file<br />
 `less /etc/iptables/rules.v4`
 
-→ Flush all configured iptables rules temporarily next reboot<br />
+→ Flush all configured iptables rules temporarily until next system reboot<br />
 `sudo iptables -F`
 <br />
 <br />
