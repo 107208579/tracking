@@ -852,12 +852,12 @@ https://man7.org/linux/man-pages/man1/journalctl.1.html<br />
 `cd`
 
 → Download 'mqtt2caldav' to your servers home directory<br />
-https://github.com/107208579/mqtt2caldav<br />
-`wget https://github.com/107208579/mqtt2caldav/archive/refs/heads/main.zip`<br />
+https://github.com/candrox/mqtt2caldav<br />
+`wget https://github.com/candrox/mqtt2caldav/archive/refs/heads/main.zip`<br />
 `unzip main.zip`<br />
 `mv mqtt2caldav-main mqtt2caldav`<br />
 
-→ Read the [README.md](https://github.com/107208579/mqtt2caldav#readme)<br />
+→ Read the [README.md](https://github.com/candrox/mqtt2caldav#readme)<br />
 
 → The config file 'config.json' holds a few examples. Adapt to your setup.<br />
 `vi mqtt2caldav/config/config.json`
