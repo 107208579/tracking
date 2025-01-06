@@ -634,7 +634,7 @@ https://www.zigbee2mqtt.io/how_tos/how_to_improve_network_range_and_stability.ht
 → Restart your server for the changes to take effect<br /> 
 `sudo reboot`
 
-→ Ideally use an USB extension to physically distance the Zigbee adapter from the server<br />
+→ IMPORTANT: Use an USB extension to physically distance the Zigbee antenna from the Bluetooth antenna!<br />
 <br />
 <br />
 
