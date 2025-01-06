@@ -594,7 +594,7 @@ https://support.metageek.com/hc/en-us/articles/203845040-Zigbee-and-WiFi-Coexist
 • 2  Frequency:2.442 GHz (Channel 7)<br />
 • 3  Frequency:2.462 GHz (Channel 11)<br />
 
-→ Ideally use an USB extension to physically distance the Zigbee antenna from the server
+→ IMPORTANT: Use an USB extension to physically distance the Zigbee antenna from the WiFi antenna!
 <br />
 <br />
 
