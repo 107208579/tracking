@@ -21,7 +21,7 @@ Here are some great people that track their life with the help of a calendar.
 * [Every Step I Take](https://www.youtube.com/watch?v=MazwAPVO70Y) (Nicholas Feltron)
 * [Productivity Hacking](https://jamesmaa.com/productivity_guide/time-management/) (James Maa)
 * [Keeping Track of Time](https://vimeo.com/57823452) (Awais Hussain)
-* [Tracking My Time Spent](https://blog.usejournal.com/quantified-self-tracking-my-time-spent-1fdb97652595) (Stephanie Rogers)
+* [Tracking My Time Spent](https://medium.com/@stogers/quantified-self-tracking-my-time-spent-1fdb97652595) (Stephanie Rogers)
 * [Time blocking and time tracking](https://www.youtube.com/watch?v=X57gxhIHjBE) (Aparna Kher)
 * [I Tracked Every Minute Of My Life For 7 Days](https://www.youtube.com/watch?v=FLLiFl1m9I4) (Nathaniel Drew)
 * [I Tracked Every Minute Of My Life For 1 Week](https://www.youtube.com/watch?v=CtyJR2e1Fco) (Antoniya Ivanova)
@@ -32,7 +32,7 @@ Here are some great people that track their life with the help of a calendar.
 <br />
 
 ## How does this work?  
-It's simple - log events in a calendar via a computer or a mobile phone. Utilise a calendar service such as [Apple Calendar](https://www.icloud.com/calendar/) or [Google Calendar](https://calendar.google.com/) that acts as central storage hub and automatically sync events between different devices such as your mobile phone or home computer. Analyse the data!
+It's simple - log events in a calendar via a computer or a mobile phone. Utilise a calendar service such as [Apple Calendar](https://www.icloud.com/calendar), [Google Calendar](https://calendar.google.com) or [NextCloud](https://nextcloud.com) that acts as central hub and automatically sync events between different devices such as your mobile phone or home computer. Analyse the data!
 <p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Setup.png" width="740"></p>
 <br />
 <br />
@@ -79,7 +79,7 @@ Each event has a different event title and event notes with more details. The sm
 
 ## What tools do you use to log events?  
 ### At my computer
-I log events directly on my iMac via a simple button-press from my [Streamdeck](https://www.elgato.com/en/stream-deck) that triggers [macOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts-mac/apdf22b0444c/mac) ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md)).
+I log events directly on my iMac via a simple button-press from my [Streamdeck](https://www.elgato.com/en/stream-deck) via predefined events that were created in [macOS Shortcuts](https://support.apple.com/en-gb/guide/shortcuts-mac/apdf22b0444c/mac) ([Examples](https://github.com/107208579/calendar-tracking/blob/main/shortcuts/README.md)).
 <br />
 <p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_StreamDeck_Photo.png" width="740"></p>
 <p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_StreamDeck_Setup.png" width="740"></p>
@@ -112,7 +112,7 @@ Events are extracted from my macOS calendar via [Export Calendars Pro](http://ap
 <p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Export Calendars Pro_Overview.png" width="740"></p>
 <br />
 
-The spreadsheet connects to [Tableau](https://www.tableau.com) which is used for analysis.
+The spreadsheet is added as a data source in [Tableau](https://www.tableau.com) which is used for analysis.
 <br />
 <p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Tableau_Records_Quarterly.png" width="740"></p>
 <p align="center"><img src="https://github.com/107208579/tracking/blob/main/img/Calendar_Tableau_Food.png" width="740"></p>
