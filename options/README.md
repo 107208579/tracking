@@ -164,6 +164,7 @@ Apart from manually logging an event in a calendar app there are lots of other w
 
 ## How can calendar events be analysed?  
 * Cross Platform
+   * [Canva](https://www.canva.com)
    * [Tableau](https://www.tableau.com)
    * [Google Data Studio](https://datastudio.google.com/)
    * [Microsoft Power Bi](https://powerbi.microsoft.com)
